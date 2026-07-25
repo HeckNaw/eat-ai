@@ -122,6 +122,7 @@ export default function App() {
         setStage("locked");
         return;
       }
+      console.error("discover failed:", e);
       setDiscoverError(
         "Couldn't search for new places right now — your own list above is unaffected.",
       );

@@ -44,7 +44,13 @@ export async function post<T>(path: string, body: object, passcode?: string): Pr
   });
   if (res.status === 401) throw new Unauthorized();
   const data = await res.json().catch(() => ({}));
-  if (!res.ok) throw new Error((data as { error?: string }).error ?? `Request failed (${res.status})`);
+  if (!res.ok) {
+    // Carry the upstream detail into the message. The UI shows something
+    // friendlier, but a single-user app is much easier to debug when the real
+    // reason reaches the console instead of being swallowed.
+    const { error, detail } = data as { error?: string; detail?: string };
+    throw new Error([error ?? `Request failed (${res.status})`, detail].filter(Boolean).join(" — "));
+  }
   return data as T;
 }
 
