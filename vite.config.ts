@@ -9,8 +9,9 @@ import react from "@vitejs/plugin-react";
  * so dev and production are not two code paths.
  */
 const ROUTES = [
-  { path: "/api/discover", module: "/api/discover.mjs", fn: "handleDiscover" },
-  { path: "/api/geocode", module: "/api/geocode.mjs", fn: "handleGeocode" },
+  { path: "/api/discover", module: "/lib/discover.mjs", fn: "handleDiscover", guard: true },
+  { path: "/api/geocode", module: "/lib/geocode.mjs", fn: "handleGeocode", guard: true },
+  { path: "/api/auth", module: "/lib/auth.mjs", fn: "handleAuth", guard: false },
 ] as const;
 
 function apiDev(env: Record<string, string>): Plugin {
@@ -28,6 +29,18 @@ function apiDev(env: Record<string, string>): Plugin {
             const chunks: Buffer[] = [];
             for await (const c of req) chunks.push(c as Buffer);
             const body = JSON.parse(Buffer.concat(chunks).toString() || "{}");
+
+            // Same passcode check the Vercel wrappers apply, so a passcode set
+            // in .env behaves identically locally. Unset means open.
+            if (route.guard) {
+              const { authorized, DENIED } = await server.ssrLoadModule("/lib/auth.mjs");
+              if (!authorized(body, { ...process.env, ...env })) {
+                res.statusCode = DENIED.status;
+                res.setHeader("content-type", "application/json");
+                res.end(JSON.stringify(DENIED.body));
+                return;
+              }
+            }
 
             const mod = await server.ssrLoadModule(route.module);
             // Pass the loaded .env explicitly. Vite only exposes VITE_-prefixed

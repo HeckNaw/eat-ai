@@ -1,0 +1,3 @@
+# Single-user app. Nothing here is meant to be found by searching.
+User-agent: *
+Disallow: /

@@ -10,6 +10,7 @@
     "data": "python3 scripts/import_lists.py && node scripts/label.mjs && node scripts/derive.mjs && node scripts/build-web-data.mjs",
     "enrich": "node --env-file=.env scripts/enrich.mjs",
     "label": "node scripts/label.mjs",
+    "icons": "node scripts/make-icons.mjs",
     "derive": "node scripts/derive.mjs && node scripts/build-web-data.mjs",
     "discover": "node --env-file=.env scripts/discover.mjs"
   },

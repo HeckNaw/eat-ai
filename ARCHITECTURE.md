@@ -267,6 +267,38 @@ all on-list filtering is local and instant with zero network calls.
 The Google key never reaches the browser. Discovery goes through one Vercel
 serverless function that holds it server-side.
 
+### Deployment shape
+
+```
+api/discover.js   ┐ Vercel function entries — every file under api/ becomes its
+api/geocode.js    │ own function, so these are thin wrappers and nothing else
+api/auth.js       ┘
+lib/discover.mjs  ┐ the actual handlers, deliberately NOT under api/ — a shared
+lib/geocode.mjs   │ module there would be deployed as a function with no default
+lib/auth.mjs      ┘ export. Imported by both the wrappers and the dev middleware.
+```
+
+`vite.config.ts` mounts the same three handlers as dev middleware, so `npm run
+dev` and production are one code path rather than two.
+
+`vercel.json` exists for exactly one reason: `scripts/lib/labeller.mjs` reads
+`lexicon.json` at runtime through a path computed from `import.meta.url`, which
+static tracing can miss. `includeFiles` pins it into the function bundle instead
+of trusting the trace.
+
+### The gate
+
+A Vercel URL is public and every `/api` call spends Google quota, so
+`APP_PASSCODE` guards the two Places routes — 401 before any outbound request.
+`/api/auth` exists so the client can learn whether it's unlocked without
+spending a call; it touches no external API.
+
+The gate protects the **spend**, not the data: `public/places.json` is a static
+asset and stays readable to anyone with the URL. That's an accepted trade — the
+saved restaurant list is not sensitive, and hiding it would mean serving 123KB
+through a function on every cold load. `robots.txt` and `noindex` keep the URL
+out of search results.
+
 ## Deliberately excluded
 
 - **Per-query LLM calls.** Ranking 80 candidates against 267 examples is a

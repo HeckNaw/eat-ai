@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { post } from "../lib/api";
 import { getPosition } from "../lib/geo";
 import type { Area, Coords } from "../lib/types";
 
@@ -49,13 +50,7 @@ export function LocationGate({
     setSearchError(null);
     setHits(null);
     try {
-      const res = await fetch("/api/geocode", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ query: q }),
-      });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error ?? "Search failed");
+      const data = await post<{ results?: Hit[] }>("/api/geocode", { query: q });
       if (!data.results?.length) setSearchError(`Nothing found for “${q}”.`);
       setHits(data.results ?? []);
     } catch (err) {

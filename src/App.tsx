@@ -3,11 +3,13 @@ import { Backdrop } from "./components/Backdrop";
 import { LocationGate } from "./components/LocationGate";
 import { QuestionScreen } from "./components/QuestionScreen";
 import { Results } from "./components/Results";
+import { Unlock } from "./components/Unlock";
+import { checkAccess, post, Unauthorized } from "./lib/api";
 import { describeWhen, targetTime } from "./lib/hours";
 import { diversify, rank } from "./lib/score";
 import type { Answers, Coords, Place, Scored, Taste } from "./lib/types";
 
-type Stage = "loading" | "gate" | "ask" | "results";
+type Stage = "loading" | "locked" | "gate" | "ask" | "results";
 
 const DEFAULTS: Answers = {
   mode: "savoury",
@@ -32,15 +34,18 @@ export default function App() {
   const [discoverError, setDiscoverError] = useState<string | null>(null);
 
   // Both payloads are static and cached after first load: 123KB + 4KB gzipped.
+  // The access probe runs alongside them rather than before, so the passcode
+  // check costs no extra wall-clock time on boot.
   useEffect(() => {
     Promise.all([
       fetch("/places.json").then((r) => r.json()),
       fetch("/taste.json").then((r) => r.json()),
+      checkAccess(),
     ])
-      .then(([p, t]) => {
+      .then(([p, t, access]) => {
         setPlaces(p);
         setTaste(t);
-        setStage("gate");
+        setStage(access.ok ? "gate" : "locked");
       })
       .catch(() => setLoadError("Couldn't load your places. Reload?"));
   }, []);
@@ -100,25 +105,23 @@ export default function App() {
       : taste.defaultSearchTypes[answers.mode];
 
     try {
-      const res = await fetch("/api/discover", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({
-          lat: origin.lat,
-          lng: origin.lng,
-          radius: Math.min(answers.radiusM, 50_000),
-          includedPrimaryTypes: types.slice(0, 50),
-          exclude: (places ?? []).map((p) => p.i),
-        }),
+      const data = await post<{ places?: Place[] }>("/api/discover", {
+        lat: origin.lat,
+        lng: origin.lng,
+        radius: Math.min(answers.radiusM, 50_000),
+        includedPrimaryTypes: types.slice(0, 50),
+        exclude: (places ?? []).map((p) => p.i),
       });
-      if (!res.ok) throw new Error(await res.text());
-      const data = await res.json();
       await floor;
       setSettling(false);
       setOffList(data.places ?? []);
-    } catch {
+    } catch (e) {
       await floor;
       setSettling(false);
+      if (e instanceof Unauthorized) {
+        setStage("locked");
+        return;
+      }
       setDiscoverError(
         "Couldn't search for new places right now — your own list above is unaffected.",
       );
@@ -160,6 +163,8 @@ export default function App() {
           </span>
         </div>
       )}
+
+      {stage === "locked" && <Unlock onUnlocked={() => setStage("gate")} />}
 
       {stage === "gate" && taste && (
         <LocationGate

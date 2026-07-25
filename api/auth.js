@@ -1,6 +1,8 @@
-/** Vercel serverless entry. Logic lives in lib/geocode.mjs, shared with dev. */
-import { handleGeocode } from "../lib/geocode.mjs";
-import { authorized, DENIED } from "../lib/auth.mjs";
+/**
+ * Passcode check. Costs nothing — it touches no external API — so the client
+ * can call it on every boot to find out whether it is already unlocked.
+ */
+import { handleAuth } from "../lib/auth.mjs";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
@@ -9,11 +11,7 @@ export default async function handler(req, res) {
   }
   try {
     const body = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
-    if (!authorized(body)) {
-      res.status(DENIED.status).json(DENIED.body);
-      return;
-    }
-    const { status, body: out } = await handleGeocode(body);
+    const { status, body: out } = handleAuth(body ?? {});
     res.status(status).json(out);
   } catch (err) {
     res.status(500).json({ error: String(err?.message ?? err) });
