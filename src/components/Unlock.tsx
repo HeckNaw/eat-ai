@@ -32,7 +32,7 @@ export function Unlock({ onUnlocked }: { onUnlocked: () => void }) {
         <span className="hi">Hi, Nathan!</span> Prove it.
       </h1>
       <p>Just once on this device — then it remembers.</p>
-      <form onSubmit={submit} style={{ display: "flex", gap: "0.5rem", marginTop: "1rem" }}>
+      <form className="row" onSubmit={submit} style={{ marginTop: "1rem" }}>
         <input
           className="field"
           type="password"
@@ -43,7 +43,7 @@ export function Unlock({ onUnlocked }: { onUnlocked: () => void }) {
           enterKeyHint="go"
           autoFocus
         />
-        <button className="btn" type="submit" disabled={busy || !code.trim()} style={{ flex: "0 0 auto" }}>
+        <button className="btn" type="submit" disabled={busy || !code.trim()}>
           {busy ? (
             <span className="thinking">
               <i />

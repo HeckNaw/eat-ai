@@ -1,5 +1,5 @@
 /**
- * Diagonal CHUD carousel behind everything.
+ * Diagonal EAT carousel behind everything.
  *
  * Rows alternate direction, which makes the whole field read as movement rather
  * than as scrolling text. The loop is seamless because each track holds the same
@@ -10,14 +10,46 @@
  * prefers-reduced-motion.
  */
 
+const WORD = "EAT";
 const ROWS = 14;
-const PER_ROW = 14;
+
+// Three letters instead of four, so more per row to keep each track wider than
+// the over-scaled container — otherwise a gap walks across the screen.
+const PER_ROW = 22;
+
+/**
+ * Face picker, temporary. A backdrop at 4% opacity behind moving cards looks
+ * nothing like a font specimen, so the only useful way to choose is in situ:
+ *
+ *   ?face=anton  ?face=bebas  ?face=archivo  ?face=oswald  ?face=impact
+ *
+ * Once one wins, hard-code it in styles.css, delete this, and drop the losing
+ * families from the font link in index.html.
+ */
+const FACES: Record<string, string> = {
+  anton: '"Anton", Impact, sans-serif',
+  bebas: '"Bebas Neue", Impact, sans-serif',
+  archivo: '"Archivo Black", Impact, sans-serif',
+  oswald: '"Oswald", Impact, sans-serif',
+  impact: 'Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif',
+};
+
+function chosenFace(): string | undefined {
+  if (typeof location === "undefined") return undefined;
+  const key = new URLSearchParams(location.search).get("face");
+  return key ? FACES[key.toLowerCase()] : undefined;
+}
 
 export function Backdrop() {
-  const run = Array.from({ length: PER_ROW }, () => "CHUD").join(" ");
+  const run = Array.from({ length: PER_ROW }, () => WORD).join(" ");
+  const face = chosenFace();
 
   return (
-    <div className="backdrop" aria-hidden="true">
+    <div
+      className="backdrop"
+      aria-hidden="true"
+      style={face ? ({ "--face": face } as React.CSSProperties) : undefined}
+    >
       <div className="backdrop-rotate">
         {Array.from({ length: ROWS }, (_, i) => (
           <div

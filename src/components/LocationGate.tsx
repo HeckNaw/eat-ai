@@ -87,7 +87,7 @@ export function LocationGate({
         <div className="q-head">
           <span className="q-title">Type an address, intersection or place</span>
         </div>
-        <form onSubmit={search} style={{ display: "flex", gap: "0.5rem" }}>
+        <form className="row" onSubmit={search}>
           <input
             className="field"
             value={query}
@@ -101,7 +101,6 @@ export function LocationGate({
             className="btn-quiet"
             type="submit"
             disabled={searching || query.trim().length < 3}
-            style={{ flex: "0 0 auto" }}
           >
             {searching ? (
               <span className="thinking">
