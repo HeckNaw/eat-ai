@@ -1,99 +1,1678 @@
 {
   "_note": "Keyword -> cuisine/attribute map, derived from the actual vocabulary in Nathan's 1,340 places. Applied by scripts/label.mjs. Hand-editable: add a token, re-run, done. Also labels off-list discovery candidates at query time, which is why it exists as data rather than being baked into the labelling step.",
   "_matching": "nameTokens and summaryTerms match on word boundaries, so 'pho' does not match 'Phoenix'. Multi-word entries match as phrases. Precedence: nameTokens > googleTypes > summaryTerms, because a name saying 'Chengdu' is stronger evidence than Google saying 'chinese_restaurant'.",
-
   "cuisines": {
-    "Vietnamese": { "family": "Southeast Asian", "nameTokens": ["pho", "banh mi", "banh", "bun bo", "com tam", "viet", "vietnam", "+84", "hu tieu", "goi cuon", "chao"], "googleTypes": ["vietnamese_restaurant"], "summaryTerms": ["vietnamese"] },
-    "Thai": { "family": "Southeast Asian", "nameTokens": ["thai", "pad thai", "tom yum", "isan", "bangkok"], "googleTypes": ["thai_restaurant"], "summaryTerms": ["thai"] },
-    "Filipino": { "family": "Southeast Asian", "nameTokens": ["filipino", "pinoy", "lechon", "sisig", "adobo", "kamayan", "halo halo", "turon", "kwek"], "googleTypes": ["filipino_restaurant"], "summaryTerms": ["filipino"] },
-    "Malaysian / Singaporean": { "family": "Southeast Asian", "nameTokens": ["malaysia", "malay", "singapore", "laksa", "nasi lemak", "hainanese", "kopitiam"], "googleTypes": [], "summaryTerms": ["malaysian", "singaporean"] },
-    "Indonesian": { "family": "Southeast Asian", "nameTokens": ["indonesia", "nasi goreng", "rendang", "satay house"], "googleTypes": ["indonesian_restaurant"], "summaryTerms": ["indonesian"] },
-    "Cambodian / Laotian": { "family": "Southeast Asian", "nameTokens": ["cambodia", "khmer", "lao", "laos", "lao-thai"], "googleTypes": [], "summaryTerms": ["cambodian", "laotian"] },
-
-    "Sichuan": { "family": "Chinese", "nameTokens": ["sichuan", "szechuan", "szechwan", "chengdu", "cheng du", "chongqing", "mala", "chuan", "苍蝇馆子"], "googleTypes": [], "summaryTerms": ["sichuan", "szechuan"] },
-    "Cantonese": { "family": "Chinese", "nameTokens": ["cantonese", "canton", "guangdong", "hong kong", "hk ", "congee", "wonton", "char siu"], "googleTypes": ["cantonese_restaurant"], "summaryTerms": ["cantonese"] },
-    "Dim Sum": { "family": "Chinese", "nameTokens": ["dim sum", "dimsum", "yum cha"], "googleTypes": ["dim_sum_restaurant"], "summaryTerms": ["dim sum"] },
-    "Hakka": { "family": "Chinese", "nameTokens": ["hakka", "chilli chicken", "chili chicken"], "googleTypes": [], "summaryTerms": ["hakka"] },
-    "Taiwanese": { "family": "Chinese", "nameTokens": ["taiwan", "taipei", "beef noodle", "gua bao", "lu rou"], "googleTypes": ["taiwanese_restaurant"], "summaryTerms": ["taiwanese"] },
-    "Shanghainese / Northern Chinese": { "family": "Chinese", "nameTokens": ["shanghai", "xian", "xi'an", "lanzhou", "dongbei", "beijing", "peking", "hand pulled", "biang"], "googleTypes": ["chinese_restaurant"], "summaryTerms": ["shanghainese"] },
-    "Hot Pot": { "family": "Chinese", "nameTokens": ["hot pot", "hotpot", "haidilao", "shabu"], "googleTypes": ["hot_pot_restaurant"], "summaryTerms": ["hot pot"] },
-    "Chinese": { "family": "Chinese", "nameTokens": ["chinese", "noodle", "noodles", "dumpling", "dumplings", "wok", "bao"], "googleTypes": ["chinese_restaurant", "asian_restaurant"], "summaryTerms": ["chinese"] },
-
-    "Korean": { "family": "Korean", "nameTokens": ["korean", "korea", "bibimbap", "bulgogi", "kimchi", "tteokbokki", "tteok", "jjigae", "gimbap", "kimbap", "soon tofu", "daldongnae", "yupdduk", "chimaek", "banchan", "hof"], "googleTypes": ["korean_restaurant", "korean_barbecue_restaurant"], "summaryTerms": ["korean"] },
-    "Ramen": { "family": "Japanese", "nameTokens": ["ramen", "tonkotsu"], "googleTypes": ["ramen_restaurant"], "summaryTerms": ["ramen"] },
-    "Sushi": { "family": "Japanese", "nameTokens": ["sushi", "omakase", "sashimi", "maki", "nigiri"], "googleTypes": ["sushi_restaurant"], "summaryTerms": ["sushi", "omakase"] },
-    "Japanese": { "family": "Japanese", "nameTokens": ["japanese", "izakaya", "udon", "soba", "donburi", "yakitori", "katsu", "teppan", "okonomiyaki", "onigiri", "taiyaki"], "googleTypes": ["japanese_restaurant"], "summaryTerms": ["japanese", "izakaya"] },
-
-    "South Indian": { "family": "South Asian", "nameTokens": ["dosa", "dosas", "idli", "uttapam", "sambar", "udupi", "chettinad", "kerala", "madras"], "googleTypes": ["south_indian_restaurant"], "summaryTerms": ["south indian", "dosa"] },
-    "Indian": { "family": "South Asian", "nameTokens": ["indian", "india", "tandoor", "tandoori", "biryani", "curry", "curries", "masala", "paneer", "chaat", "samosa", "butter chicken", "thali", "punjab", "punjabi", "naan"], "googleTypes": ["indian_restaurant"], "summaryTerms": ["indian", "curries", "curry"] },
-    "Pakistani": { "family": "South Asian", "nameTokens": ["pakistan", "nihari", "karahi", "karachi", "lahore", "haleem", "chapli", "bihari"], "googleTypes": ["pakistani_restaurant"], "summaryTerms": ["pakistani"] },
-    "Sri Lankan": { "family": "South Asian", "nameTokens": ["sri lanka", "srilanka", "lankan", "kottu", "hoppers", "jaffna"], "googleTypes": [], "summaryTerms": ["sri lankan"] },
-    "Bangladeshi": { "family": "South Asian", "nameTokens": ["bangladesh", "bengali", "dhaka"], "googleTypes": [], "summaryTerms": ["bangladeshi"] },
-    "Nepali / Tibetan": { "family": "South Asian", "nameTokens": ["momo", "momos", "nepal", "nepali", "tibet", "tibetan", "himalaya", "himalayan", "thukpa", "ama ko"], "googleTypes": ["nepalese_restaurant"], "summaryTerms": ["nepali", "tibetan", "himalayan", "momo"] },
-    "Afghan": { "family": "South Asian", "nameTokens": ["afghan", "kabul", "mantu", "bolani", "kabuli"], "googleTypes": ["afghani_restaurant"], "summaryTerms": ["afghan"] },
-
-    "Middle Eastern": { "family": "Middle Eastern", "nameTokens": ["shawarma", "shawerma", "falafel", "hummus", "middle east", "arabic", "arabesque", "manakish", "za'atar", "mandi"], "googleTypes": ["middle_eastern_restaurant"], "summaryTerms": ["middle eastern", "shawarma", "falafel"] },
-    "Lebanese": { "family": "Middle Eastern", "nameTokens": ["lebanese", "lebanon", "beirut", "tawook"], "googleTypes": ["lebanese_restaurant"], "summaryTerms": ["lebanese"] },
-    "Persian": { "family": "Middle Eastern", "nameTokens": ["persian", "iran", "iranian", "kabab", "kebab", "koobideh", "ghormeh", "tahdig", "chelow", "chelo"], "googleTypes": [], "summaryTerms": ["persian", "iranian"] },
-    "Turkish": { "family": "Middle Eastern", "nameTokens": ["turkish", "turkey", "istanbul", "doner", "pide", "lahmacun", "simit", "adana"], "googleTypes": ["turkish_restaurant"], "summaryTerms": ["turkish"] },
-    "Israeli / Jewish Deli": { "family": "Middle Eastern", "nameTokens": ["israeli", "sabich", "smoked meat", "pastrami", "kosher", "matzo", "knish"], "googleTypes": ["deli"], "summaryTerms": ["israeli", "jewish", "smoked meat"] },
-
-    "West African": { "family": "African", "nameTokens": ["suya", "jollof", "egusi", "nigeria", "nigerian", "ghana", "ghanaian", "fufu", "chop bar", "waakye", "senegal", "afro"], "googleTypes": ["african_restaurant"], "summaryTerms": ["nigerian", "ghanaian", "west african"] },
-    "Ethiopian / Eritrean": { "family": "African", "nameTokens": ["ethiopia", "ethiopian", "injera", "habesha", "eritrea", "abyssinia", "tibs", "doro wat"], "googleTypes": ["ethiopian_restaurant"], "summaryTerms": ["ethiopian", "eritrean", "injera"] },
-    "East African / Somali": { "family": "African", "nameTokens": ["somali", "somalia", "kenya", "kenyan", "tanzania", "swahili", "nyama choma"], "googleTypes": [], "summaryTerms": ["somali", "kenyan"] },
-    "North African": { "family": "African", "nameTokens": ["moroccan", "morocco", "tagine", "couscous", "tunisia", "algeria"], "googleTypes": ["moroccan_restaurant"], "summaryTerms": ["moroccan"] },
-
-    "Jamaican": { "family": "Caribbean", "nameTokens": ["jamaica", "jamaican", "jerk", "patty", "patties", "ackee", "oxtail", "yah so", "irie"], "googleTypes": ["caribbean_restaurant", "jamaican_restaurant"], "summaryTerms": ["jamaican", "jerk"] },
-    "Trinidadian / Guyanese": { "family": "Caribbean", "nameTokens": ["roti", "doubles", "trinidad", "trini", "guyana", "guyanese", "bake and shark", "pholourie", "drupatis"], "googleTypes": [], "summaryTerms": ["trinidadian", "guyanese", "roti"] },
-    "Caribbean": { "family": "Caribbean", "nameTokens": ["caribbean", "island", "west indian", "ital", "bajan", "barbados", "haitian", "cuban"], "googleTypes": ["caribbean_restaurant"], "summaryTerms": ["caribbean", "west indian"] },
-
-    "Mexican": { "family": "Latin American", "nameTokens": ["mexican", "mexico", "taco", "tacos", "taqueria", "burrito", "quesadilla", "birria", "al pastor", "elote", "tortas", "gus tacos"], "googleTypes": ["mexican_restaurant", "taco_restaurant"], "summaryTerms": ["mexican", "tacos"] },
-    "Peruvian": { "family": "Latin American", "nameTokens": ["peru", "peruvian", "ceviche", "lomo saltado", "pollo a la brasa", "anticucho"], "googleTypes": ["peruvian_restaurant"], "summaryTerms": ["peruvian"] },
-    "Brazilian": { "family": "Latin American", "nameTokens": ["brazil", "brazilian", "churrasco", "churrascaria", "feijoada", "pastel", "coxinha"], "googleTypes": ["brazilian_restaurant"], "summaryTerms": ["brazilian"] },
-    "Latin American": { "family": "Latin American", "nameTokens": ["colombia", "colombian", "venezuela", "arepa", "arepas", "empanada", "empanadas", "salvador", "pupusa", "pupusas", "argentin", "chile", "chilean", "latin"], "googleTypes": ["latin_american_restaurant"], "summaryTerms": ["colombian", "venezuelan", "salvadoran", "latin american"] },
-
-    "Portuguese": { "family": "European", "nameTokens": ["portugu", "portugal", "nata", "natas", "bifana", "piri piri", "peri peri", "bicas", "lisboa", "azores"], "googleTypes": ["portuguese_restaurant"], "summaryTerms": ["portuguese"] },
-    "Italian": { "family": "European", "nameTokens": ["italian", "italy", "trattoria", "osteria", "pasta", "risotto", "panino", "panini", "porchetta", "focaccia", "gelato"], "googleTypes": ["italian_restaurant"], "summaryTerms": ["italian", "pasta"] },
-    "Pizza": { "family": "European", "nameTokens": ["pizza", "pizzeria", "pizzaiolo", "napoletana", "neapolitan", "slice"], "googleTypes": ["pizza_restaurant"], "summaryTerms": ["pizza", "pizzas"] },
-    "Greek": { "family": "European", "nameTokens": ["greek", "greece", "souvlaki", "gyro", "gyros", "taverna", "spanakopita", "athens"], "googleTypes": ["greek_restaurant"], "summaryTerms": ["greek", "souvlaki"] },
-    "French": { "family": "European", "nameTokens": ["french", "bistro", "brasserie", "croissant", "patisserie", "crepe", "creperie", "boulangerie"], "googleTypes": ["french_restaurant"], "summaryTerms": ["french", "bistro"] },
-    "Spanish": { "family": "European", "nameTokens": ["spanish", "tapas", "paella", "jamon", "pintxos"], "googleTypes": ["spanish_restaurant"], "summaryTerms": ["spanish", "tapas"] },
-    "Eastern European": { "family": "European", "nameTokens": ["polish", "poland", "pierogi", "perogy", "ukrain", "hungarian", "goulash", "schnitzel", "czech", "romanian", "russian", "georgian", "khachapuri"], "googleTypes": ["polish_restaurant"], "summaryTerms": ["polish", "ukrainian", "hungarian"] },
-
-    "Barbecue": { "family": "North American", "nameTokens": ["bbq", "barbecue", "barbeque", "smokehouse", "brisket", "ribs", "smoked"], "googleTypes": ["barbecue_restaurant"], "summaryTerms": ["barbecue", "brisket", "ribs"] },
-    "Burgers": { "family": "North American", "nameTokens": ["burger", "burgers", "smash", "patty melt"], "googleTypes": ["hamburger_restaurant"], "summaryTerms": ["burgers"] },
-    "Fried Chicken / Wings": { "family": "North American", "nameTokens": ["fried chicken", "hot chicken", "wings", "wing", "chicken and waffles", "tenders"], "googleTypes": ["chicken_restaurant"], "summaryTerms": ["fried chicken", "wings"] },
-    "Sandwiches / Deli": { "family": "North American", "nameTokens": ["sandwich", "sandwiches", "sub", "subs", "hoagie", "deli", "bagel", "bagels", "banh"], "googleTypes": ["sandwich_shop", "bagel_shop", "deli"], "summaryTerms": ["sandwiches", "subs"] },
-    "Seafood": { "family": "North American", "nameTokens": ["seafood", "fish", "oyster", "lobster", "crab", "boil", "poke", "fish and chips", "chippy"], "googleTypes": ["seafood_restaurant"], "summaryTerms": ["seafood", "oysters"] },
-    "Steakhouse": { "family": "North American", "nameTokens": ["steak", "steakhouse", "chophouse", "prime rib"], "googleTypes": ["steak_house"], "summaryTerms": ["steaks", "steakhouse"] },
-    "Breakfast / Brunch": { "family": "North American", "nameTokens": ["breakfast", "brunch", "pancake", "waffle", "waffles", "diner", "eggs"], "googleTypes": ["breakfast_restaurant", "brunch_restaurant"], "summaryTerms": ["brunch", "breakfast", "all-day breakfast"] },
-
-    "Bakery / Pastry": { "family": "Bakery & Sweets", "nameTokens": ["bakery", "bakeshop", "pastry", "pastries", "patisserie", "cake", "cakes", "bread", "boulangerie", "donut", "doughnut"], "googleTypes": ["bakery", "pastry_shop"], "summaryTerms": ["pastries", "baked goods", "bakery"] },
-    "Dessert / Ice Cream": { "family": "Bakery & Sweets", "nameTokens": ["dessert", "desserts", "ice cream", "gelato", "creamery", "sundae", "shaved ice", "bingsu", "churros"], "googleTypes": ["dessert_shop", "ice_cream_shop", "confectionery"], "summaryTerms": ["desserts", "ice cream"] },
-    "Coffee": { "family": "Cafe", "nameTokens": ["coffee", "espresso", "roaster", "roasters", "cafe", "café", "caffe", "brew"], "googleTypes": ["coffee_shop", "cafe"], "summaryTerms": ["espresso", "coffee"] },
-    "Bubble Tea": { "family": "Cafe", "nameTokens": ["bubble tea", "boba", "milk tea", "tea house", "chatime"], "googleTypes": ["bubble_tea_store"], "summaryTerms": ["bubble tea", "boba"] },
-
-    "Vegan / Vegetarian": { "family": "Dietary", "nameTokens": ["vegan", "vegetarian", "plant based", "plant-based", "veggie"], "googleTypes": ["vegan_restaurant", "vegetarian_restaurant"], "summaryTerms": ["vegan", "vegetarian", "plant-based"] }
+    "Vietnamese": {
+      "family": "Southeast Asian",
+      "nameTokens": [
+        "+84",
+        "banh",
+        "banh mi",
+        "bun bo",
+        "chao",
+        "com tam",
+        "goi cuon",
+        "hu tieu",
+        "la sen",
+        "pho",
+        "saigon",
+        "saigonpai",
+        "viet",
+        "vietnam",
+        "vietnamese"
+      ],
+      "googleTypes": [
+        "vietnamese_restaurant"
+      ],
+      "summaryTerms": [
+        "vietnamese"
+      ]
+    },
+    "Thai": {
+      "family": "Southeast Asian",
+      "nameTokens": [
+        "thai",
+        "pad thai",
+        "tom yum",
+        "isan",
+        "bangkok"
+      ],
+      "googleTypes": [
+        "thai_restaurant"
+      ],
+      "summaryTerms": [
+        "thai"
+      ]
+    },
+    "Filipino": {
+      "family": "Southeast Asian",
+      "nameTokens": [
+        "adobo",
+        "batangas",
+        "bibingka",
+        "chicharon",
+        "filipino",
+        "halo halo",
+        "kamayan",
+        "kuya",
+        "kwek",
+        "lechon",
+        "lomi",
+        "pancit",
+        "pinoy",
+        "silog",
+        "sisig",
+        "turon"
+      ],
+      "googleTypes": [
+        "filipino_restaurant"
+      ],
+      "summaryTerms": [
+        "filipino"
+      ]
+    },
+    "Malaysian / Singaporean": {
+      "family": "Southeast Asian",
+      "nameTokens": [
+        "malaysia",
+        "malay",
+        "singapore",
+        "laksa",
+        "nasi lemak",
+        "hainanese",
+        "kopitiam"
+      ],
+      "googleTypes": [
+        "malaysian_restaurant",
+        "singaporean_restaurant"
+      ],
+      "summaryTerms": [
+        "malaysian",
+        "singaporean"
+      ]
+    },
+    "Indonesian": {
+      "family": "Southeast Asian",
+      "nameTokens": [
+        "indonesia",
+        "nasi goreng",
+        "rendang",
+        "satay house"
+      ],
+      "googleTypes": [
+        "indonesian_restaurant"
+      ],
+      "summaryTerms": [
+        "indonesian"
+      ]
+    },
+    "Cambodian / Laotian": {
+      "family": "Southeast Asian",
+      "nameTokens": [
+        "cambodia",
+        "khmer",
+        "lao",
+        "laos",
+        "lao-thai"
+      ],
+      "googleTypes": [
+        "cambodian_restaurant",
+        "laotian_restaurant"
+      ],
+      "summaryTerms": [
+        "cambodian",
+        "laotian"
+      ]
+    },
+    "Sichuan": {
+      "family": "Chinese",
+      "nameTokens": [
+        "sichuan",
+        "szechuan",
+        "szechwan",
+        "chengdu",
+        "cheng du",
+        "chongqing",
+        "mala",
+        "chuan",
+        "苍蝇馆子"
+      ],
+      "googleTypes": [
+        "chinese_restaurant"
+      ],
+      "summaryTerms": [
+        "sichuan",
+        "szechuan"
+      ]
+    },
+    "Cantonese": {
+      "family": "Chinese",
+      "nameTokens": [
+        "cantonese",
+        "canton",
+        "guangdong",
+        "hong kong",
+        "hk ",
+        "congee",
+        "wonton",
+        "char siu"
+      ],
+      "googleTypes": [
+        "cantonese_restaurant"
+      ],
+      "summaryTerms": [
+        "cantonese"
+      ]
+    },
+    "Dim Sum": {
+      "family": "Chinese",
+      "nameTokens": [
+        "dim sum",
+        "dimsum",
+        "yum cha"
+      ],
+      "googleTypes": [
+        "dim_sum_restaurant"
+      ],
+      "summaryTerms": [
+        "dim sum"
+      ]
+    },
+    "Hakka": {
+      "family": "Chinese",
+      "nameTokens": [
+        "hakka",
+        "chilli chicken",
+        "chili chicken"
+      ],
+      "googleTypes": [],
+      "summaryTerms": [
+        "hakka"
+      ]
+    },
+    "Taiwanese": {
+      "family": "Chinese",
+      "nameTokens": [
+        "taiwan",
+        "taipei",
+        "beef noodle",
+        "gua bao",
+        "lu rou"
+      ],
+      "googleTypes": [
+        "taiwanese_restaurant"
+      ],
+      "summaryTerms": [
+        "taiwanese"
+      ]
+    },
+    "Shanghainese / Northern Chinese": {
+      "family": "Chinese",
+      "nameTokens": [
+        "shanghai",
+        "xian",
+        "xi'an",
+        "lanzhou",
+        "dongbei",
+        "beijing",
+        "peking",
+        "hand pulled",
+        "biang"
+      ],
+      "googleTypes": [
+        "chinese_restaurant"
+      ],
+      "summaryTerms": [
+        "shanghainese"
+      ]
+    },
+    "Hot Pot": {
+      "family": "Chinese",
+      "nameTokens": [
+        "hot pot",
+        "hotpot",
+        "haidilao",
+        "shabu"
+      ],
+      "googleTypes": [
+        "hot_pot_restaurant"
+      ],
+      "summaryTerms": [
+        "hot pot"
+      ]
+    },
+    "Chinese": {
+      "family": "Chinese",
+      "nameTokens": [
+        "bao",
+        "chinese",
+        "dumpling",
+        "dumplings",
+        "fong on",
+        "noodle",
+        "noodles",
+        "oguz",
+        "uyghur",
+        "wok"
+      ],
+      "googleTypes": [
+        "chinese_restaurant",
+        "asian_restaurant"
+      ],
+      "summaryTerms": [
+        "chinese"
+      ]
+    },
+    "Korean": {
+      "family": "Korean",
+      "nameTokens": [
+        "banchan",
+        "bibimbap",
+        "bulgogi",
+        "chimaek",
+        "daldongnae",
+        "gimbap",
+        "hof",
+        "jjigae",
+        "kimbap",
+        "kimchi",
+        "korea",
+        "korean",
+        "sinjeon",
+        "soon tofu",
+        "topokki",
+        "tteok",
+        "tteokbokki",
+        "yupdduk"
+      ],
+      "googleTypes": [
+        "korean_restaurant",
+        "korean_barbecue_restaurant"
+      ],
+      "summaryTerms": [
+        "korean"
+      ]
+    },
+    "Ramen": {
+      "family": "Japanese",
+      "nameTokens": [
+        "ramen",
+        "tonkotsu"
+      ],
+      "googleTypes": [
+        "ramen_restaurant"
+      ],
+      "summaryTerms": [
+        "ramen"
+      ]
+    },
+    "Sushi": {
+      "family": "Japanese",
+      "nameTokens": [
+        "sushi",
+        "omakase",
+        "sashimi",
+        "maki",
+        "nigiri"
+      ],
+      "googleTypes": [
+        "sushi_restaurant"
+      ],
+      "summaryTerms": [
+        "sushi",
+        "omakase"
+      ]
+    },
+    "Japanese": {
+      "family": "Japanese",
+      "nameTokens": [
+        "donburi",
+        "izakaya",
+        "japadog",
+        "japanese",
+        "katsu",
+        "okonomiyaki",
+        "onigiri",
+        "shunoko",
+        "soba",
+        "taiyaki",
+        "takoyaki",
+        "teppan",
+        "tobiko",
+        "udon",
+        "yakitori"
+      ],
+      "googleTypes": [
+        "japanese_restaurant"
+      ],
+      "summaryTerms": [
+        "japanese",
+        "izakaya"
+      ]
+    },
+    "South Indian": {
+      "family": "South Asian",
+      "nameTokens": [
+        "chettinad",
+        "dosa",
+        "dosas",
+        "idli",
+        "kerala",
+        "madras",
+        "sambar",
+        "udupi",
+        "uttapam",
+        "vijayawada"
+      ],
+      "googleTypes": [
+        "south_indian_restaurant"
+      ],
+      "summaryTerms": [
+        "south indian",
+        "dosa"
+      ]
+    },
+    "Indian": {
+      "family": "South Asian",
+      "nameTokens": [
+        "biriyani",
+        "biryani",
+        "butter chicken",
+        "chaat",
+        "curries",
+        "curry",
+        "india",
+        "indian",
+        "masala",
+        "naan",
+        "paneer",
+        "punjab",
+        "punjabi",
+        "samosa",
+        "simply south",
+        "tandoor",
+        "tandoori",
+        "thali"
+      ],
+      "googleTypes": [
+        "indian_restaurant"
+      ],
+      "summaryTerms": [
+        "indian",
+        "curries",
+        "curry"
+      ]
+    },
+    "Pakistani": {
+      "family": "South Asian",
+      "nameTokens": [
+        "pakistan",
+        "nihari",
+        "karahi",
+        "karachi",
+        "lahore",
+        "haleem",
+        "chapli",
+        "bihari"
+      ],
+      "googleTypes": [
+        "pakistani_restaurant"
+      ],
+      "summaryTerms": [
+        "pakistani"
+      ]
+    },
+    "Sri Lankan": {
+      "family": "South Asian",
+      "nameTokens": [
+        "sri lanka",
+        "srilanka",
+        "lankan",
+        "kottu",
+        "hoppers",
+        "jaffna"
+      ],
+      "googleTypes": [
+        "sri_lankan_restaurant"
+      ],
+      "summaryTerms": [
+        "sri lankan"
+      ]
+    },
+    "Bangladeshi": {
+      "family": "South Asian",
+      "nameTokens": [
+        "bangladesh",
+        "bengali",
+        "dhaka"
+      ],
+      "googleTypes": [
+        "bangladeshi_restaurant"
+      ],
+      "summaryTerms": [
+        "bangladeshi"
+      ]
+    },
+    "Nepali / Tibetan": {
+      "family": "South Asian",
+      "nameTokens": [
+        "ama ko",
+        "gurans",
+        "himalaya",
+        "himalayan",
+        "momo",
+        "momo2go",
+        "momos",
+        "momozone",
+        "nepal",
+        "nepali",
+        "norling",
+        "thali set",
+        "thukpa",
+        "tibet",
+        "tibetan"
+      ],
+      "googleTypes": [
+        "nepalese_restaurant",
+        "tibetan_restaurant"
+      ],
+      "summaryTerms": [
+        "nepali",
+        "tibetan",
+        "himalayan",
+        "momo"
+      ]
+    },
+    "Afghan": {
+      "family": "South Asian",
+      "nameTokens": [
+        "afghan",
+        "kabul",
+        "mantu",
+        "bolani",
+        "kabuli"
+      ],
+      "googleTypes": [
+        "afghani_restaurant"
+      ],
+      "summaryTerms": [
+        "afghan"
+      ]
+    },
+    "Middle Eastern": {
+      "family": "Middle Eastern",
+      "nameTokens": [
+        "shawarma",
+        "shawerma",
+        "falafel",
+        "hummus",
+        "middle east",
+        "arabic",
+        "arabesque",
+        "manakish",
+        "za'atar",
+        "mandi"
+      ],
+      "googleTypes": [
+        "halal_restaurant",
+        "mediterranean_restaurant",
+        "middle_eastern_restaurant"
+      ],
+      "summaryTerms": [
+        "middle eastern",
+        "shawarma",
+        "falafel"
+      ]
+    },
+    "Lebanese": {
+      "family": "Middle Eastern",
+      "nameTokens": [
+        "lebanese",
+        "lebanon",
+        "beirut",
+        "tawook"
+      ],
+      "googleTypes": [
+        "lebanese_restaurant"
+      ],
+      "summaryTerms": [
+        "lebanese"
+      ]
+    },
+    "Persian": {
+      "family": "Middle Eastern",
+      "nameTokens": [
+        "persian",
+        "iran",
+        "iranian",
+        "kabab",
+        "kebab",
+        "koobideh",
+        "ghormeh",
+        "tahdig",
+        "chelow",
+        "chelo"
+      ],
+      "googleTypes": [
+        "afghani_restaurant",
+        "persian_restaurant"
+      ],
+      "summaryTerms": [
+        "persian",
+        "iranian"
+      ]
+    },
+    "Turkish": {
+      "family": "Middle Eastern",
+      "nameTokens": [
+        "adana",
+        "doner",
+        "istanbul",
+        "lahmacun",
+        "lokum",
+        "pide",
+        "simit",
+        "turkey",
+        "turkish"
+      ],
+      "googleTypes": [
+        "turkish_restaurant"
+      ],
+      "summaryTerms": [
+        "turkish"
+      ]
+    },
+    "Israeli / Jewish Deli": {
+      "family": "Middle Eastern",
+      "nameTokens": [
+        "israeli",
+        "sabich",
+        "smoked meat",
+        "pastrami",
+        "kosher",
+        "matzo",
+        "knish"
+      ],
+      "googleTypes": [
+        "deli"
+      ],
+      "summaryTerms": [
+        "israeli",
+        "jewish",
+        "smoked meat"
+      ]
+    },
+    "West African": {
+      "family": "African",
+      "nameTokens": [
+        "african",
+        "afro",
+        "afrobeat",
+        "calabar",
+        "chop bar",
+        "egusi",
+        "fufu",
+        "ghana",
+        "ghanaian",
+        "jollof",
+        "kanga",
+        "nganda",
+        "nigeria",
+        "nigerian",
+        "nyamekye",
+        "senegal",
+        "simba",
+        "suya",
+        "waakye"
+      ],
+      "googleTypes": [
+        "african_restaurant",
+        "ghanaian_restaurant",
+        "nigerian_restaurant"
+      ],
+      "summaryTerms": [
+        "nigerian",
+        "ghanaian",
+        "west african"
+      ]
+    },
+    "Ethiopian / Eritrean": {
+      "family": "African",
+      "nameTokens": [
+        "ethiopia",
+        "ethiopian",
+        "injera",
+        "habesha",
+        "eritrea",
+        "abyssinia",
+        "tibs",
+        "doro wat"
+      ],
+      "googleTypes": [
+        "ethiopian_restaurant"
+      ],
+      "summaryTerms": [
+        "ethiopian",
+        "eritrean",
+        "injera"
+      ]
+    },
+    "East African / Somali": {
+      "family": "African",
+      "nameTokens": [
+        "somali",
+        "somalia",
+        "kenya",
+        "kenyan",
+        "tanzania",
+        "swahili",
+        "nyama choma"
+      ],
+      "googleTypes": [],
+      "summaryTerms": [
+        "somali",
+        "kenyan"
+      ]
+    },
+    "North African": {
+      "family": "African",
+      "nameTokens": [
+        "moroccan",
+        "morocco",
+        "tagine",
+        "couscous",
+        "tunisia",
+        "algeria"
+      ],
+      "googleTypes": [
+        "moroccan_restaurant"
+      ],
+      "summaryTerms": [
+        "moroccan"
+      ]
+    },
+    "Jamaican": {
+      "family": "Caribbean",
+      "nameTokens": [
+        "jamaica",
+        "jamaican",
+        "jerk",
+        "patty",
+        "patties",
+        "ackee",
+        "oxtail",
+        "yah so",
+        "irie"
+      ],
+      "googleTypes": [
+        "caribbean_restaurant",
+        "jamaican_restaurant"
+      ],
+      "summaryTerms": [
+        "jamaican",
+        "jerk"
+      ]
+    },
+    "Trinidadian / Guyanese": {
+      "family": "Caribbean",
+      "nameTokens": [
+        "roti",
+        "doubles",
+        "trinidad",
+        "trini",
+        "guyana",
+        "guyanese",
+        "bake and shark",
+        "pholourie",
+        "drupatis"
+      ],
+      "googleTypes": [],
+      "summaryTerms": [
+        "trinidadian",
+        "guyanese",
+        "roti"
+      ]
+    },
+    "Caribbean": {
+      "family": "Caribbean",
+      "nameTokens": [
+        "bajan",
+        "barbados",
+        "caribbean",
+        "cuban",
+        "haitian",
+        "island",
+        "ital",
+        "punta cana",
+        "rhum",
+        "sweet spice",
+        "west indian"
+      ],
+      "googleTypes": [
+        "caribbean_restaurant"
+      ],
+      "summaryTerms": [
+        "caribbean",
+        "west indian"
+      ]
+    },
+    "Mexican": {
+      "family": "Latin American",
+      "nameTokens": [
+        "mexican",
+        "mexico",
+        "taco",
+        "tacos",
+        "taqueria",
+        "burrito",
+        "quesadilla",
+        "birria",
+        "al pastor",
+        "elote",
+        "tortas",
+        "gus tacos"
+      ],
+      "googleTypes": [
+        "mexican_restaurant",
+        "taco_restaurant"
+      ],
+      "summaryTerms": [
+        "mexican",
+        "tacos"
+      ]
+    },
+    "Peruvian": {
+      "family": "Latin American",
+      "nameTokens": [
+        "peru",
+        "peruvian",
+        "ceviche",
+        "lomo saltado",
+        "pollo a la brasa",
+        "anticucho"
+      ],
+      "googleTypes": [
+        "peruvian_restaurant"
+      ],
+      "summaryTerms": [
+        "peruvian"
+      ]
+    },
+    "Brazilian": {
+      "family": "Latin American",
+      "nameTokens": [
+        "brazil",
+        "brazilian",
+        "churrasco",
+        "churrascaria",
+        "feijoada",
+        "pastel",
+        "coxinha"
+      ],
+      "googleTypes": [
+        "brazilian_restaurant"
+      ],
+      "summaryTerms": [
+        "brazilian"
+      ]
+    },
+    "Latin American": {
+      "family": "Latin American",
+      "nameTokens": [
+        "arepa",
+        "arepas",
+        "argentin",
+        "argentine",
+        "argentino",
+        "chile",
+        "chilean",
+        "colombia",
+        "colombian",
+        "cubana",
+        "empanada",
+        "empanadas",
+        "latin",
+        "paisa",
+        "pupusa",
+        "pupusas",
+        "salvador",
+        "venezuela"
+      ],
+      "googleTypes": [
+        "argentinian_restaurant",
+        "chilean_restaurant",
+        "colombian_restaurant",
+        "cuban_restaurant",
+        "latin_american_restaurant",
+        "salvadoran_restaurant",
+        "venezuelan_restaurant"
+      ],
+      "summaryTerms": [
+        "colombian",
+        "venezuelan",
+        "salvadoran",
+        "latin american"
+      ]
+    },
+    "Portuguese": {
+      "family": "European",
+      "nameTokens": [
+        "portugu",
+        "portugal",
+        "nata",
+        "natas",
+        "bifana",
+        "piri piri",
+        "peri peri",
+        "bicas",
+        "lisboa",
+        "azores"
+      ],
+      "googleTypes": [
+        "portuguese_restaurant"
+      ],
+      "summaryTerms": [
+        "portuguese"
+      ]
+    },
+    "Italian": {
+      "family": "European",
+      "nameTokens": [
+        "italian",
+        "italy",
+        "trattoria",
+        "osteria",
+        "pasta",
+        "risotto",
+        "panino",
+        "panini",
+        "porchetta",
+        "focaccia",
+        "gelato"
+      ],
+      "googleTypes": [
+        "italian_restaurant"
+      ],
+      "summaryTerms": [
+        "italian",
+        "pasta"
+      ]
+    },
+    "Pizza": {
+      "family": "European",
+      "nameTokens": [
+        "pizza",
+        "pizzeria",
+        "pizzaiolo",
+        "napoletana",
+        "neapolitan",
+        "slice"
+      ],
+      "googleTypes": [
+        "pizza_restaurant"
+      ],
+      "summaryTerms": [
+        "pizza",
+        "pizzas"
+      ]
+    },
+    "Greek": {
+      "family": "European",
+      "nameTokens": [
+        "greek",
+        "greece",
+        "souvlaki",
+        "gyro",
+        "gyros",
+        "taverna",
+        "spanakopita",
+        "athens"
+      ],
+      "googleTypes": [
+        "greek_restaurant"
+      ],
+      "summaryTerms": [
+        "greek",
+        "souvlaki"
+      ]
+    },
+    "French": {
+      "family": "European",
+      "nameTokens": [
+        "banquise",
+        "bistro",
+        "boulangerie",
+        "brasserie",
+        "crepe",
+        "creperie",
+        "crepes",
+        "croissant",
+        "french",
+        "patisserie",
+        "poutine"
+      ],
+      "googleTypes": [
+        "french_restaurant"
+      ],
+      "summaryTerms": [
+        "french",
+        "bistro"
+      ]
+    },
+    "Spanish": {
+      "family": "European",
+      "nameTokens": [
+        "spanish",
+        "tapas",
+        "paella",
+        "jamon",
+        "pintxos"
+      ],
+      "googleTypes": [
+        "spanish_restaurant"
+      ],
+      "summaryTerms": [
+        "spanish",
+        "tapas"
+      ]
+    },
+    "Eastern European": {
+      "family": "European",
+      "nameTokens": [
+        "polish",
+        "poland",
+        "pierogi",
+        "perogy",
+        "ukrain",
+        "hungarian",
+        "goulash",
+        "schnitzel",
+        "czech",
+        "romanian",
+        "russian",
+        "georgian",
+        "khachapuri"
+      ],
+      "googleTypes": [
+        "czech_restaurant",
+        "georgian_restaurant",
+        "hungarian_restaurant",
+        "polish_restaurant",
+        "russian_restaurant",
+        "ukrainian_restaurant"
+      ],
+      "summaryTerms": [
+        "polish",
+        "ukrainian",
+        "hungarian"
+      ]
+    },
+    "Barbecue": {
+      "family": "North American",
+      "nameTokens": [
+        "bbq",
+        "barbecue",
+        "barbeque",
+        "smokehouse",
+        "brisket",
+        "ribs",
+        "smoked"
+      ],
+      "googleTypes": [
+        "american_restaurant",
+        "barbecue_restaurant"
+      ],
+      "summaryTerms": [
+        "barbecue",
+        "brisket",
+        "ribs"
+      ]
+    },
+    "Burgers": {
+      "family": "North American",
+      "nameTokens": [
+        "burger",
+        "burgers",
+        "patty melt",
+        "smash",
+        "smash burger",
+        "smshbrgr"
+      ],
+      "googleTypes": [
+        "hamburger_restaurant"
+      ],
+      "summaryTerms": [
+        "burgers"
+      ]
+    },
+    "Fried Chicken / Wings": {
+      "family": "North American",
+      "nameTokens": [
+        "chicken and waffles",
+        "chicken plus",
+        "clucks",
+        "dm chicken",
+        "fried chicken",
+        "hot chicken",
+        "tenders",
+        "wing",
+        "wings"
+      ],
+      "googleTypes": [
+        "chicken_restaurant",
+        "chicken_wings_restaurant"
+      ],
+      "summaryTerms": [
+        "fried chicken",
+        "wings"
+      ]
+    },
+    "Sandwiches / Deli": {
+      "family": "North American",
+      "nameTokens": [
+        "sandwich",
+        "sandwiches",
+        "sub",
+        "subs",
+        "hoagie",
+        "deli",
+        "bagel",
+        "bagels",
+        "banh"
+      ],
+      "googleTypes": [
+        "sandwich_shop",
+        "bagel_shop",
+        "deli"
+      ],
+      "summaryTerms": [
+        "sandwiches",
+        "subs"
+      ]
+    },
+    "Seafood": {
+      "family": "North American",
+      "nameTokens": [
+        "seafood",
+        "fish",
+        "oyster",
+        "lobster",
+        "crab",
+        "boil",
+        "poke",
+        "fish and chips",
+        "chippy"
+      ],
+      "googleTypes": [
+        "hawaiian_restaurant",
+        "poke_restaurant",
+        "seafood_restaurant"
+      ],
+      "summaryTerms": [
+        "seafood",
+        "oysters"
+      ]
+    },
+    "Steakhouse": {
+      "family": "North American",
+      "nameTokens": [
+        "steak",
+        "steakhouse",
+        "chophouse",
+        "prime rib"
+      ],
+      "googleTypes": [
+        "steak_house"
+      ],
+      "summaryTerms": [
+        "steaks",
+        "steakhouse"
+      ]
+    },
+    "Breakfast / Brunch": {
+      "family": "North American",
+      "nameTokens": [
+        "breakfast",
+        "brunch",
+        "pancake",
+        "waffle",
+        "waffles",
+        "diner",
+        "eggs"
+      ],
+      "googleTypes": [
+        "breakfast_restaurant",
+        "brunch_restaurant"
+      ],
+      "summaryTerms": [
+        "brunch",
+        "breakfast",
+        "all-day breakfast"
+      ]
+    },
+    "Bakery / Pastry": {
+      "family": "Bakery & Sweets",
+      "nameTokens": [
+        "bakery",
+        "bakeshop",
+        "pastry",
+        "pastries",
+        "patisserie",
+        "cake",
+        "cakes",
+        "bread",
+        "boulangerie",
+        "donut",
+        "doughnut"
+      ],
+      "googleTypes": [
+        "bakery",
+        "pastry_shop"
+      ],
+      "summaryTerms": [
+        "pastries",
+        "baked goods",
+        "bakery"
+      ]
+    },
+    "Dessert / Ice Cream": {
+      "family": "Bakery & Sweets",
+      "nameTokens": [
+        "dessert",
+        "desserts",
+        "ice cream",
+        "gelato",
+        "creamery",
+        "sundae",
+        "shaved ice",
+        "bingsu",
+        "churros"
+      ],
+      "googleTypes": [
+        "candy_store",
+        "confectionery",
+        "dessert_restaurant",
+        "dessert_shop",
+        "ice_cream_shop"
+      ],
+      "summaryTerms": [
+        "desserts",
+        "ice cream"
+      ]
+    },
+    "Coffee": {
+      "family": "Cafe",
+      "nameTokens": [
+        "coffee",
+        "espresso",
+        "roaster",
+        "roasters",
+        "cafe",
+        "café",
+        "caffe",
+        "brew"
+      ],
+      "googleTypes": [
+        "coffee_shop",
+        "cafe"
+      ],
+      "summaryTerms": [
+        "espresso",
+        "coffee"
+      ]
+    },
+    "Bubble Tea": {
+      "family": "Cafe",
+      "nameTokens": [
+        "bubble tea",
+        "boba",
+        "milk tea",
+        "tea house",
+        "chatime"
+      ],
+      "googleTypes": [
+        "bubble_tea_store",
+        "tea_house"
+      ],
+      "summaryTerms": [
+        "bubble tea",
+        "boba"
+      ]
+    },
+    "Vegan / Vegetarian": {
+      "family": "Dietary",
+      "nameTokens": [
+        "vegan",
+        "vegetarian",
+        "plant based",
+        "plant-based",
+        "veggie"
+      ],
+      "googleTypes": [
+        "vegan_restaurant",
+        "vegetarian_restaurant"
+      ],
+      "summaryTerms": [
+        "vegan",
+        "vegetarian",
+        "plant-based"
+      ]
+    },
+    "Québécois": {
+      "family": "North American",
+      "nameTokens": [
+        "quebec",
+        "quebecois",
+        "poutine",
+        "banquise",
+        "montreal"
+      ],
+      "googleTypes": [],
+      "summaryTerms": [
+        "quebecois",
+        "quebecois grub"
+      ]
+    },
+    "Swiss / Austrian": {
+      "family": "European",
+      "nameTokens": [
+        "alphorn",
+        "alpine",
+        "fondue",
+        "raclette",
+        "austrian",
+        "swiss"
+      ],
+      "googleTypes": [],
+      "summaryTerms": [
+        "swiss",
+        "austrian",
+        "alpine"
+      ]
+    },
+    "Canadian / Contemporary": {
+      "family": "North American",
+      "nameTokens": [
+        "canadiana",
+        "farm to table"
+      ],
+      "googleTypes": [
+        "canadian_restaurant"
+      ],
+      "summaryTerms": [
+        "seasonal menu",
+        "seasonal",
+        "locally sourced",
+        "local ingredients",
+        "foraged",
+        "farm-to-table",
+        "canadian",
+        "contemporary canadian",
+        "top chef",
+        "tasting menu",
+        "market-driven",
+        "weekly menu"
+      ]
+    },
+    "Pub / Gastropub": {
+      "family": "North American",
+      "nameTokens": [
+        "gastropub",
+        "alehouse",
+        "brewpub"
+      ],
+      "googleTypes": [
+        "pub",
+        "bar",
+        "wine_bar",
+        "brewery"
+      ],
+      "summaryTerms": [
+        "pub",
+        "gastropub",
+        "watering hole",
+        "craft beer",
+        "craft brews",
+        "draft beers",
+        "draft brews",
+        "rotating taps",
+        "whiskey selection",
+        "pub eats",
+        "pub grub",
+        "beer hall",
+        "taproom"
+      ]
+    },
+    "American / Southern": {
+      "family": "North American",
+      "nameTokens": [
+        "soul food",
+        "southern",
+        "dixie"
+      ],
+      "googleTypes": [
+        "american_restaurant"
+      ],
+      "summaryTerms": [
+        "american comfort",
+        "southern fare",
+        "southern chow",
+        "southern",
+        "comfort dishes",
+        "comfort foods",
+        "comfort food",
+        "diner fare",
+        "retro diner"
+      ]
+    },
+    "Pan-Asian / Fusion": {
+      "family": "Asian",
+      "nameTokens": [
+        "pan asian",
+        "asian fusion"
+      ],
+      "googleTypes": [
+        "asian_fusion_restaurant",
+        "fusion_restaurant"
+      ],
+      "summaryTerms": [
+        "asian-influenced",
+        "asian influenced",
+        "pan-asian",
+        "asian fusion",
+        "global-inspired",
+        "global dishes",
+        "global comfort",
+        "globally inspired"
+      ]
+    },
+    "Grocery / Market": {
+      "family": "Retail",
+      "nameTokens": [
+        "food mart",
+        "grocery",
+        "supermarket",
+        "food market",
+        "wholesale",
+        "talho",
+        "meats"
+      ],
+      "googleTypes": [
+        "grocery_store",
+        "asian_grocery_store",
+        "food_store",
+        "butcher_shop",
+        "wholesaler",
+        "supermarket",
+        "market"
+      ],
+      "summaryTerms": [
+        "gourmet cheeses",
+        "grocery",
+        "provisions",
+        "specialty foods"
+      ]
+    },
+    "Tea House": {
+      "family": "Cafe",
+      "nameTokens": [
+        "high tea",
+        "tea lounge",
+        "tea house",
+        "teahouse"
+      ],
+      "googleTypes": [],
+      "summaryTerms": [
+        "high tea",
+        "afternoon tea",
+        "tea service"
+      ]
+    }
   },
-
   "attributes": {
-    "no-frills": { "summaryTerms": ["unassuming", "no-frills", "no frills", "simple", "modest", "humble", "low-key", "hole-in-the-wall", "utilitarian", "spartan", "basic"], "nameTokens": [], "impliesPrice": "PRICE_LEVEL_INEXPENSIVE" },
-    "counter-service": { "summaryTerms": ["counter-serve", "counter serve", "counter-service", "order at the counter", "self-serve", "cafeteria-style"], "nameTokens": ["express", "take out", "takeout", "to go"], "impliesPrice": "PRICE_LEVEL_INEXPENSIVE" },
-    "takeaway": { "summaryTerms": ["takeout", "take-out", "takeaway", "delivery-only", "grab-and-go"], "nameTokens": ["takeout", "take out", "to go", "express"], "impliesPrice": "PRICE_LEVEL_INEXPENSIVE" },
-    "cash-only": { "summaryTerms": ["cash-only", "cash only"], "nameTokens": [], "impliesPrice": null },
-    "casual": { "summaryTerms": ["casual", "relaxed", "easygoing", "laid-back", "informal", "unpretentious"], "nameTokens": [], "impliesPrice": null },
-    "cozy": { "summaryTerms": ["cozy", "snug", "intimate", "compact", "tiny", "small space", "quaint"], "nameTokens": [], "impliesPrice": null },
-    "lively": { "summaryTerms": ["lively", "bustling", "buzzy", "energetic", "vibrant", "raucous"], "nameTokens": [], "impliesPrice": null },
-    "upscale": { "summaryTerms": ["upscale", "elegant", "refined", "sophisticated", "chic", "sleek", "fine dining", "tasting menu", "white-tablecloth"], "nameTokens": [], "impliesPrice": "PRICE_LEVEL_EXPENSIVE" },
-    "contemporary": { "summaryTerms": ["contemporary", "modern", "minimalist", "stylish", "trendy"], "nameTokens": [], "impliesPrice": null },
-    "traditional": { "summaryTerms": ["traditional", "classic", "authentic", "time-honored", "old-school", "longtime", "long-running", "family recipes"], "nameTokens": ["authentic", "traditional", "original", "legendary", "famous"], "impliesPrice": null },
-    "family-run": { "summaryTerms": ["family-run", "family run", "family-owned", "mom-and-pop", "husband-and-wife", "family business"], "nameTokens": [], "impliesPrice": null },
-    "institution": { "summaryTerms": ["institution", "landmark", "destination", "beloved", "iconic", "since 19", "decades", "generations", "long-standing"], "nameTokens": ["legendary", "famous", "original"], "impliesPrice": null },
-    "chain": { "summaryTerms": ["chain", "franchise", "outpost", "location of"], "nameTokens": [], "impliesPrice": null },
-    "local-chain": { "summaryTerms": ["local chain", "part of a local chain", "small chain", "local mini-chain"], "nameTokens": [], "impliesPrice": null },
-    "patio": { "summaryTerms": ["patio", "terrace", "sidewalk seating", "outdoor seating", "rooftop"], "nameTokens": [], "impliesPrice": null },
-    "late-night": { "summaryTerms": ["late-night", "late night", "open late", "24 hours", "all-night"], "nameTokens": ["24 hours", "late night"], "impliesPrice": null },
-    "bar": { "summaryTerms": ["cocktails", "craft beer", "wine list", "pub", "tavern", "beer selection", "sake"], "nameTokens": ["lounge", "tavern", "pub", "bar"], "impliesPrice": null },
-    "halal": { "summaryTerms": ["halal"], "nameTokens": ["halal"], "impliesPrice": null }
+    "no-frills": {
+      "summaryTerms": [
+        "unassuming",
+        "no-frills",
+        "no frills",
+        "simple",
+        "modest",
+        "humble",
+        "low-key",
+        "hole-in-the-wall",
+        "utilitarian",
+        "spartan",
+        "basic"
+      ],
+      "nameTokens": [],
+      "impliesPrice": "PRICE_LEVEL_INEXPENSIVE"
+    },
+    "counter-service": {
+      "summaryTerms": [
+        "counter-serve",
+        "counter serve",
+        "counter-service",
+        "order at the counter",
+        "self-serve",
+        "cafeteria-style"
+      ],
+      "nameTokens": [
+        "express",
+        "take out",
+        "takeout",
+        "to go"
+      ],
+      "impliesPrice": "PRICE_LEVEL_INEXPENSIVE"
+    },
+    "takeaway": {
+      "summaryTerms": [
+        "takeout",
+        "take-out",
+        "takeaway",
+        "delivery-only",
+        "grab-and-go"
+      ],
+      "nameTokens": [
+        "takeout",
+        "take out",
+        "to go",
+        "express"
+      ],
+      "impliesPrice": "PRICE_LEVEL_INEXPENSIVE"
+    },
+    "cash-only": {
+      "summaryTerms": [
+        "cash-only",
+        "cash only"
+      ],
+      "nameTokens": [],
+      "impliesPrice": null
+    },
+    "casual": {
+      "summaryTerms": [
+        "casual",
+        "relaxed",
+        "easygoing",
+        "laid-back",
+        "informal",
+        "unpretentious"
+      ],
+      "nameTokens": [],
+      "impliesPrice": null
+    },
+    "cozy": {
+      "summaryTerms": [
+        "cozy",
+        "snug",
+        "intimate",
+        "compact",
+        "tiny",
+        "small space",
+        "quaint"
+      ],
+      "nameTokens": [],
+      "impliesPrice": null
+    },
+    "lively": {
+      "summaryTerms": [
+        "lively",
+        "bustling",
+        "buzzy",
+        "energetic",
+        "vibrant",
+        "raucous"
+      ],
+      "nameTokens": [],
+      "impliesPrice": null
+    },
+    "upscale": {
+      "summaryTerms": [
+        "upscale",
+        "elegant",
+        "refined",
+        "sophisticated",
+        "chic",
+        "sleek",
+        "fine dining",
+        "tasting menu",
+        "white-tablecloth"
+      ],
+      "nameTokens": [],
+      "impliesPrice": "PRICE_LEVEL_EXPENSIVE"
+    },
+    "contemporary": {
+      "summaryTerms": [
+        "contemporary",
+        "modern",
+        "minimalist",
+        "stylish",
+        "trendy"
+      ],
+      "nameTokens": [],
+      "impliesPrice": null
+    },
+    "traditional": {
+      "summaryTerms": [
+        "traditional",
+        "classic",
+        "authentic",
+        "time-honored",
+        "old-school",
+        "longtime",
+        "long-running",
+        "family recipes"
+      ],
+      "nameTokens": [
+        "authentic",
+        "traditional",
+        "original",
+        "legendary",
+        "famous"
+      ],
+      "impliesPrice": null
+    },
+    "family-run": {
+      "summaryTerms": [
+        "family-run",
+        "family run",
+        "family-owned",
+        "mom-and-pop",
+        "husband-and-wife",
+        "family business"
+      ],
+      "nameTokens": [],
+      "impliesPrice": null
+    },
+    "institution": {
+      "summaryTerms": [
+        "institution",
+        "landmark",
+        "destination",
+        "beloved",
+        "iconic",
+        "since 19",
+        "decades",
+        "generations",
+        "long-standing"
+      ],
+      "nameTokens": [
+        "legendary",
+        "famous",
+        "original"
+      ],
+      "impliesPrice": null
+    },
+    "chain": {
+      "summaryTerms": [
+        "chain",
+        "franchise",
+        "outpost",
+        "location of"
+      ],
+      "nameTokens": [],
+      "impliesPrice": null
+    },
+    "local-chain": {
+      "summaryTerms": [
+        "local chain",
+        "part of a local chain",
+        "small chain",
+        "local mini-chain"
+      ],
+      "nameTokens": [],
+      "impliesPrice": null
+    },
+    "patio": {
+      "summaryTerms": [
+        "patio",
+        "terrace",
+        "sidewalk seating",
+        "outdoor seating",
+        "rooftop"
+      ],
+      "nameTokens": [],
+      "impliesPrice": null
+    },
+    "late-night": {
+      "summaryTerms": [
+        "late-night",
+        "late night",
+        "open late",
+        "24 hours",
+        "all-night"
+      ],
+      "nameTokens": [
+        "24 hours",
+        "late night"
+      ],
+      "impliesPrice": null
+    },
+    "bar": {
+      "summaryTerms": [
+        "cocktails",
+        "craft beer",
+        "wine list",
+        "pub",
+        "tavern",
+        "beer selection",
+        "sake"
+      ],
+      "nameTokens": [
+        "lounge",
+        "tavern",
+        "pub",
+        "bar"
+      ],
+      "impliesPrice": null
+    },
+    "halal": {
+      "summaryTerms": [
+        "halal"
+      ],
+      "nameTokens": [
+        "halal"
+      ],
+      "impliesPrice": null
+    }
   }
 }

@@ -1,0 +1,335 @@
+{
+  "_note": "Manual research overrides, applied by scripts/label.mjs AFTER the lexicon. Keyed by Google placeId. Each entry was resolved by reading the place's own website or searching it — signal present in neither the name nor Google's taxonomy. Two entries exist specifically because the name misleads: La Morena reads Mexican but is Ecuadorian, Bezaan reads Afghan but is a halal burger truck. Extend freely; re-running the labeller preserves these.",
+  "byPlaceId": {
+    "ChIJwwL0ok01K4gRg95lhvfdYs4": {
+      "name": "Alma",
+      "cuisine": "Chinese",
+      "cuisines": [
+        "Chinese"
+      ],
+      "source": "website",
+      "note": "modern Chinese, chef's Hakka heritage"
+    },
+    "ChIJ0wGg5Nc1K4gRLRpbQoY-Y8s": {
+      "name": "156 ONEFIVESIX",
+      "cuisine": "Korean",
+      "cuisines": [
+        "Korean"
+      ],
+      "source": "website",
+      "note": "Korean fusion dining"
+    },
+    "ChIJJXGImxvR1IkRZF1_T3Fjo9Q": {
+      "name": "Babu Takeout And Catering",
+      "cuisine": "Sri Lankan",
+      "cuisines": [
+        "Sri Lankan",
+        "South Indian"
+      ],
+      "source": "website",
+      "note": "Tamil: kothu roti, dosai, biryani"
+    },
+    "ChIJs4KUbns1K4gRIGxDSOMmieA": {
+      "name": "Allwyn's",
+      "cuisine": "Jamaican",
+      "cuisines": [
+        "Jamaican",
+        "Caribbean",
+        "Bakery / Pastry"
+      ],
+      "source": "search",
+      "note": "patties, jerk, oxtail; cash-only takeout"
+    },
+    "ChIJg9cGd2MtK4gRq4z8zFyt3go": {
+      "name": "Allwyn's",
+      "cuisine": "Jamaican",
+      "cuisines": [
+        "Jamaican",
+        "Caribbean",
+        "Bakery / Pastry"
+      ],
+      "source": "search",
+      "note": "patties, jerk, oxtail; cash-only takeout"
+    },
+    "ChIJcxtpfgQ1K4gRU62r_NW7IAE": {
+      "name": "Donna’s",
+      "cuisine": "Canadian / Contemporary",
+      "cuisines": [
+        "Canadian / Contemporary"
+      ],
+      "source": "search",
+      "note": "contemporary European, all-day"
+    },
+    "ChIJx8GYW-g1K4gR5tzcv8ZMaUQ": {
+      "name": "Hot Pork",
+      "cuisine": "Sandwiches / Deli",
+      "cuisines": [
+        "Sandwiches / Deli"
+      ],
+      "source": "search",
+      "note": "deli counter, house-made charcuterie"
+    },
+    "ChIJQzxB10fR1IkRfwCKyhsCFAY": {
+      "name": "Tropical Joe's",
+      "cuisine": "Trinidadian / Guyanese",
+      "cuisines": [
+        "Trinidadian / Guyanese",
+        "Caribbean"
+      ],
+      "source": "website",
+      "note": "Guyanese: jerk, oxtail, curry"
+    },
+    "ChIJ_22gMnnL1IkRCWLwnajmlfQ": {
+      "name": "Tropical Joe's",
+      "cuisine": "Trinidadian / Guyanese",
+      "cuisines": [
+        "Trinidadian / Guyanese",
+        "Caribbean"
+      ],
+      "source": "website",
+      "note": "Guyanese: jerk, oxtail, curry"
+    },
+    "ChIJ6Tn8Q6jN1IkRMjyUhE66_k4": {
+      "name": "La Casetta",
+      "cuisine": "Italian",
+      "cuisines": [
+        "Italian",
+        "Pizza"
+      ],
+      "source": "website",
+      "note": "Neapolitan pizza, handmade pasta"
+    },
+    "ChIJPxd9OSkzK4gRgk6_pM4x7WQ": {
+      "name": "Porzia's",
+      "cuisine": "Italian",
+      "cuisines": [
+        "Italian"
+      ],
+      "source": "website",
+      "note": "house-made pasta"
+    },
+    "ChIJ10rZ-YQ3K4gR7PJIorqDZK4": {
+      "name": "la capricciosa",
+      "cuisine": "Italian",
+      "cuisines": [
+        "Italian"
+      ],
+      "source": "website"
+    },
+    "ChIJKVLXSTDL1IkRsCitK8GWuNA": {
+      "name": "European Delight",
+      "cuisine": "Eastern European",
+      "cuisines": [
+        "Eastern European"
+      ],
+      "source": "website",
+      "note": "perogies, cabbage rolls, blintzes"
+    },
+    "ChIJhfFloJzzLogRIUlxvBnOD68": {
+      "name": "Twin Dem Kitchen",
+      "cuisine": "Jamaican",
+      "cuisines": [
+        "Jamaican",
+        "Caribbean"
+      ],
+      "source": "search",
+      "note": "jerk, curry goat, oxtail; London ON"
+    },
+    "ChIJ8eu-JDY1K4gRXI6PL2NwUB8": {
+      "name": "Aloette Go",
+      "cuisine": "Burgers",
+      "cuisines": [
+        "Burgers",
+        "Fried Chicken / Wings"
+      ],
+      "source": "website",
+      "note": "fast casual takeout"
+    },
+    "ChIJ9W47OBwzK4gRaF31d0Jyplk": {
+      "name": "Aloette Go",
+      "cuisine": "Burgers",
+      "cuisines": [
+        "Burgers",
+        "Fried Chicken / Wings"
+      ],
+      "source": "website",
+      "note": "fast casual takeout"
+    },
+    "ChIJEWtiNDctK4gR_jGIX4wnSBs": {
+      "name": "Grill Gate",
+      "cuisine": "Burgers",
+      "cuisines": [
+        "Burgers",
+        "Persian"
+      ],
+      "source": "website",
+      "note": "cheeseburgers, philly; Persian influence"
+    },
+    "ChIJIwX-KZXL1IkRsKVKZBioXcI": {
+      "name": "Agak Agak Canada",
+      "cuisine": "Malaysian / Singaporean",
+      "cuisines": [
+        "Malaysian / Singaporean"
+      ],
+      "source": "search",
+      "note": "Singaporean kopitiam: laksa, rojak, ice kachang"
+    },
+    "ChIJpQKelug1K4gRE1FcXkl5uqI": {
+      "name": "La Morena",
+      "cuisine": "Latin American",
+      "cuisines": [
+        "Latin American"
+      ],
+      "source": "search",
+      "note": "ECUADORIAN — empanadas, hornado, ceviche. Name reads Mexican; it isn't"
+    },
+    "ChIJJblqHHwxK4gR_MQULxNA7mM": {
+      "name": "Fullaluv Bar & Grill",
+      "cuisine": "Jamaican",
+      "cuisines": [
+        "Jamaican",
+        "Caribbean",
+        "Seafood"
+      ],
+      "source": "search",
+      "note": "jerk chicken + seafood"
+    },
+    "ChIJJYukdjfL1IkRmO6n1JfjfKU": {
+      "name": "Restaurant 20 Victoria",
+      "cuisine": "Canadian / Contemporary",
+      "cuisines": [
+        "Canadian / Contemporary"
+      ],
+      "source": "search",
+      "note": "Michelin one star, 7+ course tasting menu, Mexican influences"
+    },
+    "ChIJ__8_7_oxK4gR9piwa3xWi-M": {
+      "name": "Topaz Kitchen - North York",
+      "cuisine": "Jamaican",
+      "cuisines": [
+        "Jamaican",
+        "Caribbean"
+      ],
+      "source": "search",
+      "note": "jerk chicken, oxtail, steam fish"
+    },
+    "ChIJj7ja-W7xLogRPl3Ge7EpAN4": {
+      "name": "Sagi Of Wortley",
+      "cuisine": "Pan-Asian / Fusion",
+      "cuisines": [
+        "Pan-Asian / Fusion",
+        "Canadian / Contemporary"
+      ],
+      "source": "search",
+      "note": "Asian fusion, khao soi, sushi; London ON"
+    },
+    "ChIJ84X9dj_P1IkRJyj4we3L6uw": {
+      "name": "Bezaan Food Truck",
+      "cuisine": "Burgers",
+      "cuisines": [
+        "Burgers",
+        "Sandwiches / Deli"
+      ],
+      "source": "search",
+      "note": "halal burger/sandwich truck — NOT Afghan despite the name"
+    },
+    "ChIJh1-nFAA9K4gRwD_0cd4gj8c": {
+      "name": "Oaks Fusion Kitchen",
+      "cuisine": "Jamaican",
+      "cuisines": [
+        "Jamaican",
+        "Caribbean"
+      ],
+      "source": "search",
+      "note": "Jamaican fusion breakfast; Brampton"
+    },
+    "ChIJ0fhdoJ8tK4gR5IurhOfgUuo": {
+      "name": "Perfect Meat Bowl",
+      "cuisine": "Sichuan",
+      "cuisines": [
+        "Sichuan",
+        "Chinese"
+      ],
+      "source": "search",
+      "note": "一碗水煮肉片 — Sichuan boiled meat slices, halal"
+    },
+    "ChIJ8bxierc1K4gRX1CEdlDHBGA": {
+      "name": "Public Gardens Toronto",
+      "cuisine": "Italian",
+      "cuisines": [
+        "Italian",
+        "Pizza"
+      ],
+      "source": "search",
+      "note": "Italian-American, rooftop patio"
+    },
+    "ChIJtwSFMLczK4gR0o2Or1XDA4Y": {
+      "name": "Domaine MaMo",
+      "cuisine": "French",
+      "cuisines": [
+        "French",
+        "Italian"
+      ],
+      "source": "search",
+      "note": "French-Italian, Maritime Alps / Mediterranean"
+    },
+    "ChIJFRRC17Q2K4gRrDLxhzRnQJ4": {
+      "name": "First Class Delites",
+      "cuisine": "Jamaican",
+      "cuisines": [
+        "Jamaican",
+        "Caribbean"
+      ],
+      "source": "search",
+      "note": "jerk chicken, curry goat, roti; 17 years"
+    },
+    "ChIJAaZj3qntLogRYZdZ0x-Hnzw": {
+      "name": "Mundys Catering",
+      "cuisine": "Jamaican",
+      "cuisines": [
+        "Jamaican",
+        "Caribbean"
+      ],
+      "source": "search",
+      "note": "Jamaican catering; London ON"
+    },
+    "ChIJSzIPWHE0K4gRoJZnGRuikVI": {
+      "name": "Definitely Yours Restaurant",
+      "cuisine": "Jamaican",
+      "cuisines": [
+        "Jamaican",
+        "Caribbean"
+      ],
+      "source": "search",
+      "note": "was Tru Valu West Indian; goat curry, oxtail, patties"
+    },
+    "ChIJ3ZhOIAg1K4gRHj_6wsuE3qY": {
+      "name": "Gold Standard Queen",
+      "cuisine": "Breakfast / Brunch",
+      "cuisines": [
+        "Breakfast / Brunch",
+        "Sandwiches / Deli"
+      ],
+      "source": "website",
+      "note": "breakfastsandwich.ca"
+    },
+    "ChIJReTjXM80K4gR8-BfvO1Evek": {
+      "name": "Helena's Magic Kitchen",
+      "cuisine": "Eastern European",
+      "cuisines": [
+        "Eastern European"
+      ],
+      "source": "summary",
+      "note": "food-court counter-serve, quiches & stuffed chicken"
+    },
+    "ChIJ8z7Mn880K4gRooiaTeyLlag": {
+      "name": "The Village by the Grange",
+      "cuisine": "Grocery / Market",
+      "cuisines": [
+        "Grocery / Market"
+      ],
+      "source": "google",
+      "note": "food court, not a single cuisine"
+    }
+  }
+}

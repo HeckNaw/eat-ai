@@ -19,19 +19,42 @@
  * is why the matching lives here and the vocabulary lives in data.
  */
 
-import { readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const lex = JSON.parse(readFileSync(join(ROOT, "lexicon.json"), "utf8"));
+// Manual research: places whose cuisine is in neither the name nor Google's
+// taxonomy, resolved by reading their website or searching them.
+const overrides = existsSync(join(ROOT, "overrides.json"))
+  ? JSON.parse(readFileSync(join(ROOT, "overrides.json"), "utf8")).byPlaceId
+  : {};
 const src = JSON.parse(readFileSync(join(ROOT, "enriched.json"), "utf8"));
 
-// nameTokens outweigh Google's taxonomy, which outweighs prose. A name saying
-// "Chengdu" is better evidence than Google saying "chinese_restaurant".
+// A name saying "Chengdu" beats Google saying "chinese_restaurant" — but only
+// because Google is usually generic or empty. When Google IS specific
+// ("ethiopian_restaurant"), that is a curated classification and outranks a
+// keyword guess: otherwise a broad token like "african" wins over Ethiopian.
+const W_TYPE_SPECIFIC = 4;
 const W_NAME = 3;
 const W_TYPE = 2;
 const W_SUMMARY = 1;
+
+// Types that carry no cuisine information, so they only ever score W_TYPE.
+const GENERIC_TYPES = new Set([
+  "restaurant", "food", "meal_takeaway", "meal_delivery", "cafe", "bar", "pub",
+  "asian_restaurant", "fast_food_restaurant", "fine_dining_restaurant",
+  "fusion_restaurant", "asian_fusion_restaurant", "american_restaurant",
+  "chinese_restaurant", "sandwich_shop", "deli", "bakery", "dessert_shop",
+  "ice_cream_shop", "coffee_shop", "confectionery", "food_store",
+  "grocery_store", "seafood_restaurant", "barbecue_restaurant",
+  "chicken_restaurant", "hamburger_restaurant", "pizza_restaurant",
+  "steak_house", "breakfast_restaurant", "brunch_restaurant", "tea_house",
+  "bubble_tea_store", "pastry_shop", "bagel_shop", "dessert_restaurant",
+  "candy_store", "poke_restaurant", "hawaiian_restaurant", "halal_restaurant",
+  "chicken_wings_restaurant", "vegan_restaurant", "vegetarian_restaurant",
+]);
 
 /** Lowercase, strip punctuation to spaces, keep CJK and accented letters. */
 function normalize(s) {
@@ -51,7 +74,13 @@ function normalize(s) {
 function hasTerm(haystack, term) {
   const t = normalize(term).trim();
   if (!t) return false;
-  return haystack.includes(` ${t} `);
+  // Exact word match always counts.
+  if (haystack.includes(` ${t} `)) return true;
+  // Tokens of 5+ characters also match as a word PREFIX, so "vietnam" fires on
+  // "Vietnamese" and "crepe" on "Crepes". Shorter tokens stay exact-only —
+  // otherwise "pho" would match "Phoenix".
+  if (t.length >= 5) return haystack.includes(` ${t}`);
+  return false;
 }
 
 const cuisineKeys = Object.keys(lex.cuisines); // insertion order = specific first
@@ -73,7 +102,11 @@ function labelCuisine(name, types, primaryType, summary) {
       if (hasTerm(hName, tok)) { score += W_NAME; source ??= "name"; break; }
     }
     for (const gt of def.googleTypes ?? []) {
-      if (typeSet.has(gt)) { score += W_TYPE; source ??= "googleType"; break; }
+      if (typeSet.has(gt)) {
+        score += GENERIC_TYPES.has(gt) ? W_TYPE : W_TYPE_SPECIFIC;
+        source ??= "googleType";
+        break;
+      }
     }
     for (const st of def.summaryTerms ?? []) {
       if (hasTerm(hSummary, st)) { score += W_SUMMARY; source ??= "summary"; break; }
@@ -125,8 +158,20 @@ function estimatePrice(attributes) {
 }
 
 const places = src.places.map((p) => {
-  const cuisine = labelCuisine(p.name, p.types, p.primaryType, p.summary);
+  let cuisine = labelCuisine(p.name, p.types, p.primaryType, p.summary);
   const attributes = labelAttributes(p.name, p.summary);
+
+  // Researched overrides win — they came from reading the actual menu or site.
+  const ov = overrides[p.placeId];
+  if (ov) {
+    cuisine = {
+      cuisine: ov.cuisine,
+      cuisineFamily: lex.cuisines[ov.cuisine]?.family ?? null,
+      cuisines: ov.cuisines ?? [ov.cuisine],
+      cuisineSource: "researched",
+    };
+  }
+
   return {
     ...p,
     ...cuisine,
