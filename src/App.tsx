@@ -6,7 +6,7 @@ import { Results } from "./components/Results";
 import { Unlock } from "./components/Unlock";
 import { checkAccess, post, Unauthorized } from "./lib/api";
 import { describeWhen, targetTime } from "./lib/hours";
-import { diversify, rank } from "./lib/score";
+import { diversify, rank, rankWithFallback } from "./lib/score";
 import type { Answers, Coords, Place, Scored, Taste } from "./lib/types";
 
 type Stage = "loading" | "locked" | "gate" | "ask" | "results";
@@ -101,15 +101,47 @@ export default function App() {
 
   const at = useMemo(() => targetTime(answers.when), [answers.when, stage]);
 
-  const onListRanked: Scored[] = useMemo(() => {
-    if (!places || !taste || !origin) return [];
-    return rank(places, origin, answers, taste, at, modeOf);
-  }, [places, taste, origin, answers, at, modeOf]);
+  /**
+   * The rungs the fallback ladder climbs: exactly what was asked, then every
+   * cuisine sharing a family with it, then no cuisine constraint. Built here
+   * because App owns the hierarchy; the scorer stays ignorant of it.
+   */
+  const cuisineLadder = useMemo(() => {
+    const wanted = answers.cuisines;
+    if (!taste || !wanted.length) return [[], [], []];
+    const styles = Object.values(taste.hierarchy).flat();
+    const families = new Set(
+      styles.filter((f) => f.styles.some((s) => wanted.includes(s.cuisine))).map((f) => f.family),
+    );
+    const broadened = [
+      ...new Set(
+        styles.filter((f) => families.has(f.family)).flatMap((f) => f.styles.map((s) => s.cuisine)),
+      ),
+    ];
+    return [wanted, broadened, []];
+  }, [taste, answers.cuisines]);
 
+  // Aim to fill one section. Widening stops the moment there are enough.
+  const TARGET = 5;
+
+  const onList = useMemo(() => {
+    if (!places || !taste || !origin) return { items: [] as Scored[], loosened: null };
+    return rankWithFallback(places, origin, answers, taste, at, modeOf, cuisineLadder, TARGET);
+  }, [places, taste, origin, answers, at, modeOf, cuisineLadder]);
+
+  const onListRanked: Scored[] = onList.items;
+
+  // Off-list reuses whatever the saved list settled on, so both halves are
+  // filtered on the same terms and only one explanation is needed. Widening the
+  // radius cannot add candidates here — Places already restricted the fetch —
+  // but broadening the cuisine can.
   const offListRanked: Scored[] = useMemo(() => {
     if (!taste || !origin || !offList.length) return [];
-    return rank(offList, origin, answers, taste, at, modeOf);
-  }, [offList, taste, origin, answers, at, modeOf]);
+    return rank(offList, origin, answers, taste, at, modeOf, {
+      radiusM: onList.loosened?.radiusM,
+      cuisines: onList.loosened?.cuisines,
+    });
+  }, [offList, taste, origin, answers, at, modeOf, onList.loosened]);
 
   async function go() {
     if (!origin || !taste) return;
@@ -217,6 +249,7 @@ export default function App() {
           settling={settling}
           discovering={discovering}
           discoverError={discoverError}
+          loosened={onList.loosened}
           onBack={() => setStage("ask")}
         />
       )}

@@ -458,6 +458,23 @@ button {
  * collapses to a sliver, since it can shrink and the button can't. So the row
  * has to override the width, not just the flex. min-width:0 on the field stops
  * the input's default intrinsic size from doing the same thing in reverse. */
+/* The "we had to widen the search" notice. Amber rather than red: it is not an
+   error, it is the app being honest about a compromise it made. */
+.loosened {
+  margin: -0.5rem 0 1.25rem;
+  padding: 0.6875rem 0.875rem;
+  border-radius: var(--r-md);
+  border: 1px solid #ffb13d33;
+  background-color: #ffb13d14;
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+  backdrop-filter: var(--glass-blur-sm);
+  color: var(--ink-soft);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  animation: rise 0.4s var(--out) backwards;
+}
+.loosened b { color: var(--soon); font-weight: 600; }
+
 .row { display: flex; gap: 0.5rem; align-items: stretch; }
 .row .field { flex: 1 1 auto; min-width: 0; }
 .row .btn,

@@ -1,8 +1,21 @@
 import { useState } from "react";
 import { formatDistance } from "../lib/geo";
+import type { Loosened } from "../lib/score";
 import type { Scored } from "../lib/types";
 
 const PAGE = 5;
+
+/** Plain sentence for what the fallback ladder gave up, in the order it gave it. */
+function describeLoosening(l: Loosened): string {
+  const bits: string[] = [];
+  if (l.widened) bits.push(`searched out to ${formatDistance(l.radiusM)}`);
+  if (l.broadened) bits.push("included related cuisines");
+  if (l.dropped) bits.push("ignored the craving");
+  if (!bits.length) return "Showing the closest matches.";
+  const last = bits.pop();
+  const sentence = [bits.join(", "), last].filter(Boolean).join(" and ");
+  return `${sentence.charAt(0).toUpperCase()}${sentence.slice(1)}.`;
+}
 
 function statusLabel(s: Scored): { s: string; text: string } {
   if (s.open === "open") {
@@ -161,6 +174,7 @@ export function Results({
   discoverError,
   onBack,
   summary,
+  loosened,
 }: {
   onList: Scored[];
   offList: Scored[];
@@ -169,12 +183,22 @@ export function Results({
   discoverError: string | null;
   onBack: () => void;
   summary: string;
+  loosened: Loosened | null;
 }) {
   return (
     <>
       <div className="q" style={{ "--i": 0 } as React.CSSProperties}>
         <span className="eyebrow">{summary}</span>
       </div>
+
+      {/* Say what was given up. Quietly widening the search is worse than
+          returning nothing, because the results then look like they satisfied
+          constraints they don't. */}
+      {!settling && loosened && (
+        <div className="loosened">
+          <b>Not much matched.</b> {describeLoosening(loosened)}
+        </div>
+      )}
 
       <div className="section-head">
         <h2>From your list</h2>

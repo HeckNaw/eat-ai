@@ -107,13 +107,17 @@ export function rank(
   taste: Taste,
   at: Date,
   modeOf: (cuisine: string) => string,
+  /** Loosened constraints from the fallback ladder; defaults to what was asked. */
+  opts?: { radiusM?: number; cuisines?: string[] },
 ): Scored[] {
   const out: Scored[] = [];
+  const radiusM = opts?.radiusM ?? answers.radiusM;
+  const cuisines = opts?.cuisines ?? answers.cuisines;
 
   for (const place of places) {
     // --- hard filters: objective, non-negotiable, never traded off ---
     const dist = distanceM(origin, { lat: place.y, lng: place.x });
-    if (dist > answers.radiusM) continue;
+    if (dist > radiusM) continue;
 
     const { state, closesInMin } = openAt(place, at);
     if (state === "shut") continue;
@@ -122,15 +126,18 @@ export function rank(
     // not evidence it's the wrong kind of food.
     const modes = (place.cs ?? (place.c ? [place.c] : [])).map(modeOf);
     if (modes.length && !modes.some((m) => m === answers.mode || m === "both")) continue;
-    if (answers.cuisines.length) {
+    if (cuisines.length) {
       const matched = place.cs ?? (place.c ? [place.c] : []);
-      if (!matched.some((c) => answers.cuisines.includes(c))) continue;
+      if (!matched.some((c) => cuisines.includes(c))) continue;
     }
 
     // --- scoring: derived signals, combined by the weights above ---
     const score =
-      W.cuisine * cuisineScore(place, taste, answers.cuisines) +
-      W.distance * proximity(dist, answers.radiusM) +
+      W.cuisine * cuisineScore(place, taste, cuisines) +
+      // Proximity is measured against the radius actually in force, so that
+      // once the search widens the far results still order sensibly instead of
+      // all flattening to zero.
+      W.distance * proximity(dist, radiusM) +
       W.attributes * attributeScore(place, taste) +
       W.neighbourhood * neighbourhoodScore(place, taste) +
       // A place with unknown hours is a gamble, so nudge it below a sure thing
@@ -144,11 +151,109 @@ export function rank(
       open: state,
       closesInMin,
       score,
-      why: explain(place, taste, answers.cuisines, dist),
+      why: explain(place, taste, cuisines, dist),
     });
   }
 
   return out.sort((a, b) => b.score - a.score);
+}
+
+/** What had to be given up to fill the results, and how to say so. */
+export interface Loosened {
+  radiusM: number;
+  cuisines: string[];
+  widened: boolean;
+  broadened: boolean;
+  dropped: boolean;
+}
+
+/**
+ * Widen the search until there are enough results, one concession at a time.
+ *
+ * An empty screen is the worst possible answer to "I'm hungry" — but so is
+ * silently pretending a place 4km away was within the 1km you asked for. So the
+ * ladder gives ground in a fixed order, stops the moment it has enough, and
+ * reports exactly what it relaxed so the UI can say it out loud.
+ *
+ * The order encodes which concession costs least:
+ *
+ *   1. distance ×1.6   — a bit further is a smaller compromise than a different
+ *                        cuisine, because you asked for the cuisine on purpose
+ *   2. + related cuisines — Sichuan opens up to the rest of Chinese
+ *   3. distance ×2.5
+ *   4. drop the craving entirely — last resort, you did explicitly ask
+ *
+ * Two things deliberately never relax: `mode`, because someone who wants
+ * dessert is not served by a steakhouse, and `shut`, because a closed
+ * restaurant is not a recommendation at any distance.
+ *
+ * Only the saved list truly benefits from the distance rungs — off-list
+ * candidates were fetched from Places inside the original radius, so widening
+ * cannot conjure more of them without another billed call. They still gain from
+ * the cuisine rungs.
+ */
+const LADDER = [
+  { radius: 1, cuisine: 0 },   // exactly what was asked
+  { radius: 1.6, cuisine: 0 }, // a bit further
+  { radius: 1.6, cuisine: 1 }, // ...and related cuisines
+  { radius: 2.5, cuisine: 1 }, // further still
+  { radius: 2.5, cuisine: 2 }, // give up on the craving
+] as const;
+
+const MAX_RADIUS_M = 60_000;
+
+type Rung = (typeof LADDER)[number];
+
+export function rankWithFallback(
+  places: Place[],
+  origin: Coords,
+  answers: Answers,
+  taste: Taste,
+  at: Date,
+  modeOf: (cuisine: string) => string,
+  /** [as asked, family-broadened, []] — built by the caller, which owns the hierarchy. */
+  cuisineLadder: string[][],
+  target: number,
+): { items: Scored[]; loosened: Loosened | null } {
+  const rungFor = (step: Rung) =>
+    cuisineLadder[Math.min(step.cuisine, cuisineLadder.length - 1)] ?? [];
+  const radiusFor = (step: Rung) => Math.min(answers.radiusM * step.radius, MAX_RADIUS_M);
+
+  let best: Scored[] = [];
+  let bestStep: Rung = LADDER[0];
+  let relaxed = false;
+
+  for (const [i, step] of LADDER.entries()) {
+    // With no craving set there is nothing to broaden, so the cuisine rungs
+    // duplicate the distance rung above them.
+    const prev = LADDER[i - 1];
+    if (prev && !answers.cuisines.length && step.radius === prev.radius) continue;
+
+    const items = rank(places, origin, answers, taste, at, modeOf, {
+      radiusM: radiusFor(step),
+      cuisines: rungFor(step),
+    });
+
+    if (items.length > best.length) {
+      best = items;
+      bestStep = step;
+      relaxed = i > 0;
+    }
+    if (items.length >= target) break;
+  }
+
+  if (!relaxed) return { items: best, loosened: null };
+
+  return {
+    items: best,
+    loosened: {
+      radiusM: radiusFor(bestStep),
+      cuisines: rungFor(bestStep),
+      widened: bestStep.radius > 1,
+      broadened: Boolean(answers.cuisines.length) && bestStep.cuisine === 1,
+      dropped: Boolean(answers.cuisines.length) && bestStep.cuisine >= 2,
+    },
+  };
 }
 
 /**

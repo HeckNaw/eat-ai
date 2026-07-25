@@ -1,0 +1,7052 @@
+{
+  "generatedAt": "2026-07-25T20:09:46.647Z",
+  "partial": false,
+  "searches": 56,
+  "apiCalls": 54,
+  "count": 56,
+  "unmatchedCount": 0,
+  "places": [
+    {
+      "title": "4Ever Sushi",
+      "normalizedTitle": "4ever sushi",
+      "cid": "0x3bf55cd7a3f6b5a9",
+      "featureId": "0x882b35f186af2ef3:0x3bf55cd7a3f6b5a9",
+      "url": "https://www.google.com/maps/place/4Ever+Sushi/data=!4m2!3m1!1s0x882b35f186af2ef3:0x3bf55cd7a3f6b5a9",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJ8y6vhvE1K4gRqbX2o9dc9Ts",
+      "name": "4Ever Sushi",
+      "address": "225 Queen St W, Toronto",
+      "lat": 43.650368799999995,
+      "lng": -79.388055,
+      "primaryType": "restaurant",
+      "primaryTypeLabel": "Restaurant",
+      "types": [
+        "restaurant",
+        "asian_restaurant",
+        "sushi_restaurant",
+        "fine_dining_restaurant",
+        "meal_takeaway",
+        "japanese_restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": null,
+      "rating": 4.6,
+      "reviewCount": 362,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 30
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://4eversushi.com/",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=4320461498770437545&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Ajisen Ramen (Chinatown)",
+      "normalizedTitle": "ajisen ramen chinatown",
+      "cid": "0x71a6447306111d9f",
+      "featureId": "0x882b34c3966ed4f7:0x71a6447306111d9f",
+      "url": "https://www.google.com/maps/place/Ajisen+Ramen+(Chinatown)/data=!4m2!3m1!1s0x882b34c3966ed4f7:0x71a6447306111d9f",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJ99RulsM0K4gRnx0RBnNEpnE",
+      "name": "Ajisen Ramen (Chinatown)",
+      "address": "332 Spadina Ave., Toronto",
+      "lat": 43.653901,
+      "lng": -79.398763,
+      "primaryType": "ramen_restaurant",
+      "primaryTypeLabel": "Ramen restaurant",
+      "types": [
+        "ramen_restaurant",
+        "japanese_restaurant",
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "rating": 4.5,
+      "reviewCount": 2813,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://www.ajisenramen.ca/",
+      "summary": "Renowned for its pork broth, this casual Japanese chain offers a variety of soups & rice dishes.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=8189308233233538463&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Bourbon St. Grill (Yonge Eglinton Centre)",
+      "normalizedTitle": "bourbon st grill yonge eglinton centre",
+      "cid": "0xa14297ce3ff135a3",
+      "featureId": "0x882b330014b11179:0xa14297ce3ff135a3",
+      "url": "https://www.google.com/maps/place/Bourbon+St.+Grill+(Yonge+Eglinton+Centre)/data=!4m2!3m1!1s0x882b330014b11179:0xa14297ce3ff135a3",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJeRGxFAAzK4gRozXxP86XQqE",
+      "name": "Bourbon St. Grill (Yonge Eglinton Centre)",
+      "address": "2300 Yonge St, Toronto",
+      "lat": 43.7071214,
+      "lng": -79.3990726,
+      "primaryType": "south_american_restaurant",
+      "primaryTypeLabel": "South American restaurant",
+      "types": [
+        "south_american_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": null,
+      "rating": 4.2,
+      "reviewCount": 42,
+      "openingHours": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": null,
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=11620016900661130659&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Buono Ristorante",
+      "normalizedTitle": "buono ristorante",
+      "cid": "0xd4bdcb1940722928",
+      "featureId": "0x89d4cde1c101d527:0xd4bdcb1940722928",
+      "url": "https://www.google.com/maps/place/Buono+Ristorante/data=!4m2!3m1!1s0x89d4cde1c101d527:0xd4bdcb1940722928",
+      "reasons": [
+        "overpriced"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJJ9UBweHN1IkRKClyQBnLvdQ",
+      "name": "Buono Ristorante",
+      "address": "1566 Bayview Ave, Toronto",
+      "lat": 43.7053903,
+      "lng": -79.37521819999999,
+      "primaryType": "italian_restaurant",
+      "primaryTypeLabel": "Italian restaurant",
+      "types": [
+        "italian_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": null,
+      "rating": 4.8,
+      "reviewCount": 1183,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 0,
+            "hour": 16,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 16,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 16,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 16,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 16,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 16,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 16,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 30
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://buonoristorante.com/",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=15329632015954880808&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Burrito Boyz Queen & Spadina",
+      "normalizedTitle": "burrito boyz queen spadina",
+      "cid": "0xed568dd0222be292",
+      "featureId": "0x882b352f8017661d:0xed568dd0222be292",
+      "url": "https://www.google.com/maps/place/Burrito+Boyz+Queen+%26+Spadina/data=!4m2!3m1!1s0x882b352f8017661d:0xed568dd0222be292",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJHWYXgC81K4gRkuIrItCNVu0",
+      "name": "Burrito Boyz Queen & Spadina",
+      "address": "489 Queen St W, Toronto",
+      "lat": 43.6481957,
+      "lng": -79.3981895,
+      "primaryType": "burrito_restaurant",
+      "primaryTypeLabel": "Burrito restaurant",
+      "types": [
+        "burrito_restaurant",
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "rating": 4.7,
+      "reviewCount": 198,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 4,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 4,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://www.burritoboyz.ca/",
+      "summary": "Casual counter-serve outfit offering large burritos & quesadillas with classic fillings.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=17102012560052052626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Cafe Landwer",
+      "normalizedTitle": "cafe landwer",
+      "cid": "0x6986c20ea1ff3267",
+      "featureId": "0x882b3504ae3d72e1:0x6986c20ea1ff3267",
+      "url": "https://www.google.com/maps/place/Cafe+Landwer/data=!4m2!3m1!1s0x882b3504ae3d72e1:0x6986c20ea1ff3267",
+      "reasons": [
+        "inauthentic"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJ4XI9rgQ1K4gRZzL_oQ7Chmk",
+      "name": "Cafe Landwer",
+      "address": "33 Bloor Street East, 33 Bloor St E, Toronto",
+      "lat": 43.6702665,
+      "lng": -79.3854539,
+      "primaryType": "cafe",
+      "primaryTypeLabel": "Cafe",
+      "types": [
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "rating": 4.3,
+      "reviewCount": 2247,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://www.landwer.ca/",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=7603978388964848231&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Campechano Adelaide",
+      "normalizedTitle": "campechano adelaide",
+      "cid": "0xda635105ca1baf8f",
+      "featureId": "0x882b34de7a560889:0xda635105ca1baf8f",
+      "url": "https://www.google.com/maps/place/Campechano+Adelaide/data=!4m2!3m1!1s0x882b34de7a560889:0xda635105ca1baf8f",
+      "reasons": [
+        "overpriced"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJiQhWet40K4gRj68bygVRY9o",
+      "name": "Campechano Adelaide",
+      "address": "504 Adelaide St W, Toronto",
+      "lat": 43.6458071,
+      "lng": -79.40077099999999,
+      "primaryType": "mexican_restaurant",
+      "primaryTypeLabel": "Mexican restaurant",
+      "types": [
+        "mexican_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "rating": 4.4,
+      "reviewCount": 1996,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://www.campechano.ca/",
+      "summary": "Tacos & quesadillas boasting housemade tortillas, plus drinks, served in a laid-back, bright space.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=15736510608270143375&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Earls Kitchen + Bar",
+      "normalizedTitle": "earls kitchen bar",
+      "cid": "0xb5c78420e96132db",
+      "featureId": "0x882b35c7b18cb18b:0xb5c78420e96132db",
+      "url": "https://www.google.com/maps/place/Earls+Kitchen+%2B+Bar/data=!4m2!3m1!1s0x882b35c7b18cb18b:0xb5c78420e96132db",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJi7GMscc1K4gR2zJh6SCEx7U",
+      "name": "Earls Kitchen + Bar",
+      "address": "55 Bloor St W Unit 113, Toronto",
+      "lat": 43.668941,
+      "lng": -79.3887896,
+      "primaryType": "restaurant",
+      "primaryTypeLabel": "Restaurant",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "rating": 4.8,
+      "reviewCount": 4454,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 2,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://earls.ca/locations/yorkville/",
+      "summary": "Sleek, upscale chain serving gourmet burgers, global comfort food, cocktails, wines & beers.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=13098583318119658203&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "eaTO- Indian Street Food",
+      "normalizedTitle": "eato indian street food",
+      "cid": "0xe16c845f410e30f3",
+      "featureId": "0x89d4cda8211d98ab:0xe16c845f410e30f3",
+      "url": "https://www.google.com/maps/place/eaTO-+Indian+Street+Food/data=!4m2!3m1!1s0x89d4cda8211d98ab:0xe16c845f410e30f3",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJq5gdIajN1IkR8zAOQV-EbOE",
+      "name": "eaTO- Indian Street Food",
+      "address": "1960 Lawrence Ave E Unit 13, Scarborough",
+      "lat": 43.7451223,
+      "lng": -79.2979817,
+      "primaryType": "indian_restaurant",
+      "primaryTypeLabel": "Indian restaurant",
+      "types": [
+        "indian_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": null,
+      "rating": 4.4,
+      "reviewCount": 1406,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 0,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://www.eato.ca/",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=16243503500666745075&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Eggstatic Toronto",
+      "normalizedTitle": "eggstatic toronto",
+      "cid": "0x4d1a6bedd1e0f80b",
+      "featureId": "0x89d4cda13acda60d:0x4d1a6bedd1e0f80b",
+      "url": "https://www.google.com/maps/place/Eggstatic+Toronto/data=!4m2!3m1!1s0x89d4cda13acda60d:0x4d1a6bedd1e0f80b",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJDabNOqHN1IkRC_jg0e1rGk0",
+      "name": "Eggstatic Toronto",
+      "address": "1568 Bayview Ave, Toronto",
+      "lat": 43.705439,
+      "lng": -79.375237,
+      "primaryType": "breakfast_restaurant",
+      "primaryTypeLabel": "Breakfast restaurant",
+      "types": [
+        "breakfast_restaurant",
+        "brunch_restaurant",
+        "halal_restaurant",
+        "middle_eastern_restaurant",
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "rating": 4.5,
+      "reviewCount": 2192,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://www.eggstatic.ca/branches/toronto-bayview-brunch-restaurant",
+      "summary": "Trendy bistro serving up artisan breakfast & brunch, plus desserts, drinks & sidewalk seating.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=5555871759487531019&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "El Furniture Warehouse",
+      "normalizedTitle": "el furniture warehouse",
+      "cid": "0x4becf9db76ec2bd9",
+      "featureId": "0x882b34cfde024bc9:0x4becf9db76ec2bd9",
+      "url": "https://www.google.com/maps/place/El+Furniture+Warehouse/data=!4m2!3m1!1s0x882b34cfde024bc9:0x4becf9db76ec2bd9",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJyUsC3s80K4gR2Svsdtv57Es",
+      "name": "El Furniture Warehouse",
+      "address": "232 Queen St W, Toronto",
+      "lat": 43.6502335,
+      "lng": -79.3902518,
+      "primaryType": "restaurant",
+      "primaryTypeLabel": "Restaurant",
+      "types": [
+        "restaurant",
+        "sports_bar",
+        "brewpub",
+        "hamburger_restaurant",
+        "night_club",
+        "pub",
+        "cocktail_bar",
+        "bar_and_grill",
+        "american_restaurant",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "rating": 4,
+      "reviewCount": 4983,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 2,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://warehousegroup.ca/locations/el-furniture-warehouse-queen-st/",
+      "summary": "Mellow local eatery doling out burgers, tacos & other comfort eats in homey space with a patio.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=5471022368336653273&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "El Trompo",
+      "normalizedTitle": "el trompo",
+      "cid": "0xee13ed04ab9ff32b",
+      "featureId": "0x882b34c1f8bb2bf1:0xee13ed04ab9ff32b",
+      "url": "https://www.google.com/maps/place/El+Trompo/data=!4m2!3m1!1s0x882b34c1f8bb2bf1:0xee13ed04ab9ff32b",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJ8Su7-ME0K4gRK_OfqwTtE-4",
+      "name": "El Trompo",
+      "address": "277 Augusta Ave, Toronto",
+      "lat": 43.6558485,
+      "lng": -79.4024282,
+      "primaryType": "mexican_restaurant",
+      "primaryTypeLabel": "Mexican restaurant",
+      "types": [
+        "mexican_restaurant",
+        "chicken_restaurant",
+        "western_restaurant",
+        "meal_delivery",
+        "food_delivery",
+        "taco_restaurant",
+        "meal_takeaway",
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "rating": 4.4,
+      "reviewCount": 2269,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 21,
+            "minute": 30
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://www.eltrompo.ca/",
+      "summary": "Eatery with a bustling patio & bright, snug interior, serving classic Mexican fare & margaritas.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=17155316009899389739&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Evviva Breakfast and Lunch",
+      "normalizedTitle": "evviva breakfast and lunch",
+      "cid": "0x788f093142bcaefe",
+      "featureId": "0x882b33c4d28281dd:0x788f093142bcaefe",
+      "url": "https://www.google.com/maps/place/Evviva+Breakfast+and+Lunch/data=!4m2!3m1!1s0x882b33c4d28281dd:0x788f093142bcaefe",
+      "reasons": [
+        "inauthentic"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJ3YGC0sQzK4gR_q68QjEJj3g",
+      "name": "Evviva Breakfast and Lunch",
+      "address": "39 Eglinton Ave E, Toronto",
+      "lat": 43.706859,
+      "lng": -79.3969685,
+      "primaryType": "restaurant",
+      "primaryTypeLabel": "Restaurant",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": null,
+      "rating": 4.8,
+      "reviewCount": 1469,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://www.evviva.ca/",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=8687172313398685438&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Fairway Restaurant & Bar",
+      "normalizedTitle": "fairway restaurant bar",
+      "cid": "0xf0d23c5810a40f81",
+      "featureId": "0x89d4cd0941f80b4f:0xf0d23c5810a40f81",
+      "url": "https://www.google.com/maps/place/Fairway+Restaurant+%26+Bar/data=!4m2!3m1!1s0x89d4cd0941f80b4f:0xf0d23c5810a40f81",
+      "reasons": [
+        "inauthentic"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJTwv4QQnN1IkRgQ-kEFg80vA",
+      "name": "Fairway Restaurant & Bar",
+      "address": "1660 Bayview Ave, Toronto",
+      "lat": 43.7072992,
+      "lng": -79.3761,
+      "primaryType": "restaurant",
+      "primaryTypeLabel": "Restaurant",
+      "types": [
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "priceLevel": null,
+      "rating": 4.7,
+      "reviewCount": 56,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://www.fairwayrestaurant.ca/",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=17352998663145918337&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Gabby's",
+      "normalizedTitle": "gabby s",
+      "cid": "0xbc8250815a74f199",
+      "featureId": "0x882b332c3a6c4091:0xbc8250815a74f199",
+      "url": "https://www.google.com/maps/place/Gabby's/data=!4m2!3m1!1s0x882b332c3a6c4091:0xbc8250815a74f199",
+      "reasons": [
+        "inauthentic"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJkUBsOiwzK4gRmfF0WoFQgrw",
+      "name": "Gabby's",
+      "address": "383 Eglinton Ave E, Toronto",
+      "lat": 43.709279699999996,
+      "lng": -79.38498369999999,
+      "primaryType": "restaurant",
+      "primaryTypeLabel": "Restaurant",
+      "types": [
+        "restaurant",
+        "bar_and_grill",
+        "pub",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "rating": 4.5,
+      "reviewCount": 631,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 15,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 15,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 2,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://www.gabbys.ca/locations/midtown-eglinton-east",
+      "summary": "Laid-back restaurant & sports bar with a wide menu of hearty pub grub, plus draft beers & cocktails.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=13583507942601453977&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Granite Brewery & Tied House",
+      "normalizedTitle": "granite brewery tied house",
+      "cid": "0xd9cebd5e81389b99",
+      "featureId": "0x882b332fbbb0c383:0xd9cebd5e81389b99",
+      "url": "https://www.google.com/maps/place/Granite+Brewery+%26+Tied+House/data=!4m2!3m1!1s0x882b332fbbb0c383:0xd9cebd5e81389b99",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJg8Owuy8zK4gRmZs4gV69ztk",
+      "name": "Granite Brewery & Tied House",
+      "address": "245 Eglinton Ave E, Toronto",
+      "lat": 43.7080556,
+      "lng": -79.3897222,
+      "primaryType": "brewpub",
+      "primaryTypeLabel": "Brewpub",
+      "types": [
+        "brewpub",
+        "brewery",
+        "pub",
+        "bar",
+        "manufacturer",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "rating": 4.5,
+      "reviewCount": 938,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 0,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://www.granitebrewery.ca/",
+      "summary": "Neighbourhood brewpub with front & back patios, serving homestyle & English-inspired fare.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=15694689965025303449&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Grazie Ristorante",
+      "normalizedTitle": "grazie ristorante",
+      "cid": "0x8117c5e21bea71bc",
+      "featureId": "0x882b332312be25ff:0x8117c5e21bea71bc",
+      "url": "https://www.google.com/maps/place/Grazie+Ristorante/data=!4m2!3m1!1s0x882b332312be25ff:0x8117c5e21bea71bc",
+      "reasons": [
+        "overpriced"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJ_yW-EiMzK4gRvHHqG-LFF4E",
+      "name": "Grazie Ristorante",
+      "address": "2373 Yonge St, Toronto",
+      "lat": 43.7093346,
+      "lng": -79.3986467,
+      "primaryType": "italian_restaurant",
+      "primaryTypeLabel": "Italian restaurant",
+      "types": [
+        "italian_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "rating": 4.5,
+      "reviewCount": 3760,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://www.grazie.ca/",
+      "summary": "Pasta, pizza & other familiar Italian dishes served in a relaxed, vibrant space.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=9302121130278678972&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Hana Don Japanese Cuisine & Bar",
+      "normalizedTitle": "hana don japanese cuisine bar",
+      "cid": "0xee569cc0501459cb",
+      "featureId": "0x89d4d37445f95da3:0xee569cc0501459cb",
+      "url": "https://www.google.com/maps/place/Hana+Don+Japanese+Cuisine+%26+Bar/data=!4m2!3m1!1s0x89d4d37445f95da3:0xee569cc0501459cb",
+      "reasons": [
+        "inauthentic"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJo135RXTT1IkRy1kUUMCcVu4",
+      "name": "Hana Don Japanese Cuisine & Bar",
+      "address": "1800 Sheppard Ave E Unit 2020, North York",
+      "lat": 43.7774091,
+      "lng": -79.3444481,
+      "primaryType": "japanese_restaurant",
+      "primaryTypeLabel": "Japanese restaurant",
+      "types": [
+        "sushi_restaurant",
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": null,
+      "rating": 4.1,
+      "reviewCount": 630,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://hanadon.ca/",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=17174086578815130059&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Hangout Street",
+      "normalizedTitle": "hangout street",
+      "cid": "0xeb0d45f2ff16bcc3",
+      "featureId": "0x89d4cb5453b15895:0xeb0d45f2ff16bcc3",
+      "url": "https://www.google.com/maps/place/Hangout+Street/data=!4m2!3m1!1s0x89d4cb5453b15895:0xeb0d45f2ff16bcc3",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJlVixU1TL1IkRw7wW__JFDes",
+      "name": "Hangout Street",
+      "address": "181 Parliament St, Toronto",
+      "lat": 43.655891,
+      "lng": -79.3644261,
+      "primaryType": "food_court",
+      "primaryTypeLabel": "Food court",
+      "types": [
+        "food_court",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": null,
+      "rating": 4.6,
+      "reviewCount": 34,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": null,
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=16937270683574385859&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Hazel's Diner",
+      "normalizedTitle": "hazel s diner",
+      "cid": "0x2dac57aad1579d49",
+      "featureId": "0x882b333135e0e85f:0x2dac57aad1579d49",
+      "url": "https://www.google.com/maps/place/Hazel's+Diner/data=!4m2!3m1!1s0x882b333135e0e85f:0x2dac57aad1579d49",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJX-jgNTEzK4gRSZ1X0apXrC0",
+      "name": "Hazel's Diner",
+      "address": "523 Mt Pleasant Rd, Toronto",
+      "lat": 43.7021162,
+      "lng": -79.38748269999999,
+      "primaryType": "diner",
+      "primaryTypeLabel": "Diner",
+      "types": [
+        "diner",
+        "breakfast_restaurant",
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "rating": 4.5,
+      "reviewCount": 491,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://hazelsdiner.ca/",
+      "summary": "Cozy haunt with booth seating serving breakfast standards plus sandwiches & burgers.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=3291101818869226825&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "House Of Gourmet",
+      "normalizedTitle": "house of gourmet",
+      "cid": "0x855eeb280fca7897",
+      "featureId": "0x882b34c380b1bab9:0x855eeb280fca7897",
+      "url": "https://www.google.com/maps/place/House+Of+Gourmet/data=!4m2!3m1!1s0x882b34c380b1bab9:0x855eeb280fca7897",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJubqxgMM0K4gRl3jKDyjrXoU",
+      "name": "House Of Gourmet",
+      "address": "484 Dundas St W, Toronto",
+      "lat": 43.653244799999996,
+      "lng": -79.39720919999999,
+      "primaryType": "cantonese_restaurant",
+      "primaryTypeLabel": "Cantonese restaurant",
+      "types": [
+        "cantonese_restaurant",
+        "chinese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "rating": 4,
+      "reviewCount": 3322,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 2,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://www.houseofgourmet.ca/",
+      "summary": "Compact Chinese seafood restaurant providing simple cooking in informal surroundings.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=9610377212151363735&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Java House",
+      "normalizedTitle": "java house",
+      "cid": "0xd6c523b6fa1a7288",
+      "featureId": "0x882b34dc523d6f01:0xd6c523b6fa1a7288",
+      "url": "https://www.google.com/maps/place/Java+House/data=!4m2!3m1!1s0x882b34dc523d6f01:0xd6c523b6fa1a7288",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJAW89Utw0K4gRiHIa-rYjxdY",
+      "name": "Java House",
+      "address": "537 Queen St W, Toronto",
+      "lat": 43.647903,
+      "lng": -79.399754,
+      "primaryType": "restaurant",
+      "primaryTypeLabel": "Restaurant",
+      "types": [
+        "restaurant",
+        "cafe",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "rating": 4.1,
+      "reviewCount": 1292,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 2,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 2,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 2,
+            "minute": 30
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://javahousetoronto.com/?utm_source=google&utm_medium=maps&utm_campaign=website",
+      "summary": "Comfy spot for informal eats, such as all-day breakfasts, pad Thai & fajitas, plus pitchers & pints.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=15475814963315634824&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Jimmy John's",
+      "normalizedTitle": "jimmy john s",
+      "cid": "0x45b02fc689e06028",
+      "featureId": "0x882b350010b37adb:0x45b02fc689e06028",
+      "url": "https://www.google.com/maps/place/Jimmy+John's/data=!4m2!3m1!1s0x882b350010b37adb:0x45b02fc689e06028",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJ23qzEAA1K4gRKGDgicYvsEU",
+      "name": "Jimmy John's",
+      "address": "299 King St W, Toronto",
+      "lat": 43.6464064,
+      "lng": -79.3900986,
+      "primaryType": "fast_food_restaurant",
+      "primaryTypeLabel": "Fast food restaurant",
+      "types": [
+        "fast_food_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": null,
+      "rating": 4.6,
+      "reviewCount": 110,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://jimmyjohns.ca/",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=5021566114281316392&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Jing Chinese Restaurant",
+      "normalizedTitle": "jing chinese restaurant",
+      "cid": "0x99777a5603ac9f69",
+      "featureId": "0x89d4cd68b5061603:0x99777a5603ac9f69",
+      "url": "https://www.google.com/maps/place/Jing+Chinese+Restaurant/data=!4m2!3m1!1s0x89d4cd68b5061603:0x99777a5603ac9f69",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJAxYGtWjN1IkRaZ-sA1Z6d5k",
+      "name": "Jing Chinese Restaurant",
+      "address": "1634 Bayview Ave A, Toronto",
+      "lat": 43.7066972,
+      "lng": -79.37581320000001,
+      "primaryType": "restaurant",
+      "primaryTypeLabel": "Restaurant",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": null,
+      "rating": 4.4,
+      "reviewCount": 377,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://jingrestaurant.ca/",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=11058441919878963049&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Joanne's Deli",
+      "normalizedTitle": "joanne s deli",
+      "cid": "0x3cc564cebb4eac42",
+      "featureId": "0x882b332f893971a3:0x3cc564cebb4eac42",
+      "url": "https://www.google.com/maps/place/Joanne's+Deli/data=!4m2!3m1!1s0x882b332f893971a3:0x3cc564cebb4eac42",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJo3E5iS8zK4gRQqxOu85kxTw",
+      "name": "Joanne's Deli",
+      "address": "234 Eglinton Ave E, Toronto",
+      "lat": 43.7085471,
+      "lng": -79.3913023,
+      "primaryType": "deli",
+      "primaryTypeLabel": "Deli",
+      "types": [
+        "deli",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": null,
+      "rating": 4.8,
+      "reviewCount": 172,
+      "openingHours": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://joannesdeli.com/",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=4379017051756211266&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Juicy Dumpling",
+      "normalizedTitle": "juicy dumpling",
+      "cid": "0xacd47b1c73955319",
+      "featureId": "0x882b3500043c08ab:0xacd47b1c73955319",
+      "url": "https://www.google.com/maps/place/Juicy+Dumpling/data=!4m2!3m1!1s0x882b3500043c08ab:0xacd47b1c73955319",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJqwg8BAA1K4gRGVOVcxx71Kw",
+      "name": "Juicy Dumpling",
+      "address": "280 Spadina Ave., Toronto",
+      "lat": 43.6525773,
+      "lng": -79.3987057,
+      "primaryType": "dumpling_restaurant",
+      "primaryTypeLabel": "Dumpling restaurant",
+      "types": [
+        "dumpling_restaurant",
+        "fast_food_restaurant",
+        "chinese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "rating": 4.5,
+      "reviewCount": 3971,
+      "openingHours": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 0,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://www.juicydumpling.ca/",
+      "summary": "Compact counter serve offering Shanghai-style dumplings, wonton soups & fried chicken.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=12453714231714730777&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Kadak Toronto",
+      "normalizedTitle": "kadak toronto",
+      "cid": "0x577918a5b4f38714",
+      "featureId": "0x882b33007d2d8d6f:0x577918a5b4f38714",
+      "url": "https://www.google.com/maps/place/Kadak+Toronto/data=!4m2!3m1!1s0x882b33007d2d8d6f:0x577918a5b4f38714",
+      "reasons": [
+        "overpriced"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJb40tfQAzK4gRFIfztKUYeVc",
+      "name": "Kadak Toronto",
+      "address": "2088 Yonge St, Toronto",
+      "lat": 43.7022385,
+      "lng": -79.39759819999999,
+      "primaryType": "indian_restaurant",
+      "primaryTypeLabel": "Indian restaurant",
+      "types": [
+        "indian_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": null,
+      "rating": 4.7,
+      "reviewCount": 730,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://www.kadak.ca/",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=6303096253466248980&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Kaikaki Japanese Cuisine",
+      "normalizedTitle": "kaikaki japanese cuisine",
+      "cid": "0x1ad4b48479b1c8fb",
+      "featureId": "0x882b2d27fbb2b217:0x1ad4b48479b1c8fb",
+      "url": "https://www.google.com/maps/place/Kaikaki+Japanese+Cuisine/data=!4m2!3m1!1s0x882b2d27fbb2b217:0x1ad4b48479b1c8fb",
+      "reasons": [
+        "inauthentic"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJF7Ky-yctK4gR-8ixeYS01Bo",
+      "name": "Kaikaki Japanese Cuisine",
+      "address": "3307 Bayview Ave, North York",
+      "lat": 43.7918227,
+      "lng": -79.3924588,
+      "primaryType": "japanese_restaurant",
+      "primaryTypeLabel": "Japanese restaurant",
+      "types": [
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "rating": 4.3,
+      "reviewCount": 531,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://kaikaki.ca/",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=1933368621119162619&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Kensington Kitchen",
+      "normalizedTitle": "kensington kitchen",
+      "cid": "0xcb21a102aae664ea",
+      "featureId": "0x882b35c55a456e55:0xcb21a102aae664ea",
+      "url": "https://www.google.com/maps/place/Kensington+Kitchen/data=!4m2!3m1!1s0x882b35c55a456e55:0xcb21a102aae664ea",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJVW5FWsU1K4gR6mTmqgKhIcs",
+      "name": "Kensington Kitchen",
+      "address": "255 Augusta Ave, Toronto",
+      "lat": 43.655168700000004,
+      "lng": -79.4021133,
+      "primaryType": "meal_takeaway",
+      "primaryTypeLabel": "Takeout restaurant",
+      "types": [
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": null,
+      "rating": 4.8,
+      "reviewCount": 197,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 0,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": null,
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=14637157296760055018&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "KINTON RAMEN KOREATOWN",
+      "normalizedTitle": "kinton ramen koreatown",
+      "cid": "0x1a8a362f69ec608",
+      "featureId": "0x882b348d075a6d53:0x1a8a362f69ec608",
+      "url": "https://www.google.com/maps/place/KINTON+RAMEN+KOREATOWN/data=!4m2!3m1!1s0x882b348d075a6d53:0x1a8a362f69ec608",
+      "reasons": [
+        "bad_quality",
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 2,
+      "confidence": "cid_exact",
+      "placeId": "ChIJU21aB400K4gRCMae9mKjqAE",
+      "name": "KINTON RAMEN KOREATOWN",
+      "address": "668 Bloor St W, Toronto",
+      "lat": 43.6642004,
+      "lng": -79.4163531,
+      "primaryType": "ramen_restaurant",
+      "primaryTypeLabel": "Ramen restaurant",
+      "types": [
+        "ramen_restaurant",
+        "noodle_shop",
+        "japanese_restaurant",
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "rating": 4.5,
+      "reviewCount": 2462,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 30
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://www.kintonramen.com/location/kinton-ramen-koreatown/?utm_source=google&utm_medium=organic&utm_campaign=gbp-listing&utm_content=kinton-ramen-koreatown",
+      "summary": "Bar stools line the open kitchen at this modern & simple place offering custom ramen bowls & tapas.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=119525035565041160&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "La Carnita",
+      "normalizedTitle": "la carnita",
+      "cid": "0x2103349d44fac1ea",
+      "featureId": "0x882b34d060af3fd1:0x2103349d44fac1ea",
+      "url": "https://www.google.com/maps/place/La+Carnita/data=!4m2!3m1!1s0x882b34d060af3fd1:0x2103349d44fac1ea",
+      "reasons": [
+        "inauthentic"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJ0T-vYNA0K4gR6sH6RJ00AyE",
+      "name": "La Carnita",
+      "address": "106 John St, Toronto",
+      "lat": 43.6471367,
+      "lng": -79.39013,
+      "primaryType": "restaurant",
+      "primaryTypeLabel": "Restaurant",
+      "types": [
+        "restaurant",
+        "mexican_restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "rating": 4.1,
+      "reviewCount": 4754,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 0,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://lacarnita.com/",
+      "summary": "Creative tacos & craft beer served in an edgy space with graffiti-style murals & hip-hop soundtrack.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=2378802878253548010&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Mad Radish l Healthy Restaurant & Catering",
+      "normalizedTitle": "mad radish l healthy restaurant catering",
+      "cid": "0x91aea93d650b1ccd",
+      "featureId": "0x882b3537547b9a8d:0x91aea93d650b1ccd",
+      "url": "https://www.google.com/maps/place/Mad+Radish+l+Healthy+Restaurant+%26+Catering/data=!4m2!3m1!1s0x882b3537547b9a8d:0x91aea93d650b1ccd",
+      "reasons": [
+        "inauthentic"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJjZp7VDc1K4gRzRwLZT2prpE",
+      "name": "Mad Radish l Healthy Restaurant & Catering",
+      "address": "120 Bloor St E, Toronto",
+      "lat": 43.6710357,
+      "lng": -79.3840416,
+      "primaryType": "restaurant",
+      "primaryTypeLabel": "Restaurant",
+      "types": [
+        "burrito_restaurant",
+        "chicken_restaurant",
+        "salad_shop",
+        "fast_food_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "rating": 4.5,
+      "reviewCount": 537,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://www.madradish.com/",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=10497513862600531149&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Mandarin Restaurant",
+      "normalizedTitle": "mandarin restaurant",
+      "cid": "0x3b6c4bbd262e1dbb",
+      "featureId": "0x882b2dfd8f94a9b3:0x3b6c4bbd262e1dbb",
+      "url": "https://www.google.com/maps/place/Mandarin+Restaurant/data=!4m2!3m1!1s0x882b2dfd8f94a9b3:0x3b6c4bbd262e1dbb",
+      "reasons": [
+        "bad_quality",
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 2,
+      "confidence": "cid_exact",
+      "placeId": "ChIJs6mUj_0tK4gRux0uJr1LbDs",
+      "name": "Mandarin Restaurant",
+      "address": "1027 Finch Ave W, North York",
+      "lat": 43.7673515,
+      "lng": -79.4695285,
+      "primaryType": "restaurant",
+      "primaryTypeLabel": "Restaurant",
+      "types": [
+        "restaurant",
+        "buffet_restaurant",
+        "sushi_restaurant",
+        "asian_restaurant",
+        "family_restaurant",
+        "seafood_restaurant",
+        "chinese_restaurant",
+        "meal_takeaway",
+        "japanese_restaurant",
+        "service",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "rating": 4.7,
+      "reviewCount": 14190,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 0,
+            "hour": 16,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 16,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://www.mandarinrestaurant.com/",
+      "summary": "Extensive buffet in a casual space offering local & Chinese dishes, as well as sushi.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=4281880621483957691&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "McSorley's Wonderful Saloon & Grill",
+      "normalizedTitle": "mcsorley s wonderful saloon grill",
+      "cid": "0xd1965a404d125f6f",
+      "featureId": "0x89d4cccde2c95b91:0xd1965a404d125f6f",
+      "url": "https://www.google.com/maps/place/McSorley's+Wonderful+Saloon+%26+Grill/data=!4m2!3m1!1s0x89d4cccde2c95b91:0xd1965a404d125f6f",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJkVvJ4s3M1IkRb18STUBaltE",
+      "name": "McSorley's Wonderful Saloon & Grill",
+      "address": "1544 Bayview Ave, Toronto",
+      "lat": 43.704737,
+      "lng": -79.375121,
+      "primaryType": "bar_and_grill",
+      "primaryTypeLabel": "Bar & grill",
+      "types": [
+        "bar_and_grill",
+        "pub",
+        "meal_takeaway",
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "rating": 4.3,
+      "reviewCount": 683,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://www.mcsorleys.ca/",
+      "summary": "Festive hangout featuring over a dozen big-screen TVs, plus a wide draft selection & a pub grub.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=15102357632650993519&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Miku Toronto",
+      "normalizedTitle": "miku toronto",
+      "cid": "0xa58893d17557ef2a",
+      "featureId": "0x89d4cb2a5661156d:0xa58893d17557ef2a",
+      "url": "https://www.google.com/maps/place/Miku+Toronto/data=!4m2!3m1!1s0x89d4cb2a5661156d:0xa58893d17557ef2a",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJbRVhVirL1IkRKu9XddGTiKU",
+      "name": "Miku Toronto",
+      "address": "Waterpark Place, 10 Bay St. #105, Toronto",
+      "lat": 43.641148099999995,
+      "lng": -79.37753359999999,
+      "primaryType": "japanese_restaurant",
+      "primaryTypeLabel": "Japanese restaurant",
+      "types": [
+        "sushi_restaurant",
+        "bar",
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "rating": 4.5,
+      "reviewCount": 4442,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 16,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 16,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://mikutoronto.com/",
+      "summary": "Flame-seared sushi is the specialty at this Japanese fine-dining destination with soaring ceilings.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=11927946140916903722&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Montana’s BBQ & Bar",
+      "normalizedTitle": "montana s bbq bar",
+      "cid": "0xd0f736678da881",
+      "featureId": "0x882b2e763b4eb679:0xd0f736678da881",
+      "url": "https://www.google.com/maps/place/Montana%E2%80%99s+BBQ+%26+Bar/data=!4m2!3m1!1s0x882b2e763b4eb679:0xd0f736678da881",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJebZOO3YuK4gRgaiNZzb30AA",
+      "name": "Montana’s BBQ & Bar",
+      "address": "2011 Steeles Ave W, North York",
+      "lat": 43.786608199999996,
+      "lng": -79.47147819999999,
+      "primaryType": "restaurant",
+      "primaryTypeLabel": "Restaurant",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "rating": 4.6,
+      "reviewCount": 6555,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 0,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://www.montanas.ca/en/locations/on/north-york/2011-steeles-ave-w",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=58818608193448065&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Moxies Toronto Downtown Restaurant",
+      "normalizedTitle": "moxies toronto downtown restaurant",
+      "cid": "0xdc1f8f230d2da2a4",
+      "featureId": "0x882b34d3c90773ed:0xdc1f8f230d2da2a4",
+      "url": "https://www.google.com/maps/place/Moxies+Toronto+Downtown+Restaurant/data=!4m2!3m1!1s0x882b34d3c90773ed:0xdc1f8f230d2da2a4",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJ7XMHydM0K4gRpKItDSOPH9w",
+      "name": "Moxies Toronto Downtown Restaurant",
+      "address": "70 University Ave, Toronto",
+      "lat": 43.6464675,
+      "lng": -79.3844654,
+      "primaryType": "restaurant",
+      "primaryTypeLabel": "Restaurant",
+      "types": [
+        "restaurant",
+        "brunch_restaurant",
+        "steak_house",
+        "cocktail_bar",
+        "bar_and_grill",
+        "bar",
+        "event_venue",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "rating": 4.2,
+      "reviewCount": 3508,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 1,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://moxies.ca/restaurants/toronto-downtown/?utm_source=GMB&utm_medium=google-location-listing&utm_campaign=organic",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=15861553793329898148&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Oxtail Pho & Banh Mi",
+      "normalizedTitle": "oxtail pho banh mi",
+      "cid": "0xde9b53cbcd41a6ab",
+      "featureId": "0x882b34ef565fed9f:0xde9b53cbcd41a6ab",
+      "url": "https://www.google.com/maps/place/Oxtail+Pho+%26+Banh+Mi/data=!4m2!3m1!1s0x882b34ef565fed9f:0xde9b53cbcd41a6ab",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "supersedes": "Oxtail Pho & Banh Mi",
+      "confidence": "cid_exact",
+      "placeId": "ChIJn-1fVu80K4gRq6ZBzctTm94",
+      "name": "Oxtail Pho & Banh Mi",
+      "address": "814 Dundas St W, Toronto",
+      "lat": 43.651889399999995,
+      "lng": -79.40899929999999,
+      "primaryType": "vietnamese_restaurant",
+      "primaryTypeLabel": "Vietnamese restaurant",
+      "types": [
+        "vietnamese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "rating": 4.3,
+      "reviewCount": 690,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 4,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 4,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 4,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 4,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 4,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 5,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 5,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://oxtailpho.ca/",
+      "summary": "Humble eatery serving classic Vietnamese fare such as noodle soups, rice dishes & sandwiches.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=16040506632597251755&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Piano Piano",
+      "normalizedTitle": "piano piano",
+      "cid": "0xa6ab9538cf42a9ba",
+      "featureId": "0x882b337977abfa0b:0xa6ab9538cf42a9ba",
+      "url": "https://www.google.com/maps/place/Piano+Piano/data=!4m2!3m1!1s0x882b337977abfa0b:0xa6ab9538cf42a9ba",
+      "reasons": [
+        "bad_quality",
+        "inauthentic",
+        "overpriced",
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 4,
+      "confidence": "cid_exact",
+      "placeId": "ChIJC_qrd3kzK4gRuqlCzziVq6Y",
+      "name": "Piano Piano",
+      "address": "623 Mt Pleasant Rd, Toronto",
+      "lat": 43.704521899999996,
+      "lng": -79.38832819999999,
+      "primaryType": "italian_restaurant",
+      "primaryTypeLabel": "Italian restaurant",
+      "types": [
+        "italian_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "rating": 4.2,
+      "reviewCount": 947,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 30
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://www.pianopianotherestaurant.com/",
+      "summary": "Classic Italian dishes served in a bright, artful venue featuring multiple dining areas & a bar.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=12009856902541519290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Pickle Barrel",
+      "normalizedTitle": "pickle barrel",
+      "cid": "0x3f13f8b4f923960c",
+      "featureId": "0x882b333cb7b0bbdb:0x3f13f8b4f923960c",
+      "url": "https://www.google.com/maps/place/Pickle+Barrel/data=!4m2!3m1!1s0x882b333cb7b0bbdb:0x3f13f8b4f923960c",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJ27uwtzwzK4gRDJYj-bT4Ez8",
+      "name": "Pickle Barrel",
+      "address": "2300 Yonge St, Toronto",
+      "lat": 43.7072347,
+      "lng": -79.39895179999999,
+      "primaryType": "restaurant",
+      "primaryTypeLabel": "Restaurant",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "rating": 4.3,
+      "reviewCount": 3075,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://www.picklebarrel.ca/en/locations/on/toronto/2300-yonge-st.",
+      "summary": "Market-fresh comfort food, plus beer & wine in a long-standing, down-to-earth locale.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=4545249905104623116&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Ramona’s Kitchen",
+      "normalizedTitle": "ramona s kitchen",
+      "cid": "0x1baff99888bb295e",
+      "featureId": "0x89d4cd5777112245:0x1baff99888bb295e",
+      "url": "https://www.google.com/maps/place/Ramona%E2%80%99s+Kitchen/data=!4m2!3m1!1s0x89d4cd5777112245:0x1baff99888bb295e",
+      "reasons": [
+        "inauthentic"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJRSIRd1fN1IkRXim7iJj5rxs",
+      "name": "Ramona’s Kitchen",
+      "address": "1608 Bayview Ave, Toronto",
+      "lat": 43.706185,
+      "lng": -79.37551549999999,
+      "primaryType": "restaurant",
+      "primaryTypeLabel": "Restaurant",
+      "types": [
+        "restaurant",
+        "brunch_restaurant",
+        "breakfast_restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": null,
+      "rating": 4.8,
+      "reviewCount": 1410,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 21,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://ramonaskitchen.ca/",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=1995087593472731486&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Ristorante Sotto Sotto",
+      "normalizedTitle": "ristorante sotto sotto",
+      "cid": "0x3028fc7df1953a91",
+      "featureId": "0x882b34a41a0c7531:0x3028fc7df1953a91",
+      "url": "https://www.google.com/maps/place/Ristorante+Sotto+Sotto/data=!4m2!3m1!1s0x882b34a41a0c7531:0x3028fc7df1953a91",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "supersedes": "Ristorante Sotto Sotto",
+      "confidence": "cid_exact",
+      "placeId": "ChIJMXUMGqQ0K4gRkTqV8X38KDA",
+      "name": "Ristorante Sotto Sotto",
+      "address": "120 Avenue Rd, Toronto",
+      "lat": 43.6737982,
+      "lng": -79.396393,
+      "primaryType": "italian_restaurant",
+      "primaryTypeLabel": "Italian restaurant",
+      "types": [
+        "italian_restaurant",
+        "fine_dining_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "rating": 4.3,
+      "reviewCount": 1423,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://www.sottosotto.ca/",
+      "summary": "Upscale trattoria serving traditional dishes from South-Central Italy.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=3470301130743167633&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "RUDY",
+      "normalizedTitle": "rudy",
+      "cid": "0x1856e4c097f0ef13",
+      "featureId": "0x882b35d5a5cba85f:0x1856e4c097f0ef13",
+      "url": "https://www.google.com/maps/place/RUDY/data=!4m2!3m1!1s0x882b35d5a5cba85f:0x1856e4c097f0ef13",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJX6jLpdU1K4gRE-_wl8DkVhg",
+      "name": "RUDY",
+      "address": "69 Duncan St, Toronto",
+      "lat": 43.6500592,
+      "lng": -79.3891865,
+      "primaryType": "meal_takeaway",
+      "primaryTypeLabel": "Takeout restaurant",
+      "types": [
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": null,
+      "rating": 4.3,
+      "reviewCount": 1398,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 4,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 4,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://orders.rudyresto.com/",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=1753840620741390099&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Saigon Lotus",
+      "normalizedTitle": "saigon lotus",
+      "cid": "0xf2a993aef3481e2a",
+      "featureId": "0x882b34c3c751a4bf:0xf2a993aef3481e2a",
+      "url": "https://www.google.com/maps/place/Saigon+Lotus/data=!4m2!3m1!1s0x882b34c3c751a4bf:0xf2a993aef3481e2a",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJv6RRx8M0K4gRKh5I866TqfI",
+      "name": "Saigon Lotus",
+      "address": "6 St Andrew St, Toronto",
+      "lat": 43.65441020000001,
+      "lng": -79.3992766,
+      "primaryType": "vietnamese_restaurant",
+      "primaryTypeLabel": "Vietnamese restaurant",
+      "types": [
+        "vietnamese_restaurant",
+        "vegan_restaurant",
+        "vegetarian_restaurant",
+        "asian_restaurant",
+        "thai_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "rating": 4.6,
+      "reviewCount": 1876,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://www.saigonlotus.ca/",
+      "summary": "Simple tables adorn this Vietnamese & Thai restaurant, which also has a robust exotic drink menu.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=17485669407857843754&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Salad King",
+      "normalizedTitle": "salad king",
+      "cid": "0xdddf2291d1c79ad2",
+      "featureId": "0x882b34cac79b46d9:0xdddf2291d1c79ad2",
+      "url": "https://www.google.com/maps/place/Salad+King/data=!4m2!3m1!1s0x882b34cac79b46d9:0xdddf2291d1c79ad2",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJ2Uabx8o0K4gR0prH0ZEi390",
+      "name": "Salad King",
+      "address": "340 Yonge St, Toronto",
+      "lat": 43.6577202,
+      "lng": -79.3816274,
+      "primaryType": "thai_restaurant",
+      "primaryTypeLabel": "Thai restaurant",
+      "types": [
+        "thai_restaurant",
+        "vegan_restaurant",
+        "vegetarian_restaurant",
+        "halal_restaurant",
+        "meal_delivery",
+        "food_delivery",
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "rating": 4.3,
+      "reviewCount": 5469,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 21,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://www.saladking.com/",
+      "summary": "Thai eatery serving noodles, curries & salads, with communal tables & a choice of spice levels.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=15987535211873671890&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "SMOKESHOW bbq and brew",
+      "normalizedTitle": "smokeshow bbq and brew",
+      "cid": "0x1c6f8054baac1d66",
+      "featureId": "0x882b3311b9eb7fcf:0x1c6f8054baac1d66",
+      "url": "https://www.google.com/maps/place/SMOKESHOW+bbq+and+brew/data=!4m2!3m1!1s0x882b3311b9eb7fcf:0x1c6f8054baac1d66",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJz3_ruREzK4gRZh2sulSAbxw",
+      "name": "SMOKESHOW bbq and brew",
+      "address": "744 Mt Pleasant Rd, Toronto",
+      "lat": 43.707167399999996,
+      "lng": -79.3900448,
+      "primaryType": "barbecue_restaurant",
+      "primaryTypeLabel": "Barbecue restaurant",
+      "types": [
+        "barbecue_restaurant",
+        "live_music_venue",
+        "event_venue",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "rating": 3.9,
+      "reviewCount": 1564,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 13,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 15,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 15,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 13,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 2,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://www.smokeshowbbqandbrew.com/",
+      "summary": "Live bands play regularly at this laid-back venue with many screens dishing out BBQ fare & burgers.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=2048997456874315110&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Social Llama Cafe",
+      "normalizedTitle": "social llama cafe",
+      "cid": "0x31e8c19d1a0f12ed",
+      "featureId": "0x882b33077466d665:0x31e8c19d1a0f12ed",
+      "url": "https://www.google.com/maps/place/Social+Llama+Cafe/data=!4m2!3m1!1s0x882b33077466d665:0x31e8c19d1a0f12ed",
+      "reasons": [
+        "inauthentic"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJZdZmdAczK4gR7RIPGp3B6DE",
+      "name": "Social Llama Cafe",
+      "address": "2107 Yonge St, Toronto",
+      "lat": 43.703234599999995,
+      "lng": -79.39740259999999,
+      "primaryType": "restaurant",
+      "primaryTypeLabel": "Restaurant",
+      "types": [
+        "restaurant",
+        "vegan_restaurant",
+        "vegetarian_restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": null,
+      "rating": 4.9,
+      "reviewCount": 349,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://socialllamacafe.ca/",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=3596337182946562797&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Spano’s Diner",
+      "normalizedTitle": "spano s diner",
+      "cid": "0xcd24a8468d5fa621",
+      "featureId": "0x882b337a921887c5:0xcd24a8468d5fa621",
+      "url": "https://www.google.com/maps/place/Spano%E2%80%99s+Diner/data=!4m2!3m1!1s0x882b337a921887c5:0xcd24a8468d5fa621",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJxYcYknozK4gRIaZfjUaoJM0",
+      "name": "Spano’s Diner",
+      "address": "1 Hafis Rd unit #3, North York",
+      "lat": 43.7057874,
+      "lng": -79.4702241,
+      "primaryType": "restaurant",
+      "primaryTypeLabel": "Restaurant",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": null,
+      "rating": 4.8,
+      "reviewCount": 167,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 21,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://www.spanodiner.ca/",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=14782124897909843489&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "The Fortunate Fox",
+      "normalizedTitle": "the fortunate fox",
+      "cid": "0xef8f6c6ccdea5f12",
+      "featureId": "0x882b351517c824a1:0xef8f6c6ccdea5f12",
+      "url": "https://www.google.com/maps/place/The+Fortunate+Fox/data=!4m2!3m1!1s0x882b351517c824a1:0xef8f6c6ccdea5f12",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJoSTIFxU1K4gREl_qzWxsj-8",
+      "name": "The Fortunate Fox",
+      "address": "280 Bloor St W, Toronto",
+      "lat": 43.667504799999996,
+      "lng": -79.4009224,
+      "primaryType": "restaurant",
+      "primaryTypeLabel": "Restaurant",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "rating": 4.1,
+      "reviewCount": 913,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 2,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://thefortunatefox.com/",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=17262135111301357330&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "The Hand Roll Sushi Bar",
+      "normalizedTitle": "the hand roll sushi bar",
+      "cid": "0xc4689cf826a06c19",
+      "featureId": "0x882b357227857ea1:0xc4689cf826a06c19",
+      "url": "https://www.google.com/maps/place/The+Hand+Roll+Sushi+Bar/data=!4m2!3m1!1s0x882b357227857ea1:0xc4689cf826a06c19",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJoX6FJ3I1K4gRGWygJvicaMQ",
+      "name": "The Hand Roll Sushi Bar",
+      "address": "717 Bay St., Toronto",
+      "lat": 43.6588092,
+      "lng": -79.3846555,
+      "primaryType": "japanese_restaurant",
+      "primaryTypeLabel": "Japanese restaurant",
+      "types": [
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": null,
+      "rating": 4.6,
+      "reviewCount": 228,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 30
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": null,
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=14152734418625653785&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "To-Ne Sushi",
+      "normalizedTitle": "to ne sushi",
+      "cid": "0x77742f2455147770",
+      "featureId": "0x882b34dc85d3c469:0x77742f2455147770",
+      "url": "https://www.google.com/maps/place/To-Ne+Sushi/data=!4m2!3m1!1s0x882b34dc85d3c469:0x77742f2455147770",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJacTThdw0K4gRcHcUVSQvdHc",
+      "name": "To-Ne Sushi",
+      "address": "414 Queen St W, Toronto",
+      "lat": 43.6486368,
+      "lng": -79.39778559999999,
+      "primaryType": "sushi_restaurant",
+      "primaryTypeLabel": "Sushi restaurant",
+      "types": [
+        "sushi_restaurant",
+        "asian_restaurant",
+        "meal_delivery",
+        "food_delivery",
+        "meal_takeaway",
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "rating": 4.5,
+      "reviewCount": 1676,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 50
+          },
+          "close": {
+            "day": 1,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 50
+          },
+          "close": {
+            "day": 2,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 50
+          },
+          "close": {
+            "day": 3,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 50
+          },
+          "close": {
+            "day": 4,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 50
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 50
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://www.tonesushi.ca/",
+      "summary": "Japanese seafood option with a varied menu, adventurous presentations & comfortable decor.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=8607556620904593264&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "TOKYO GRILL at North York",
+      "normalizedTitle": "tokyo grill at north york",
+      "cid": "0xb7124d083471d29d",
+      "featureId": "0x882b2dd3ea5df8a3:0xb7124d083471d29d",
+      "url": "https://www.google.com/maps/place/TOKYO+GRILL+at+North+York/data=!4m2!3m1!1s0x882b2dd3ea5df8a3:0xb7124d083471d29d",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJo_hd6tMtK4gRndJxNAhNErc",
+      "name": "TOKYO GRILL at North York",
+      "address": "5175 Yonge St, North York",
+      "lat": 43.7699881,
+      "lng": -79.4128243,
+      "primaryType": "japanese_restaurant",
+      "primaryTypeLabel": "Japanese restaurant",
+      "types": [
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": null,
+      "rating": 4.5,
+      "reviewCount": 1637,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 2,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://www.tokyogrill.ca/",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=13191690956156555933&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Victory Cafe",
+      "normalizedTitle": "victory cafe",
+      "cid": "0xc31179be7168ff27",
+      "featureId": "0x882b3493ffefe031:0xc31179be7168ff27",
+      "url": "https://www.google.com/maps/place/Victory+Cafe/data=!4m2!3m1!1s0x882b3493ffefe031:0xc31179be7168ff27",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJMeDv_5M0K4gRJ_9ocb55EcM",
+      "name": "Victory Cafe",
+      "address": "440 Bloor St W, Toronto",
+      "lat": 43.665825399999996,
+      "lng": -79.408552,
+      "primaryType": "bar",
+      "primaryTypeLabel": "Bar",
+      "types": [
+        "bar",
+        "pizza_delivery",
+        "meal_delivery",
+        "food_delivery",
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "rating": 4.2,
+      "reviewCount": 1350,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 2,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://victorycafe.ca/",
+      "summary": "Laid-back haunt with a patio offering a wide selection of craft beers, pub grub & wood-fired pizza.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=14056149770853482279&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Vozara Food Factory",
+      "normalizedTitle": "vozara food factory",
+      "cid": "0xc30573b52f1fb641",
+      "featureId": "0x89d4cd2d0b29656b:0xc30573b52f1fb641",
+      "url": "https://www.google.com/maps/place/Vozara+Food+Factory/data=!4m2!3m1!1s0x89d4cd2d0b29656b:0xc30573b52f1fb641",
+      "reasons": [
+        "overpriced"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJa2UpCy3N1IkRQbYfL7VzBcM",
+      "name": "Vozara Food Factory",
+      "address": "858 Eglinton Ave E, East York",
+      "lat": 43.7136439,
+      "lng": -79.3654507,
+      "primaryType": "restaurant",
+      "primaryTypeLabel": "Restaurant",
+      "types": [
+        "restaurant",
+        "persian_restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "rating": 4.5,
+      "reviewCount": 639,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 30
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "https://vozara.ca/",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=14052765434296383041&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Wilbur Mexicana",
+      "normalizedTitle": "wilbur mexicana",
+      "cid": "0xebdf6cc752312f19",
+      "featureId": "0x882b34de9542d05b:0xebdf6cc752312f19",
+      "url": "https://www.google.com/maps/place/Wilbur+Mexicana/data=!4m2!3m1!1s0x882b34de9542d05b:0xebdf6cc752312f19",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJW9BCld40K4gRGS8xUsds3-s",
+      "name": "Wilbur Mexicana",
+      "address": "552 King St W, Toronto",
+      "lat": 43.644877799999996,
+      "lng": -79.398798,
+      "primaryType": "mexican_restaurant",
+      "primaryTypeLabel": "Mexican restaurant",
+      "types": [
+        "mexican_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "rating": 4.6,
+      "reviewCount": 4729,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://wilburstacoshop.com/",
+      "summary": "This apothecary-inspired counter serve dishes up Mexican street food like tacos & burritos.",
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=16996423122052787993&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    },
+    {
+      "title": "Yummi's",
+      "normalizedTitle": "yummi s",
+      "cid": "0x6287fe83e449923d",
+      "featureId": "0x89d4cdf8ab774665:0x6287fe83e449923d",
+      "url": "https://www.google.com/maps/place/Yummi's/data=!4m2!3m1!1s0x89d4cdf8ab774665:0x6287fe83e449923d",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1,
+      "confidence": "cid_exact",
+      "placeId": "ChIJZUZ3q_jN1IkRPZJJ5IP-h2I",
+      "name": "Yummi's",
+      "address": "2020 Lawrence Ave E, Scarborough",
+      "lat": 43.745483,
+      "lng": -79.2964957,
+      "primaryType": "shawarma_restaurant",
+      "primaryTypeLabel": "Shawarma restaurant",
+      "types": [
+        "shawarma_restaurant",
+        "hamburger_restaurant",
+        "halal_restaurant",
+        "fast_food_restaurant",
+        "middle_eastern_restaurant",
+        "american_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "rating": 4.2,
+      "reviewCount": 1038,
+      "openingHours": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 2,
+            "minute": 0
+          }
+        }
+      ],
+      "utcOffsetMinutes": -240,
+      "website": "http://yummis.ca/",
+      "summary": null,
+      "businessStatus": "OPERATIONAL",
+      "googleMapsUri": "https://maps.google.com/?cid=7099923179997073981&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "enriched": true
+    }
+  ],
+  "unmatched": []
+}
