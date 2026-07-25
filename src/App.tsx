@@ -85,6 +85,14 @@ export default function App() {
       .catch(() => setLoadError("Couldn't load your places. Reload?"));
   }, []);
 
+  // Every screen change starts at the top. Picking a location from far down the
+  // gate's area list would otherwise drop you into the middle of the questions
+  // screen; the same applies going into results and back. Instant, not smooth —
+  // this is a page swap, not a scroll within one.
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [stage]);
+
   /** Cuisine -> mode, read off the hierarchy so the client needs no lexicon copy. */
   const modeOf = useMemo(() => {
     const map = new Map<string, string>();
