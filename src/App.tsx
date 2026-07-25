@@ -11,6 +11,41 @@ import type { Answers, Coords, Place, Scored, Taste } from "./lib/types";
 
 type Stage = "loading" | "locked" | "gate" | "ask" | "results";
 
+/** Nearby Search accepts at most 50 includedPrimaryTypes. */
+const MAX_TYPES = 50;
+
+/**
+ * Google place types to search for, best-liked first.
+ *
+ * Two things this has to get right, both learned the hard way:
+ *
+ * 1. Selecting *every* cuisine says exactly what selecting none says — "no
+ *    constraint" — so it uses the curated default set rather than the union.
+ *    The union runs to 87 types in savoury, and truncating that to 50 by list
+ *    order threw away Coffee, Korean, Middle Eastern, Vietnamese, Mexican and
+ *    Thai: Select All was searching a worse set than leaving the picker blank.
+ * 2. When a large-but-partial selection still overflows 50, the types that
+ *    survive are the ones attached to the most-saved cuisines. Truncation is
+ *    unavoidable; dropping the least-liked rather than the last-listed is not.
+ */
+function searchTypes(taste: Taste, answers: Answers): string[] {
+  const familiesInMode = taste.hierarchy[answers.mode] ?? [];
+  const cuisinesInMode = familiesInMode.flatMap((f) => f.styles.map((s) => s.cuisine));
+  const wanted = answers.cuisines;
+
+  const coversEverything =
+    cuisinesInMode.length > 0 && cuisinesInMode.every((c) => wanted.includes(c));
+  if (!wanted.length || coversEverything) return taste.defaultSearchTypes[answers.mode];
+
+  const styles = Object.values(taste.hierarchy)
+    .flat()
+    .flatMap((f) => f.styles)
+    .filter((s) => wanted.includes(s.cuisine))
+    .sort((a, b) => (taste.cuisineAffinity[b.cuisine] ?? 0) - (taste.cuisineAffinity[a.cuisine] ?? 0));
+
+  return [...new Set(styles.flatMap((s) => s.googleTypes))].slice(0, MAX_TYPES);
+}
+
 const DEFAULTS: Answers = {
   mode: "savoury",
   when: "now",
@@ -89,27 +124,12 @@ export default function App() {
     // as a deliberate beat rather than a flash of broken layout.
     const floor = new Promise((r) => setTimeout(r, 550));
 
-    // Cuisine -> Google place types. Falls back to the top types for the chosen
-    // mode: an unrestricted Nearby Search downtown returns franchises.
-    const wanted = answers.cuisines;
-    const types = wanted.length
-      ? [
-          ...new Set(
-            Object.values(taste.hierarchy)
-              .flat()
-              .flatMap((f) => f.styles)
-              .filter((s) => wanted.includes(s.cuisine))
-              .flatMap((s) => s.googleTypes),
-          ),
-        ]
-      : taste.defaultSearchTypes[answers.mode];
-
     try {
       const data = await post<{ places?: Place[] }>("/api/discover", {
         lat: origin.lat,
         lng: origin.lng,
         radius: Math.min(answers.radiusM, 50_000),
-        includedPrimaryTypes: types.slice(0, 50),
+        includedPrimaryTypes: searchTypes(taste, answers),
         exclude: (places ?? []).map((p) => p.i),
       });
       await floor;
