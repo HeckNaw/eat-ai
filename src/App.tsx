@@ -6,6 +6,7 @@ import { Results } from "./components/Results";
 import { Unlock } from "./components/Unlock";
 import { checkAccess, post, Unauthorized } from "./lib/api";
 import { describeWhen, targetTime } from "./lib/hours";
+import { localizeFamilies } from "./lib/local";
 import { diversify, rank } from "./lib/score";
 import type { Answers, Coords, Place, Scored, Taste } from "./lib/types";
 
@@ -108,6 +109,16 @@ export default function App() {
   }, [taste]);
 
   const at = useMemo(() => targetTime(answers.when), [answers.when, stage]);
+
+  // Craving chips re-counted and re-ordered by what's near the chosen spot, so
+  // downtown shows Chinese first and North York shows Korean — rather than the
+  // global list pinning North American at the top everywhere. Free: it counts
+  // the saved places already in the browser, no API call. See lib/local.ts.
+  const localFamilies = useMemo(() => {
+    if (!taste) return [];
+    const base = taste.hierarchy[answers.mode] ?? taste.hierarchy.savoury;
+    return localizeFamilies(base, places ?? [], origin).families;
+  }, [taste, places, origin, answers.mode]);
 
   // No filter-loosening. A craving is a hard filter — asking for coffee and
   // being shown a burger to pad the list is worse than a short list. The one
@@ -218,6 +229,7 @@ export default function App() {
       {stage === "ask" && taste && (
         <QuestionScreen
           taste={taste}
+          families={localFamilies}
           answers={answers}
           setAnswers={setAnswers}
           onGo={go}

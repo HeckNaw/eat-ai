@@ -41,6 +41,7 @@ function shortcuts(): { label: string; at: string }[] {
  */
 export function QuestionScreen({
   taste,
+  families,
   answers,
   setAnswers,
   onGo,
@@ -48,6 +49,8 @@ export function QuestionScreen({
   onChangeLocation,
 }: {
   taste: Taste;
+  /** Craving families, already re-ordered by what's near the chosen spot. */
+  families: Family[];
   answers: Answers;
   setAnswers: (a: Answers) => void;
   onGo: () => void;
@@ -57,7 +60,8 @@ export function QuestionScreen({
   const [openFamily, setOpenFamily] = useState<string | null>(null);
   const [showTime, setShowTime] = useState(typeof answers.when === "object");
 
-  const families: Family[] = taste.hierarchy[answers.mode] ?? taste.hierarchy.savoury;
+  const familyList: Family[] =
+    families.length ? families : (taste.hierarchy[answers.mode] ?? taste.hierarchy.savoury);
 
   const toggleCuisine = (c: string) => {
     const has = answers.cuisines.includes(c);
@@ -68,7 +72,7 @@ export function QuestionScreen({
   };
 
   /** Every cuisine currently on offer, i.e. within the chosen sweet/savoury mode. */
-  const allVisible = families.flatMap((f) => f.styles.map((s) => s.cuisine));
+  const allVisible = familyList.flatMap((f) => f.styles.map((s) => s.cuisine));
 
   /** Selecting a family means every style inside it. */
   const toggleFamily = (f: Family) => {
@@ -214,7 +218,7 @@ export function QuestionScreen({
           )}
         </div>
         <div className="chips">
-          {families.map((f) => {
+          {familyList.map((f) => {
             const on = f.styles.some((s) => answers.cuisines.includes(s.cuisine));
             const isOpen = openFamily === f.family;
             // A family wrapping a single cuisine has nothing to drill into, so
@@ -227,7 +231,7 @@ export function QuestionScreen({
                 <div style={{ display: "flex", gap: "0.375rem" }}>
                   <button className="chip" data-on={on} onClick={() => toggleFamily(f)}>
                     {label}
-                    <span className="chip-n">{f.count}</span>
+                    {f.count > 0 && <span className="chip-n">{f.count}</span>}
                   </button>
                   {f.styles.length > 1 && (
                     <button
@@ -252,7 +256,7 @@ export function QuestionScreen({
                             onClick={() => toggleCuisine(s.cuisine)}
                           >
                             {s.cuisine}
-                            <span className="chip-n">{s.count}</span>
+                            {s.count > 0 && <span className="chip-n">{s.count}</span>}
                           </button>
                         ))}
                       </div>
