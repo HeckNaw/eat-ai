@@ -14,6 +14,13 @@
   --bg-lift: #1b1614;
   --surface: #221c19;
   --surface-2: #2c2521;
+
+  /* Translucent equivalents. With the CHUD backdrop behind everything, opaque
+     fills read as black blocks pasted on top; letting a little texture through
+     seats the controls in the page instead. */
+  --glass: #1b1614d9;
+  --glass-lift: #221c19e6;
+  --glass-soft: #2c2521cc;
   --line: #3a312c;
   --line-bright: #4c4038;
 
@@ -224,18 +231,31 @@ h1, h2, h3 {
   z-index: 20;
   padding: 0.875rem 0 max(0.875rem, env(safe-area-inset-bottom));
   margin-top: auto;
-  background: linear-gradient(to top, var(--bg) 46%, #14100ee0 74%, transparent);
+  background: linear-gradient(to top, #14100efa 30%, #14100ecc 62%, #14100e00 100%);
 }
 
 /* --------------------------------------------------------------------------
    buttons
    -------------------------------------------------------------------------- */
 
-button {
+button,
+input,
+select,
+textarea {
   font: inherit;
   color: inherit;
+  /* WebKit paints its own button fill unless appearance is reset — without this,
+     buttons show a native dark background beneath whatever we set. */
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+button {
   border: 0;
-  background: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  background-image: none;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
@@ -266,7 +286,8 @@ button {
   padding: 0 1rem;
   border-radius: var(--r-pill);
   border: 1px solid var(--line);
-  background: var(--surface);
+  background: var(--glass-lift);
+  backdrop-filter: blur(6px);
   color: var(--ink-soft);
   font-size: 0.875rem;
   font-weight: 500;
@@ -296,7 +317,7 @@ button {
   padding: 0 0.9375rem;
   border-radius: var(--r-pill);
   border: 1px solid var(--line);
-  background: var(--bg-lift);
+  background: var(--glass);
   color: var(--ink-soft);
   font-size: 0.9375rem;
   font-weight: 500;
@@ -371,7 +392,7 @@ button {
   padding: 0 0.9375rem;
   border-radius: var(--r-pill);
   border: 1px solid var(--line);
-  background: var(--bg-lift);
+  background: var(--glass);
   color: var(--ink);
   font-family: var(--mono);
   font-size: 0.9375rem;
@@ -414,7 +435,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   padding: 0.25rem;
   border-radius: var(--r-lg);
   border: 1px solid var(--line);
-  background: var(--bg-lift);
+  background: var(--glass);
+  backdrop-filter: blur(6px);
 }
 .seg button {
   min-height: 3rem;
@@ -430,7 +452,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 .seg button:active { transform: scale(0.97); }
 .seg button[data-on="true"] {
-  background: var(--surface-2);
+  background: var(--glass-soft);
   color: var(--ink);
   box-shadow: 0 1px 0 #ffffff12 inset;
 }
@@ -461,7 +483,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   padding: 0.9375rem 1rem;
   border-radius: var(--r-lg);
   border: 1px solid var(--line);
-  background: linear-gradient(160deg, var(--surface), var(--bg-lift));
+  background: linear-gradient(160deg, #221c19ee, #1b1614e8);
+  backdrop-filter: blur(8px);
   box-shadow: var(--shadow);
   overflow: hidden;
   animation: rise 0.5s var(--out) backwards;
@@ -556,7 +579,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   padding: 1.25rem;
   border-radius: var(--r-lg);
   border: 1px solid var(--line);
-  background: var(--surface);
+  background: var(--glass-lift);
+  backdrop-filter: blur(10px);
   animation: rise 0.45s var(--out) backwards;
 }
 
@@ -599,7 +623,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   padding: 0.9375rem 1rem;
   border-radius: var(--r-lg);
   border: 1px solid var(--line);
-  background: var(--surface);
+  background: var(--glass-lift);
+  backdrop-filter: blur(8px);
   overflow: hidden;
   position: relative;
   animation: rise 0.4s var(--out) backwards;

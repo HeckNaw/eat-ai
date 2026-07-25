@@ -26,9 +26,10 @@ export function Backdrop() {
             data-dir={i % 2 === 0 ? "left" : "right"}
             style={
               {
-                // Varying the duration per row stops the field looking mechanical.
-                "--dur": `${34 + (i % 5) * 7}s`,
-                "--delay": `${i * -2.5}s`,
+                // Slow enough to read as drift rather than scrolling. Varying the
+                // duration per row stops the field looking mechanical.
+                "--dur": `${110 + (i % 5) * 22}s`,
+                "--delay": `${i * -7}s`,
               } as React.CSSProperties
             }
           >
