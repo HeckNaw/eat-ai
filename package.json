@@ -1,14 +1,17 @@
 {
-  "name": "foodlists",
+  "name": "chudly-ai",
   "private": true,
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "node scripts/build-web-data.mjs && vite",
+    "build": "node scripts/build-web-data.mjs && tsc -b && vite build",
     "preview": "vite preview",
-    "import": "python3 scripts/import_lists.py",
-    "enrich": "node scripts/enrich.mjs"
+    "data": "python3 scripts/import_lists.py && node scripts/label.mjs && node scripts/derive.mjs && node scripts/build-web-data.mjs",
+    "enrich": "node --env-file=.env scripts/enrich.mjs",
+    "label": "node scripts/label.mjs",
+    "derive": "node scripts/derive.mjs && node scripts/build-web-data.mjs",
+    "discover": "node --env-file=.env scripts/discover.mjs"
   },
   "dependencies": {
     "react": "^19.1.0",

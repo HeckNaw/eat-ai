@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-25T06:05:56.508Z",
+  "generatedAt": "2026-07-25T06:06:08.517Z",
   "basis": {
     "places": 1269,
     "withCoordinates": 1269,
@@ -2398,6 +2398,15 @@
     ],
     "sweet": [
       {
+        "cuisine": "Bakery / Pastry",
+        "count": 159,
+        "family": "Bakery & Sweets",
+        "googleTypes": [
+          "bakery",
+          "pastry_shop"
+        ]
+      },
+      {
         "cuisine": "Dessert / Ice Cream",
         "count": 111,
         "family": "Bakery & Sweets",
@@ -2407,6 +2416,15 @@
           "dessert_restaurant",
           "dessert_shop",
           "ice_cream_shop"
+        ]
+      },
+      {
+        "cuisine": "Coffee",
+        "count": 105,
+        "family": "Cafe",
+        "googleTypes": [
+          "coffee_shop",
+          "cafe"
         ]
       },
       {

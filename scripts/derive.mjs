@@ -149,7 +149,13 @@ const hierarchy = {
 // are different things.
 function chipsFor(mode) {
   return Object.entries(cuisineAffinity)
-    .filter(([k, v]) => modeOf(k) === mode && v.count >= 10)
+    .filter(([k, v]) => {
+      const m = modeOf(k);
+      // "both" belongs on the sweet side — bakeries and cafés are where you go
+      // for something sweet — but must not crowd the savoury list.
+      const ok = mode === "sweet" ? m === "sweet" || m === "both" : m === "savoury";
+      return ok && v.count >= 10;
+    })
     .slice(0, 12)
     .map(([k, v]) => ({
       cuisine: k,
