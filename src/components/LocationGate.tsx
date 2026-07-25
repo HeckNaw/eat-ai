@@ -37,23 +37,19 @@ export function LocationGate({
   return (
     <>
       <div className="panel gate">
-        <span className="greeting">Hi, Nathan!</span>
-        <span className="eyebrow">Before we start</span>
         <h1>
-          I need to know
-          <br />
-          where you are.
+          <span className="hi">Hi, Nathan!</span> I need to know where you are.
         </h1>
         <p>Everything useful depends on it:</p>
         <ul>
           <li>
-            <b>How far</b> — the only question that matters when you're hungry
+            <b>How far</b> is the only question that matters when you're hungry
           </li>
           <li>
-            <b>What's actually open</b> — right now, in this timezone
+            <b>What's actually open</b> right now, in this timezone
           </li>
           <li>
-            <b>Which of your 1,269 places</b> are near enough to bother with
+            <b>Which of your 1,269 spots</b> are near enough to bother with
           </li>
         </ul>
         <p style={{ fontSize: "0.875rem", color: "var(--ink-faint)" }}>

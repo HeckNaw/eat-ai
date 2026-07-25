@@ -105,6 +105,63 @@ body::after {
 }
 
 /* --------------------------------------------------------------------------
+   backdrop — diagonal CHUD carousel
+   --------------------------------------------------------------------------
+   Sits at z-index 0 inside #root, so it paints above the body gradients and
+   grain but beneath every piece of UI. */
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+  /* Faint enough to read as texture. Any higher and it fights the cards. */
+  color: #ffffff;
+  opacity: 0.042;
+}
+
+/* Rotated and over-scaled so the diagonal never exposes a corner. */
+.backdrop-rotate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 220vmax;
+  height: 220vmax;
+  transform: translate(-50%, -50%) rotate(-17deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(0.25rem, 1.4vw, 1rem);
+}
+
+.backdrop-row {
+  display: flex;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.backdrop-track {
+  font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", "Arial Black", sans-serif;
+  font-size: clamp(2.75rem, 8vw, 6.5rem);
+  line-height: 0.92;
+  letter-spacing: 0.02em;
+  flex: 0 0 auto;
+  animation: slide var(--dur, 40s) linear infinite;
+  animation-delay: var(--delay, 0s);
+}
+.backdrop-row[data-dir="right"] .backdrop-track { animation-direction: reverse; }
+
+/* Exactly -50%: the track holds the run twice, so this wraps invisibly. */
+@keyframes slide {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+
+.shell { position: relative; z-index: 1; }
+
+/* --------------------------------------------------------------------------
    type
    -------------------------------------------------------------------------- */
 
@@ -505,16 +562,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .gate { display: flex; flex-direction: column; gap: 1rem; text-align: left; }
 
-/* A greeting in the mint rather than the coral — the coral is the action colour,
-   and a hello is not an action. */
-.greeting {
-  font-family: var(--display);
-  font-size: 1.1875rem;
-  font-weight: 640;
-  letter-spacing: -0.025em;
-  color: var(--open);
-  margin-bottom: -0.5rem;
-}
+/* Greeting set inline in the headline, so it reads as one sentence the assistant
+   is saying rather than a separate banner. */
+.hi { color: var(--accent); }
 .gate h1 { font-size: clamp(1.625rem, 7vw, 2.125rem); }
 .gate p { margin: 0; color: var(--ink-dim); font-size: 0.9375rem; line-height: 1.55; }
 .gate ul { margin: 0; padding-left: 1.125rem; color: var(--ink-dim); font-size: 0.9375rem; }
@@ -628,5 +678,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     animation-duration: 0.01ms !important;
     animation-delay: 0ms !important;
     transition-duration: 0.01ms !important;
+  }
+  /* The backdrop is the exception: collapsing its animation would snap every row
+     to the -50% end state. Hold it still instead. */
+  .backdrop-track {
+    animation: none !important;
+    transform: none !important;
   }
 }

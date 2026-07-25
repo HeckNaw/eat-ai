@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { Backdrop } from "./components/Backdrop";
 import { LocationGate } from "./components/LocationGate";
 import { QuestionScreen } from "./components/QuestionScreen";
 import { Results } from "./components/Results";
@@ -134,7 +135,9 @@ export default function App() {
     : "";
 
   return (
-    <div className="shell">
+    <>
+      <Backdrop />
+      <div className="shell">
       <header className="masthead">
         <span className="wordmark">
           chudly<b>.ai</b>
@@ -191,6 +194,7 @@ export default function App() {
           onBack={() => setStage("ask")}
         />
       )}
-    </div>
+      </div>
+    </>
   );
 }
