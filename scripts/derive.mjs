@@ -119,6 +119,9 @@ function buildHierarchy(mode) {
     if (mode === "savoury" && !(m === "savoury" || m === "both")) continue;
     if (mode === "sweet" && !(m === "sweet" || m === "both")) continue;
     if (mode === "retail" && m !== "retail") continue;
+    // "either" is everything edible — retail (groceries, butchers) is not a
+    // dinner recommendation and stays out of the picker.
+    if (mode === "either" && m === "retail") continue;
     if (!families.has(def.family)) families.set(def.family, { family: def.family, count: 0, styles: [] });
     const f = families.get(def.family);
     f.count += v.count;
@@ -138,6 +141,10 @@ const hierarchy = {
   savoury: buildHierarchy("savoury"),
   sweet: buildHierarchy("sweet"),
   retail: buildHierarchy("retail"),
+  // Built here rather than by concatenating savoury + sweet in the UI. A "both"
+  // cuisine (bakery, coffee) legitimately appears in each tree, so concatenating
+  // duplicated those families and rendered their cuisines twice.
+  either: buildHierarchy("either"),
 };
 
 // Chips for the question screen, split by the top-level sweet/savoury choice.

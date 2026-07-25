@@ -57,11 +57,9 @@ export function QuestionScreen({
   const [openFamily, setOpenFamily] = useState<string | null>(null);
   const [showTime, setShowTime] = useState(typeof answers.when === "object");
 
-  const mode = answers.mode === "sweet" ? "sweet" : "savoury";
-  const families: Family[] =
-    answers.mode === "either"
-      ? [...taste.hierarchy.savoury, ...taste.hierarchy.sweet]
-      : taste.hierarchy[mode];
+  // Every mode has its own pre-built tree, including "either" — concatenating
+  // savoury + sweet here duplicated the families holding "both" cuisines.
+  const families: Family[] = taste.hierarchy[answers.mode] ?? taste.hierarchy.savoury;
 
   const toggleCuisine = (c: string) => {
     const has = answers.cuisines.includes(c);

@@ -43,7 +43,7 @@ export interface Area {
   topCuisines: string[];
 }
 
-export type Mode = "savoury" | "sweet" | "retail";
+export type Mode = "savoury" | "sweet" | "retail" | "either";
 
 export interface Family {
   family: string;
