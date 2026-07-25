@@ -37,6 +37,7 @@ export function LocationGate({
   return (
     <>
       <div className="panel gate">
+        <span className="greeting">Hi, Nathan!</span>
         <span className="eyebrow">Before we start</span>
         <h1>
           I need to know

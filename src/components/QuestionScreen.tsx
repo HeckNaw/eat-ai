@@ -71,6 +71,9 @@ export function QuestionScreen({
     });
   };
 
+  /** Every cuisine currently on offer, i.e. within the chosen sweet/savoury mode. */
+  const allVisible = families.flatMap((f) => f.styles.map((s) => s.cuisine));
+
   /** Selecting a family means every style inside it. */
   const toggleFamily = (f: Family) => {
     const all = f.styles.map((s) => s.cuisine);
@@ -196,9 +199,19 @@ export function QuestionScreen({
       <div className="q" style={q(3)}>
         <div className="q-head">
           <span className="q-title">Craving anything?</span>
-          {answers.cuisines.length > 0 && (
+          {answers.cuisines.length > 0 ? (
             <button className="btn-quiet" onClick={() => setAnswers({ ...answers, cuisines: [] })}>
               Clear {answers.cuisines.length}
+            </button>
+          ) : (
+            <button
+              className="btn-quiet"
+              onClick={() => setAnswers({ ...answers, cuisines: allVisible })}
+            >
+              Select all
+              <span className="mono" style={{ opacity: 0.5, marginLeft: "0.375rem", fontSize: "0.75rem" }}>
+                {allVisible.length}
+              </span>
             </button>
           )}
         </div>
@@ -206,18 +219,23 @@ export function QuestionScreen({
           {families.map((f) => {
             const on = f.styles.some((s) => answers.cuisines.includes(s.cuisine));
             const isOpen = openFamily === f.family;
+            // A family wrapping a single cuisine has nothing to drill into, so
+            // it labels itself with the cuisine. Otherwise the chip reads as an
+            // invented container — "Asian" for one pan-Asian entry, "Pacific"
+            // for eight poke places.
+            const label = f.styles.length === 1 ? (f.styles[0]?.cuisine ?? f.family) : f.family;
             return (
               <div key={f.family} style={{ width: "100%" }}>
                 <div style={{ display: "flex", gap: "0.375rem" }}>
                   <button className="chip" data-on={on} onClick={() => toggleFamily(f)}>
-                    {f.family}
+                    {label}
                     <span className="chip-n">{f.count}</span>
                   </button>
                   {f.styles.length > 1 && (
                     <button
                       className="chip"
                       data-open={isOpen}
-                      aria-label={`Styles within ${f.family}`}
+                      aria-label={`Styles within ${label}`}
                       onClick={() => setOpenFamily(isOpen ? null : f.family)}
                     >
                       <span className="chip-more">+</span>

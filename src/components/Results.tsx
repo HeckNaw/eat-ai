@@ -85,6 +85,38 @@ function PlaceCard({ item, index, isNew }: { item: Scored; index: number; isNew:
   );
 }
 
+/**
+ * Placeholder stack shown while a section settles. Widths vary per row so it
+ * reads as text rather than a progress bar.
+ */
+function Skeletons({ count = 5 }: { count?: number }) {
+  const widths = ["62%", "48%", "71%", "55%", "66%"];
+  const pills = [
+    ["3.5rem", "4.5rem", "2.5rem"],
+    ["3rem", "5rem"],
+    ["4rem", "3.5rem", "3rem"],
+    ["3.25rem", "4rem"],
+    ["3.75rem", "4.25rem", "2.75rem"],
+  ];
+  return (
+    <div className="cards">
+      {Array.from({ length: count }, (_, i) => (
+        <div className="sk" key={i} style={{ "--i": i } as React.CSSProperties}>
+          <div className="sk-row">
+            <div className="sk-bar" style={{ width: widths[i % widths.length], flex: "0 0 auto" }} />
+            <div className="sk-bar" style={{ width: "2.5rem", marginLeft: "auto" }} />
+          </div>
+          <div className="sk-meta">
+            {(pills[i % pills.length] ?? []).map((w, j) => (
+              <div className="sk-pill" key={j} style={{ width: w }} />
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 /** Paginated list. "See more" costs nothing — everything shown is already fetched. */
 function Paged({ items, isNew, empty }: { items: Scored[]; isNew: boolean; empty: string }) {
   const [shown, setShown] = useState(PAGE);
@@ -124,6 +156,7 @@ function Paged({ items, isNew, empty }: { items: Scored[]; isNew: boolean; empty
 export function Results({
   onList,
   offList,
+  settling,
   discovering,
   discoverError,
   onBack,
@@ -131,6 +164,7 @@ export function Results({
 }: {
   onList: Scored[];
   offList: Scored[];
+  settling: boolean;
   discovering: boolean;
   discoverError: string | null;
   onBack: () => void;
@@ -145,14 +179,22 @@ export function Results({
       <div className="section-head">
         <h2>From your list</h2>
         <span className="section-count mono">
-          {onList.length ? `${Math.min(PAGE, onList.length)} of ${onList.length}` : "none"}
+          {settling
+            ? "\u00b7\u00b7\u00b7"
+            : onList.length
+              ? `${Math.min(PAGE, onList.length)} of ${onList.length}`
+              : "none"}
         </span>
       </div>
-      <Paged
-        items={onList}
-        isNew={false}
-        empty="Nothing you've saved is open and close enough. Try a wider radius or a later time."
-      />
+      {settling ? (
+        <Skeletons />
+      ) : (
+        <Paged
+          items={onList}
+          isNew={false}
+          empty="Nothing you've saved is open and close enough. Try a wider radius or a later time."
+        />
+      )}
 
       <div className="section-head">
         <h2>New to you</h2>
@@ -166,14 +208,7 @@ export function Results({
       </div>
 
       {discovering ? (
-        <div className="empty">
-          <span className="thinking" style={{ color: "var(--accent)" }}>
-            <i />
-            <i />
-            <i />
-          </span>
-          <div style={{ marginTop: "0.625rem" }}>Looking for places you haven't saved</div>
-        </div>
+        <Skeletons />
       ) : discoverError ? (
         <div className="err">{discoverError}</div>
       ) : (

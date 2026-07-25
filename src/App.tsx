@@ -26,6 +26,7 @@ export default function App() {
   const [answers, setAnswers] = useState<Answers>(DEFAULTS);
 
   const [offList, setOffList] = useState<Place[]>([]);
+  const [settling, setSettling] = useState(false);
   const [discovering, setDiscovering] = useState(false);
   const [discoverError, setDiscoverError] = useState<string | null>(null);
 
@@ -74,7 +75,13 @@ export default function App() {
     setStage("results");
     setOffList([]);
     setDiscoverError(null);
+    setSettling(true);
     setDiscovering(true);
+
+    // The saved-list half is computed synchronously, so it would pop in with no
+    // perceptible transition. A short floor gives the skeletons time to register
+    // as a deliberate beat rather than a flash of broken layout.
+    const floor = new Promise((r) => setTimeout(r, 550));
 
     // Cuisine -> Google place types. Falls back to the top types for the chosen
     // mode: an unrestricted Nearby Search downtown returns franchises.
@@ -105,12 +112,17 @@ export default function App() {
       });
       if (!res.ok) throw new Error(await res.text());
       const data = await res.json();
+      await floor;
+      setSettling(false);
       setOffList(data.places ?? []);
     } catch {
+      await floor;
+      setSettling(false);
       setDiscoverError(
         "Couldn't search for new places right now — your own list above is unaffected.",
       );
     } finally {
+      setSettling(false);
       setDiscovering(false);
     }
   }
@@ -173,6 +185,7 @@ export default function App() {
           summary={summary}
           onList={diversify(onListRanked, 40)}
           offList={diversify(offListRanked, 40)}
+          settling={settling}
           discovering={discovering}
           discoverError={discoverError}
           onBack={() => setStage("ask")}
