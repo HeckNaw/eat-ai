@@ -2,43 +2,50 @@ import { defineConfig, loadEnv, type Plugin } from "vite";
 import react from "@vitejs/plugin-react";
 
 /**
- * Serve /api/discover during `npm run dev`.
+ * Serve the /api routes during `npm run dev`.
  *
- * Vite has no notion of serverless functions, so without this the discovery half
- * of the app 404s locally. Imports the same handler the Vercel function uses, so
- * dev and production are not two code paths.
+ * Vite has no notion of serverless functions, so without this the discovery and
+ * geocode calls 404 locally. Imports the same handlers the Vercel functions use,
+ * so dev and production are not two code paths.
  */
+const ROUTES = [
+  { path: "/api/discover", module: "/api/discover.mjs", fn: "handleDiscover" },
+  { path: "/api/geocode", module: "/api/geocode.mjs", fn: "handleGeocode" },
+] as const;
+
 function apiDev(env: Record<string, string>): Plugin {
   return {
     name: "chudly-api-dev",
     configureServer(server) {
-      server.middlewares.use("/api/discover", async (req, res) => {
-        if (req.method !== "POST") {
-          res.statusCode = 405;
-          res.end(JSON.stringify({ error: "POST only" }));
-          return;
-        }
-        try {
-          const chunks: Buffer[] = [];
-          for await (const c of req) chunks.push(c as Buffer);
-          const body = JSON.parse(Buffer.concat(chunks).toString() || "{}");
+      for (const route of ROUTES) {
+        server.middlewares.use(route.path, async (req, res) => {
+          if (req.method !== "POST") {
+            res.statusCode = 405;
+            res.end(JSON.stringify({ error: "POST only" }));
+            return;
+          }
+          try {
+            const chunks: Buffer[] = [];
+            for await (const c of req) chunks.push(c as Buffer);
+            const body = JSON.parse(Buffer.concat(chunks).toString() || "{}");
 
-          const { handleDiscover } = await server.ssrLoadModule("/api/discover.mjs");
-          // Pass the loaded .env explicitly. Vite only exposes VITE_-prefixed
-          // vars to the client and does not populate process.env server-side,
-          // so the Google key has to be handed over here — which also keeps it
-          // out of the browser bundle by construction.
-          const out = await handleDiscover(body, { ...process.env, ...env });
+            const mod = await server.ssrLoadModule(route.module);
+            // Pass the loaded .env explicitly. Vite only exposes VITE_-prefixed
+            // vars to the client and does not populate process.env server-side,
+            // so the Google key has to be handed over here — which also keeps it
+            // out of the browser bundle by construction.
+            const out = await mod[route.fn](body, { ...process.env, ...env });
 
-          res.statusCode = out.status;
-          res.setHeader("content-type", "application/json");
-          res.end(JSON.stringify(out.body));
-        } catch (err) {
-          res.statusCode = 500;
-          res.setHeader("content-type", "application/json");
-          res.end(JSON.stringify({ error: String((err as Error)?.message ?? err) }));
-        }
-      });
+            res.statusCode = out.status;
+            res.setHeader("content-type", "application/json");
+            res.end(JSON.stringify(out.body));
+          } catch (err) {
+            res.statusCode = 500;
+            res.setHeader("content-type", "application/json");
+            res.end(JSON.stringify({ error: String((err as Error)?.message ?? err) }));
+          }
+        });
+      }
     },
   };
 }

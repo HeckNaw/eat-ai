@@ -2,13 +2,15 @@ import { useState } from "react";
 import { getPosition } from "../lib/geo";
 import type { Area, Coords } from "../lib/types";
 
+interface Hit { id: string; name: string; address: string | null; lat: number; lng: number }
+
 /**
  * Explain first, then ask.
  *
  * A cold browser permission prompt gets denied, and a denial is sticky — so the
  * reason comes before the request, and the request is tied to a deliberate tap
- * rather than page load. Denial is not a dead end: the fallback is picking from
- * the user's own saved neighbourhoods, which needs no geocoding API.
+ * rather than page load. Two manual routes sit alongside it, so denying location
+ * is never a dead end: type an address, or pick a saved neighbourhood.
  */
 export function LocationGate({
   areas,
@@ -19,20 +21,51 @@ export function LocationGate({
 }) {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [manual, setManual] = useState(false);
 
-  async function ask() {
+  const [query, setQuery] = useState("");
+  const [searching, setSearching] = useState(false);
+  const [hits, setHits] = useState<Hit[] | null>(null);
+  const [searchError, setSearchError] = useState<string | null>(null);
+  const [showAllAreas, setShowAllAreas] = useState(false);
+
+  async function useDevice() {
     setBusy(true);
     setError(null);
     try {
       onLocated(await getPosition(), "your location");
     } catch (e) {
       setError((e as Error).message);
-      setManual(true);
     } finally {
       setBusy(false);
     }
   }
+
+  /** Explicit submit rather than search-as-you-type — every lookup is an API call. */
+  async function search(e: React.FormEvent) {
+    e.preventDefault();
+    const q = query.trim();
+    if (q.length < 3) return;
+    setSearching(true);
+    setSearchError(null);
+    setHits(null);
+    try {
+      const res = await fetch("/api/geocode", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ query: q }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error ?? "Search failed");
+      if (!data.results?.length) setSearchError(`Nothing found for “${q}”.`);
+      setHits(data.results ?? []);
+    } catch (err) {
+      setSearchError((err as Error).message);
+    } finally {
+      setSearching(false);
+    }
+  }
+
+  const visibleAreas = showAllAreas ? areas : areas.slice(0, 6);
 
   return (
     <>
@@ -43,31 +76,83 @@ export function LocationGate({
         <p>Everything useful depends on it:</p>
         <ul>
           <li>
-            <b>How far</b> is the only question that matters when you're hungry
+            <b>How far</b> — the only question that matters when you're hungry
           </li>
           <li>
-            <b>What's actually open</b> right now, in this timezone
+            <b>What's actually open</b> — right now, in this timezone
           </li>
           <li>
-            <b>Which of your 1,269 spots</b> are near enough to bother with
+            <b>Which of your places</b> are near enough to bother with
           </li>
         </ul>
-        <p style={{ fontSize: "0.875rem", color: "var(--ink-faint)" }}>
-          It stays on your phone. Nothing is stored, nothing is sent anywhere except
-          Google, and only to ask what's nearby.
-        </p>
-
         {error && <div className="err">{error}</div>}
       </div>
 
-      {manual && (
-        <>
-          <div className="section-head">
-            <h2>Or pick where you are</h2>
-            <span className="section-count mono">{areas.length} areas</span>
+      <div className="q" style={{ marginTop: "1.25rem" }}>
+        <div className="q-head">
+          <span className="q-title">Type an address, intersection or place</span>
+        </div>
+        <form onSubmit={search} style={{ display: "flex", gap: "0.5rem" }}>
+          <input
+            className="field"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="e.g. Dundas &amp; Ossington"
+            autoComplete="street-address"
+            enterKeyHint="search"
+            inputMode="search"
+          />
+          <button
+            className="btn-quiet"
+            type="submit"
+            disabled={searching || query.trim().length < 3}
+            style={{ flex: "0 0 auto" }}
+          >
+            {searching ? (
+              <span className="thinking">
+                <i />
+                <i />
+                <i />
+              </span>
+            ) : (
+              "Find"
+            )}
+          </button>
+        </form>
+
+        {searchError && (
+          <div className="hint" style={{ color: "var(--soon)" }}>
+            {searchError}
+          </div>
+        )}
+
+        {hits && hits.length > 0 && (
+          <div className="cards" style={{ marginTop: "0.75rem" }}>
+            {hits.map((h, i) => (
+              <button
+                key={h.id}
+                className="card"
+                style={{ "--i": i } as React.CSSProperties}
+                onClick={() => onLocated({ lat: h.lat, lng: h.lng }, h.name)}
+              >
+                <div className="card-top">
+                  <span className="card-name">{h.name}</span>
+                </div>
+                {h.address && <div className="card-meta">{h.address}</div>}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+
+      {areas.length > 0 && (
+        <div className="q">
+          <div className="q-head">
+            <span className="q-title">Or somewhere you already eat</span>
+            <span className="section-count mono">{areas.length}</span>
           </div>
           <div className="cards">
-            {areas.slice(0, 10).map((a, i) => (
+            {visibleAreas.map((a, i) => (
               <button
                 key={`${a.lat},${a.lng}`}
                 className="card"
@@ -88,11 +173,20 @@ export function LocationGate({
               </button>
             ))}
           </div>
-        </>
+          {!showAllAreas && areas.length > 6 && (
+            <button
+              className="btn-quiet"
+              style={{ width: "100%", marginTop: "0.75rem" }}
+              onClick={() => setShowAllAreas(true)}
+            >
+              See {areas.length - 6} more areas
+            </button>
+          )}
+        </div>
       )}
 
       <div className="dock">
-        <button className="btn" onClick={ask} disabled={busy}>
+        <button className="btn" onClick={useDevice} disabled={busy}>
           {busy ? (
             <span className="thinking">
               <i />
@@ -103,15 +197,6 @@ export function LocationGate({
             <>Use my location</>
           )}
         </button>
-        {!manual && (
-          <button
-            className="btn-quiet"
-            style={{ width: "100%", marginTop: "0.5rem" }}
-            onClick={() => setManual(true)}
-          >
-            I'd rather pick an area
-          </button>
-        )}
       </div>
     </>
   );
