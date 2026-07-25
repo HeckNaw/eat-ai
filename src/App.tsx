@@ -97,7 +97,7 @@ export default function App() {
               .flatMap((s) => s.googleTypes),
           ),
         ]
-      : taste.defaultSearchTypes[answers.mode === "sweet" ? "sweet" : "savoury"];
+      : taste.defaultSearchTypes[answers.mode];
 
     try {
       const res = await fetch("/api/discover", {
@@ -129,7 +129,7 @@ export default function App() {
   }
 
   const summary = origin
-    ? `${answers.mode === "either" ? "anything" : answers.mode} · ${describeWhen(answers.when)} · within ${
+    ? `${answers.mode} · ${describeWhen(answers.when)} · within ${
         answers.radiusM >= 60_000 ? "any distance" : `${(answers.radiusM / 1000).toFixed(answers.radiusM < 1000 ? 1 : 0)}km`
       }${answers.cuisines.length ? ` · ${answers.cuisines.length} craving${answers.cuisines.length > 1 ? "s" : ""}` : ""}`
     : "";

@@ -138,7 +138,7 @@ Four questions, all with defaults, so the common case is a single tap.
 
 | Question | Type | Options | Filters on |
 |---|---|---|---|
-| Sweet or savoury | single | savoury · sweet · either | cuisine `mode` |
+| Sweet or savoury | single | savoury · sweet | cuisine `mode` |
 | When | single | now · in an hour · pick a time | `openingHours` at target time |
 | How far | single | walking (1km) · 5km · 10km · anywhere | haversine from location |
 | Craving | **multi**, optional | family chips, each expanding to its styles | `cuisines[]` |
@@ -149,7 +149,10 @@ they will travel for dinner in units precise enough to type.
 "Tonight" was cut for being unfilterable — a time picker replaces it.
 
 **Sweet or savoury comes first** because it reshapes everything after it: the
-chip set, the discovery types, and the results. Bakery, dessert, coffee and
+chip set, the discovery types, and the results. It is deliberately a two-state
+toggle with no "either" — an escape hatch there would mix bakeries back into
+dinner, which is the exact noise the split exists to remove, and flipping the
+toggle is one tap. Bakery, dessert, coffee and
 bubble tea are 30% of the saved places — a real interest that answers a
 different question than "what's for dinner", so it gets its own axis rather than
 being mixed in or buried.

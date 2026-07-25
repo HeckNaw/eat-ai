@@ -57,8 +57,6 @@ export function QuestionScreen({
   const [openFamily, setOpenFamily] = useState<string | null>(null);
   const [showTime, setShowTime] = useState(typeof answers.when === "object");
 
-  // Every mode has its own pre-built tree, including "either" — concatenating
-  // savoury + sweet here duplicated the families holding "both" cuisines.
   const families: Family[] = taste.hierarchy[answers.mode] ?? taste.hierarchy.savoury;
 
   const toggleCuisine = (c: string) => {
@@ -93,13 +91,15 @@ export function QuestionScreen({
           <span className="q-title">Sweet or savoury?</span>
         </div>
         <div className="seg">
-          {(["savoury", "sweet", "either"] as const).map((m) => (
+          {(["savoury", "sweet"] as const).map((m) => (
             <button
               key={m}
               data-on={answers.mode === m}
+              // Cravings are mode-scoped, so switching sides clears them rather
+              // than leaving selections that no longer exist in the new tree.
               onClick={() => setAnswers({ ...answers, mode: m, cuisines: [] })}
             >
-              {m === "savoury" ? "Savoury" : m === "sweet" ? "Sweet" : "Either"}
+              {m === "savoury" ? "Savoury" : "Sweet"}
             </button>
           ))}
         </div>

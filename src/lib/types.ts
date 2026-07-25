@@ -43,7 +43,7 @@ export interface Area {
   topCuisines: string[];
 }
 
-export type Mode = "savoury" | "sweet" | "retail" | "either";
+export type Mode = "savoury" | "sweet" | "retail";
 
 export interface Family {
   family: string;
@@ -61,7 +61,7 @@ export interface Chip {
 export interface Coords { lat: number; lng: number }
 
 export interface Answers {
-  mode: "savoury" | "sweet" | "either";
+  mode: "savoury" | "sweet";
   when: "now" | "hour" | { at: string };
   radiusM: number;
   cuisines: string[];

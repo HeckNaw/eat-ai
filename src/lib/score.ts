@@ -118,13 +118,10 @@ export function rank(
     const { state, closesInMin } = openAt(place, at);
     if (state === "shut") continue;
 
-    if (answers.mode !== "either") {
-      const modes = (place.cs ?? (place.c ? [place.c] : [])).map(modeOf);
-      const ok =
-        modes.length === 0 ||
-        modes.some((m) => m === answers.mode || m === "both");
-      if (!ok) continue;
-    }
+    // An unlabelled place is never eliminated by mode — absence of a cuisine is
+    // not evidence it's the wrong kind of food.
+    const modes = (place.cs ?? (place.c ? [place.c] : [])).map(modeOf);
+    if (modes.length && !modes.some((m) => m === answers.mode || m === "both")) continue;
     if (answers.cuisines.length) {
       const matched = place.cs ?? (place.c ? [place.c] : []);
       if (!matched.some((c) => answers.cuisines.includes(c))) continue;
