@@ -1,6 +1,30 @@
 {
   "places": [
     {
+      "title": "1910 La Mexicana",
+      "normalizedTitle": "1910 la mexicana",
+      "cid": "0xb0d8da8beb288df0",
+      "featureId": "0x882b35a47ddbb99b:0xb0d8da8beb288df0",
+      "url": "https://www.google.com/maps/place/1910+La+Mexicana/data=!4m2!3m1!1s0x882b35a47ddbb99b:0xb0d8da8beb288df0",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "241 Pizza",
+      "normalizedTitle": "241 pizza",
+      "cid": "0x8d5876eb1257f80",
+      "featureId": "0x882b345c37d1add9:0x8d5876eb1257f80",
+      "url": "https://www.google.com/maps/place/241+Pizza/data=!4m2!3m1!1s0x882b345c37d1add9:0x8d5876eb1257f80",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
       "title": "4Ever Sushi",
       "normalizedTitle": "4ever sushi",
       "cid": "0x3bf55cd7a3f6b5a9",
@@ -18,6 +42,67 @@
       "cid": "0x71a6447306111d9f",
       "featureId": "0x882b34c3966ed4f7:0x71a6447306111d9f",
       "url": "https://www.google.com/maps/place/Ajisen+Ramen+(Chinatown)/data=!4m2!3m1!1s0x882b34c3966ed4f7:0x71a6447306111d9f",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "AM Bagel",
+      "normalizedTitle": "am bagel",
+      "cid": "0x63deee51e36972e",
+      "featureId": "0x882b35869f9c677b:0x63deee51e36972e",
+      "url": "https://www.google.com/maps/place/AM+Bagel/data=!4m2!3m1!1s0x882b35869f9c677b:0x63deee51e36972e",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Astoria Shish Kebob House - Danforth",
+      "normalizedTitle": "astoria shish kebob house danforth",
+      "cid": "0x6c7528dbbc20a6df",
+      "featureId": "0x89d4cc9c2f5e0f71:0x6c7528dbbc20a6df",
+      "url": "https://www.google.com/maps/place/Astoria+Shish+Kebob+House+-+Danforth/data=!4m2!3m1!1s0x89d4cc9c2f5e0f71:0x6c7528dbbc20a6df",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Atomic 10",
+      "normalizedTitle": "atomic 10",
+      "cid": "0xe8d614d0e379d2e6",
+      "featureId": "0x882b353ac98a1963:0xe8d614d0e379d2e6",
+      "url": "https://www.google.com/maps/place/Atomic+10/data=!4m2!3m1!1s0x882b353ac98a1963:0xe8d614d0e379d2e6",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "supersedes": "Atomic 10"
+    },
+    {
+      "title": "BBQ Chicken Danforth",
+      "normalizedTitle": "bbq chicken danforth",
+      "cid": "0xe27e27c031a729e4",
+      "featureId": "0x89d4cdc3ec348d95:0xe27e27c031a729e4",
+      "url": "https://www.google.com/maps/place/BBQ+Chicken+Danforth/data=!4m2!3m1!1s0x89d4cdc3ec348d95:0xe27e27c031a729e4",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Billy's Souvlaki Place",
+      "normalizedTitle": "billy s souvlaki place",
+      "cid": "0x580d40d39d85fb0c",
+      "featureId": "0x882b345e5ebe9ef5:0x580d40d39d85fb0c",
+      "url": "https://www.google.com/maps/place/Billy's+Souvlaki+Place/data=!4m2!3m1!1s0x882b345e5ebe9ef5:0x580d40d39d85fb0c",
       "reasons": [
         "bad_quality"
       ],
@@ -44,6 +129,18 @@
       "url": "https://www.google.com/maps/place/Buono+Ristorante/data=!4m2!3m1!1s0x89d4cde1c101d527:0xd4bdcb1940722928",
       "reasons": [
         "overpriced"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Burrito Boyz",
+      "normalizedTitle": "burrito boyz",
+      "cid": "0xdc16008d01a2914b",
+      "featureId": "0x882b35b64e2f9d17:0xdc16008d01a2914b",
+      "url": "https://www.google.com/maps/place/Burrito+Boyz/data=!4m2!3m1!1s0x882b35b64e2f9d17:0xdc16008d01a2914b",
+      "reasons": [
+        "bad_quality"
       ],
       "note": null,
       "strength": 1
@@ -80,6 +177,66 @@
       "url": "https://www.google.com/maps/place/Campechano+Adelaide/data=!4m2!3m1!1s0x882b34de7a560889:0xda635105ca1baf8f",
       "reasons": [
         "overpriced"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Cano Restaurant",
+      "normalizedTitle": "cano restaurant",
+      "cid": "0x772256d7afcaf077",
+      "featureId": "0x882b3476c9609515:0x772256d7afcaf077",
+      "url": "https://www.google.com/maps/place/Cano+Restaurant/data=!4m2!3m1!1s0x882b3476c9609515:0x772256d7afcaf077",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Casa Sushi",
+      "normalizedTitle": "casa sushi",
+      "cid": "0xbc450ce0956557ce",
+      "featureId": "0x89d4cc9c5b486441:0xbc450ce0956557ce",
+      "url": "https://www.google.com/maps/place/Casa+Sushi/data=!4m2!3m1!1s0x89d4cc9c5b486441:0xbc450ce0956557ce",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Chito's Pizza And Foods",
+      "normalizedTitle": "chito s pizza and foods",
+      "cid": "0x2b524b2ee406a05",
+      "featureId": "0x882b3446a1ef8b9f:0x2b524b2ee406a05",
+      "url": "https://www.google.com/maps/place/Chito's+Pizza+And+Foods/data=!4m2!3m1!1s0x882b3446a1ef8b9f:0x2b524b2ee406a05",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Chungchun Rice Dog Scarborough",
+      "normalizedTitle": "chungchun rice dog scarborough",
+      "cid": "0xd83ab1213e3074db",
+      "featureId": "0x89d4d1cf8664e373:0xd83ab1213e3074db",
+      "url": "https://www.google.com/maps/place/Chungchun+Rice+Dog+Scarborough/data=!4m2!3m1!1s0x89d4d1cf8664e373:0xd83ab1213e3074db",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Duffy's Tavern",
+      "normalizedTitle": "duffy s tavern",
+      "cid": "0xa5beeee05348e168",
+      "featureId": "0x882b37ae4284f0bb:0xa5beeee05348e168",
+      "url": "https://www.google.com/maps/place/Duffy's+Tavern/data=!4m2!3m1!1s0x882b37ae4284f0bb:0xa5beeee05348e168",
+      "reasons": [
+        "pedestrian"
       ],
       "note": null,
       "strength": 1
@@ -133,6 +290,18 @@
       "strength": 1
     },
     {
+      "title": "El rincón del pastorcito",
+      "normalizedTitle": "el rincón del pastorcito",
+      "cid": "0x601b2b0296334449",
+      "featureId": "0x882b35003fced681:0x601b2b0296334449",
+      "url": "https://www.google.com/maps/place/El+rinc%C3%B3n+del+pastorcito/data=!4m2!3m1!1s0x882b35003fced681:0x601b2b0296334449",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
       "title": "El Trompo",
       "normalizedTitle": "el trompo",
       "cid": "0xee13ed04ab9ff32b",
@@ -169,6 +338,42 @@
       "strength": 1
     },
     {
+      "title": "Fat Bastard Burrito",
+      "normalizedTitle": "fat bastard burrito",
+      "cid": "0xe7565b9df2e8a371",
+      "featureId": "0x882b3594fcc6e5f7:0xe7565b9df2e8a371",
+      "url": "https://www.google.com/maps/place/Fat+Bastard+Burrito/data=!4m2!3m1!1s0x882b3594fcc6e5f7:0xe7565b9df2e8a371",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Forest Hill Farmhouse",
+      "normalizedTitle": "forest hill farmhouse",
+      "cid": "0x744ea80592fc48e2",
+      "featureId": "0x882b35b46bdae29d:0x744ea80592fc48e2",
+      "url": "https://www.google.com/maps/place/Forest+Hill+Farmhouse/data=!4m2!3m1!1s0x882b35b46bdae29d:0x744ea80592fc48e2",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Frenzline Sports Bar & Grill",
+      "normalizedTitle": "frenzline sports bar grill",
+      "cid": "0x73f88c40fef9111a",
+      "featureId": "0x882b33ed0fa22565:0x73f88c40fef9111a",
+      "url": "https://www.google.com/maps/place/Frenzline+Sports+Bar+%26+Grill/data=!4m2!3m1!1s0x882b33ed0fa22565:0x73f88c40fef9111a",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
       "title": "Gabby's",
       "normalizedTitle": "gabby s",
       "cid": "0xbc8250815a74f199",
@@ -200,6 +405,18 @@
       "url": "https://www.google.com/maps/place/Grazie+Ristorante/data=!4m2!3m1!1s0x882b332312be25ff:0x8117c5e21bea71bc",
       "reasons": [
         "overpriced"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Greek Gordo",
+      "normalizedTitle": "greek gordo",
+      "cid": "0x8f855c2c351dc170",
+      "featureId": "0x882b35339e559a3f:0x8f855c2c351dc170",
+      "url": "https://www.google.com/maps/place/Greek+Gordo/data=!4m2!3m1!1s0x882b35339e559a3f:0x8f855c2c351dc170",
+      "reasons": [
+        "pedestrian"
       ],
       "note": null,
       "strength": 1
@@ -253,6 +470,18 @@
       "strength": 1
     },
     {
+      "title": "Ice Queen Restaurant",
+      "normalizedTitle": "ice queen restaurant",
+      "cid": "0x5abdf137c2cd2068",
+      "featureId": "0x882b35b63e44d719:0x5abdf137c2cd2068",
+      "url": "https://www.google.com/maps/place/Ice+Queen+Restaurant/data=!4m2!3m1!1s0x882b35b63e44d719:0x5abdf137c2cd2068",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
       "title": "Java House",
       "normalizedTitle": "java house",
       "cid": "0xd6c523b6fa1a7288",
@@ -260,6 +489,18 @@
       "url": "https://www.google.com/maps/place/Java+House/data=!4m2!3m1!1s0x882b34dc523d6f01:0xd6c523b6fa1a7288",
       "reasons": [
         "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Jerk King",
+      "normalizedTitle": "jerk king",
+      "cid": "0xa612e4c0fecf7b83",
+      "featureId": "0x882b345ced4141eb:0xa612e4c0fecf7b83",
+      "url": "https://www.google.com/maps/place/Jerk+King/data=!4m2!3m1!1s0x882b345ced4141eb:0xa612e4c0fecf7b83",
+      "reasons": [
+        "bad_quality"
       ],
       "note": null,
       "strength": 1
@@ -337,6 +578,42 @@
       "strength": 1
     },
     {
+      "title": "Kami Sushi",
+      "normalizedTitle": "kami sushi",
+      "cid": "0x359dd144eadf1acd",
+      "featureId": "0x882b35ca82ea4cc7:0x359dd144eadf1acd",
+      "url": "https://www.google.com/maps/place/Kami+Sushi/data=!4m2!3m1!1s0x882b35ca82ea4cc7:0x359dd144eadf1acd",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Karaage Mukai",
+      "normalizedTitle": "karaage mukai",
+      "cid": "0xcea17ebf053b19d5",
+      "featureId": "0x89d4cd6f779405b1:0xcea17ebf053b19d5",
+      "url": "https://www.google.com/maps/place/Karaage+Mukai/data=!4m2!3m1!1s0x89d4cd6f779405b1:0xcea17ebf053b19d5",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Katsu Japanese Restaurant",
+      "normalizedTitle": "katsu japanese restaurant",
+      "cid": "0xe02218b7ea999eb0",
+      "featureId": "0x89d4cc9caef1d94d:0xe02218b7ea999eb0",
+      "url": "https://www.google.com/maps/place/Katsu+Japanese+Restaurant/data=!4m2!3m1!1s0x89d4cc9caef1d94d:0xe02218b7ea999eb0",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
       "title": "Kensington Kitchen",
       "normalizedTitle": "kensington kitchen",
       "cid": "0xcb21a102aae664ea",
@@ -362,6 +639,18 @@
       "strength": 2
     },
     {
+      "title": "Komi Banh Mi Bar",
+      "normalizedTitle": "komi banh mi bar",
+      "cid": "0xfdcaa8f0a11da7e",
+      "featureId": "0x882b3536b167b79d:0xfdcaa8f0a11da7e",
+      "url": "https://www.google.com/maps/place/Komi+Banh+Mi+Bar/data=!4m2!3m1!1s0x882b3536b167b79d:0xfdcaa8f0a11da7e",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
       "title": "La Carnita",
       "normalizedTitle": "la carnita",
       "cid": "0x2103349d44fac1ea",
@@ -369,6 +658,42 @@
       "url": "https://www.google.com/maps/place/La+Carnita/data=!4m2!3m1!1s0x882b34d060af3fd1:0x2103349d44fac1ea",
       "reasons": [
         "inauthentic"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "La Diperie Danforth",
+      "normalizedTitle": "la diperie danforth",
+      "cid": "0x70e4295713796dba",
+      "featureId": "0x89d4cc9c29fd69e3:0x70e4295713796dba",
+      "url": "https://www.google.com/maps/place/La+Diperie+Danforth/data=!4m2!3m1!1s0x89d4cc9c29fd69e3:0x70e4295713796dba",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "La Taqueria",
+      "normalizedTitle": "la taqueria",
+      "cid": "0x13e023cce479fd4f",
+      "featureId": "0x882b35000b6465af:0x13e023cce479fd4f",
+      "url": "https://www.google.com/maps/place/La+Taqueria/data=!4m2!3m1!1s0x882b35000b6465af:0x13e023cce479fd4f",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Landmark Restaurant & Tavern",
+      "normalizedTitle": "landmark restaurant tavern",
+      "cid": "0x9e8fb54743cf7bdd",
+      "featureId": "0x882b33ed06cd3af3:0x9e8fb54743cf7bdd",
+      "url": "https://www.google.com/maps/place/Landmark+Restaurant+%26+Tavern/data=!4m2!3m1!1s0x882b33ed06cd3af3:0x9e8fb54743cf7bdd",
+      "reasons": [
+        "pedestrian"
       ],
       "note": null,
       "strength": 1
@@ -386,6 +711,18 @@
       "strength": 1
     },
     {
+      "title": "Mama Rosa Restaurant & Bar Roncesvalles",
+      "normalizedTitle": "mama rosa restaurant bar roncesvalles",
+      "cid": "0x768575e967afb50c",
+      "featureId": "0x882b354feac5d8fd:0x768575e967afb50c",
+      "url": "https://www.google.com/maps/place/Mama+Rosa+Restaurant+%26+Bar+Roncesvalles/data=!4m2!3m1!1s0x882b354feac5d8fd:0x768575e967afb50c",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
       "title": "Mandarin Restaurant",
       "normalizedTitle": "mandarin restaurant",
       "cid": "0x3b6c4bbd262e1dbb",
@@ -397,6 +734,42 @@
       ],
       "note": null,
       "strength": 2
+    },
+    {
+      "title": "Marcello's Pizzeria",
+      "normalizedTitle": "marcello s pizzeria",
+      "cid": "0x5d26270dddd85084",
+      "featureId": "0x882b3473fb59db25:0x5d26270dddd85084",
+      "url": "https://www.google.com/maps/place/Marcello's+Pizzeria/data=!4m2!3m1!1s0x882b3473fb59db25:0x5d26270dddd85084",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Mary Brown's Chicken",
+      "normalizedTitle": "mary brown s chicken",
+      "cid": "0xececb15850dc659c",
+      "featureId": "0x89d4cdcf8bdbcb0f:0xececb15850dc659c",
+      "url": "https://www.google.com/maps/place/Mary+Brown's+Chicken/data=!4m2!3m1!1s0x89d4cdcf8bdbcb0f:0xececb15850dc659c",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "McDonald's",
+      "normalizedTitle": "mcdonald s",
+      "cid": "0x5d3622056c00aa3d",
+      "featureId": "0x882b35b64a6cd8e3:0x5d3622056c00aa3d",
+      "url": "https://www.google.com/maps/place/McDonald's/data=!4m2!3m1!1s0x882b35b64a6cd8e3:0x5d3622056c00aa3d",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
     },
     {
       "title": "McSorley's Wonderful Saloon & Grill",
@@ -423,6 +796,19 @@
       "strength": 1
     },
     {
+      "title": "Monkey Sushi Bloor (All You Can Eat)",
+      "normalizedTitle": "monkey sushi bloor all you can eat",
+      "cid": "0x4530039f09dc3f5a",
+      "featureId": "0x882b3577b612f483:0x4530039f09dc3f5a",
+      "url": "https://www.google.com/maps/place/Monkey+Sushi+Bloor+(All+You+Can+Eat)/data=!4m2!3m1!1s0x882b3577b612f483:0x4530039f09dc3f5a",
+      "reasons": [
+        "bad_quality",
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 2
+    },
+    {
       "title": "Montana’s BBQ & Bar",
       "normalizedTitle": "montana s bbq bar",
       "cid": "0xd0f736678da881",
@@ -447,6 +833,18 @@
       "strength": 1
     },
     {
+      "title": "Méxology Bistro",
+      "normalizedTitle": "méxology bistro",
+      "cid": "0x8d28de2a5c9e82e3",
+      "featureId": "0x882b33bc761bf001:0x8d28de2a5c9e82e3",
+      "url": "https://www.google.com/maps/place/M%C3%A9xology+Bistro/data=!4m2!3m1!1s0x882b33bc761bf001:0x8d28de2a5c9e82e3",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
       "title": "Oxtail Pho & Banh Mi",
       "normalizedTitle": "oxtail pho banh mi",
       "cid": "0xde9b53cbcd41a6ab",
@@ -458,6 +856,18 @@
       "note": null,
       "strength": 1,
       "supersedes": "Oxtail Pho & Banh Mi"
+    },
+    {
+      "title": "Pho Vietnam Family Restaurant",
+      "normalizedTitle": "pho vietnam family restaurant",
+      "cid": "0x89e13f3fcd22811f",
+      "featureId": "0x89d4d3ff3dcb2b3f:0x89e13f3fcd22811f",
+      "url": "https://www.google.com/maps/place/Pho+Vietnam+Family+Restaurant/data=!4m2!3m1!1s0x89d4d3ff3dcb2b3f:0x89e13f3fcd22811f",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
     },
     {
       "title": "Piano Piano",
@@ -480,6 +890,43 @@
       "cid": "0x3f13f8b4f923960c",
       "featureId": "0x882b333cb7b0bbdb:0x3f13f8b4f923960c",
       "url": "https://www.google.com/maps/place/Pickle+Barrel/data=!4m2!3m1!1s0x882b333cb7b0bbdb:0x3f13f8b4f923960c",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Pizza Bono",
+      "normalizedTitle": "pizza bono",
+      "cid": "0xc32df6258d41446f",
+      "featureId": "0x89d4cd4064ce1171:0xc32df6258d41446f",
+      "url": "https://www.google.com/maps/place/Pizza+Bono/data=!4m2!3m1!1s0x89d4cd4064ce1171:0xc32df6258d41446f",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Pizza Hut",
+      "normalizedTitle": "pizza hut",
+      "cid": "0x5b910ebeba198bcb",
+      "featureId": "0x882b33edb08f284f:0x5b910ebeba198bcb",
+      "url": "https://www.google.com/maps/place/Pizza+Hut/data=!4m2!3m1!1s0x882b33edb08f284f:0x5b910ebeba198bcb",
+      "reasons": [
+        "bad_quality",
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 2
+    },
+    {
+      "title": "Popeyes Louisiana Kitchen",
+      "normalizedTitle": "popeyes louisiana kitchen",
+      "cid": "0xa7248c4a1fff9da3",
+      "featureId": "0x882b3473e4bfd2c5:0xa7248c4a1fff9da3",
+      "url": "https://www.google.com/maps/place/Popeyes+Louisiana+Kitchen/data=!4m2!3m1!1s0x882b3473e4bfd2c5:0xa7248c4a1fff9da3",
       "reasons": [
         "pedestrian"
       ],
@@ -548,6 +995,30 @@
       "strength": 1
     },
     {
+      "title": "Salonika Estiatorio",
+      "normalizedTitle": "salonika estiatorio",
+      "cid": "0x7de7020a34c05353",
+      "featureId": "0x89d4cd0047bd33bb:0x7de7020a34c05353",
+      "url": "https://www.google.com/maps/place/Salonika+Estiatorio/data=!4m2!3m1!1s0x89d4cd0047bd33bb:0x7de7020a34c05353",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Seoul Shakers",
+      "normalizedTitle": "seoul shakers",
+      "cid": "0x850118e16803156f",
+      "featureId": "0x882b35a2cb1edbc9:0x850118e16803156f",
+      "url": "https://www.google.com/maps/place/Seoul+Shakers/data=!4m2!3m1!1s0x882b35a2cb1edbc9:0x850118e16803156f",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
       "title": "SMOKESHOW bbq and brew",
       "normalizedTitle": "smokeshow bbq and brew",
       "cid": "0x1c6f8054baac1d66",
@@ -572,11 +1043,132 @@
       "strength": 1
     },
     {
+      "title": "Solkatt Cafe",
+      "normalizedTitle": "solkatt cafe",
+      "cid": "0x68d4d5bb6c59947a",
+      "featureId": "0x882b35b4bd238fa9:0x68d4d5bb6c59947a",
+      "url": "https://www.google.com/maps/place/Solkatt+Cafe/data=!4m2!3m1!1s0x882b35b4bd238fa9:0x68d4d5bb6c59947a",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Souvlaki Place",
+      "normalizedTitle": "souvlaki place",
+      "cid": "0xfcc95323e7d06240",
+      "featureId": "0x882b35ee2c368b71:0xfcc95323e7d06240",
+      "url": "https://www.google.com/maps/place/Souvlaki+Place/data=!4m2!3m1!1s0x882b35ee2c368b71:0xfcc95323e7d06240",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
       "title": "Spano’s Diner",
       "normalizedTitle": "spano s diner",
       "cid": "0xcd24a8468d5fa621",
       "featureId": "0x882b337a921887c5:0xcd24a8468d5fa621",
       "url": "https://www.google.com/maps/place/Spano%E2%80%99s+Diner/data=!4m2!3m1!1s0x882b337a921887c5:0xcd24a8468d5fa621",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Stacked Pancake & Breakfast House",
+      "normalizedTitle": "stacked pancake breakfast house",
+      "cid": "0x62a789b1695d8e5f",
+      "featureId": "0x89d4cd77df8d4d47:0x62a789b1695d8e5f",
+      "url": "https://www.google.com/maps/place/Stacked+Pancake+%26+Breakfast+House/data=!4m2!3m1!1s0x89d4cd77df8d4d47:0x62a789b1695d8e5f",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Subway",
+      "normalizedTitle": "subway",
+      "cid": "0x4a70c2f1aa9c975b",
+      "featureId": "0x882b33ecd1763b57:0x4a70c2f1aa9c975b",
+      "url": "https://www.google.com/maps/place/Subway/data=!4m2!3m1!1s0x882b33ecd1763b57:0x4a70c2f1aa9c975b",
+      "reasons": [
+        "bad_quality",
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 2
+    },
+    {
+      "title": "Sushi California",
+      "normalizedTitle": "sushi california",
+      "cid": "0x4e7fb552d40d53b",
+      "featureId": "0x882b34730cb7a6ab:0x4e7fb552d40d53b",
+      "url": "https://www.google.com/maps/place/Sushi+California/data=!4m2!3m1!1s0x882b34730cb7a6ab:0x4e7fb552d40d53b",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Taco Bell",
+      "normalizedTitle": "taco bell",
+      "cid": "0x4d8f96d649f93848",
+      "featureId": "0x882b35e7ef71c411:0x4d8f96d649f93848",
+      "url": "https://www.google.com/maps/place/Taco+Bell/data=!4m2!3m1!1s0x882b35e7ef71c411:0x4d8f96d649f93848",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Tahini's Shawarma",
+      "normalizedTitle": "tahini s shawarma",
+      "cid": "0x3c428a87735f1657",
+      "featureId": "0x882b35006f65fdf7:0x3c428a87735f1657",
+      "url": "https://www.google.com/maps/place/Tahini's+Shawarma/data=!4m2!3m1!1s0x882b35006f65fdf7:0x3c428a87735f1657",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Tapps Restaurant & Bar 🍻",
+      "normalizedTitle": "tapps restaurant bar",
+      "cid": "0xe651dc43cd88dda2",
+      "featureId": "0x89d4cdff01fc45ed:0xe651dc43cd88dda2",
+      "url": "https://www.google.com/maps/place/Tapps+Restaurant+%26+Bar+%F0%9F%8D%BB/data=!4m2!3m1!1s0x89d4cdff01fc45ed:0xe651dc43cd88dda2",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "TENACH MEXICAN RESTAURANT",
+      "normalizedTitle": "tenach mexican restaurant",
+      "cid": "0x799ebe0232b45cd4",
+      "featureId": "0x882b3479b8112b3f:0x799ebe0232b45cd4",
+      "url": "https://www.google.com/maps/place/TENACH+MEXICAN+RESTAURANT/data=!4m2!3m1!1s0x882b3479b8112b3f:0x799ebe0232b45cd4",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "The Burger Bros (BLOOR)",
+      "normalizedTitle": "the burger bros bloor",
+      "cid": "0xfc26a076f7d15eb3",
+      "featureId": "0x882b356c0cf238ff:0xfc26a076f7d15eb3",
+      "url": "https://www.google.com/maps/place/The+Burger+Bros+(BLOOR)/data=!4m2!3m1!1s0x882b356c0cf238ff:0xfc26a076f7d15eb3",
       "reasons": [
         "pedestrian"
       ],
@@ -608,6 +1200,54 @@
       "strength": 1
     },
     {
+      "title": "The Three Speed",
+      "normalizedTitle": "the three speed",
+      "cid": "0x2b12bf5713112579",
+      "featureId": "0x882b34435bcdbbf9:0x2b12bf5713112579",
+      "url": "https://www.google.com/maps/place/The+Three+Speed/data=!4m2!3m1!1s0x882b34435bcdbbf9:0x2b12bf5713112579",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "The Whole Plate",
+      "normalizedTitle": "the whole plate",
+      "cid": "0x8d3944e2e808da5f",
+      "featureId": "0x882b35b5e57cb507:0x8d3944e2e808da5f",
+      "url": "https://www.google.com/maps/place/The+Whole+Plate/data=!4m2!3m1!1s0x882b35b5e57cb507:0x8d3944e2e808da5f",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Tim Hortons",
+      "normalizedTitle": "tim hortons",
+      "cid": "0xbe1e4ba8583b976d",
+      "featureId": "0x882b33ecdf215779:0xbe1e4ba8583b976d",
+      "url": "https://www.google.com/maps/place/Tim+Hortons/data=!4m2!3m1!1s0x882b33ecdf215779:0xbe1e4ba8583b976d",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Tim Hortons",
+      "normalizedTitle": "tim hortons",
+      "cid": "0xbeec63c940fa31b5",
+      "featureId": "0x882b35b204e4d18b:0xbeec63c940fa31b5",
+      "url": "https://www.google.com/maps/place/Tim+Hortons/data=!4m2!3m1!1s0x882b35b204e4d18b:0xbeec63c940fa31b5",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
       "title": "To-Ne Sushi",
       "normalizedTitle": "to ne sushi",
       "cid": "0x77742f2455147770",
@@ -625,6 +1265,18 @@
       "cid": "0xb7124d083471d29d",
       "featureId": "0x882b2dd3ea5df8a3:0xb7124d083471d29d",
       "url": "https://www.google.com/maps/place/TOKYO+GRILL+at+North+York/data=!4m2!3m1!1s0x882b2dd3ea5df8a3:0xb7124d083471d29d",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Uai Pizzeria & Restaurant",
+      "normalizedTitle": "uai pizzeria restaurant",
+      "cid": "0xa34c98b62390d16c",
+      "featureId": "0x882b35c885ac7e8f:0xa34c98b62390d16c",
+      "url": "https://www.google.com/maps/place/Uai+Pizzeria+%26+Restaurant/data=!4m2!3m1!1s0x882b35c885ac7e8f:0xa34c98b62390d16c",
       "reasons": [
         "pedestrian"
       ],
@@ -681,6 +1333,7 @@
     }
   ],
   "supersededTitles": [
+    "Atomic 10",
     "Ristorante Sotto Sotto",
     "Oxtail Pho & Banh Mi"
   ]

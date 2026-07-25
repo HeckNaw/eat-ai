@@ -1,139 +1,139 @@
 {
-  "generatedAt": "2026-07-25T20:06:57.889Z",
+  "generatedAt": "2026-07-25T20:56:34.702Z",
   "basis": {
-    "places": 1267,
-    "withCoordinates": 1267,
+    "places": 1266,
+    "withCoordinates": 1266,
     "note": "All saved places weighted equally. Provenance (might_try/must_try/hidden_gem/good_eats) is not a quality hierarchy and is not used here."
   },
   "cuisineAffinity": {
     "Chinese": {
       "count": 179,
-      "share": 0.07157,
+      "share": 0.07163,
       "weight": 1
     },
     "Bakery / Pastry": {
       "count": 159,
-      "share": 0.06357,
+      "share": 0.06363,
       "weight": 0.8883
     },
     "Sandwiches / Deli": {
-      "count": 125,
-      "share": 0.04998,
-      "weight": 0.6983
+      "count": 124,
+      "share": 0.04962,
+      "weight": 0.6927
     },
     "Dessert / Ice Cream": {
       "count": 111,
-      "share": 0.04438,
+      "share": 0.04442,
       "weight": 0.6201
     },
     "Japanese": {
       "count": 105,
-      "share": 0.04198,
+      "share": 0.04202,
       "weight": 0.5866
     },
     "Coffee": {
       "count": 105,
-      "share": 0.04198,
+      "share": 0.04202,
       "weight": 0.5866
     },
     "Indian": {
       "count": 103,
-      "share": 0.04118,
+      "share": 0.04122,
       "weight": 0.5754
     },
     "Korean": {
       "count": 86,
-      "share": 0.03439,
+      "share": 0.03441,
       "weight": 0.4804
     },
     "Caribbean": {
       "count": 85,
-      "share": 0.03399,
+      "share": 0.03401,
       "weight": 0.4749
     },
     "Jamaican": {
       "count": 79,
-      "share": 0.03159,
+      "share": 0.03161,
       "weight": 0.4413
     },
     "Middle Eastern": {
       "count": 66,
-      "share": 0.02639,
+      "share": 0.02641,
       "weight": 0.3687
     },
     "Fried Chicken / Wings": {
       "count": 65,
-      "share": 0.02599,
+      "share": 0.02601,
       "weight": 0.3631
     },
     "American / Southern": {
       "count": 64,
-      "share": 0.02559,
+      "share": 0.02561,
       "weight": 0.3575
     },
     "Barbecue": {
       "count": 63,
-      "share": 0.02519,
+      "share": 0.02521,
       "weight": 0.352
     },
     "Seafood": {
       "count": 63,
-      "share": 0.02519,
+      "share": 0.02521,
       "weight": 0.352
     },
     "Italian": {
       "count": 62,
-      "share": 0.02479,
+      "share": 0.02481,
       "weight": 0.3464
     },
     "Pizza": {
       "count": 54,
-      "share": 0.02159,
+      "share": 0.02161,
       "weight": 0.3017
     },
     "Vietnamese": {
       "count": 53,
-      "share": 0.02119,
+      "share": 0.02121,
       "weight": 0.2961
     },
     "Grocery / Market": {
       "count": 51,
-      "share": 0.02039,
+      "share": 0.02041,
       "weight": 0.2849
     },
     "Breakfast / Brunch": {
       "count": 50,
-      "share": 0.01999,
+      "share": 0.02001,
       "weight": 0.2793
     },
     "Mexican": {
-      "count": 49,
-      "share": 0.01959,
-      "weight": 0.2737
+      "count": 48,
+      "share": 0.01921,
+      "weight": 0.2682
     },
     "Thai": {
       "count": 44,
-      "share": 0.01759,
+      "share": 0.01761,
       "weight": 0.2458
     },
     "Sushi": {
       "count": 43,
-      "share": 0.01719,
+      "share": 0.01721,
       "weight": 0.2402
     },
     "Vegan / Vegetarian": {
       "count": 42,
-      "share": 0.01679,
+      "share": 0.01681,
       "weight": 0.2346
     },
     "Burgers": {
       "count": 42,
-      "share": 0.01679,
+      "share": 0.01681,
       "weight": 0.2346
     },
     "Pan-Asian / Fusion": {
       "count": 32,
-      "share": 0.01279,
+      "share": 0.01281,
       "weight": 0.1788
     },
     "French": {
@@ -349,101 +349,101 @@
   },
   "familyAffinity": {
     "North American": {
-      "count": 388,
-      "share": 0.19419,
+      "count": 387,
+      "share": 0.19389,
       "weight": 1
     },
     "Bakery & Sweets": {
       "count": 208,
-      "share": 0.1041,
-      "weight": 0.5361
+      "share": 0.10421,
+      "weight": 0.5375
     },
     "Chinese": {
       "count": 188,
-      "share": 0.09409,
-      "weight": 0.4845
+      "share": 0.09419,
+      "weight": 0.4858
     },
     "European": {
       "count": 180,
-      "share": 0.09009,
-      "weight": 0.4639
+      "share": 0.09018,
+      "weight": 0.4651
     },
     "South Asian": {
       "count": 133,
-      "share": 0.06657,
-      "weight": 0.3428
+      "share": 0.06663,
+      "weight": 0.3437
     },
     "Southeast Asian": {
       "count": 132,
-      "share": 0.06607,
-      "weight": 0.3402
+      "share": 0.06613,
+      "weight": 0.3411
     },
     "Cafe": {
       "count": 118,
-      "share": 0.05906,
-      "weight": 0.3041
+      "share": 0.05912,
+      "weight": 0.3049
     },
     "Japanese": {
       "count": 110,
-      "share": 0.05506,
-      "weight": 0.2835
+      "share": 0.05511,
+      "weight": 0.2842
     },
     "Middle Eastern": {
       "count": 107,
-      "share": 0.05355,
-      "weight": 0.2758
+      "share": 0.05361,
+      "weight": 0.2765
     },
     "Caribbean": {
       "count": 103,
-      "share": 0.05155,
-      "weight": 0.2655
+      "share": 0.0516,
+      "weight": 0.2661
     },
     "Korean": {
       "count": 86,
-      "share": 0.04304,
-      "weight": 0.2216
+      "share": 0.04309,
+      "weight": 0.2222
     },
     "Latin American": {
-      "count": 77,
-      "share": 0.03854,
-      "weight": 0.1985
+      "count": 76,
+      "share": 0.03808,
+      "weight": 0.1964
     },
     "Retail": {
       "count": 51,
-      "share": 0.02553,
-      "weight": 0.1314
+      "share": 0.02555,
+      "weight": 0.1318
     },
     "Dietary": {
       "count": 42,
-      "share": 0.02102,
-      "weight": 0.1082
+      "share": 0.02104,
+      "weight": 0.1085
     },
     "African": {
       "count": 35,
-      "share": 0.01752,
-      "weight": 0.0902
+      "share": 0.01754,
+      "weight": 0.0904
     },
     "Asian": {
       "count": 32,
-      "share": 0.01602,
-      "weight": 0.0825
+      "share": 0.01603,
+      "weight": 0.0827
     },
     "Pacific": {
       "count": 8,
-      "share": 0.004,
-      "weight": 0.0206
+      "share": 0.00401,
+      "weight": 0.0207
     }
   },
   "hierarchy": {
     "savoury": [
       {
         "family": "North American",
-        "count": 533,
+        "count": 532,
         "styles": [
           {
             "cuisine": "Sandwiches / Deli",
-            "count": 125,
-            "weight": 0.6983,
+            "count": 124,
+            "weight": 0.6927,
             "googleTypes": [
               "sandwich_shop",
               "bagel_shop",
@@ -946,12 +946,12 @@
       },
       {
         "family": "Latin American",
-        "count": 81,
+        "count": 80,
         "styles": [
           {
             "cuisine": "Mexican",
-            "count": 49,
-            "weight": 0.2737,
+            "count": 48,
+            "weight": 0.2682,
             "googleTypes": [
               "mexican_restaurant",
               "taco_restaurant"
@@ -1148,87 +1148,87 @@
   "attributeAffinity": {
     "traditional": {
       "count": 146,
-      "share": 0.17217,
+      "share": 0.17258,
       "weight": 1
     },
     "casual": {
-      "count": 116,
-      "share": 0.13679,
-      "weight": 0.7945
+      "count": 115,
+      "share": 0.13593,
+      "weight": 0.7877
     },
     "bar": {
-      "count": 89,
-      "share": 0.10495,
-      "weight": 0.6096
+      "count": 88,
+      "share": 0.10402,
+      "weight": 0.6027
     },
     "no-frills": {
       "count": 73,
-      "share": 0.08608,
+      "share": 0.08629,
       "weight": 0.5
     },
     "cozy": {
       "count": 71,
-      "share": 0.08373,
+      "share": 0.08392,
       "weight": 0.4863
     },
     "counter-service": {
       "count": 61,
-      "share": 0.07193,
+      "share": 0.0721,
       "weight": 0.4178
     },
     "contemporary": {
       "count": 51,
-      "share": 0.06014,
+      "share": 0.06028,
       "weight": 0.3493
     },
     "takeaway": {
       "count": 45,
-      "share": 0.05307,
+      "share": 0.05319,
       "weight": 0.3082
     },
     "institution": {
       "count": 43,
-      "share": 0.05071,
+      "share": 0.05083,
       "weight": 0.2945
     },
     "patio": {
       "count": 36,
-      "share": 0.04245,
+      "share": 0.04255,
       "weight": 0.2466
     },
     "lively": {
       "count": 35,
-      "share": 0.04127,
+      "share": 0.04137,
       "weight": 0.2397
     },
     "upscale": {
       "count": 24,
-      "share": 0.0283,
+      "share": 0.02837,
       "weight": 0.1644
     },
     "chain": {
       "count": 18,
-      "share": 0.02123,
+      "share": 0.02128,
       "weight": 0.1233
     },
     "family-run": {
       "count": 17,
-      "share": 0.02005,
+      "share": 0.02009,
       "weight": 0.1164
     },
     "halal": {
       "count": 9,
-      "share": 0.01061,
+      "share": 0.01064,
       "weight": 0.0616
     },
     "late-night": {
       "count": 7,
-      "share": 0.00825,
+      "share": 0.00827,
       "weight": 0.0479
     },
     "local-chain": {
       "count": 6,
-      "share": 0.00708,
+      "share": 0.00709,
       "weight": 0.0411
     },
     "cash-only": {
@@ -1491,18 +1491,6 @@
       ]
     },
     {
-      "lat": 43.67836,
-      "lng": -79.44128,
-      "count": 11,
-      "topCuisines": [
-        "Mexican",
-        "Thai",
-        "Jamaican",
-        "Dessert / Ice Cream",
-        "Latin American"
-      ]
-    },
-    {
       "lat": 43.78699,
       "lng": -79.27362,
       "count": 11,
@@ -1548,6 +1536,18 @@
         "Japanese",
         "Thai",
         "Eastern European"
+      ]
+    },
+    {
+      "lat": 43.67836,
+      "lng": -79.44145,
+      "count": 10,
+      "topCuisines": [
+        "Mexican",
+        "Thai",
+        "Jamaican",
+        "Dessert / Ice Cream",
+        "Latin American"
       ]
     },
     {
@@ -2303,7 +2303,7 @@
       },
       {
         "cuisine": "Sandwiches / Deli",
-        "count": 125,
+        "count": 124,
         "family": "North American",
         "googleTypes": [
           "sandwich_shop",
@@ -2490,7 +2490,7 @@
   "descriptiveOnly": {
     "note": "Recorded for display, NOT scoring inputs. Rating is too tightly distributed to discriminate and weighting it would push down the low-rated favourites. Review count shows no obscurity preference. Price is missing for ~46% of saved places and ~75% of off-list candidates.",
     "rating": {
-      "n": 1264,
+      "n": 1263,
       "mean": 4.488,
       "sd": 0.277,
       "min": 2.2,
@@ -2500,9 +2500,9 @@
       "max": 5
     },
     "reviewCount": {
-      "n": 1264,
-      "mean": 1393.875,
-      "sd": 1977.874,
+      "n": 1263,
+      "mean": 1394.192,
+      "sd": 1978.625,
       "min": 5,
       "p10": 188,
       "median": 796,
@@ -2511,7 +2511,7 @@
     },
     "priceLevel": {
       "unknown": 576,
-      "PRICE_LEVEL_MODERATE": 401,
+      "PRICE_LEVEL_MODERATE": 400,
       "PRICE_LEVEL_INEXPENSIVE": 261,
       "PRICE_LEVEL_EXPENSIVE": 15,
       "PRICE_LEVEL_VERY_EXPENSIVE": 14

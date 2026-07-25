@@ -63,7 +63,9 @@ OUT = os.path.join(ROOT, "negatives.json")
 # filenames carry punctuation and emoji.
 REASONS = {
     "just bad quality food": "bad_quality",
+    "bad food": "bad_quality",
     "too pedestrian": "pedestrian",
+    "pedestrian": "pedestrian",
     "too corporate": "inauthentic",
     "too expensive": "overpriced",
 }
