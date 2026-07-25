@@ -1,0 +1,30 @@
+# Needs manual resolution
+
+25 of 1,340 places could not be matched automatically.
+The Maps URL still works — open it, note the address, and re-search by address.
+
+- **AKI SUSHI** — `good_eats` — [no_match](https://www.google.com/maps/place/AKI+SUSHI/data=!4m2!3m1!1s0x882a75130a6cf721:0x57fef4f470996fb3)
+- **Athens Pastries** — `must_try` — [no_results](https://www.google.com/maps/place/Athens+Pastries/data=!4m2!3m1!1s0x89d4cc9cf32a3c63:0x58755dcb96a35947)
+- **Awesome Tteokbokki(어썸 떡볶이)** — `must_try` — [no_match](https://www.google.com/maps/place/Awesome+Tteokbokki(%EC%96%B4%EC%8D%B8+%EB%96%A1%EB%B3%B6%EC%9D%B4)/data=!4m2!3m1!1s0x882b3565ed19cf1d:0x637886cbd387dcdf)
+- **BBQ BOX** — `hidden_gem` — [no_match](https://www.google.com/maps/place/BBQ+BOX/data=!4m2!3m1!1s0x882b33009d7750b9:0x840b8941beb8e8c0)
+- **D'AMO** — `must_try` — [no_match](https://www.google.com/maps/place/D'AMO/data=!4m2!3m1!1s0x89d4cfb68819e3ad:0xea8a4eee1e5cdb9e)
+- **Doce Bakery** — `hidden_gem` — [no_match](https://www.google.com/maps/place/Doce+Bakery/data=!4m2!3m1!1s0x882b337ff05a9b4f:0x88e3d6b5e5abb042)
+- **El Jefe De Pollo** — `must_try` — [no_match](https://www.google.com/maps/place/El+Jefe+De+Pollo/data=!4m2!3m1!1s0x882b314b773e41f1:0xe1e33f21d18cca14)
+- **Hakka Heaven (The House of Chilli Chicken),(Halal)** — `might_try` — [no_match](https://www.google.com/maps/place/Hakka+Heaven+(The+House+of+Chilli+Chicken),(Halal)/data=!4m2!3m1!1s0x882b351f2e823981:0xf69eac765e90dd89)
+- **Inspire Restaurant** — `might_try` — [no_match](https://www.google.com/maps/place/Inspire+Restaurant/data=!4m2!3m1!1s0x89d4d63be2f6dda3:0xe73a9dfe11c32d79)
+- **Kathmandu Restaurant** — `might_try` — [no_match](https://www.google.com/maps/place/Kathmandu+Restaurant/data=!4m2!3m1!1s0x882b34b387beb7f5:0xbc6b58a575a84e1e)
+- **Lao-Thai** — `must_try` — [no_match](https://www.google.com/maps/place/Lao-Thai/data=!4m2!3m1!1s0x882b35aac2383d75:0xecaf9c40395b7061)
+- **Marusya's Kitchen** — `hidden_gem` — [no_match](https://www.google.com/maps/place/Marusya's+Kitchen/data=!4m2!3m1!1s0x882b37faa9daf7d3:0xfb9a1a40b70ad9e1)
+- **México Lindo** — `might_try` — [no_match](https://www.google.com/maps/place/M%C3%A9xico+Lindo/data=!4m2!3m1!1s0x89d4cc352e9f0f9f:0x178f748ab94df097)
+- **Omai** — `might_try` — [no_match](https://www.google.com/maps/place/Omai/data=!4m2!3m1!1s0x882b34c63d40f127:0x1a7367519000d257)
+- **Restaurant Pompette** — `must_try` — [no_match](https://www.google.com/maps/place/Restaurant+Pompette/data=!4m2!3m1!1s0x882b35ed2dad681f:0x253c94e7e173beed)
+- **Sansa Bakery & Grill** — `hidden_gem` — [no_match](https://www.google.com/maps/place/Sansa+Bakery+%26+Grill/data=!4m2!3m1!1s0x882b33a9519ac433:0xf10d9d82daa27d91)
+- **Satkora** — `might_try` — [no_match](https://www.google.com/maps/place/Satkora/data=!4m2!3m1!1s0x89d4cffd3b0b60ef:0x291dc417e457698)
+- **Shuyi Tealicious 书亦烧仙草 Burlington** — `hidden_gem` — [no_match](https://www.google.com/maps/place/Shuyi+Tealicious+%E4%B9%A6%E4%BA%A6%E7%83%A7%E4%BB%99%E8%8D%89+Burlington/data=!4m2!3m1!1s0x882b618abd4ab013:0x150514acc8383f62)
+- **Slammie Sammies** — `must_try` — [no_match](https://www.google.com/maps/place/Slammie+Sammies/data=!4m2!3m1!1s0x882b351f4b597df7:0x23e7288cc2d77592)
+- **T Wok Restaurant 泛亚豪庭** — `might_try` — [no_match](https://www.google.com/maps/place/T+Wok+Restaurant+%E6%B3%9B%E4%BA%9A%E8%B1%AA%E5%BA%AD/data=!4m2!3m1!1s0x89d4d3b550c993ab:0x7f4ad9b52e805166)
+- **T&J Humppy's Jerk** — `hidden_gem` — [no_match](https://www.google.com/maps/place/T%26J+Humppy's+Jerk/data=!4m2!3m1!1s0x882b33f2202cc669:0xe8576db9e5cd0d9b)
+- **The Arepa Republic** — `might_try` — [no_match](https://www.google.com/maps/place/The+Arepa+Republic/data=!4m2!3m1!1s0x882b31600f515e63:0xd2f39554a2bb12d)
+- **The Empire** — `might_try` — [no_match](https://www.google.com/maps/place/The+Empire/data=!4m2!3m1!1s0x882b345dd5672b4f:0xd4ae5170c350fdb5)
+- **Tianjin Auntie's Steamed Bun 天津阿姨包子铺** — `must_try` — [no_match](https://www.google.com/maps/place/Tianjin+Auntie's+Steamed+Bun+%E5%A4%A9%E6%B4%A5%E9%98%BF%E5%A7%A8%E5%8C%85%E5%AD%90%E9%93%BA/data=!4m2!3m1!1s0x882b3548fdae30f1:0x13068f55d438694d)
+- **Yupdduk Finch** — `might_try` — [no_match](https://www.google.com/maps/place/Yupdduk+Finch/data=!4m2!3m1!1s0x882b2d0c3fe85181:0xad0f458cb7730c9a)

@@ -1,0 +1,16 @@
+# Secrets — never commit
+.env
+.env.local
+.env.*.local
+
+# Dependencies / build output
+node_modules/
+dist/
+.vite/
+
+# Raw Places API responses. Bulky and regenerable from enriched.json —
+# kept out of git, but kept on disk so a re-run never re-fetches.
+data/places-cache.jsonl
+
+# macOS
+.DS_Store
