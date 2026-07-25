@@ -1,5 +1,7 @@
 # chudly.ai
 
+**Live: [chudly-ai.vercel.app](https://chudly-ai.vercel.app)**
+
 A personal food assistant. One user. Opens on a phone, asks four questions,
 returns picks from the 1,269 saved places and from places never saved.
 

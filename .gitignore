@@ -14,3 +14,9 @@ data/places-cache.jsonl
 
 # macOS
 .DS_Store
+
+# Added by `vercel link` — project id, and the .env.local holding the OIDC token.
+.vercel
+.env*
+# ...but the template carries no secrets and must stay tracked.
+!.env.example
