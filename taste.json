@@ -1,0 +1,2501 @@
+{
+  "generatedAt": "2026-07-25T06:05:56.508Z",
+  "basis": {
+    "places": 1269,
+    "withCoordinates": 1269,
+    "note": "All saved places weighted equally. Provenance (might_try/must_try/hidden_gem/good_eats) is not a quality hierarchy and is not used here."
+  },
+  "cuisineAffinity": {
+    "Chinese": {
+      "count": 179,
+      "share": 0.07146,
+      "weight": 1
+    },
+    "Bakery / Pastry": {
+      "count": 159,
+      "share": 0.06347,
+      "weight": 0.8883
+    },
+    "Sandwiches / Deli": {
+      "count": 126,
+      "share": 0.0503,
+      "weight": 0.7039
+    },
+    "Dessert / Ice Cream": {
+      "count": 111,
+      "share": 0.04431,
+      "weight": 0.6201
+    },
+    "Japanese": {
+      "count": 105,
+      "share": 0.04192,
+      "weight": 0.5866
+    },
+    "Coffee": {
+      "count": 105,
+      "share": 0.04192,
+      "weight": 0.5866
+    },
+    "Indian": {
+      "count": 103,
+      "share": 0.04112,
+      "weight": 0.5754
+    },
+    "Korean": {
+      "count": 86,
+      "share": 0.03433,
+      "weight": 0.4804
+    },
+    "Caribbean": {
+      "count": 85,
+      "share": 0.03393,
+      "weight": 0.4749
+    },
+    "Jamaican": {
+      "count": 80,
+      "share": 0.03194,
+      "weight": 0.4469
+    },
+    "Middle Eastern": {
+      "count": 66,
+      "share": 0.02635,
+      "weight": 0.3687
+    },
+    "Fried Chicken / Wings": {
+      "count": 65,
+      "share": 0.02595,
+      "weight": 0.3631
+    },
+    "American / Southern": {
+      "count": 64,
+      "share": 0.02555,
+      "weight": 0.3575
+    },
+    "Barbecue": {
+      "count": 63,
+      "share": 0.02515,
+      "weight": 0.352
+    },
+    "Italian": {
+      "count": 63,
+      "share": 0.02515,
+      "weight": 0.352
+    },
+    "Seafood": {
+      "count": 63,
+      "share": 0.02515,
+      "weight": 0.352
+    },
+    "Vietnamese": {
+      "count": 54,
+      "share": 0.02156,
+      "weight": 0.3017
+    },
+    "Pizza": {
+      "count": 54,
+      "share": 0.02156,
+      "weight": 0.3017
+    },
+    "Grocery / Market": {
+      "count": 51,
+      "share": 0.02036,
+      "weight": 0.2849
+    },
+    "Breakfast / Brunch": {
+      "count": 50,
+      "share": 0.01996,
+      "weight": 0.2793
+    },
+    "Mexican": {
+      "count": 49,
+      "share": 0.01956,
+      "weight": 0.2737
+    },
+    "Thai": {
+      "count": 44,
+      "share": 0.01756,
+      "weight": 0.2458
+    },
+    "Sushi": {
+      "count": 43,
+      "share": 0.01717,
+      "weight": 0.2402
+    },
+    "Vegan / Vegetarian": {
+      "count": 42,
+      "share": 0.01677,
+      "weight": 0.2346
+    },
+    "Burgers": {
+      "count": 42,
+      "share": 0.01677,
+      "weight": 0.2346
+    },
+    "Pan-Asian / Fusion": {
+      "count": 32,
+      "share": 0.01277,
+      "weight": 0.1788
+    },
+    "French": {
+      "count": 30,
+      "share": 0.01198,
+      "weight": 0.1676
+    },
+    "Cantonese": {
+      "count": 27,
+      "share": 0.01078,
+      "weight": 0.1508
+    },
+    "Pub / Gastropub": {
+      "count": 26,
+      "share": 0.01038,
+      "weight": 0.1453
+    },
+    "West African": {
+      "count": 26,
+      "share": 0.01038,
+      "weight": 0.1453
+    },
+    "Trinidadian / Guyanese": {
+      "count": 25,
+      "share": 0.00998,
+      "weight": 0.1397
+    },
+    "Ramen": {
+      "count": 23,
+      "share": 0.00918,
+      "weight": 0.1285
+    },
+    "Filipino": {
+      "count": 23,
+      "share": 0.00918,
+      "weight": 0.1285
+    },
+    "Latin American": {
+      "count": 22,
+      "share": 0.00878,
+      "weight": 0.1229
+    },
+    "Canadian / Contemporary": {
+      "count": 21,
+      "share": 0.00838,
+      "weight": 0.1173
+    },
+    "Israeli / Jewish Deli": {
+      "count": 20,
+      "share": 0.00798,
+      "weight": 0.1117
+    },
+    "South Indian": {
+      "count": 18,
+      "share": 0.00719,
+      "weight": 0.1006
+    },
+    "Eastern European": {
+      "count": 17,
+      "share": 0.00679,
+      "weight": 0.095
+    },
+    "Persian": {
+      "count": 16,
+      "share": 0.00639,
+      "weight": 0.0894
+    },
+    "Portuguese": {
+      "count": 15,
+      "share": 0.00599,
+      "weight": 0.0838
+    },
+    "Nepali / Tibetan": {
+      "count": 15,
+      "share": 0.00599,
+      "weight": 0.0838
+    },
+    "Greek": {
+      "count": 15,
+      "share": 0.00599,
+      "weight": 0.0838
+    },
+    "Bubble Tea": {
+      "count": 15,
+      "share": 0.00599,
+      "weight": 0.0838
+    },
+    "Hot Pot": {
+      "count": 13,
+      "share": 0.00519,
+      "weight": 0.0726
+    },
+    "Steakhouse": {
+      "count": 12,
+      "share": 0.00479,
+      "weight": 0.067
+    },
+    "Turkish": {
+      "count": 12,
+      "share": 0.00479,
+      "weight": 0.067
+    },
+    "Malaysian / Singaporean": {
+      "count": 11,
+      "share": 0.00439,
+      "weight": 0.0615
+    },
+    "Hakka": {
+      "count": 11,
+      "share": 0.00439,
+      "weight": 0.0615
+    },
+    "Lebanese": {
+      "count": 10,
+      "share": 0.00399,
+      "weight": 0.0559
+    },
+    "Dim Sum": {
+      "count": 9,
+      "share": 0.00359,
+      "weight": 0.0503
+    },
+    "Pakistani": {
+      "count": 8,
+      "share": 0.00319,
+      "weight": 0.0447
+    },
+    "Indonesian": {
+      "count": 8,
+      "share": 0.00319,
+      "weight": 0.0447
+    },
+    "Hawaiian / Poke": {
+      "count": 8,
+      "share": 0.00319,
+      "weight": 0.0447
+    },
+    "Ethiopian / Eritrean": {
+      "count": 7,
+      "share": 0.00279,
+      "weight": 0.0391
+    },
+    "Afghan": {
+      "count": 7,
+      "share": 0.00279,
+      "weight": 0.0391
+    },
+    "Sri Lankan": {
+      "count": 7,
+      "share": 0.00279,
+      "weight": 0.0391
+    },
+    "Brazilian": {
+      "count": 7,
+      "share": 0.00279,
+      "weight": 0.0391
+    },
+    "Taiwanese": {
+      "count": 6,
+      "share": 0.0024,
+      "weight": 0.0335
+    },
+    "Sichuan": {
+      "count": 6,
+      "share": 0.0024,
+      "weight": 0.0335
+    },
+    "Spanish": {
+      "count": 6,
+      "share": 0.0024,
+      "weight": 0.0335
+    },
+    "Bangladeshi": {
+      "count": 4,
+      "share": 0.0016,
+      "weight": 0.0223
+    },
+    "Peruvian": {
+      "count": 3,
+      "share": 0.0012,
+      "weight": 0.0168
+    },
+    "Swiss / Austrian": {
+      "count": 3,
+      "share": 0.0012,
+      "weight": 0.0168
+    },
+    "East African / Somali": {
+      "count": 3,
+      "share": 0.0012,
+      "weight": 0.0168
+    },
+    "Cambodian / Laotian": {
+      "count": 2,
+      "share": 0.0008,
+      "weight": 0.0112
+    },
+    "Québécois": {
+      "count": 2,
+      "share": 0.0008,
+      "weight": 0.0112
+    },
+    "Shanghainese / Northern Chinese": {
+      "count": 1,
+      "share": 0.0004,
+      "weight": 0.0056
+    },
+    "Tea House": {
+      "count": 1,
+      "share": 0.0004,
+      "weight": 0.0056
+    }
+  },
+  "familyAffinity": {
+    "North American": {
+      "count": 389,
+      "share": 0.19431,
+      "weight": 1
+    },
+    "Bakery & Sweets": {
+      "count": 208,
+      "share": 0.1039,
+      "weight": 0.5347
+    },
+    "Chinese": {
+      "count": 188,
+      "share": 0.09391,
+      "weight": 0.4833
+    },
+    "European": {
+      "count": 181,
+      "share": 0.09041,
+      "weight": 0.4653
+    },
+    "Southeast Asian": {
+      "count": 133,
+      "share": 0.06643,
+      "weight": 0.3419
+    },
+    "South Asian": {
+      "count": 133,
+      "share": 0.06643,
+      "weight": 0.3419
+    },
+    "Cafe": {
+      "count": 118,
+      "share": 0.05894,
+      "weight": 0.3033
+    },
+    "Japanese": {
+      "count": 110,
+      "share": 0.05495,
+      "weight": 0.2828
+    },
+    "Middle Eastern": {
+      "count": 107,
+      "share": 0.05345,
+      "weight": 0.2751
+    },
+    "Caribbean": {
+      "count": 104,
+      "share": 0.05195,
+      "weight": 0.2674
+    },
+    "Korean": {
+      "count": 86,
+      "share": 0.04296,
+      "weight": 0.2211
+    },
+    "Latin American": {
+      "count": 77,
+      "share": 0.03846,
+      "weight": 0.1979
+    },
+    "Retail": {
+      "count": 51,
+      "share": 0.02547,
+      "weight": 0.1311
+    },
+    "Dietary": {
+      "count": 42,
+      "share": 0.02098,
+      "weight": 0.108
+    },
+    "African": {
+      "count": 35,
+      "share": 0.01748,
+      "weight": 0.09
+    },
+    "Asian": {
+      "count": 32,
+      "share": 0.01598,
+      "weight": 0.0823
+    },
+    "Pacific": {
+      "count": 8,
+      "share": 0.004,
+      "weight": 0.0206
+    }
+  },
+  "hierarchy": {
+    "savoury": [
+      {
+        "family": "North American",
+        "count": 534,
+        "styles": [
+          {
+            "cuisine": "Sandwiches / Deli",
+            "count": 126,
+            "weight": 0.7039,
+            "googleTypes": [
+              "sandwich_shop",
+              "bagel_shop",
+              "deli"
+            ]
+          },
+          {
+            "cuisine": "Fried Chicken / Wings",
+            "count": 65,
+            "weight": 0.3631,
+            "googleTypes": [
+              "chicken_restaurant",
+              "chicken_wings_restaurant"
+            ]
+          },
+          {
+            "cuisine": "American / Southern",
+            "count": 64,
+            "weight": 0.3575,
+            "googleTypes": [
+              "american_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Barbecue",
+            "count": 63,
+            "weight": 0.352,
+            "googleTypes": [
+              "barbecue_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Seafood",
+            "count": 63,
+            "weight": 0.352,
+            "googleTypes": [
+              "poke_restaurant",
+              "seafood_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Breakfast / Brunch",
+            "count": 50,
+            "weight": 0.2793,
+            "googleTypes": [
+              "breakfast_restaurant",
+              "brunch_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Burgers",
+            "count": 42,
+            "weight": 0.2346,
+            "googleTypes": [
+              "hamburger_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Pub / Gastropub",
+            "count": 26,
+            "weight": 0.1453,
+            "googleTypes": [
+              "brewery",
+              "pub",
+              "wine_bar"
+            ]
+          },
+          {
+            "cuisine": "Canadian / Contemporary",
+            "count": 21,
+            "weight": 0.1173,
+            "googleTypes": [
+              "canadian_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Steakhouse",
+            "count": 12,
+            "weight": 0.067,
+            "googleTypes": [
+              "steak_house"
+            ]
+          },
+          {
+            "cuisine": "Québécois",
+            "count": 2,
+            "weight": 0.0112,
+            "googleTypes": []
+          }
+        ]
+      },
+      {
+        "family": "Chinese",
+        "count": 252,
+        "styles": [
+          {
+            "cuisine": "Chinese",
+            "count": 179,
+            "weight": 1,
+            "googleTypes": [
+              "chinese_restaurant",
+              "asian_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Cantonese",
+            "count": 27,
+            "weight": 0.1508,
+            "googleTypes": [
+              "cantonese_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Hot Pot",
+            "count": 13,
+            "weight": 0.0726,
+            "googleTypes": [
+              "hot_pot_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Hakka",
+            "count": 11,
+            "weight": 0.0615,
+            "googleTypes": []
+          },
+          {
+            "cuisine": "Dim Sum",
+            "count": 9,
+            "weight": 0.0503,
+            "googleTypes": [
+              "dim_sum_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Taiwanese",
+            "count": 6,
+            "weight": 0.0335,
+            "googleTypes": [
+              "taiwanese_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Sichuan",
+            "count": 6,
+            "weight": 0.0335,
+            "googleTypes": []
+          },
+          {
+            "cuisine": "Shanghainese / Northern Chinese",
+            "count": 1,
+            "weight": 0.0056,
+            "googleTypes": []
+          }
+        ]
+      },
+      {
+        "family": "European",
+        "count": 203,
+        "styles": [
+          {
+            "cuisine": "Italian",
+            "count": 63,
+            "weight": 0.352,
+            "googleTypes": [
+              "italian_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Pizza",
+            "count": 54,
+            "weight": 0.3017,
+            "googleTypes": [
+              "pizza_restaurant"
+            ]
+          },
+          {
+            "cuisine": "French",
+            "count": 30,
+            "weight": 0.1676,
+            "googleTypes": [
+              "french_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Eastern European",
+            "count": 17,
+            "weight": 0.095,
+            "googleTypes": [
+              "czech_restaurant",
+              "georgian_restaurant",
+              "hungarian_restaurant",
+              "polish_restaurant",
+              "russian_restaurant",
+              "ukrainian_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Portuguese",
+            "count": 15,
+            "weight": 0.0838,
+            "googleTypes": [
+              "portuguese_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Greek",
+            "count": 15,
+            "weight": 0.0838,
+            "googleTypes": [
+              "greek_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Spanish",
+            "count": 6,
+            "weight": 0.0335,
+            "googleTypes": [
+              "spanish_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Swiss / Austrian",
+            "count": 3,
+            "weight": 0.0168,
+            "googleTypes": []
+          }
+        ]
+      },
+      {
+        "family": "Caribbean",
+        "count": 190,
+        "styles": [
+          {
+            "cuisine": "Caribbean",
+            "count": 85,
+            "weight": 0.4749,
+            "googleTypes": [
+              "caribbean_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Jamaican",
+            "count": 80,
+            "weight": 0.4469,
+            "googleTypes": [
+              "caribbean_restaurant",
+              "jamaican_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Trinidadian / Guyanese",
+            "count": 25,
+            "weight": 0.1397,
+            "googleTypes": []
+          }
+        ]
+      },
+      {
+        "family": "Japanese",
+        "count": 171,
+        "styles": [
+          {
+            "cuisine": "Japanese",
+            "count": 105,
+            "weight": 0.5866,
+            "googleTypes": [
+              "japanese_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Sushi",
+            "count": 43,
+            "weight": 0.2402,
+            "googleTypes": [
+              "sushi_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Ramen",
+            "count": 23,
+            "weight": 0.1285,
+            "googleTypes": [
+              "ramen_restaurant"
+            ]
+          }
+        ]
+      },
+      {
+        "family": "South Asian",
+        "count": 162,
+        "styles": [
+          {
+            "cuisine": "Indian",
+            "count": 103,
+            "weight": 0.5754,
+            "googleTypes": [
+              "indian_restaurant"
+            ]
+          },
+          {
+            "cuisine": "South Indian",
+            "count": 18,
+            "weight": 0.1006,
+            "googleTypes": [
+              "south_indian_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Nepali / Tibetan",
+            "count": 15,
+            "weight": 0.0838,
+            "googleTypes": [
+              "nepalese_restaurant",
+              "tibetan_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Pakistani",
+            "count": 8,
+            "weight": 0.0447,
+            "googleTypes": [
+              "pakistani_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Afghan",
+            "count": 7,
+            "weight": 0.0391,
+            "googleTypes": [
+              "afghani_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Sri Lankan",
+            "count": 7,
+            "weight": 0.0391,
+            "googleTypes": [
+              "sri_lankan_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Bangladeshi",
+            "count": 4,
+            "weight": 0.0223,
+            "googleTypes": [
+              "bangladeshi_restaurant"
+            ]
+          }
+        ]
+      },
+      {
+        "family": "Bakery & Sweets",
+        "count": 159,
+        "styles": [
+          {
+            "cuisine": "Bakery / Pastry",
+            "count": 159,
+            "weight": 0.8883,
+            "googleTypes": [
+              "bakery",
+              "pastry_shop"
+            ]
+          }
+        ]
+      },
+      {
+        "family": "Southeast Asian",
+        "count": 142,
+        "styles": [
+          {
+            "cuisine": "Vietnamese",
+            "count": 54,
+            "weight": 0.3017,
+            "googleTypes": [
+              "vietnamese_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Thai",
+            "count": 44,
+            "weight": 0.2458,
+            "googleTypes": [
+              "thai_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Filipino",
+            "count": 23,
+            "weight": 0.1285,
+            "googleTypes": [
+              "filipino_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Malaysian / Singaporean",
+            "count": 11,
+            "weight": 0.0615,
+            "googleTypes": [
+              "malaysian_restaurant",
+              "singaporean_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Indonesian",
+            "count": 8,
+            "weight": 0.0447,
+            "googleTypes": [
+              "indonesian_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Cambodian / Laotian",
+            "count": 2,
+            "weight": 0.0112,
+            "googleTypes": [
+              "cambodian_restaurant",
+              "laotian_restaurant"
+            ]
+          }
+        ]
+      },
+      {
+        "family": "Middle Eastern",
+        "count": 124,
+        "styles": [
+          {
+            "cuisine": "Middle Eastern",
+            "count": 66,
+            "weight": 0.3687,
+            "googleTypes": [
+              "mediterranean_restaurant",
+              "middle_eastern_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Israeli / Jewish Deli",
+            "count": 20,
+            "weight": 0.1117,
+            "googleTypes": [
+              "deli"
+            ]
+          },
+          {
+            "cuisine": "Persian",
+            "count": 16,
+            "weight": 0.0894,
+            "googleTypes": [
+              "afghani_restaurant",
+              "persian_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Turkish",
+            "count": 12,
+            "weight": 0.067,
+            "googleTypes": [
+              "turkish_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Lebanese",
+            "count": 10,
+            "weight": 0.0559,
+            "googleTypes": [
+              "lebanese_restaurant"
+            ]
+          }
+        ]
+      },
+      {
+        "family": "Cafe",
+        "count": 105,
+        "styles": [
+          {
+            "cuisine": "Coffee",
+            "count": 105,
+            "weight": 0.5866,
+            "googleTypes": [
+              "coffee_shop",
+              "cafe"
+            ]
+          }
+        ]
+      },
+      {
+        "family": "Korean",
+        "count": 86,
+        "styles": [
+          {
+            "cuisine": "Korean",
+            "count": 86,
+            "weight": 0.4804,
+            "googleTypes": [
+              "korean_restaurant",
+              "korean_barbecue_restaurant"
+            ]
+          }
+        ]
+      },
+      {
+        "family": "Latin American",
+        "count": 81,
+        "styles": [
+          {
+            "cuisine": "Mexican",
+            "count": 49,
+            "weight": 0.2737,
+            "googleTypes": [
+              "mexican_restaurant",
+              "taco_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Latin American",
+            "count": 22,
+            "weight": 0.1229,
+            "googleTypes": [
+              "argentinian_restaurant",
+              "chilean_restaurant",
+              "colombian_restaurant",
+              "cuban_restaurant",
+              "latin_american_restaurant",
+              "salvadoran_restaurant",
+              "venezuelan_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Brazilian",
+            "count": 7,
+            "weight": 0.0391,
+            "googleTypes": [
+              "brazilian_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Peruvian",
+            "count": 3,
+            "weight": 0.0168,
+            "googleTypes": [
+              "peruvian_restaurant"
+            ]
+          }
+        ]
+      },
+      {
+        "family": "Dietary",
+        "count": 42,
+        "styles": [
+          {
+            "cuisine": "Vegan / Vegetarian",
+            "count": 42,
+            "weight": 0.2346,
+            "googleTypes": [
+              "vegan_restaurant",
+              "vegetarian_restaurant"
+            ]
+          }
+        ]
+      },
+      {
+        "family": "African",
+        "count": 36,
+        "styles": [
+          {
+            "cuisine": "West African",
+            "count": 26,
+            "weight": 0.1453,
+            "googleTypes": [
+              "african_restaurant",
+              "ghanaian_restaurant",
+              "nigerian_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Ethiopian / Eritrean",
+            "count": 7,
+            "weight": 0.0391,
+            "googleTypes": [
+              "ethiopian_restaurant"
+            ]
+          },
+          {
+            "cuisine": "East African / Somali",
+            "count": 3,
+            "weight": 0.0168,
+            "googleTypes": []
+          }
+        ]
+      },
+      {
+        "family": "Asian",
+        "count": 32,
+        "styles": [
+          {
+            "cuisine": "Pan-Asian / Fusion",
+            "count": 32,
+            "weight": 0.1788,
+            "googleTypes": [
+              "asian_fusion_restaurant",
+              "fusion_restaurant"
+            ]
+          }
+        ]
+      },
+      {
+        "family": "Pacific",
+        "count": 8,
+        "styles": [
+          {
+            "cuisine": "Hawaiian / Poke",
+            "count": 8,
+            "weight": 0.0447,
+            "googleTypes": [
+              "hawaiian_restaurant",
+              "poke_restaurant"
+            ]
+          }
+        ]
+      }
+    ],
+    "sweet": [
+      {
+        "family": "Bakery & Sweets",
+        "count": 270,
+        "styles": [
+          {
+            "cuisine": "Bakery / Pastry",
+            "count": 159,
+            "weight": 0.8883,
+            "googleTypes": [
+              "bakery",
+              "pastry_shop"
+            ]
+          },
+          {
+            "cuisine": "Dessert / Ice Cream",
+            "count": 111,
+            "weight": 0.6201,
+            "googleTypes": [
+              "candy_store",
+              "confectionery",
+              "dessert_restaurant",
+              "dessert_shop",
+              "ice_cream_shop"
+            ]
+          }
+        ]
+      },
+      {
+        "family": "Cafe",
+        "count": 121,
+        "styles": [
+          {
+            "cuisine": "Coffee",
+            "count": 105,
+            "weight": 0.5866,
+            "googleTypes": [
+              "coffee_shop",
+              "cafe"
+            ]
+          },
+          {
+            "cuisine": "Bubble Tea",
+            "count": 15,
+            "weight": 0.0838,
+            "googleTypes": [
+              "bubble_tea_store",
+              "tea_house"
+            ]
+          },
+          {
+            "cuisine": "Tea House",
+            "count": 1,
+            "weight": 0.0056,
+            "googleTypes": []
+          }
+        ]
+      }
+    ],
+    "retail": [
+      {
+        "family": "Retail",
+        "count": 51,
+        "styles": [
+          {
+            "cuisine": "Grocery / Market",
+            "count": 51,
+            "weight": 0.2849,
+            "googleTypes": [
+              "asian_grocery_store",
+              "butcher_shop",
+              "grocery_store",
+              "supermarket",
+              "wholesaler"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "attributeAffinity": {
+    "traditional": {
+      "count": 148,
+      "share": 0.17371,
+      "weight": 1
+    },
+    "casual": {
+      "count": 116,
+      "share": 0.13615,
+      "weight": 0.7838
+    },
+    "bar": {
+      "count": 89,
+      "share": 0.10446,
+      "weight": 0.6014
+    },
+    "no-frills": {
+      "count": 74,
+      "share": 0.08685,
+      "weight": 0.5
+    },
+    "cozy": {
+      "count": 71,
+      "share": 0.08333,
+      "weight": 0.4797
+    },
+    "counter-service": {
+      "count": 61,
+      "share": 0.0716,
+      "weight": 0.4122
+    },
+    "contemporary": {
+      "count": 51,
+      "share": 0.05986,
+      "weight": 0.3446
+    },
+    "takeaway": {
+      "count": 45,
+      "share": 0.05282,
+      "weight": 0.3041
+    },
+    "institution": {
+      "count": 43,
+      "share": 0.05047,
+      "weight": 0.2905
+    },
+    "patio": {
+      "count": 36,
+      "share": 0.04225,
+      "weight": 0.2432
+    },
+    "lively": {
+      "count": 35,
+      "share": 0.04108,
+      "weight": 0.2365
+    },
+    "upscale": {
+      "count": 25,
+      "share": 0.02934,
+      "weight": 0.1689
+    },
+    "chain": {
+      "count": 18,
+      "share": 0.02113,
+      "weight": 0.1216
+    },
+    "family-run": {
+      "count": 17,
+      "share": 0.01995,
+      "weight": 0.1149
+    },
+    "halal": {
+      "count": 9,
+      "share": 0.01056,
+      "weight": 0.0608
+    },
+    "late-night": {
+      "count": 7,
+      "share": 0.00822,
+      "weight": 0.0473
+    },
+    "local-chain": {
+      "count": 6,
+      "share": 0.00704,
+      "weight": 0.0405
+    },
+    "cash-only": {
+      "count": 1,
+      "share": 0.00117,
+      "weight": 0.0068
+    }
+  },
+  "clusters": [
+    {
+      "lat": 43.65093,
+      "lng": -79.40266,
+      "count": 47,
+      "topCuisines": [
+        "Pizza",
+        "Chinese",
+        "Middle Eastern",
+        "Indian",
+        "Vietnamese"
+      ]
+    },
+    {
+      "lat": 43.65676,
+      "lng": -79.40176,
+      "count": 35,
+      "topCuisines": [
+        "Sandwiches / Deli",
+        "Bakery / Pastry",
+        "Chinese",
+        "Vietnamese",
+        "Sushi"
+      ]
+    },
+    {
+      "lat": 43.65091,
+      "lng": -79.39398,
+      "count": 33,
+      "topCuisines": [
+        "Chinese",
+        "Sandwiches / Deli",
+        "Bakery / Pastry",
+        "Ramen",
+        "Cantonese"
+      ]
+    },
+    {
+      "lat": 43.6667,
+      "lng": -79.38342,
+      "count": 28,
+      "topCuisines": [
+        "Korean",
+        "Dessert / Ice Cream",
+        "Bakery / Pastry",
+        "Indian",
+        "Sushi"
+      ]
+    },
+    {
+      "lat": 43.6581,
+      "lng": -79.3817,
+      "count": 25,
+      "topCuisines": [
+        "Korean",
+        "Japanese",
+        "Bubble Tea",
+        "Bakery / Pastry",
+        "West African"
+      ]
+    },
+    {
+      "lat": 43.70421,
+      "lng": -79.39356,
+      "count": 22,
+      "topCuisines": [
+        "Japanese",
+        "Indian",
+        "Thai",
+        "Portuguese",
+        "Fried Chicken / Wings"
+      ]
+    },
+    {
+      "lat": 43.66977,
+      "lng": -79.38982,
+      "count": 21,
+      "topCuisines": [
+        "Japanese",
+        "Italian",
+        "French",
+        "Indian",
+        "Sushi"
+      ]
+    },
+    {
+      "lat": 43.77549,
+      "lng": -79.41431,
+      "count": 19,
+      "topCuisines": [
+        "Korean",
+        "Chinese",
+        "Japanese",
+        "Dessert / Ice Cream",
+        "Sichuan"
+      ]
+    },
+    {
+      "lat": 43.66432,
+      "lng": -79.41561,
+      "count": 17,
+      "topCuisines": [
+        "Korean",
+        "Indian",
+        "Bakery / Pastry",
+        "Grocery / Market",
+        "Middle Eastern"
+      ]
+    },
+    {
+      "lat": 43.6515,
+      "lng": -79.42711,
+      "count": 15,
+      "topCuisines": [
+        "Bakery / Pastry",
+        "Latin American",
+        "Italian",
+        "Vietnamese",
+        "Canadian / Contemporary"
+      ]
+    },
+    {
+      "lat": 43.64022,
+      "lng": -79.43902,
+      "count": 15,
+      "topCuisines": [
+        "Nepali / Tibetan",
+        "Indian",
+        "Filipino",
+        "West African",
+        "Korean"
+      ]
+    },
+    {
+      "lat": 43.70621,
+      "lng": -79.37548,
+      "count": 15,
+      "topCuisines": [
+        "Bakery / Pastry",
+        "Middle Eastern",
+        "Sandwiches / Deli",
+        "Fried Chicken / Wings",
+        "Dessert / Ice Cream"
+      ]
+    },
+    {
+      "lat": 43.65908,
+      "lng": -79.44177,
+      "count": 14,
+      "topCuisines": [
+        "Jamaican",
+        "Italian",
+        "Chinese",
+        "Portuguese",
+        "Greek"
+      ]
+    },
+    {
+      "lat": 43.69573,
+      "lng": -79.45048,
+      "count": 14,
+      "topCuisines": [
+        "Mexican",
+        "Latin American",
+        "Bakery / Pastry",
+        "Brazilian",
+        "Dessert / Ice Cream"
+      ]
+    },
+    {
+      "lat": 43.64899,
+      "lng": -79.41633,
+      "count": 14,
+      "topCuisines": [
+        "Sandwiches / Deli",
+        "Pizza",
+        "French",
+        "Dessert / Ice Cream",
+        "Coffee"
+      ]
+    },
+    {
+      "lat": 43.67575,
+      "lng": -79.39058,
+      "count": 14,
+      "topCuisines": [
+        "Italian",
+        "Burgers",
+        "Seafood",
+        "Sandwiches / Deli",
+        "Bakery / Pastry"
+      ]
+    },
+    {
+      "lat": 43.80495,
+      "lng": -79.28861,
+      "count": 13,
+      "topCuisines": [
+        "Chinese",
+        "Fried Chicken / Wings",
+        "Hot Pot",
+        "Taiwanese",
+        "Vietnamese"
+      ]
+    },
+    {
+      "lat": 43.76607,
+      "lng": -79.41193,
+      "count": 13,
+      "topCuisines": [
+        "Korean",
+        "Japanese",
+        "Ramen",
+        "Fried Chicken / Wings",
+        "Burgers"
+      ]
+    },
+    {
+      "lat": 43.66135,
+      "lng": -79.42883,
+      "count": 12,
+      "topCuisines": [
+        "Ethiopian / Eritrean",
+        "Malaysian / Singaporean",
+        "Bakery / Pastry",
+        "Mexican",
+        "Vegan / Vegetarian"
+      ]
+    },
+    {
+      "lat": 43.6496,
+      "lng": -79.37951,
+      "count": 12,
+      "topCuisines": [
+        "Canadian / Contemporary",
+        "Chinese",
+        "Sushi",
+        "Korean",
+        "Seafood"
+      ]
+    },
+    {
+      "lat": 43.67855,
+      "lng": -79.34536,
+      "count": 11,
+      "topCuisines": [
+        "Greek",
+        "Pizza",
+        "Caribbean",
+        "Ethiopian / Eritrean",
+        "Fried Chicken / Wings"
+      ]
+    },
+    {
+      "lat": 43.67836,
+      "lng": -79.44128,
+      "count": 11,
+      "topCuisines": [
+        "Mexican",
+        "Thai",
+        "Jamaican",
+        "Dessert / Ice Cream",
+        "Latin American"
+      ]
+    },
+    {
+      "lat": 43.78699,
+      "lng": -79.27362,
+      "count": 11,
+      "topCuisines": [
+        "Chinese",
+        "Malaysian / Singaporean",
+        "Filipino",
+        "Barbecue",
+        "Vietnamese"
+      ]
+    },
+    {
+      "lat": 43.66551,
+      "lng": -79.46613,
+      "count": 11,
+      "topCuisines": [
+        "Thai",
+        "Pizza",
+        "Mexican",
+        "Fried Chicken / Wings",
+        "Italian"
+      ]
+    },
+    {
+      "lat": 43.84902,
+      "lng": -79.34792,
+      "count": 10,
+      "topCuisines": [
+        "Chinese",
+        "Vietnamese",
+        "Ramen",
+        "Cantonese",
+        "Taiwanese"
+      ]
+    },
+    {
+      "lat": 43.73101,
+      "lng": -79.4036,
+      "count": 10,
+      "topCuisines": [
+        "Indian",
+        "Bakery / Pastry",
+        "Japanese",
+        "Thai",
+        "Eastern European"
+      ]
+    },
+    {
+      "lat": 43.68228,
+      "lng": -79.32938,
+      "count": 10,
+      "topCuisines": [
+        "Ethiopian / Eritrean",
+        "Bakery / Pastry",
+        "Mexican",
+        "Afghan",
+        "Pizza"
+      ]
+    },
+    {
+      "lat": 43.74537,
+      "lng": -79.29488,
+      "count": 9,
+      "topCuisines": [
+        "Middle Eastern",
+        "Vietnamese",
+        "Lebanese",
+        "Afghan",
+        "Bakery / Pastry"
+      ]
+    },
+    {
+      "lat": 43.6872,
+      "lng": -79.39355,
+      "count": 9,
+      "topCuisines": [
+        "Sandwiches / Deli",
+        "Hawaiian / Poke",
+        "Indian",
+        "Peruvian",
+        "Burgers"
+      ]
+    },
+    {
+      "lat": 43.66902,
+      "lng": -79.32255,
+      "count": 9,
+      "topCuisines": [
+        "Indian",
+        "Fried Chicken / Wings",
+        "Mexican",
+        "Turkish",
+        "Caribbean"
+      ]
+    },
+    {
+      "lat": 43.85942,
+      "lng": -79.30518,
+      "count": 9,
+      "topCuisines": [
+        "Cantonese",
+        "Coffee",
+        "Chinese",
+        "Korean",
+        "Bakery / Pastry"
+      ]
+    },
+    {
+      "lat": 43.74128,
+      "lng": -79.30552,
+      "count": 8,
+      "topCuisines": [
+        "Middle Eastern",
+        "Thai",
+        "Bakery / Pastry",
+        "West African"
+      ]
+    },
+    {
+      "lat": 43.67045,
+      "lng": -79.3309,
+      "count": 8,
+      "topCuisines": [
+        "Breakfast / Brunch",
+        "Seafood",
+        "Burgers",
+        "Vietnamese",
+        "Japanese"
+      ]
+    },
+    {
+      "lat": 43.64949,
+      "lng": -79.44966,
+      "count": 8,
+      "topCuisines": [
+        "Vietnamese",
+        "Barbecue",
+        "Indian",
+        "Burgers",
+        "Ramen"
+      ]
+    },
+    {
+      "lat": 43.65735,
+      "lng": -79.41708,
+      "count": 8,
+      "topCuisines": [
+        "Coffee",
+        "Sandwiches / Deli",
+        "Portuguese",
+        "Breakfast / Brunch",
+        "South Indian"
+      ]
+    },
+    {
+      "lat": 43.64299,
+      "lng": -79.3799,
+      "count": 8,
+      "topCuisines": [
+        "Steakhouse",
+        "Bakery / Pastry",
+        "Dessert / Ice Cream",
+        "Burgers",
+        "Grocery / Market"
+      ]
+    },
+    {
+      "lat": 43.84601,
+      "lng": -79.38038,
+      "count": 8,
+      "topCuisines": [
+        "Cantonese",
+        "Bakery / Pastry",
+        "Korean",
+        "Coffee",
+        "Thai"
+      ]
+    },
+    {
+      "lat": 43.69604,
+      "lng": -79.44131,
+      "count": 8,
+      "topCuisines": [
+        "Jamaican",
+        "Filipino",
+        "Mexican",
+        "Caribbean"
+      ]
+    },
+    {
+      "lat": 43.64231,
+      "lng": -79.426,
+      "count": 7,
+      "topCuisines": [
+        "Fried Chicken / Wings",
+        "Korean",
+        "Nepali / Tibetan",
+        "Bakery / Pastry"
+      ]
+    },
+    {
+      "lat": 43.71193,
+      "lng": -79.39938,
+      "count": 7,
+      "topCuisines": [
+        "Sandwiches / Deli",
+        "Burgers",
+        "Barbecue",
+        "Thai",
+        "Coffee"
+      ]
+    },
+    {
+      "lat": 43.81345,
+      "lng": -79.29292,
+      "count": 7,
+      "topCuisines": [
+        "Bakery / Pastry",
+        "Chinese",
+        "South Indian",
+        "Barbecue",
+        "Sushi"
+      ]
+    },
+    {
+      "lat": 43.7922,
+      "lng": -79.2502,
+      "count": 7,
+      "topCuisines": [
+        "Fried Chicken / Wings",
+        "Sri Lankan",
+        "Chinese",
+        "Jamaican",
+        "Indian"
+      ]
+    },
+    {
+      "lat": 43.64172,
+      "lng": -79.44721,
+      "count": 7,
+      "topCuisines": [
+        "Eastern European",
+        "Japanese",
+        "Mexican",
+        "South Indian",
+        "Jamaican"
+      ]
+    },
+    {
+      "lat": 43.64898,
+      "lng": -79.37026,
+      "count": 7,
+      "topCuisines": [
+        "Bakery / Pastry",
+        "Mexican",
+        "Seafood",
+        "Portuguese",
+        "Fried Chicken / Wings"
+      ]
+    },
+    {
+      "lat": 43.68722,
+      "lng": -79.43874,
+      "count": 7,
+      "topCuisines": [
+        "Sandwiches / Deli",
+        "Jamaican",
+        "Grocery / Market",
+        "Coffee",
+        "Italian"
+      ]
+    },
+    {
+      "lat": 43.66536,
+      "lng": -79.35191,
+      "count": 7,
+      "topCuisines": [
+        "Bakery / Pastry",
+        "Ramen",
+        "Vietnamese",
+        "Cantonese",
+        "Chinese"
+      ]
+    },
+    {
+      "lat": 43.65724,
+      "lng": -79.39118,
+      "count": 7,
+      "topCuisines": [
+        "Chinese",
+        "Thai",
+        "Portuguese",
+        "Korean",
+        "Middle Eastern"
+      ]
+    },
+    {
+      "lat": 43.82025,
+      "lng": -79.30491,
+      "count": 6,
+      "topCuisines": [
+        "Vietnamese",
+        "Bakery / Pastry",
+        "Korean",
+        "Thai",
+        "Coffee"
+      ]
+    },
+    {
+      "lat": 43.64094,
+      "lng": -79.41837,
+      "count": 6,
+      "topCuisines": [
+        "Burgers",
+        "Jamaican",
+        "Thai",
+        "Breakfast / Brunch",
+        "Seafood"
+      ]
+    },
+    {
+      "lat": 43.65698,
+      "lng": -79.45251,
+      "count": 6,
+      "topCuisines": [
+        "Japanese",
+        "Bakery / Pastry",
+        "Indian",
+        "Sandwiches / Deli",
+        "Thai"
+      ]
+    },
+    {
+      "lat": 43.6429,
+      "lng": -79.39572,
+      "count": 6,
+      "topCuisines": [
+        "Indian",
+        "Fried Chicken / Wings",
+        "Dessert / Ice Cream",
+        "Seafood",
+        "Burgers"
+      ]
+    },
+    {
+      "lat": 43.68745,
+      "lng": -79.29848,
+      "count": 6,
+      "topCuisines": [
+        "Caribbean",
+        "Barbecue",
+        "Jamaican",
+        "Pizza",
+        "Seafood"
+      ]
+    },
+    {
+      "lat": 43.70398,
+      "lng": -79.50426,
+      "count": 6,
+      "topCuisines": [
+        "Mexican",
+        "Jamaican",
+        "Caribbean"
+      ]
+    },
+    {
+      "lat": 43.66631,
+      "lng": -79.40549,
+      "count": 6,
+      "topCuisines": [
+        "Middle Eastern",
+        "Chinese",
+        "Eastern European",
+        "Korean"
+      ]
+    },
+    {
+      "lat": 43.72436,
+      "lng": -79.28589,
+      "count": 5,
+      "topCuisines": [
+        "Sandwiches / Deli",
+        "Fried Chicken / Wings",
+        "Barbecue",
+        "Seafood"
+      ]
+    },
+    {
+      "lat": 43.66005,
+      "lng": -79.3673,
+      "count": 5,
+      "topCuisines": [
+        "Malaysian / Singaporean",
+        "Japanese",
+        "Hakka",
+        "Sushi",
+        "Trinidadian / Guyanese"
+      ]
+    },
+    {
+      "lat": 43.70645,
+      "lng": -79.30882,
+      "count": 5,
+      "topCuisines": [
+        "Sandwiches / Deli",
+        "Caribbean",
+        "Vietnamese",
+        "Bakery / Pastry",
+        "Burgers"
+      ]
+    },
+    {
+      "lat": 43.84265,
+      "lng": -79.39005,
+      "count": 5,
+      "topCuisines": [
+        "Vietnamese",
+        "Sandwiches / Deli",
+        "Chinese"
+      ]
+    },
+    {
+      "lat": 44.50162,
+      "lng": -80.21828,
+      "count": 5,
+      "topCuisines": [
+        "Sandwiches / Deli",
+        "Pizza",
+        "French"
+      ]
+    },
+    {
+      "lat": 43.73014,
+      "lng": -79.28265,
+      "count": 5,
+      "topCuisines": [
+        "Burgers",
+        "West African",
+        "Jamaican",
+        "Israeli / Jewish Deli",
+        "South Indian"
+      ]
+    },
+    {
+      "lat": 43.67753,
+      "lng": -79.35271,
+      "count": 5,
+      "topCuisines": [
+        "Greek",
+        "Thai",
+        "Japanese",
+        "Middle Eastern"
+      ]
+    },
+    {
+      "lat": 43.87687,
+      "lng": -79.26065,
+      "count": 5,
+      "topCuisines": [
+        "Bakery / Pastry",
+        "Japanese",
+        "Greek",
+        "Dessert / Ice Cream",
+        "Burgers"
+      ]
+    },
+    {
+      "lat": 43.64346,
+      "lng": -79.53469,
+      "count": 5,
+      "topCuisines": [
+        "Korean",
+        "Bakery / Pastry",
+        "Seafood",
+        "Portuguese",
+        "Thai"
+      ]
+    },
+    {
+      "lat": 43.73174,
+      "lng": -79.27014,
+      "count": 5,
+      "topCuisines": [
+        "Indian",
+        "Chinese",
+        "Bangladeshi",
+        "Sri Lankan"
+      ]
+    },
+    {
+      "lat": 43.66641,
+      "lng": -79.47338,
+      "count": 5,
+      "topCuisines": [
+        "Breakfast / Brunch",
+        "Indian",
+        "Turkish",
+        "Bakery / Pastry",
+        "Grocery / Market"
+      ]
+    },
+    {
+      "lat": 43.6497,
+      "lng": -79.4832,
+      "count": 5,
+      "topCuisines": [
+        "Indian",
+        "Middle Eastern",
+        "Italian",
+        "Nepali / Tibetan",
+        "Chinese"
+      ]
+    },
+    {
+      "lat": 43.67018,
+      "lng": -79.43642,
+      "count": 5,
+      "topCuisines": [
+        "Italian",
+        "Bakery / Pastry",
+        "Sandwiches / Deli",
+        "Pizza",
+        "Middle Eastern"
+      ]
+    },
+    {
+      "lat": 43.73827,
+      "lng": -79.43524,
+      "count": 5,
+      "topCuisines": [
+        "Filipino",
+        "Sandwiches / Deli"
+      ]
+    },
+    {
+      "lat": 43.75964,
+      "lng": -79.41107,
+      "count": 4,
+      "topCuisines": [
+        "Chinese",
+        "Jamaican",
+        "Korean",
+        "Vietnamese"
+      ]
+    },
+    {
+      "lat": 43.68767,
+      "lng": -79.47378,
+      "count": 4,
+      "topCuisines": [
+        "Jamaican",
+        "Mexican",
+        "Middle Eastern"
+      ]
+    },
+    {
+      "lat": 43.76612,
+      "lng": -79.28017,
+      "count": 4,
+      "topCuisines": [
+        "Bakery / Pastry",
+        "Burgers",
+        "Sri Lankan"
+      ]
+    },
+    {
+      "lat": 43.87581,
+      "lng": -79.4382,
+      "count": 4,
+      "topCuisines": [
+        "Caribbean",
+        "Middle Eastern",
+        "Thai",
+        "Eastern European"
+      ]
+    },
+    {
+      "lat": 43.72262,
+      "lng": -79.29542,
+      "count": 4,
+      "topCuisines": [
+        "Chinese",
+        "Jamaican",
+        "South Indian",
+        "Middle Eastern"
+      ]
+    },
+    {
+      "lat": 43.67274,
+      "lng": -79.28766,
+      "count": 4,
+      "topCuisines": [
+        "Sandwiches / Deli",
+        "Dessert / Ice Cream",
+        "Ramen",
+        "Coffee"
+      ]
+    },
+    {
+      "lat": 43.83122,
+      "lng": -79.30696,
+      "count": 4,
+      "topCuisines": [
+        "Bakery / Pastry",
+        "Jamaican",
+        "Coffee",
+        "Filipino"
+      ]
+    },
+    {
+      "lat": 43.68744,
+      "lng": -79.49088,
+      "count": 4,
+      "topCuisines": [
+        "Jamaican",
+        "Bubble Tea",
+        "West African"
+      ]
+    },
+    {
+      "lat": 43.68176,
+      "lng": -79.42646,
+      "count": 4,
+      "topCuisines": [
+        "Italian",
+        "Jamaican",
+        "Burgers",
+        "Latin American"
+      ]
+    },
+    {
+      "lat": 43.64472,
+      "lng": -79.40155,
+      "count": 4,
+      "topCuisines": [
+        "Italian",
+        "Pizza",
+        "Jamaican"
+      ]
+    },
+    {
+      "lat": 43.66047,
+      "lng": -79.3438,
+      "count": 4,
+      "topCuisines": [
+        "Caribbean",
+        "Fried Chicken / Wings",
+        "Pizza",
+        "Chinese"
+      ]
+    },
+    {
+      "lat": 43.66241,
+      "lng": -79.33478,
+      "count": 4,
+      "topCuisines": [
+        "Pizza",
+        "Bakery / Pastry",
+        "Spanish"
+      ]
+    },
+    {
+      "lat": 43.68633,
+      "lng": -79.31033,
+      "count": 4,
+      "topCuisines": [
+        "Eastern European",
+        "Bakery / Pastry",
+        "Burgers",
+        "Ethiopian / Eritrean"
+      ]
+    },
+    {
+      "lat": 43.75475,
+      "lng": -79.35639,
+      "count": 4,
+      "topCuisines": [
+        "Sandwiches / Deli",
+        "Dessert / Ice Cream",
+        "Middle Eastern"
+      ]
+    },
+    {
+      "lat": 43.68855,
+      "lng": -79.74072,
+      "count": 4,
+      "topCuisines": [
+        "Chinese",
+        "Nepali / Tibetan",
+        "Caribbean",
+        "Indian"
+      ]
+    },
+    {
+      "lat": 43.74398,
+      "lng": -79.30025,
+      "count": 4,
+      "topCuisines": [
+        "Barbecue",
+        "Fried Chicken / Wings",
+        "Pakistani",
+        "Middle Eastern"
+      ]
+    },
+    {
+      "lat": 43.8244,
+      "lng": -79.29967,
+      "count": 4,
+      "topCuisines": [
+        "Korean",
+        "Vietnamese",
+        "Bubble Tea"
+      ]
+    },
+    {
+      "lat": 43.84862,
+      "lng": -79.35805,
+      "count": 4,
+      "topCuisines": [
+        "Thai",
+        "Vietnamese",
+        "Sandwiches / Deli",
+        "Middle Eastern"
+      ]
+    },
+    {
+      "lat": 43.71308,
+      "lng": -79.30702,
+      "count": 4,
+      "topCuisines": [
+        "Mexican",
+        "Filipino",
+        "Nepali / Tibetan",
+        "Sushi"
+      ]
+    },
+    {
+      "lat": 43.69098,
+      "lng": -79.47172,
+      "count": 4,
+      "topCuisines": [
+        "Indian",
+        "Mexican",
+        "Fried Chicken / Wings"
+      ]
+    },
+    {
+      "lat": 43.85015,
+      "lng": -79.25319,
+      "count": 4,
+      "topCuisines": [
+        "Chinese",
+        "Sri Lankan",
+        "Latin American",
+        "Fried Chicken / Wings"
+      ]
+    },
+    {
+      "lat": 43.67646,
+      "lng": -79.45044,
+      "count": 4,
+      "topCuisines": [
+        "Brazilian",
+        "Italian",
+        "Bakery / Pastry"
+      ]
+    },
+    {
+      "lat": 43.66607,
+      "lng": -79.36889,
+      "count": 4,
+      "topCuisines": [
+        "Japanese",
+        "Mexican",
+        "Nepali / Tibetan"
+      ]
+    },
+    {
+      "lat": 43.73003,
+      "lng": -79.43214,
+      "count": 4,
+      "topCuisines": [
+        "Filipino"
+      ]
+    }
+  ],
+  "chips": {
+    "savoury": [
+      {
+        "cuisine": "Chinese",
+        "count": 179,
+        "family": "Chinese",
+        "googleTypes": [
+          "chinese_restaurant",
+          "asian_restaurant"
+        ]
+      },
+      {
+        "cuisine": "Sandwiches / Deli",
+        "count": 126,
+        "family": "North American",
+        "googleTypes": [
+          "sandwich_shop",
+          "bagel_shop",
+          "deli"
+        ]
+      },
+      {
+        "cuisine": "Japanese",
+        "count": 105,
+        "family": "Japanese",
+        "googleTypes": [
+          "japanese_restaurant"
+        ]
+      },
+      {
+        "cuisine": "Indian",
+        "count": 103,
+        "family": "South Asian",
+        "googleTypes": [
+          "indian_restaurant"
+        ]
+      },
+      {
+        "cuisine": "Korean",
+        "count": 86,
+        "family": "Korean",
+        "googleTypes": [
+          "korean_restaurant",
+          "korean_barbecue_restaurant"
+        ]
+      },
+      {
+        "cuisine": "Caribbean",
+        "count": 85,
+        "family": "Caribbean",
+        "googleTypes": [
+          "caribbean_restaurant"
+        ]
+      },
+      {
+        "cuisine": "Jamaican",
+        "count": 80,
+        "family": "Caribbean",
+        "googleTypes": [
+          "caribbean_restaurant",
+          "jamaican_restaurant"
+        ]
+      },
+      {
+        "cuisine": "Middle Eastern",
+        "count": 66,
+        "family": "Middle Eastern",
+        "googleTypes": [
+          "mediterranean_restaurant",
+          "middle_eastern_restaurant"
+        ]
+      },
+      {
+        "cuisine": "Fried Chicken / Wings",
+        "count": 65,
+        "family": "North American",
+        "googleTypes": [
+          "chicken_restaurant",
+          "chicken_wings_restaurant"
+        ]
+      },
+      {
+        "cuisine": "American / Southern",
+        "count": 64,
+        "family": "North American",
+        "googleTypes": [
+          "american_restaurant"
+        ]
+      },
+      {
+        "cuisine": "Barbecue",
+        "count": 63,
+        "family": "North American",
+        "googleTypes": [
+          "barbecue_restaurant"
+        ]
+      },
+      {
+        "cuisine": "Italian",
+        "count": 63,
+        "family": "European",
+        "googleTypes": [
+          "italian_restaurant"
+        ]
+      }
+    ],
+    "sweet": [
+      {
+        "cuisine": "Dessert / Ice Cream",
+        "count": 111,
+        "family": "Bakery & Sweets",
+        "googleTypes": [
+          "candy_store",
+          "confectionery",
+          "dessert_restaurant",
+          "dessert_shop",
+          "ice_cream_shop"
+        ]
+      },
+      {
+        "cuisine": "Bubble Tea",
+        "count": 15,
+        "family": "Cafe",
+        "googleTypes": [
+          "bubble_tea_store",
+          "tea_house"
+        ]
+      }
+    ]
+  },
+  "defaultSearchTypes": {
+    "savoury": [
+      "chinese_restaurant",
+      "asian_restaurant",
+      "bakery",
+      "pastry_shop",
+      "sandwich_shop",
+      "bagel_shop",
+      "deli",
+      "japanese_restaurant",
+      "coffee_shop",
+      "cafe",
+      "indian_restaurant",
+      "korean_restaurant",
+      "korean_barbecue_restaurant",
+      "caribbean_restaurant",
+      "jamaican_restaurant",
+      "mediterranean_restaurant",
+      "middle_eastern_restaurant",
+      "chicken_restaurant",
+      "chicken_wings_restaurant",
+      "american_restaurant",
+      "barbecue_restaurant",
+      "italian_restaurant",
+      "poke_restaurant",
+      "seafood_restaurant",
+      "vietnamese_restaurant",
+      "pizza_restaurant",
+      "breakfast_restaurant",
+      "brunch_restaurant",
+      "mexican_restaurant",
+      "taco_restaurant",
+      "thai_restaurant"
+    ],
+    "sweet": [
+      "bakery",
+      "pastry_shop",
+      "candy_store",
+      "confectionery",
+      "dessert_restaurant",
+      "dessert_shop",
+      "ice_cream_shop",
+      "coffee_shop",
+      "cafe",
+      "bubble_tea_store",
+      "tea_house"
+    ]
+  },
+  "descriptiveOnly": {
+    "note": "Recorded for display, NOT scoring inputs. Rating is too tightly distributed to discriminate and weighting it would push down the low-rated favourites. Review count shows no obscurity preference. Price is missing for ~46% of saved places and ~75% of off-list candidates.",
+    "rating": {
+      "n": 1266,
+      "mean": 4.487,
+      "sd": 0.277,
+      "min": 2.2,
+      "p10": 4.2,
+      "median": 4.5,
+      "p90": 4.8,
+      "max": 5
+    },
+    "reviewCount": {
+      "n": 1266,
+      "mean": 1393.342,
+      "sd": 1976.41,
+      "min": 5,
+      "p10": 188,
+      "median": 796,
+      "p90": 3172,
+      "max": 26225
+    },
+    "priceLevel": {
+      "unknown": 576,
+      "PRICE_LEVEL_MODERATE": 401,
+      "PRICE_LEVEL_INEXPENSIVE": 262,
+      "PRICE_LEVEL_VERY_EXPENSIVE": 15,
+      "PRICE_LEVEL_EXPENSIVE": 15
+    }
+  }
+}

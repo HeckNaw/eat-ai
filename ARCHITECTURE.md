@@ -134,21 +134,51 @@ Over-fetch once, paginate free.
 
 ### The questions
 
-Three questions, all with defaults, so the common case is a single tap.
+Four questions, all with defaults, so the common case is a single tap.
 
 | Question | Type | Options | Filters on |
 |---|---|---|---|
+| Sweet or savoury | single | savoury · sweet · either | cuisine `mode` |
 | When | single | now · in an hour · pick a time | `openingHours` at target time |
 | How far | single | <1km · <5km · <10km · anywhere · type your answer | haversine from location |
-| Craving | **multi**, optional | your most-saved cuisines · + more · type your answer | `cuisine` / `cuisineFamily` |
+| Craving | **multi**, optional | family chips, each expanding to its styles | `cuisines[]` |
 
 "Tonight" was cut for being unfilterable — a time picker replaces it.
 
-**Craving is multi-select**, since a craving is often two or three things at
-once. Selecting nothing means no cuisine constraint — in which case the search
-still narrows to the top cuisines from `taste.json` rather than running
-unrestricted, because an unrestricted search downtown returns franchises. The
-chips shown are the most-saved cuisines, with the full list behind "+ more".
+**Sweet or savoury comes first** because it reshapes everything after it: the
+chip set, the discovery types, and the results. Bakery, dessert, coffee and
+bubble tea are 30% of the saved places — a real interest that answers a
+different question than "what's for dinner", so it gets its own axis rather than
+being mixed in or buried.
+
+Each cuisine carries a `mode` in the lexicon: `savoury`, `sweet`, `both`
+(bakeries and cafés, which sell savoury food too) or `retail` (groceries,
+butchers — shown only when explicitly asked for). A `both` cuisine is
+**matchable** in savoury mode but not **promoted** as a savoury chip: a Lebanese
+bakery selling manakish should turn up in a savoury search, while offering
+"Bakery" as a top suggestion at 7pm is noise.
+
+**Craving is multi-select and hierarchical.** Chips are families; tapping one
+expands to the styles inside it, so "Chinese" can mean all of it or narrow to
+Cantonese, Dim Sum, Hot Pot, Hakka, Taiwanese or Sichuan. The tree is not
+authored — every lexicon entry already carries a `family`, and the counts come
+from the saved places:
+
+```
+Chinese (252)      Chinese 179 · Cantonese 27 · Hot Pot 13 · Hakka 11 ·
+                   Dim Sum 9 · Taiwanese 6 · Sichuan 6 · Shanghainese 1
+Caribbean (190)    Caribbean 85 · Jamaican 80 · Trinidadian / Guyanese 25
+Japanese (171)     Japanese 105 · Sushi 43 · Ramen 23
+South Asian (162)  Indian 103 · South Indian 18 · Nepali/Tibetan 15 ·
+                   Pakistani 8 · Afghan 7 · Sri Lankan 7 · Bangladeshi 4
+```
+
+Selecting nothing means no cuisine constraint — in which case discovery still
+narrows to the top cuisines for the chosen mode rather than running
+unrestricted, because an unrestricted search downtown returns franchises.
+
+Matching uses `cuisines[]` (every match) rather than the primary label, so a
+craving for Lebanese still finds a place whose primary label is Bakery.
 
 There is no source question: results **always** show both sections (see below),
 which removes a tap and makes the split explicit rather than hidden.

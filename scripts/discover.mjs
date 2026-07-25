@@ -13,6 +13,7 @@
  */
 
 import { readFileSync } from "node:fs";
+import { labelPlacesResult } from "./lib/labeller.mjs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -107,7 +108,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 
   const results = await searchNearby({ apiKey, ...args, includedPrimaryTypes });
 
-  const fresh = results.filter((r) => !savedIds.has(r.id));
+  // Exact dedup on Google placeId — both sides carry it after enrichment.
+  const fresh = results.filter((r) => !savedIds.has(r.id)).map(labelPlacesResult);
   console.log(`\n${results.length} returned · ${results.length - fresh.length} already on your lists · ${fresh.length} new\n`);
 
   const field = (r, f) => (f(r) == null ? "—" : f(r));
@@ -127,10 +129,20 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log(`  ${name.padEnd(18)} ${n}/${results.length}`);
   }
 
+  const withCuisine = fresh.filter((r) => r.cuisine).length;
+  console.log(`\nLABELLING off-list candidates with the same lexicon:`);
+  console.log(`  got a cuisine: ${withCuisine}/${fresh.length}`);
+  const bySource = new Map();
+  for (const r of fresh) {
+    if (r.cuisineSource) bySource.set(r.cuisineSource, (bySource.get(r.cuisineSource) ?? 0) + 1);
+  }
+  for (const [k, n] of bySource) console.log(`    via ${k.padEnd(12)} ${n}`);
+
   console.log(`\nNEW TO YOU (nearest first):`);
-  for (const r of fresh.slice(0, 12)) {
-    const rating = r.rating ? `${r.rating}★ (${r.userRatingCount})` : "unrated";
-    console.log(`  ${(r.displayName?.text ?? "?").slice(0, 32).padEnd(32)} ${rating.padEnd(16)} ${r.primaryType ?? "—"}`);
-    if (r.editorialSummary?.text) console.log(`      "${r.editorialSummary.text.slice(0, 76)}"`);
+  for (const r of fresh.slice(0, 14)) {
+    const rating = r.rating ? `${r.rating}★ (${r.reviewCount})` : "unrated";
+    const cui = r.cuisine ? `${r.cuisine}` : "— no cuisine —";
+    console.log(`  ${r.name.slice(0, 30).padEnd(31)} ${rating.padEnd(15)} ${cui.padEnd(24)} ${r.cuisineSource ?? ""}`);
+    if (r.attributes.length) console.log(`      attrs: ${r.attributes.join(", ")}`);
   }
 }

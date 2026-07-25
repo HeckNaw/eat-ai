@@ -26,7 +26,8 @@
       ],
       "summaryTerms": [
         "vietnamese"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Thai": {
       "family": "Southeast Asian",
@@ -42,7 +43,8 @@
       ],
       "summaryTerms": [
         "thai"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Filipino": {
       "family": "Southeast Asian",
@@ -69,7 +71,8 @@
       ],
       "summaryTerms": [
         "filipino"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Malaysian / Singaporean": {
       "family": "Southeast Asian",
@@ -89,7 +92,8 @@
       "summaryTerms": [
         "malaysian",
         "singaporean"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Indonesian": {
       "family": "Southeast Asian",
@@ -104,7 +108,8 @@
       ],
       "summaryTerms": [
         "indonesian"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Cambodian / Laotian": {
       "family": "Southeast Asian",
@@ -122,7 +127,8 @@
       "summaryTerms": [
         "cambodian",
         "laotian"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Sichuan": {
       "family": "Chinese",
@@ -137,13 +143,12 @@
         "chuan",
         "苍蝇馆子"
       ],
-      "googleTypes": [
-        "chinese_restaurant"
-      ],
+      "googleTypes": [],
       "summaryTerms": [
         "sichuan",
         "szechuan"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Cantonese": {
       "family": "Chinese",
@@ -162,7 +167,8 @@
       ],
       "summaryTerms": [
         "cantonese"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Dim Sum": {
       "family": "Chinese",
@@ -176,7 +182,8 @@
       ],
       "summaryTerms": [
         "dim sum"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Hakka": {
       "family": "Chinese",
@@ -188,7 +195,8 @@
       "googleTypes": [],
       "summaryTerms": [
         "hakka"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Taiwanese": {
       "family": "Chinese",
@@ -204,7 +212,8 @@
       ],
       "summaryTerms": [
         "taiwanese"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Shanghainese / Northern Chinese": {
       "family": "Chinese",
@@ -219,12 +228,11 @@
         "hand pulled",
         "biang"
       ],
-      "googleTypes": [
-        "chinese_restaurant"
-      ],
+      "googleTypes": [],
       "summaryTerms": [
         "shanghainese"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Hot Pot": {
       "family": "Chinese",
@@ -239,7 +247,8 @@
       ],
       "summaryTerms": [
         "hot pot"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Chinese": {
       "family": "Chinese",
@@ -261,7 +270,8 @@
       ],
       "summaryTerms": [
         "chinese"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Korean": {
       "family": "Korean",
@@ -291,7 +301,8 @@
       ],
       "summaryTerms": [
         "korean"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Ramen": {
       "family": "Japanese",
@@ -304,7 +315,8 @@
       ],
       "summaryTerms": [
         "ramen"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Sushi": {
       "family": "Japanese",
@@ -321,7 +333,8 @@
       "summaryTerms": [
         "sushi",
         "omakase"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Japanese": {
       "family": "Japanese",
@@ -348,7 +361,8 @@
       "summaryTerms": [
         "japanese",
         "izakaya"
-      ]
+      ],
+      "mode": "savoury"
     },
     "South Indian": {
       "family": "South Asian",
@@ -370,7 +384,8 @@
       "summaryTerms": [
         "south indian",
         "dosa"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Indian": {
       "family": "South Asian",
@@ -401,7 +416,8 @@
         "indian",
         "curries",
         "curry"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Pakistani": {
       "family": "South Asian",
@@ -420,7 +436,8 @@
       ],
       "summaryTerms": [
         "pakistani"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Sri Lankan": {
       "family": "South Asian",
@@ -437,7 +454,8 @@
       ],
       "summaryTerms": [
         "sri lankan"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Bangladeshi": {
       "family": "South Asian",
@@ -451,7 +469,8 @@
       ],
       "summaryTerms": [
         "bangladeshi"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Nepali / Tibetan": {
       "family": "South Asian",
@@ -481,7 +500,8 @@
         "tibetan",
         "himalayan",
         "momo"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Afghan": {
       "family": "South Asian",
@@ -497,7 +517,8 @@
       ],
       "summaryTerms": [
         "afghan"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Middle Eastern": {
       "family": "Middle Eastern",
@@ -514,7 +535,6 @@
         "mandi"
       ],
       "googleTypes": [
-        "halal_restaurant",
         "mediterranean_restaurant",
         "middle_eastern_restaurant"
       ],
@@ -522,7 +542,8 @@
         "middle eastern",
         "shawarma",
         "falafel"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Lebanese": {
       "family": "Middle Eastern",
@@ -537,7 +558,8 @@
       ],
       "summaryTerms": [
         "lebanese"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Persian": {
       "family": "Middle Eastern",
@@ -560,7 +582,8 @@
       "summaryTerms": [
         "persian",
         "iranian"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Turkish": {
       "family": "Middle Eastern",
@@ -580,7 +603,8 @@
       ],
       "summaryTerms": [
         "turkish"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Israeli / Jewish Deli": {
       "family": "Middle Eastern",
@@ -600,7 +624,8 @@
         "israeli",
         "jewish",
         "smoked meat"
-      ]
+      ],
+      "mode": "savoury"
     },
     "West African": {
       "family": "African",
@@ -634,7 +659,8 @@
         "nigerian",
         "ghanaian",
         "west african"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Ethiopian / Eritrean": {
       "family": "African",
@@ -655,7 +681,8 @@
         "ethiopian",
         "eritrean",
         "injera"
-      ]
+      ],
+      "mode": "savoury"
     },
     "East African / Somali": {
       "family": "African",
@@ -672,7 +699,8 @@
       "summaryTerms": [
         "somali",
         "kenyan"
-      ]
+      ],
+      "mode": "savoury"
     },
     "North African": {
       "family": "African",
@@ -689,7 +717,8 @@
       ],
       "summaryTerms": [
         "moroccan"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Jamaican": {
       "family": "Caribbean",
@@ -711,7 +740,8 @@
       "summaryTerms": [
         "jamaican",
         "jerk"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Trinidadian / Guyanese": {
       "family": "Caribbean",
@@ -731,7 +761,8 @@
         "trinidadian",
         "guyanese",
         "roti"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Caribbean": {
       "family": "Caribbean",
@@ -754,7 +785,8 @@
       "summaryTerms": [
         "caribbean",
         "west indian"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Mexican": {
       "family": "Latin American",
@@ -779,7 +811,8 @@
       "summaryTerms": [
         "mexican",
         "tacos"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Peruvian": {
       "family": "Latin American",
@@ -796,7 +829,8 @@
       ],
       "summaryTerms": [
         "peruvian"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Brazilian": {
       "family": "Latin American",
@@ -814,7 +848,8 @@
       ],
       "summaryTerms": [
         "brazilian"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Latin American": {
       "family": "Latin American",
@@ -852,7 +887,8 @@
         "venezuelan",
         "salvadoran",
         "latin american"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Portuguese": {
       "family": "European",
@@ -873,7 +909,8 @@
       ],
       "summaryTerms": [
         "portuguese"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Italian": {
       "family": "European",
@@ -896,7 +933,8 @@
       "summaryTerms": [
         "italian",
         "pasta"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Pizza": {
       "family": "European",
@@ -914,7 +952,8 @@
       "summaryTerms": [
         "pizza",
         "pizzas"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Greek": {
       "family": "European",
@@ -934,7 +973,8 @@
       "summaryTerms": [
         "greek",
         "souvlaki"
-      ]
+      ],
+      "mode": "savoury"
     },
     "French": {
       "family": "European",
@@ -957,7 +997,8 @@
       "summaryTerms": [
         "french",
         "bistro"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Spanish": {
       "family": "European",
@@ -974,7 +1015,8 @@
       "summaryTerms": [
         "spanish",
         "tapas"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Eastern European": {
       "family": "European",
@@ -1005,7 +1047,8 @@
         "polish",
         "ukrainian",
         "hungarian"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Barbecue": {
       "family": "North American",
@@ -1019,14 +1062,14 @@
         "smoked"
       ],
       "googleTypes": [
-        "american_restaurant",
         "barbecue_restaurant"
       ],
       "summaryTerms": [
         "barbecue",
         "brisket",
         "ribs"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Burgers": {
       "family": "North American",
@@ -1043,7 +1086,8 @@
       ],
       "summaryTerms": [
         "burgers"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Fried Chicken / Wings": {
       "family": "North American",
@@ -1065,7 +1109,8 @@
       "summaryTerms": [
         "fried chicken",
         "wings"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Sandwiches / Deli": {
       "family": "North American",
@@ -1088,7 +1133,8 @@
       "summaryTerms": [
         "sandwiches",
         "subs"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Seafood": {
       "family": "North American",
@@ -1104,14 +1150,14 @@
         "chippy"
       ],
       "googleTypes": [
-        "hawaiian_restaurant",
         "poke_restaurant",
         "seafood_restaurant"
       ],
       "summaryTerms": [
         "seafood",
         "oysters"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Steakhouse": {
       "family": "North American",
@@ -1127,7 +1173,8 @@
       "summaryTerms": [
         "steaks",
         "steakhouse"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Breakfast / Brunch": {
       "family": "North American",
@@ -1148,7 +1195,8 @@
         "brunch",
         "breakfast",
         "all-day breakfast"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Bakery / Pastry": {
       "family": "Bakery & Sweets",
@@ -1173,7 +1221,8 @@
         "pastries",
         "baked goods",
         "bakery"
-      ]
+      ],
+      "mode": "both"
     },
     "Dessert / Ice Cream": {
       "family": "Bakery & Sweets",
@@ -1198,7 +1247,8 @@
       "summaryTerms": [
         "desserts",
         "ice cream"
-      ]
+      ],
+      "mode": "sweet"
     },
     "Coffee": {
       "family": "Cafe",
@@ -1219,7 +1269,8 @@
       "summaryTerms": [
         "espresso",
         "coffee"
-      ]
+      ],
+      "mode": "both"
     },
     "Bubble Tea": {
       "family": "Cafe",
@@ -1237,7 +1288,8 @@
       "summaryTerms": [
         "bubble tea",
         "boba"
-      ]
+      ],
+      "mode": "sweet"
     },
     "Vegan / Vegetarian": {
       "family": "Dietary",
@@ -1256,7 +1308,8 @@
         "vegan",
         "vegetarian",
         "plant-based"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Québécois": {
       "family": "North American",
@@ -1271,7 +1324,8 @@
       "summaryTerms": [
         "quebecois",
         "quebecois grub"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Swiss / Austrian": {
       "family": "European",
@@ -1288,7 +1342,8 @@
         "swiss",
         "austrian",
         "alpine"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Canadian / Contemporary": {
       "family": "North American",
@@ -1312,7 +1367,8 @@
         "tasting menu",
         "market-driven",
         "weekly menu"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Pub / Gastropub": {
       "family": "North American",
@@ -1322,10 +1378,9 @@
         "brewpub"
       ],
       "googleTypes": [
+        "brewery",
         "pub",
-        "bar",
-        "wine_bar",
-        "brewery"
+        "wine_bar"
       ],
       "summaryTerms": [
         "pub",
@@ -1341,7 +1396,8 @@
         "pub grub",
         "beer hall",
         "taproom"
-      ]
+      ],
+      "mode": "savoury"
     },
     "American / Southern": {
       "family": "North American",
@@ -1363,7 +1419,8 @@
         "comfort food",
         "diner fare",
         "retro diner"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Pan-Asian / Fusion": {
       "family": "Asian",
@@ -1384,7 +1441,8 @@
         "global dishes",
         "global comfort",
         "globally inspired"
-      ]
+      ],
+      "mode": "savoury"
     },
     "Grocery / Market": {
       "family": "Retail",
@@ -1398,20 +1456,19 @@
         "meats"
       ],
       "googleTypes": [
-        "grocery_store",
         "asian_grocery_store",
-        "food_store",
         "butcher_shop",
-        "wholesaler",
+        "grocery_store",
         "supermarket",
-        "market"
+        "wholesaler"
       ],
       "summaryTerms": [
         "gourmet cheeses",
         "grocery",
         "provisions",
         "specialty foods"
-      ]
+      ],
+      "mode": "retail"
     },
     "Tea House": {
       "family": "Cafe",
@@ -1426,7 +1483,27 @@
         "high tea",
         "afternoon tea",
         "tea service"
-      ]
+      ],
+      "mode": "sweet"
+    },
+    "Hawaiian / Poke": {
+      "family": "Pacific",
+      "nameTokens": [
+        "poke",
+        "poki",
+        "pokito",
+        "hawaiian",
+        "musubi"
+      ],
+      "googleTypes": [
+        "hawaiian_restaurant",
+        "poke_restaurant"
+      ],
+      "summaryTerms": [
+        "poke",
+        "hawaiian"
+      ],
+      "mode": "savoury"
     }
   },
   "attributes": {
@@ -1674,5 +1751,6 @@
       ],
       "impliesPrice": null
     }
-  }
+  },
+  "_modes": "savoury | sweet | both | retail. Drives the top-level sweet/savoury filter. Bakeries and coffee are 'both' because they serve savoury food too; retail (grocery, butcher) appears only when explicitly asked for."
 }
