@@ -67,9 +67,11 @@ const places = labelled.places
   }));
 
 /**
- * Name each cluster from the addresses of the places inside it — the most common
- * street plus the locality. Free, and it turns the location-denied fallback into
- * "pick where you are" instead of a dead end. No geocoding API needed.
+ * Name each cluster by its main INTERSECTION, derived from the addresses already
+ * on hand. No geocoding API, and it travels to any city where places are saved.
+ *
+ * A street alone is useless in Toronto — four separate clusters sit on Yonge St,
+ * which runs 56km. "Yonge St & Yorkville Ave" is how people actually navigate.
  */
 function nameClusters(clusters, allPlaces) {
   const R = 6371000, rad = (d) => (d * Math.PI) / 180;
@@ -78,22 +80,82 @@ function nameClusters(clusters, allPlaces) {
       Math.cos(rad(aY)) * Math.cos(rad(bY)) * Math.sin(rad(bX - aX) / 2) ** 2;
     return 2 * R * Math.asin(Math.sqrt(h));
   };
+
+  /** "244 Claremont St Unit 3" -> "Claremont St" */
+  const streetOf = (addr) => {
+    if (!addr) return null;
+    let s = addr.split(",")[0].trim();
+    s = s.replace(/^[\d\-\/]+\s*/, "");
+    s = s.replace(/\s+(unit|suite|ste|apt|#|no\.?)\s*.*$/i, "");
+    // "Bloor St W Main Floor", "Queen St E Lower Level", "King St Rear"
+    s = s.replace(/\s+(main|ground|lower|upper|second|basement|bsmt|mezzanine|concourse|penthouse|ph|rear|front|lobby)\b.*$/i, "");
+    s = s.replace(/\s+\d+[a-z]?$/i, "");
+    return s.length > 3 ? s : null;
+  };
+
+  /**
+   * Collapse "Bloor St W" and "Bloor St W A" so a street never pairs with itself.
+   * The trailing-letter strip runs while spaces still exist, and spares n/s/e/w
+   * because those are real directions that distinguish two different streets.
+   */
+  const key = (s) =>
+    s.toLowerCase()
+      .replace(/[.,]/g, "")
+      .replace(/\b(street|st)\b/g, "st")
+      .replace(/\b(avenue|ave)\b/g, "av")
+      .replace(/\b(road|rd)\b/g, "rd")
+      .replace(/\b(boulevard|blvd)\b/g, "bl")
+      .replace(/\b(drive|dr)\b/g, "dr")
+      .replace(/\s+(?![nsew]\b)[a-z]\b\s*$/, "")
+      .replace(/[^a-z0-9]/g, "");
+
   return clusters.map((c) => {
-    const near = allPlaces.filter((p) => p.a && dist(c.lat, c.lng, p.y, p.x) < 700);
-    const streets = new Map(), localities = new Map();
-    for (const p of near) {
-      const parts = p.a.split(",").map((x) => x.trim());
-      // "244 Claremont St" -> "Claremont St"
-      const street = (parts[0] ?? "").replace(/^[\d\-\/]+\s*/, "").replace(/\s+(unit|suite|#).*$/i, "");
-      if (street.length > 3) streets.set(street, (streets.get(street) ?? 0) + 1);
-      const loc = parts[1];
+    const near = [];
+    for (const p of allPlaces) {
+      if (!p.a) continue;
+      const d = dist(c.lat, c.lng, p.y, p.x);
+      if (d < 650) near.push([p, d]);
+    }
+
+    // Weight by closeness — a street at the centroid names the place better than
+    // one at the cluster's edge.
+    const streets = new Map();
+    const localities = new Map();
+    for (const [p, d] of near) {
+      const st = streetOf(p.a);
+      if (st) {
+        const k = key(st);
+        const cur = streets.get(k) ?? { name: st, w: 0 };
+        cur.w += 1 / (1 + d / 250);
+        // Prefer the shorter spelling as the display form.
+        if (st.length < cur.name.length) cur.name = st;
+        streets.set(k, cur);
+      }
+      const loc = p.a.split(",")[1]?.trim();
       if (loc) localities.set(loc, (localities.get(loc) ?? 0) + 1);
     }
-    const top = (m) => [...m.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] ?? null;
-    const street = top(streets), locality = top(localities);
+
+    const ranked = [...streets.values()].sort((a, b) => b.w - a.w);
+    const locality = [...localities.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] ?? null;
+
+    let name;
+    if (ranked.length >= 2) {
+      name = `${ranked[0].name} & ${ranked[1].name}`;
+    } else if (ranked.length === 1) {
+      // One street only — qualify it with the locality so it is still specific.
+      name = locality && key(locality) !== key(ranked[0].name)
+        ? `${ranked[0].name}, ${locality}`
+        : ranked[0].name;
+    } else {
+      name = locality ?? "Saved area";
+    }
+
     return {
-      lat: c.lat, lng: c.lng, count: c.count,
-      name: street ? (locality && locality !== street ? `${street}, ${locality}` : street) : locality ?? "Saved area",
+      lat: c.lat,
+      lng: c.lng,
+      count: c.count,
+      name,
+      locality,
       topCuisines: c.topCuisines.slice(0, 3),
     };
   });

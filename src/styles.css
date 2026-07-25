@@ -322,6 +322,22 @@ button {
 .field::placeholder { color: var(--ink-faint); }
 .field:focus { outline: none; border-color: var(--accent); }
 
+/* Date/time inputs: iOS ignores height on these and Safari hides the picker
+   indicator against a dark background unless it's inverted. */
+input[type="datetime-local"],
+input[type="time"],
+input[type="date"] {
+  min-height: 3rem;
+  appearance: none;
+  -webkit-appearance: none;
+}
+input[type="datetime-local"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1) opacity(0.55);
+  cursor: pointer;
+}
+
 .hint {
   font-family: var(--mono);
   font-size: 0.75rem;

@@ -140,8 +140,11 @@ Four questions, all with defaults, so the common case is a single tap.
 |---|---|---|---|
 | Sweet or savoury | single | savoury · sweet · either | cuisine `mode` |
 | When | single | now · in an hour · pick a time | `openingHours` at target time |
-| How far | single | <1km · <5km · <10km · anywhere · type your answer | haversine from location |
+| How far | single | walking (1km) · 5km · 10km · anywhere | haversine from location |
 | Craving | **multi**, optional | family chips, each expanding to its styles | `cuisines[]` |
+
+Four fixed radius options, no free-text entry — nobody thinks about how far
+they will travel for dinner in units precise enough to type.
 
 "Tonight" was cut for being unfilterable — a time picker replaces it.
 
@@ -185,9 +188,6 @@ which removes a tap and makes the split explicit rather than hidden.
 
 Defaults are `now · <5km · anything`, so a query is one button press unless
 tonight is unusual. The questions exist for narrowing, not as a toll gate.
-
-Free-text distance is parsed for units and for time ("20 min" → ~10km at city
-driving speed), and the interpreted radius is echoed back so it can be corrected.
 
 ### Price is not a filter
 

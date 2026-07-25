@@ -72,20 +72,45 @@ export function openAt(
   return { state: "shut", closesInMin: null };
 }
 
-/** Resolve the "when" answer to an actual instant. */
+/**
+ * Resolve the "when" answer to an actual instant.
+ *
+ * `at` is a datetime-local string ("2026-07-25T19:30"), which browsers parse as
+ * local time — so an explicitly chosen day and time is honoured literally rather
+ * than being rolled forward.
+ */
 export function targetTime(when: "now" | "hour" | { at: string }): Date {
   if (when === "now") return new Date();
   if (when === "hour") return new Date(Date.now() + 60 * 60_000);
-  // "HH:MM" today, rolling to tomorrow if already past.
-  const [h, m] = when.at.split(":").map(Number);
-  const d = new Date();
-  d.setHours(h ?? 19, m ?? 0, 0, 0);
-  if (d.getTime() < Date.now() - 60_000) d.setDate(d.getDate() + 1);
-  return d;
+  const d = new Date(when.at);
+  return Number.isNaN(d.getTime()) ? new Date() : d;
+}
+
+/** Format a Date for a datetime-local input, in local time. */
+export function toLocalInput(d: Date): string {
+  const pad = (n: number) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
+}
+
+/** Sensible starting point: the next half hour, two hours out. */
+export function defaultWhenAt(): string {
+  const d = new Date(Date.now() + 2 * 60 * 60_000);
+  d.setMinutes(d.getMinutes() > 30 ? 60 : 30, 0, 0);
+  return toLocalInput(d);
 }
 
 export function describeWhen(when: Answers["when"]): string {
   if (when === "now") return "now";
   if (when === "hour") return "in an hour";
-  return `at ${when.at}`;
+
+  const d = targetTime(when);
+  const today = new Date();
+  const sameDay = d.toDateString() === today.toDateString();
+  const tomorrow = new Date(today.getTime() + 86_400_000);
+  const isTomorrow = d.toDateString() === tomorrow.toDateString();
+
+  const time = d.toLocaleTimeString("en-CA", { hour: "numeric", minute: "2-digit" });
+  if (sameDay) return `today ${time}`;
+  if (isTomorrow) return `tomorrow ${time}`;
+  return `${d.toLocaleDateString("en-CA", { weekday: "short", day: "numeric", month: "short" })} ${time}`;
 }

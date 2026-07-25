@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { parseDistance } from "../lib/parse";
+import { defaultWhenAt, describeWhen, toLocalInput } from "../lib/hours";
 import type { Answers, Family, Taste } from "../lib/types";
 
 const RADII = [
@@ -8,6 +8,31 @@ const RADII = [
   { label: "10km", sub: null, m: 10_000 },
   { label: "Anywhere", sub: null, m: 60_000 },
 ];
+
+/**
+ * Quick jumps for the days people actually plan around, so the calendar is there
+ * for the rest rather than being the only way in.
+ */
+function shortcuts(): { label: string; at: string }[] {
+  const out: { label: string; at: string }[] = [];
+  const mk = (dayOffset: number, hour: number, min: number) => {
+    const d = new Date();
+    d.setDate(d.getDate() + dayOffset);
+    d.setHours(hour, min, 0, 0);
+    return toLocalInput(d);
+  };
+  out.push({ label: "Tonight 7pm", at: mk(0, 19, 0) });
+  out.push({ label: "Tomorrow 12pm", at: mk(1, 12, 0) });
+  out.push({ label: "Tomorrow 7pm", at: mk(1, 19, 0) });
+
+  // Next Friday and Saturday evening, the two most-planned slots.
+  const today = new Date().getDay();
+  for (const [name, dow] of [["Fri", 5], ["Sat", 6]] as const) {
+    const delta = (dow - today + 7) % 7 || 7;
+    out.push({ label: `${name} 7pm`, at: mk(delta, 19, 0) });
+  }
+  return out;
+}
 
 /**
  * Every question is defaulted, so the whole screen collapses to one tap when
@@ -30,10 +55,7 @@ export function QuestionScreen({
   onChangeLocation: () => void;
 }) {
   const [openFamily, setOpenFamily] = useState<string | null>(null);
-  const [freeDistance, setFreeDistance] = useState("");
   const [showTime, setShowTime] = useState(typeof answers.when === "object");
-
-  const parsed = freeDistance ? parseDistance(freeDistance) : null;
 
   const mode = answers.mode === "sweet" ? "sweet" : "savoury";
   const families: Family[] =
@@ -112,20 +134,43 @@ export function QuestionScreen({
             data-on={typeof answers.when === "object"}
             onClick={() => {
               setShowTime(true);
-              setAnswers({ ...answers, when: { at: "19:30" } });
+              if (typeof answers.when !== "object") {
+                setAnswers({ ...answers, when: { at: defaultWhenAt() } });
+              }
             }}
           >
-            Pick a time
+            Pick a day &amp; time
           </button>
         </div>
+
         {showTime && typeof answers.when === "object" && (
-          <input
-            className="field"
-            style={{ marginTop: "0.5rem" }}
-            type="time"
-            value={answers.when.at}
-            onChange={(e) => setAnswers({ ...answers, when: { at: e.target.value } })}
-          />
+          <div style={{ marginTop: "0.5rem" }}>
+            {/* datetime-local carries a native calendar and clock, which beats a
+                hand-rolled picker on a phone. Shortcuts cover the common days. */}
+            <input
+              className="field"
+              type="datetime-local"
+              min={toLocalInput(new Date())}
+              value={answers.when.at}
+              onChange={(e) => setAnswers({ ...answers, when: { at: e.target.value } })}
+            />
+            <div className="chips" style={{ marginTop: "0.5rem" }}>
+              {shortcuts().map((s2) => {
+                const on = typeof answers.when === "object" && answers.when.at === s2.at;
+                return (
+                  <button
+                    key={s2.at}
+                    className="chip-sm"
+                    data-on={on}
+                    onClick={() => setAnswers({ ...answers, when: { at: s2.at } })}
+                  >
+                    {s2.label}
+                  </button>
+                );
+              })}
+            </div>
+            <div className="hint mono">&rarr; {describeWhen(answers.when)}</div>
+          </div>
         )}
       </div>
 
@@ -138,33 +183,14 @@ export function QuestionScreen({
             <button
               key={r.m}
               className="chip"
-              data-on={answers.radiusM === r.m && !parsed}
-              onClick={() => {
-                setFreeDistance("");
-                setAnswers({ ...answers, radiusM: r.m });
-              }}
+              data-on={answers.radiusM === r.m}
+              onClick={() => setAnswers({ ...answers, radiusM: r.m })}
             >
               {r.label}
               {r.sub && <span className="chip-n">{r.sub}</span>}
             </button>
           ))}
         </div>
-        <input
-          className="field"
-          style={{ marginTop: "0.5rem" }}
-          placeholder="or type it — “20 min”, “2 miles”, “800m”"
-          value={freeDistance}
-          onChange={(e) => {
-            setFreeDistance(e.target.value);
-            const p = parseDistance(e.target.value);
-            if (p) setAnswers({ ...answers, radiusM: p.radiusM });
-          }}
-        />
-        {freeDistance && (
-          <div className="hint mono">
-            {parsed ? `→ ${parsed.label}` : "→ didn't catch that — try “20 min” or “3km”"}
-          </div>
-        )}
       </div>
 
       <div className="q" style={q(3)}>
