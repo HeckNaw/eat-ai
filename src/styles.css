@@ -179,7 +179,6 @@ body::after {
 .backdrop-row {
   display: flex;
   white-space: nowrap;
-  will-change: transform;
 }
 
 .backdrop-track {
@@ -190,15 +189,10 @@ body::after {
   line-height: 0.92;
   letter-spacing: 0.02em;
   flex: 0 0 auto;
-  animation: slide var(--dur, 40s) linear infinite;
-  animation-delay: var(--delay, 0s);
-}
-.backdrop-row[data-dir="right"] .backdrop-track { animation-direction: reverse; }
-
-/* Exactly -50%: the track holds the run twice, so this wraps invisibly. */
-@keyframes slide {
-  from { transform: translate3d(0, 0, 0); }
-  to { transform: translate3d(-50%, 0, 0); }
+  /* Transform is driven per-frame in Backdrop.tsx — see the comment there for
+     why motion is in JS (scroll-reactive speed) rather than a CSS keyframe. */
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
 }
 
 .shell { position: relative; z-index: 1; }

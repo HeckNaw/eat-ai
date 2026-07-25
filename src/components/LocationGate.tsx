@@ -71,13 +71,13 @@ export function LocationGate({
         <p>Everything useful depends on it:</p>
         <ul>
           <li>
-            <b>How far</b> — the only question that matters when you're hungry
+            <b>How far</b> are you willing to go to eat.
           </li>
           <li>
-            <b>What's actually open</b> — right now, in this timezone
+            <b>What's actually open</b> right now or for your occasion.
           </li>
           <li>
-            <b>Which of your places</b> are near enough to bother with
+            <b>Which of your places</b> are near enough to bother with.
           </li>
         </ul>
         {error && <div className="err">{error}</div>}
