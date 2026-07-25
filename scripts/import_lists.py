@@ -22,24 +22,18 @@ ROOT = os.path.dirname(HERE)
 DATA = os.path.join(ROOT, "data")
 OUT = os.path.join(ROOT, "seed.json")
 
-# Filename (minus emoji/extension) -> status slug.
-# Ordered weakest to strongest; index doubles as merge precedence.
+# Filename (minus emoji/extension) -> list slug.
 #
-# hidden_gem sits in the wishlist tier, not above good_eats. Nathan's call:
-# the label goes stale (a place flagged as hidden in 2023 may have 3,000
-# reviews now), so it shouldn't be read as a stronger endorsement than
-# might_try/must_try. good_eats is the only status meaning "went, liked it".
-STATUS_ORDER = ["might_try", "hidden_gem", "must_try", "good_eats"]
+# Provenance only — which of the four lists a place was saved to. NOT a quality
+# hierarchy and not a ranking input. Every one of the 1,340 places is somewhere
+# Nathan decided was worth eating at, so they all carry equal weight as taste
+# signal; the list name is kept for display, nothing more.
+#
+# Order is used solely for merge precedence when the same place appears twice:
+# the later entry wins as the more recent state, not the better one.
+LIST_ORDER = ["might_try", "hidden_gem", "must_try", "good_eats"]
 
-# What the taste profile actually keys off. Only `tried` is a verified positive.
-STATUS_TIER = {
-    "might_try": "wishlist",
-    "hidden_gem": "wishlist",
-    "must_try": "wishlist",
-    "good_eats": "tried",
-}
-
-LIST_TO_STATUS = {
+LIST_TO_SLUG = {
     "might try": "might_try",
     "must try": "must_try",
     "good eats": "good_eats",
@@ -91,8 +85,8 @@ def main():
 
     for path in paths:
         lname = list_name(path)
-        status = LIST_TO_STATUS.get(lname)
-        if status is None:
+        slug = LIST_TO_SLUG.get(lname)
+        if slug is None:
             raise SystemExit(f"Unmapped list name {lname!r} from {path}")
 
         with open(path, newline="", encoding="utf-8") as fh:
@@ -126,8 +120,8 @@ def main():
                         "title": title,
                         "normalizedTitle": norm,
                         "mapsUrl": url,
-                        "status": status,
-                        "sourceLists": [status],
+                        "list": slug,
+                        "sourceLists": [slug],
                         "notes": [note] if note else [],
                         # Filled in by the enrichment pass.
                         "enriched": False,
@@ -135,55 +129,47 @@ def main():
                     continue
 
                 stats["merged"] += 1
-                if status not in existing["sourceLists"]:
-                    existing["sourceLists"].append(status)
-                # Strongest status wins; tried always beats wishlisted.
-                if STATUS_ORDER.index(status) > STATUS_ORDER.index(existing["status"]):
-                    existing["status"] = status
+                if slug not in existing["sourceLists"]:
+                    existing["sourceLists"].append(slug)
+                # Later list wins as the more recent state, not the better one.
+                if LIST_ORDER.index(slug) > LIST_ORDER.index(existing["list"]):
+                    existing["list"] = slug
                 if note and note not in existing["notes"]:
                     existing["notes"].append(note)
 
     records = list(places.values())
     for r in records:
-        r["sourceLists"].sort(key=STATUS_ORDER.index)
-        r["tier"] = STATUS_TIER[r["status"]]
-        # A place that sat on a wishlist and later made it into good_eats.
-        r["graduated"] = r["tier"] == "tried" and any(
-            STATUS_TIER[s] == "wishlist" for s in r["sourceLists"]
-        )
+        r["sourceLists"].sort(key=LIST_ORDER.index)
 
     records.sort(key=lambda r: r["normalizedTitle"])
 
     payload = {
         "source": "Google Maps saved lists export",
         "listFiles": [os.path.basename(p) for p in paths],
-        "statusOrder": STATUS_ORDER,
-        "statusTier": STATUS_TIER,
+        "listOrder": LIST_ORDER,
         "count": len(records),
         "places": records,
     }
     with open(OUT, "w", encoding="utf-8") as fh:
         json.dump(payload, fh, ensure_ascii=False, indent=2)
 
-    by_status = Counter(r["status"] for r in records)
+    by_list = Counter(r["list"] for r in records)
     multi = [r for r in records if len(r["sourceLists"]) > 1]
-    graduated = [r for r in records if r["graduated"]]
 
     print(f"rows read:        {stats['rows']}")
     print(f"unique places:    {len(records)}")
     print(f"merges:           {stats['merged']}")
     print(f"rows w/o cid:     {stats['no_feature_id']}")
     print()
-    print("resolved status:")
-    for s in STATUS_ORDER:
-        print(f"  {s:12} {by_status[s]:4}")
+    print("resolved list:")
+    for s in LIST_ORDER:
+        print(f"  {s:12} {by_list[s]:4}")
     print()
     print(f"in >1 list:       {len(multi)}")
-    print(f"graduated:        {len(graduated)}  (wishlisted, then tried)")
     print()
     print("sample merges:")
     for r in multi[:12]:
-        print(f"  {r['title'][:44]:44} {' + '.join(r['sourceLists'])} -> {r['status']}")
+        print(f"  {r['title'][:44]:44} {' + '.join(r['sourceLists'])} -> {r['list']}")
     if unresolved:
         print(f"\n{len(unresolved)} rows had no feature ID (title-matched instead):")
         for t in unresolved[:10]:

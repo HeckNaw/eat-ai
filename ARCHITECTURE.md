@@ -9,9 +9,15 @@ Nathan likes.
 
 1. **Facts are computed, judgment is derived from data.** Distance, opening
    hours, and dedup are arithmetic. Taste is a statistical comparison against
-   the 267 `good_eats` places. No hand-authored thresholds anywhere — no
-   `rating > 4.6`, because Dav's Hotspot and Chrisly Cafe are low-rated
-   favourites and a rule like that would rank them down.
+   all 1,340 saved places. No hand-authored thresholds anywhere — no
+   `rating > 4.6`, because some favourites are low-rated and a rule like that
+   would rank them down.
+
+   **All 1,340 places carry equal weight.** Might try, Must try, Hidden Gems and
+   Good eats are provenance, not a quality hierarchy — every one is somewhere
+   Nathan decided was worth eating at, and an unvisited place may well be better
+   than a visited one. There is no tried/untried axis and no per-place state to
+   maintain, which is why the app needs no database at all.
 2. **Questions must be objectively filterable.** Each one maps to a hard
    filter over real fields. "Who are you with" was cut for failing this.
 3. **The LLM runs once, at build time.** It converts text (names, editorial
@@ -26,7 +32,7 @@ Nathan likes.
 data/*.csv                Google Maps export (4 lists, 1,343 rows)
    │  scripts/import_lists.py
    ▼
-seed.json                 1,340 places · CID identity · status · tier      ✅ done
+seed.json                 1,340 places · CID identity · list provenance   ✅ done
    │  scripts/enrich.mjs                       ← Places API, ~1,237 calls
    ▼
 enriched.json             + placeId, coords, types, rating, reviewCount,
@@ -37,7 +43,7 @@ labelled.json             + cuisine (granular), attributes[]
 lexicon.json                keyword → cuisine map, reused for off-list places
    │  scripts/derive.mjs                       ← pure statistics
    ▼
-taste.json                distributions computed from the 267 good_eats
+taste.json                distributions over all 1,340, weighted equally
 ```
 
 ### Why the labelling pass exists
@@ -63,25 +69,28 @@ model call, even for places never saved.
 
 ### taste.json — computed, not authored
 
-Derived from the 267 `good_eats` only (`hidden_gem` sits in the wishlist tier —
-the label goes stale as places get popularised):
+Derived from all 1,340 saved places, weighted equally:
 
-- cuisine frequency distribution
-- rating distribution (mean, spread) — so low-rated favourites shift it rather
-  than being penalised
-- review-count distribution — captures the under-reviewed preference without
-  hardcoding a cutoff
-- price-level distribution, over the ~52% of places that have one
+- cuisine frequency distribution — the primary signal
+- cuisine-family rollup, for softer matching
 - attribute frequencies from the labelling pass
-- geographic clusters — where he actually eats
+- geographic clusters — the neighbourhoods worth searching in
+
+**Not** scoring inputs, though still stored for display:
+
+- rating — the distribution is too tight to discriminate (mean 4.40, sd 0.28,
+  249 of 266 at 4.0★+), and weighting it would push down exactly the low-rated
+  favourites that motivated rule 1
+- review count — no obscurity preference is visible in the data
+- price level — missing for 46% of saved places and 75% of off-list candidates
 
 ## Runtime, every query
 
 ```
-1. QUESTIONS      when · how far · list-only / new / either
+1. QUESTIONS      when · how far · craving (multi, optional)
 2. LOCATION       browser geolocation, manual entry as fallback
 3. CANDIDATES     on-list:  filter labelled.json locally      → 0 calls
-                  off-list: Nearby Search × top cuisines      → 3–5 calls
+                  off-list: one Nearby Search                 → 1 call
 4. HARD FILTERS   open at target time · within radius ·
                   operational · not already saved (off-list only)
 5. SCORE          every candidate vs taste.json — same function both sources
@@ -93,11 +102,11 @@ the label goes stale as places get popularised):
 
 On-list and off-list picks are never blended into one ranked list. Blending
 would require a weight for "Nathan already saved this", and no principled value
-for it exists — set it high and discovery never fires, set it low and the 1,073
+for it exists — set it high and discovery never fires, set it low and the 1,340
 deliberately-saved places get ignored. So the sections are explicit:
 
 ```
-FROM YOUR LIST        up to 5     ← already vetted
+FROM YOUR LIST        up to 5     ← somewhere you saved
    [ see more ]
 NEW TO YOU            up to 5     ← never saved
    [ see more ]
@@ -113,48 +122,56 @@ The two buttons have very different costs, and the design exploits that:
 | | cost | depth |
 |---|---|---|
 | **From your list** | **$0** — already in memory | every place that passed, however many |
-| **New to you** | **$0** until the fetched pool is exhausted | ~80 candidates ≈ 16 pages |
+| **New to you** | **$0** until the fetched pool is exhausted | 20 candidates = 4 pages |
 
-The initial discovery call already fetches up to 20 results per cuisine across
-3–5 cuisines — roughly 80 candidates — while showing only 5. So the first dozen
-or more "see more" taps just paginate a pool already paid for. Only when that
-pool runs dry does the app widen the radius or query further cuisines, and it
-says so before spending a call.
+`includedPrimaryTypes` accepts many cuisines in a **single** call — verified
+live with seven types in one request — so a multi-cuisine craving is still one
+call, not one per cuisine. That call returns 20 candidates while only 5 are
+shown, so the first three "see more" taps paginate a pool already paid for.
+Only when it runs dry does the app widen the radius, and it says so first.
 
 Over-fetch once, paginate free.
 
 ### The questions
 
-| Question | Options | Filters on |
-|---|---|---|
-| When | now · in an hour · tonight · tomorrow | `openingHours` at target time |
-| How far | <1km · <5km · <10km · 10km+ · type your answer | haversine from location |
-| Price | $ · $$ · $$$+ · doesn't matter | `priceLevel`, with inference (below) |
-| Source | from my list · something new · either | `status` presence |
+Three questions, all with defaults, so the common case is a single tap.
+
+| Question | Type | Options | Filters on |
+|---|---|---|---|
+| When | single | now · in an hour · pick a time | `openingHours` at target time |
+| How far | single | <1km · <5km · <10km · anywhere · type your answer | haversine from location |
+| Craving | **multi**, optional | your most-saved cuisines · + more · type your answer | `cuisine` / `cuisineFamily` |
+
+"Tonight" was cut for being unfilterable — a time picker replaces it.
+
+**Craving is multi-select**, since a craving is often two or three things at
+once. Selecting nothing means no cuisine constraint — in which case the search
+still narrows to the top cuisines from `taste.json` rather than running
+unrestricted, because an unrestricted search downtown returns franchises. The
+chips shown are the most-saved cuisines, with the full list behind "+ more".
+
+There is no source question: results **always** show both sections (see below),
+which removes a tap and makes the split explicit rather than hidden.
+
+Defaults are `now · <5km · anything`, so a query is one button press unless
+tonight is unusual. The questions exist for narrowing, not as a toll gate.
 
 Free-text distance is parsed for units and for time ("20 min" → ~10km at city
 driving speed), and the interpreted radius is echoed back so it can be corrected.
 
-### Price, and the 48% that don't have one
+### Price is not a filter
 
-Google has no `priceLevel` for roughly half the saved places, and the gap is
-not random — it is systematically the small independents that dominate the
-lists. A naive price filter would therefore discard the favourites it should be
-surfacing.
+Dropped from the UI. `priceLevel` is missing for 46% of saved places and **75%
+of off-list candidates** (5 of 20 in a live discovery test), and the gap is not
+random — it is systematically the small independents that dominate the lists. A
+price filter would discard the favourites it should be surfacing.
 
-Three-part handling:
+The labelling pass can estimate a band from summary vocabulary
+(*counter-service*, *takeaway*, *upscale*), but in practice it only fired for 34
+places, because places without a price usually lack a summary too.
 
-1. **Known price** — filter on `priceLevel` directly.
-2. **Unknown price** — the labelling pass estimates a band from the name and
-   editorial summary, which carry strong signal for this: *compact*,
-   *counter-service*, *cash-only*, *takeaway*, *shop* all read cheap. Stored as
-   `priceEstimate` with a confidence, kept strictly separate from the real field.
-3. **Never silently dropped** — a pick that passed on an estimate is labelled
-   "price unconfirmed" in the UI, so an estimate is never presented as fact.
-
-Observed distribution across the probe sample was `INEXPENSIVE` and `MODERATE`
-only, with no `EXPENSIVE` at all — so the `$$$+` bucket will likely return
-little from the saved lists and lean on off-list discovery.
+`priceLevel` and `priceEstimate` are still stored and still available to the
+scorer as a weak signal where present. They just never gate a result.
 
 ### Opening hours
 
@@ -201,7 +218,7 @@ queries in the same neighbourhood cost nothing.
 | | |
 |---|---|
 | Enrichment, one-time | 1,237 calls · $9.00, or **$0** split across the month boundary |
-| Discovery, ongoing | ~120 calls/month vs 1,000 free — **$0** |
+| Discovery, ongoing | 1 call per query · own SKU with 1,000 free/month — **$0** |
 | Anthropic | **$0** — labelling runs in Claude Code |
 | Hosting | **$0** — Vercel free tier |
 
