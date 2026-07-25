@@ -630,16 +630,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .pip { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
 .status[data-s="open"] .pip { animation: pulse 2.4s ease-in-out infinite; }
 
-.card-why {
-  margin-top: 0.5625rem;
-  padding-top: 0.5625rem;
-  border-top: 1px solid var(--line);
-  font-size: 0.8125rem;
-  line-height: 1.45;
-  color: var(--ink-dim);
-}
-.card-why b { color: var(--ink-soft); font-weight: 600; }
-
 /* --------------------------------------------------------------------------
    states
    -------------------------------------------------------------------------- */

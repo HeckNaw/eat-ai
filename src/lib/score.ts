@@ -86,29 +86,6 @@ function neighbourhoodScore(place: Place, taste: Taste): number {
   return best;
 }
 
-/** One short line explaining the pick. Templated — no model call. */
-function explain(place: Place, taste: Taste, wanted: string[], distM: number): string {
-  const bits: string[] = [];
-
-  if (wanted.length && place.cs?.some((c) => wanted.includes(c))) {
-    bits.push(`<b>${place.cs.find((c) => wanted.includes(c))}</b> — what you asked for`);
-  } else if (place.c) {
-    const w = taste.cuisineAffinity[place.c] ?? 0;
-    if (w >= 0.55) bits.push(`<b>${place.c}</b> is one of your most-saved`);
-    else if (w > 0) bits.push(`<b>${place.c}</b>`);
-  }
-
-  const strong = (place.at ?? [])
-    .filter((a) => (taste.attributeAffinity[a] ?? 0) >= 0.4)
-    .slice(0, 2);
-  if (strong.length) bits.push(strong.join(" · "));
-
-  if (neighbourhoodScore(place, taste) > 0.35) bits.push("in an area you eat in a lot");
-  if (distM < 700) bits.push("walkable");
-
-  return bits.slice(0, 3).join(" &middot; ");
-}
-
 export interface Ranked {
   onList: Scored[];
   offList: Scored[];
@@ -167,7 +144,6 @@ export function rank(
       open: state,
       closesInMin,
       score,
-      why: explain(place, taste, cuisines, dist),
     });
   }
 

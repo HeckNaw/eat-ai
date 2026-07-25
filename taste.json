@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-25T20:56:34.702Z",
+  "generatedAt": "2026-07-25T22:16:31.039Z",
   "basis": {
     "places": 1266,
     "withCoordinates": 1266,
@@ -181,7 +181,7 @@
       "share": 0.0084,
       "weight": 0.1173
     },
-    "Israeli / Jewish Deli": {
+    "Jewish Deli": {
       "count": 20,
       "share": 0.008,
       "weight": 0.1117
@@ -880,7 +880,7 @@
             ]
           },
           {
-            "cuisine": "Israeli / Jewish Deli",
+            "cuisine": "Jewish Deli",
             "count": 20,
             "weight": 0.1117,
             "googleTypes": [
@@ -1943,7 +1943,7 @@
         "Burgers",
         "West African",
         "Jamaican",
-        "Israeli / Jewish Deli",
+        "Jewish Deli",
         "South Indian"
       ]
     },

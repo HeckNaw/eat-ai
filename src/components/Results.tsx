@@ -79,8 +79,6 @@ function PlaceCard({ item, index, isNew }: { item: Scored; index: number; isNew:
           </>
         )}
       </div>
-
-      {item.why && <div className="card-why" dangerouslySetInnerHTML={{ __html: item.why }} />}
     </a>
   );
 }

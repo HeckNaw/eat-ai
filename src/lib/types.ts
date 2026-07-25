@@ -77,5 +77,4 @@ export interface Scored {
   open: OpenState;
   closesInMin: number | null;
   score: number;
-  why: string;
 }

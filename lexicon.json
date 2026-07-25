@@ -606,10 +606,9 @@
       ],
       "mode": "savoury"
     },
-    "Israeli / Jewish Deli": {
+    "Jewish Deli": {
       "family": "Middle Eastern",
       "nameTokens": [
-        "israeli",
         "sabich",
         "smoked meat",
         "pastrami",
@@ -621,7 +620,6 @@
         "deli"
       ],
       "summaryTerms": [
-        "israeli",
         "jewish",
         "smoked meat"
       ],

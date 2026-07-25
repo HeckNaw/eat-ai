@@ -7943,7 +7943,7 @@
       "cuisineFamily": "North American",
       "cuisines": [
         "Sandwiches / Deli",
-        "Israeli / Jewish Deli",
+        "Jewish Deli",
         "American / Southern"
       ],
       "cuisineSource": "googleType",
@@ -22695,7 +22695,7 @@
       "cuisineFamily": "North American",
       "cuisines": [
         "Sandwiches / Deli",
-        "Israeli / Jewish Deli",
+        "Jewish Deli",
         "Breakfast / Brunch",
         "Bakery / Pastry",
         "Coffee"
@@ -28615,7 +28615,7 @@
       "cuisineFamily": "North American",
       "cuisines": [
         "Sandwiches / Deli",
-        "Israeli / Jewish Deli"
+        "Jewish Deli"
       ],
       "cuisineSource": "name",
       "attributes": [],
@@ -28750,7 +28750,7 @@
       "cuisineFamily": "North American",
       "cuisines": [
         "Sandwiches / Deli",
-        "Israeli / Jewish Deli"
+        "Jewish Deli"
       ],
       "cuisineSource": "name",
       "attributes": [],
@@ -30800,7 +30800,7 @@
       "cuisines": [
         "Barbecue",
         "American / Southern",
-        "Israeli / Jewish Deli"
+        "Jewish Deli"
       ],
       "cuisineSource": "googleType",
       "attributes": [
@@ -39897,7 +39897,7 @@
       "cuisineFamily": "North American",
       "cuisines": [
         "Sandwiches / Deli",
-        "Israeli / Jewish Deli"
+        "Jewish Deli"
       ],
       "cuisineSource": "name",
       "attributes": [],
@@ -39951,7 +39951,7 @@
       "cuisines": [
         "Sandwiches / Deli",
         "Barbecue",
-        "Israeli / Jewish Deli"
+        "Jewish Deli"
       ],
       "cuisineSource": "name",
       "attributes": [],
@@ -68153,7 +68153,7 @@
       "cuisineFamily": "North American",
       "cuisines": [
         "Sandwiches / Deli",
-        "Israeli / Jewish Deli"
+        "Jewish Deli"
       ],
       "cuisineSource": "name",
       "attributes": [],
@@ -68294,7 +68294,7 @@
       "cuisineFamily": "North American",
       "cuisines": [
         "Sandwiches / Deli",
-        "Israeli / Jewish Deli"
+        "Jewish Deli"
       ],
       "cuisineSource": "name",
       "attributes": [],
@@ -80026,10 +80026,10 @@
       "summary": null,
       "businessStatus": "OPERATIONAL",
       "googleMapsUri": "https://maps.google.com/?cid=13072403613305210634&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "cuisine": "Israeli / Jewish Deli",
+      "cuisine": "Jewish Deli",
       "cuisineFamily": "Middle Eastern",
       "cuisines": [
-        "Israeli / Jewish Deli",
+        "Jewish Deli",
         "Sandwiches / Deli"
       ],
       "cuisineSource": "googleType",
@@ -104393,7 +104393,7 @@
       "cuisineFamily": "North American",
       "cuisines": [
         "Barbecue",
-        "Israeli / Jewish Deli",
+        "Jewish Deli",
         "Sandwiches / Deli"
       ],
       "cuisineSource": "googleType",
@@ -108385,7 +108385,7 @@
       "cuisineFamily": "North American",
       "cuisines": [
         "Sandwiches / Deli",
-        "Israeli / Jewish Deli"
+        "Jewish Deli"
       ],
       "cuisineSource": "name",
       "attributes": [
@@ -108555,7 +108555,6 @@
       "types": [
         "middle_eastern_restaurant",
         "vegetarian_restaurant",
-        "israeli_restaurant",
         "mediterranean_restaurant",
         "restaurant",
         "food",
@@ -128556,7 +128555,7 @@
       "cuisineFamily": "North American",
       "cuisines": [
         "Sandwiches / Deli",
-        "Israeli / Jewish Deli",
+        "Jewish Deli",
         "Steakhouse"
       ],
       "cuisineSource": "name",
@@ -128823,7 +128822,7 @@
       "cuisines": [
         "Bakery / Pastry",
         "Grocery / Market",
-        "Israeli / Jewish Deli",
+        "Jewish Deli",
         "Sandwiches / Deli",
         "Dessert / Ice Cream",
         "Coffee",
@@ -129079,7 +129078,7 @@
       "cuisineFamily": "Bakery & Sweets",
       "cuisines": [
         "Bakery / Pastry",
-        "Israeli / Jewish Deli",
+        "Jewish Deli",
         "Sandwiches / Deli",
         "Grocery / Market"
       ],
@@ -139276,10 +139275,10 @@
       "summary": null,
       "businessStatus": "OPERATIONAL",
       "googleMapsUri": "https://maps.google.com/?cid=1330376880463924534&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "cuisine": "Israeli / Jewish Deli",
+      "cuisine": "Jewish Deli",
       "cuisineFamily": "Middle Eastern",
       "cuisines": [
-        "Israeli / Jewish Deli",
+        "Jewish Deli",
         "Sandwiches / Deli",
         "Barbecue",
         "Steakhouse"
@@ -154621,7 +154620,7 @@
       "cuisines": [
         "Bakery / Pastry",
         "Italian",
-        "Israeli / Jewish Deli",
+        "Jewish Deli",
         "Sandwiches / Deli",
         "Breakfast / Brunch",
         "Dessert / Ice Cream",
@@ -157718,10 +157717,10 @@
       "summary": null,
       "businessStatus": "OPERATIONAL",
       "googleMapsUri": "https://maps.google.com/?cid=1838943844597075471&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "cuisine": "Israeli / Jewish Deli",
+      "cuisine": "Jewish Deli",
       "cuisineFamily": "Middle Eastern",
       "cuisines": [
-        "Israeli / Jewish Deli",
+        "Jewish Deli",
         "Sandwiches / Deli"
       ],
       "cuisineSource": "googleType",
@@ -159125,10 +159124,10 @@
       "summary": null,
       "businessStatus": "OPERATIONAL",
       "googleMapsUri": "https://maps.google.com/?cid=4530372584377909462&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "cuisine": "Israeli / Jewish Deli",
+      "cuisine": "Jewish Deli",
       "cuisineFamily": "Middle Eastern",
       "cuisines": [
-        "Israeli / Jewish Deli",
+        "Jewish Deli",
         "Sandwiches / Deli"
       ],
       "cuisineSource": "googleType",
@@ -159398,7 +159397,7 @@
       "cuisines": [
         "Breakfast / Brunch",
         "American / Southern",
-        "Israeli / Jewish Deli",
+        "Jewish Deli",
         "Sandwiches / Deli"
       ],
       "cuisineSource": "name",
@@ -160433,7 +160432,7 @@
       "cuisineFamily": "North American",
       "cuisines": [
         "Sandwiches / Deli",
-        "Israeli / Jewish Deli"
+        "Jewish Deli"
       ],
       "cuisineSource": "name",
       "attributes": [
