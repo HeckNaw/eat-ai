@@ -19,7 +19,7 @@
      fills read as black blocks pasted on top; letting a little texture through
      seats the controls in the page instead. */
   --glass: #1b1614d9;
-  --glass-lift: #221c19e6;
+  --glass-lift: #221c19cf;
   --glass-soft: #2c2521cc;
   --line: #3a312c;
   --line-bright: #4c4038;
@@ -231,7 +231,10 @@ h1, h2, h3 {
   z-index: 20;
   padding: 0.875rem 0 max(0.875rem, env(safe-area-inset-bottom));
   margin-top: auto;
-  background: linear-gradient(to top, #14100efa 30%, #14100ecc 62%, #14100e00 100%);
+  /* No fill. A scrim here used to stop content showing through the sticky area,
+     but over the drifting backdrop it read as a black box under the buttons. The
+     buttons carry their own backgrounds, so they stay legible without it. */
+  background: none;
 }
 
 /* --------------------------------------------------------------------------
