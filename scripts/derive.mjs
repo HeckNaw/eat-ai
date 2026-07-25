@@ -18,14 +18,23 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { lex } from "./lib/labeller.mjs";
+import { isRuledOut, negatives } from "./lib/negatives.mjs";
 
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const src = JSON.parse(readFileSync(join(ROOT, "labelled.json"), "utf8"));
 
+// A place later marked "would not eat here" is not evidence of taste, even
+// though it was once saved. The negative lists are the more recent statement
+// and win outright, so these drop out of every count below — otherwise the
+// model keeps learning from a judgement that has since been reversed.
+const ruledOut = src.places.filter(isRuledOut);
+
 // Permanently closed places tell us nothing about where to eat tonight, but
 // they DO still describe taste — a shuttered favourite was still a favourite.
 // Kept for affinity, excluded from geography.
-const all = src.places.filter((p) => p.businessStatus !== "CLOSED_PERMANENTLY");
+const all = src.places
+  .filter((p) => !isRuledOut(p))
+  .filter((p) => p.businessStatus !== "CLOSED_PERMANENTLY");
 const located = all.filter((p) => p.lat != null && p.lng != null);
 
 /** Count occurrences, then express each as a share and as 0..1 against the max. */
@@ -251,5 +260,11 @@ for (const f of hierarchy.savoury.slice(0, 7)) {
 console.log(`\nhierarchy — sweet:`);
 for (const f of hierarchy.sweet) {
   console.log(`  ${f.family} (${f.count}): ${f.styles.map((s2) => `${s2.cuisine} ${s2.count}`).join(" · ")}`);
+}
+if (negatives.cids.size) {
+  console.log(
+    `\nruled out: ${negatives.cids.size} negatives loaded, ${ruledOut.length} matched a saved place` +
+      (ruledOut.length ? ` — ${ruledOut.map((p) => p.name).join(", ")}` : ""),
+  );
 }
 console.log(`\nwrote taste.json`);

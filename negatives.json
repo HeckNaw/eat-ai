@@ -1,0 +1,687 @@
+{
+  "places": [
+    {
+      "title": "4Ever Sushi",
+      "normalizedTitle": "4ever sushi",
+      "cid": "0x3bf55cd7a3f6b5a9",
+      "featureId": "0x882b35f186af2ef3:0x3bf55cd7a3f6b5a9",
+      "url": "https://www.google.com/maps/place/4Ever+Sushi/data=!4m2!3m1!1s0x882b35f186af2ef3:0x3bf55cd7a3f6b5a9",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Ajisen Ramen (Chinatown)",
+      "normalizedTitle": "ajisen ramen chinatown",
+      "cid": "0x71a6447306111d9f",
+      "featureId": "0x882b34c3966ed4f7:0x71a6447306111d9f",
+      "url": "https://www.google.com/maps/place/Ajisen+Ramen+(Chinatown)/data=!4m2!3m1!1s0x882b34c3966ed4f7:0x71a6447306111d9f",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Bourbon St. Grill (Yonge Eglinton Centre)",
+      "normalizedTitle": "bourbon st grill yonge eglinton centre",
+      "cid": "0xa14297ce3ff135a3",
+      "featureId": "0x882b330014b11179:0xa14297ce3ff135a3",
+      "url": "https://www.google.com/maps/place/Bourbon+St.+Grill+(Yonge+Eglinton+Centre)/data=!4m2!3m1!1s0x882b330014b11179:0xa14297ce3ff135a3",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Buono Ristorante",
+      "normalizedTitle": "buono ristorante",
+      "cid": "0xd4bdcb1940722928",
+      "featureId": "0x89d4cde1c101d527:0xd4bdcb1940722928",
+      "url": "https://www.google.com/maps/place/Buono+Ristorante/data=!4m2!3m1!1s0x89d4cde1c101d527:0xd4bdcb1940722928",
+      "reasons": [
+        "overpriced"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Burrito Boyz Queen & Spadina",
+      "normalizedTitle": "burrito boyz queen spadina",
+      "cid": "0xed568dd0222be292",
+      "featureId": "0x882b352f8017661d:0xed568dd0222be292",
+      "url": "https://www.google.com/maps/place/Burrito+Boyz+Queen+%26+Spadina/data=!4m2!3m1!1s0x882b352f8017661d:0xed568dd0222be292",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Cafe Landwer",
+      "normalizedTitle": "cafe landwer",
+      "cid": "0x6986c20ea1ff3267",
+      "featureId": "0x882b3504ae3d72e1:0x6986c20ea1ff3267",
+      "url": "https://www.google.com/maps/place/Cafe+Landwer/data=!4m2!3m1!1s0x882b3504ae3d72e1:0x6986c20ea1ff3267",
+      "reasons": [
+        "inauthentic"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Campechano Adelaide",
+      "normalizedTitle": "campechano adelaide",
+      "cid": "0xda635105ca1baf8f",
+      "featureId": "0x882b34de7a560889:0xda635105ca1baf8f",
+      "url": "https://www.google.com/maps/place/Campechano+Adelaide/data=!4m2!3m1!1s0x882b34de7a560889:0xda635105ca1baf8f",
+      "reasons": [
+        "overpriced"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Earls Kitchen + Bar",
+      "normalizedTitle": "earls kitchen bar",
+      "cid": "0xb5c78420e96132db",
+      "featureId": "0x882b35c7b18cb18b:0xb5c78420e96132db",
+      "url": "https://www.google.com/maps/place/Earls+Kitchen+%2B+Bar/data=!4m2!3m1!1s0x882b35c7b18cb18b:0xb5c78420e96132db",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "eaTO- Indian Street Food",
+      "normalizedTitle": "eato indian street food",
+      "cid": "0xe16c845f410e30f3",
+      "featureId": "0x89d4cda8211d98ab:0xe16c845f410e30f3",
+      "url": "https://www.google.com/maps/place/eaTO-+Indian+Street+Food/data=!4m2!3m1!1s0x89d4cda8211d98ab:0xe16c845f410e30f3",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Eggstatic Toronto",
+      "normalizedTitle": "eggstatic toronto",
+      "cid": "0x4d1a6bedd1e0f80b",
+      "featureId": "0x89d4cda13acda60d:0x4d1a6bedd1e0f80b",
+      "url": "https://www.google.com/maps/place/Eggstatic+Toronto/data=!4m2!3m1!1s0x89d4cda13acda60d:0x4d1a6bedd1e0f80b",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "El Furniture Warehouse",
+      "normalizedTitle": "el furniture warehouse",
+      "cid": "0x4becf9db76ec2bd9",
+      "featureId": "0x882b34cfde024bc9:0x4becf9db76ec2bd9",
+      "url": "https://www.google.com/maps/place/El+Furniture+Warehouse/data=!4m2!3m1!1s0x882b34cfde024bc9:0x4becf9db76ec2bd9",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "El Trompo",
+      "normalizedTitle": "el trompo",
+      "cid": "0xee13ed04ab9ff32b",
+      "featureId": "0x882b34c1f8bb2bf1:0xee13ed04ab9ff32b",
+      "url": "https://www.google.com/maps/place/El+Trompo/data=!4m2!3m1!1s0x882b34c1f8bb2bf1:0xee13ed04ab9ff32b",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Evviva Breakfast and Lunch",
+      "normalizedTitle": "evviva breakfast and lunch",
+      "cid": "0x788f093142bcaefe",
+      "featureId": "0x882b33c4d28281dd:0x788f093142bcaefe",
+      "url": "https://www.google.com/maps/place/Evviva+Breakfast+and+Lunch/data=!4m2!3m1!1s0x882b33c4d28281dd:0x788f093142bcaefe",
+      "reasons": [
+        "inauthentic"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Fairway Restaurant & Bar",
+      "normalizedTitle": "fairway restaurant bar",
+      "cid": "0xf0d23c5810a40f81",
+      "featureId": "0x89d4cd0941f80b4f:0xf0d23c5810a40f81",
+      "url": "https://www.google.com/maps/place/Fairway+Restaurant+%26+Bar/data=!4m2!3m1!1s0x89d4cd0941f80b4f:0xf0d23c5810a40f81",
+      "reasons": [
+        "inauthentic"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Gabby's",
+      "normalizedTitle": "gabby s",
+      "cid": "0xbc8250815a74f199",
+      "featureId": "0x882b332c3a6c4091:0xbc8250815a74f199",
+      "url": "https://www.google.com/maps/place/Gabby's/data=!4m2!3m1!1s0x882b332c3a6c4091:0xbc8250815a74f199",
+      "reasons": [
+        "inauthentic"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Granite Brewery & Tied House",
+      "normalizedTitle": "granite brewery tied house",
+      "cid": "0xd9cebd5e81389b99",
+      "featureId": "0x882b332fbbb0c383:0xd9cebd5e81389b99",
+      "url": "https://www.google.com/maps/place/Granite+Brewery+%26+Tied+House/data=!4m2!3m1!1s0x882b332fbbb0c383:0xd9cebd5e81389b99",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Grazie Ristorante",
+      "normalizedTitle": "grazie ristorante",
+      "cid": "0x8117c5e21bea71bc",
+      "featureId": "0x882b332312be25ff:0x8117c5e21bea71bc",
+      "url": "https://www.google.com/maps/place/Grazie+Ristorante/data=!4m2!3m1!1s0x882b332312be25ff:0x8117c5e21bea71bc",
+      "reasons": [
+        "overpriced"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Hana Don Japanese Cuisine & Bar",
+      "normalizedTitle": "hana don japanese cuisine bar",
+      "cid": "0xee569cc0501459cb",
+      "featureId": "0x89d4d37445f95da3:0xee569cc0501459cb",
+      "url": "https://www.google.com/maps/place/Hana+Don+Japanese+Cuisine+%26+Bar/data=!4m2!3m1!1s0x89d4d37445f95da3:0xee569cc0501459cb",
+      "reasons": [
+        "inauthentic"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Hangout Street",
+      "normalizedTitle": "hangout street",
+      "cid": "0xeb0d45f2ff16bcc3",
+      "featureId": "0x89d4cb5453b15895:0xeb0d45f2ff16bcc3",
+      "url": "https://www.google.com/maps/place/Hangout+Street/data=!4m2!3m1!1s0x89d4cb5453b15895:0xeb0d45f2ff16bcc3",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Hazel's Diner",
+      "normalizedTitle": "hazel s diner",
+      "cid": "0x2dac57aad1579d49",
+      "featureId": "0x882b333135e0e85f:0x2dac57aad1579d49",
+      "url": "https://www.google.com/maps/place/Hazel's+Diner/data=!4m2!3m1!1s0x882b333135e0e85f:0x2dac57aad1579d49",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "House Of Gourmet",
+      "normalizedTitle": "house of gourmet",
+      "cid": "0x855eeb280fca7897",
+      "featureId": "0x882b34c380b1bab9:0x855eeb280fca7897",
+      "url": "https://www.google.com/maps/place/House+Of+Gourmet/data=!4m2!3m1!1s0x882b34c380b1bab9:0x855eeb280fca7897",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Java House",
+      "normalizedTitle": "java house",
+      "cid": "0xd6c523b6fa1a7288",
+      "featureId": "0x882b34dc523d6f01:0xd6c523b6fa1a7288",
+      "url": "https://www.google.com/maps/place/Java+House/data=!4m2!3m1!1s0x882b34dc523d6f01:0xd6c523b6fa1a7288",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Jimmy John's",
+      "normalizedTitle": "jimmy john s",
+      "cid": "0x45b02fc689e06028",
+      "featureId": "0x882b350010b37adb:0x45b02fc689e06028",
+      "url": "https://www.google.com/maps/place/Jimmy+John's/data=!4m2!3m1!1s0x882b350010b37adb:0x45b02fc689e06028",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Jing Chinese Restaurant",
+      "normalizedTitle": "jing chinese restaurant",
+      "cid": "0x99777a5603ac9f69",
+      "featureId": "0x89d4cd68b5061603:0x99777a5603ac9f69",
+      "url": "https://www.google.com/maps/place/Jing+Chinese+Restaurant/data=!4m2!3m1!1s0x89d4cd68b5061603:0x99777a5603ac9f69",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Joanne's Deli",
+      "normalizedTitle": "joanne s deli",
+      "cid": "0x3cc564cebb4eac42",
+      "featureId": "0x882b332f893971a3:0x3cc564cebb4eac42",
+      "url": "https://www.google.com/maps/place/Joanne's+Deli/data=!4m2!3m1!1s0x882b332f893971a3:0x3cc564cebb4eac42",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Juicy Dumpling",
+      "normalizedTitle": "juicy dumpling",
+      "cid": "0xacd47b1c73955319",
+      "featureId": "0x882b3500043c08ab:0xacd47b1c73955319",
+      "url": "https://www.google.com/maps/place/Juicy+Dumpling/data=!4m2!3m1!1s0x882b3500043c08ab:0xacd47b1c73955319",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Kadak Toronto",
+      "normalizedTitle": "kadak toronto",
+      "cid": "0x577918a5b4f38714",
+      "featureId": "0x882b33007d2d8d6f:0x577918a5b4f38714",
+      "url": "https://www.google.com/maps/place/Kadak+Toronto/data=!4m2!3m1!1s0x882b33007d2d8d6f:0x577918a5b4f38714",
+      "reasons": [
+        "overpriced"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Kaikaki Japanese Cuisine",
+      "normalizedTitle": "kaikaki japanese cuisine",
+      "cid": "0x1ad4b48479b1c8fb",
+      "featureId": "0x882b2d27fbb2b217:0x1ad4b48479b1c8fb",
+      "url": "https://www.google.com/maps/place/Kaikaki+Japanese+Cuisine/data=!4m2!3m1!1s0x882b2d27fbb2b217:0x1ad4b48479b1c8fb",
+      "reasons": [
+        "inauthentic"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Kensington Kitchen",
+      "normalizedTitle": "kensington kitchen",
+      "cid": "0xcb21a102aae664ea",
+      "featureId": "0x882b35c55a456e55:0xcb21a102aae664ea",
+      "url": "https://www.google.com/maps/place/Kensington+Kitchen/data=!4m2!3m1!1s0x882b35c55a456e55:0xcb21a102aae664ea",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "KINTON RAMEN KOREATOWN",
+      "normalizedTitle": "kinton ramen koreatown",
+      "cid": "0x1a8a362f69ec608",
+      "featureId": "0x882b348d075a6d53:0x1a8a362f69ec608",
+      "url": "https://www.google.com/maps/place/KINTON+RAMEN+KOREATOWN/data=!4m2!3m1!1s0x882b348d075a6d53:0x1a8a362f69ec608",
+      "reasons": [
+        "bad_quality",
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 2
+    },
+    {
+      "title": "La Carnita",
+      "normalizedTitle": "la carnita",
+      "cid": "0x2103349d44fac1ea",
+      "featureId": "0x882b34d060af3fd1:0x2103349d44fac1ea",
+      "url": "https://www.google.com/maps/place/La+Carnita/data=!4m2!3m1!1s0x882b34d060af3fd1:0x2103349d44fac1ea",
+      "reasons": [
+        "inauthentic"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Mad Radish l Healthy Restaurant & Catering",
+      "normalizedTitle": "mad radish l healthy restaurant catering",
+      "cid": "0x91aea93d650b1ccd",
+      "featureId": "0x882b3537547b9a8d:0x91aea93d650b1ccd",
+      "url": "https://www.google.com/maps/place/Mad+Radish+l+Healthy+Restaurant+%26+Catering/data=!4m2!3m1!1s0x882b3537547b9a8d:0x91aea93d650b1ccd",
+      "reasons": [
+        "inauthentic"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Mandarin Restaurant",
+      "normalizedTitle": "mandarin restaurant",
+      "cid": "0x3b6c4bbd262e1dbb",
+      "featureId": "0x882b2dfd8f94a9b3:0x3b6c4bbd262e1dbb",
+      "url": "https://www.google.com/maps/place/Mandarin+Restaurant/data=!4m2!3m1!1s0x882b2dfd8f94a9b3:0x3b6c4bbd262e1dbb",
+      "reasons": [
+        "bad_quality",
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 2
+    },
+    {
+      "title": "McSorley's Wonderful Saloon & Grill",
+      "normalizedTitle": "mcsorley s wonderful saloon grill",
+      "cid": "0xd1965a404d125f6f",
+      "featureId": "0x89d4cccde2c95b91:0xd1965a404d125f6f",
+      "url": "https://www.google.com/maps/place/McSorley's+Wonderful+Saloon+%26+Grill/data=!4m2!3m1!1s0x89d4cccde2c95b91:0xd1965a404d125f6f",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Miku Toronto",
+      "normalizedTitle": "miku toronto",
+      "cid": "0xa58893d17557ef2a",
+      "featureId": "0x89d4cb2a5661156d:0xa58893d17557ef2a",
+      "url": "https://www.google.com/maps/place/Miku+Toronto/data=!4m2!3m1!1s0x89d4cb2a5661156d:0xa58893d17557ef2a",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Montana’s BBQ & Bar",
+      "normalizedTitle": "montana s bbq bar",
+      "cid": "0xd0f736678da881",
+      "featureId": "0x882b2e763b4eb679:0xd0f736678da881",
+      "url": "https://www.google.com/maps/place/Montana%E2%80%99s+BBQ+%26+Bar/data=!4m2!3m1!1s0x882b2e763b4eb679:0xd0f736678da881",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Moxies Toronto Downtown Restaurant",
+      "normalizedTitle": "moxies toronto downtown restaurant",
+      "cid": "0xdc1f8f230d2da2a4",
+      "featureId": "0x882b34d3c90773ed:0xdc1f8f230d2da2a4",
+      "url": "https://www.google.com/maps/place/Moxies+Toronto+Downtown+Restaurant/data=!4m2!3m1!1s0x882b34d3c90773ed:0xdc1f8f230d2da2a4",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Oxtail Pho & Banh Mi",
+      "normalizedTitle": "oxtail pho banh mi",
+      "cid": "0xde9b53cbcd41a6ab",
+      "featureId": "0x882b34ef565fed9f:0xde9b53cbcd41a6ab",
+      "url": "https://www.google.com/maps/place/Oxtail+Pho+%26+Banh+Mi/data=!4m2!3m1!1s0x882b34ef565fed9f:0xde9b53cbcd41a6ab",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "supersedes": "Oxtail Pho & Banh Mi"
+    },
+    {
+      "title": "Piano Piano",
+      "normalizedTitle": "piano piano",
+      "cid": "0xa6ab9538cf42a9ba",
+      "featureId": "0x882b337977abfa0b:0xa6ab9538cf42a9ba",
+      "url": "https://www.google.com/maps/place/Piano+Piano/data=!4m2!3m1!1s0x882b337977abfa0b:0xa6ab9538cf42a9ba",
+      "reasons": [
+        "bad_quality",
+        "inauthentic",
+        "overpriced",
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 4
+    },
+    {
+      "title": "Pickle Barrel",
+      "normalizedTitle": "pickle barrel",
+      "cid": "0x3f13f8b4f923960c",
+      "featureId": "0x882b333cb7b0bbdb:0x3f13f8b4f923960c",
+      "url": "https://www.google.com/maps/place/Pickle+Barrel/data=!4m2!3m1!1s0x882b333cb7b0bbdb:0x3f13f8b4f923960c",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Ramona’s Kitchen",
+      "normalizedTitle": "ramona s kitchen",
+      "cid": "0x1baff99888bb295e",
+      "featureId": "0x89d4cd5777112245:0x1baff99888bb295e",
+      "url": "https://www.google.com/maps/place/Ramona%E2%80%99s+Kitchen/data=!4m2!3m1!1s0x89d4cd5777112245:0x1baff99888bb295e",
+      "reasons": [
+        "inauthentic"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Ristorante Sotto Sotto",
+      "normalizedTitle": "ristorante sotto sotto",
+      "cid": "0x3028fc7df1953a91",
+      "featureId": "0x882b34a41a0c7531:0x3028fc7df1953a91",
+      "url": "https://www.google.com/maps/place/Ristorante+Sotto+Sotto/data=!4m2!3m1!1s0x882b34a41a0c7531:0x3028fc7df1953a91",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1,
+      "supersedes": "Ristorante Sotto Sotto"
+    },
+    {
+      "title": "RUDY",
+      "normalizedTitle": "rudy",
+      "cid": "0x1856e4c097f0ef13",
+      "featureId": "0x882b35d5a5cba85f:0x1856e4c097f0ef13",
+      "url": "https://www.google.com/maps/place/RUDY/data=!4m2!3m1!1s0x882b35d5a5cba85f:0x1856e4c097f0ef13",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Saigon Lotus",
+      "normalizedTitle": "saigon lotus",
+      "cid": "0xf2a993aef3481e2a",
+      "featureId": "0x882b34c3c751a4bf:0xf2a993aef3481e2a",
+      "url": "https://www.google.com/maps/place/Saigon+Lotus/data=!4m2!3m1!1s0x882b34c3c751a4bf:0xf2a993aef3481e2a",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Salad King",
+      "normalizedTitle": "salad king",
+      "cid": "0xdddf2291d1c79ad2",
+      "featureId": "0x882b34cac79b46d9:0xdddf2291d1c79ad2",
+      "url": "https://www.google.com/maps/place/Salad+King/data=!4m2!3m1!1s0x882b34cac79b46d9:0xdddf2291d1c79ad2",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "SMOKESHOW bbq and brew",
+      "normalizedTitle": "smokeshow bbq and brew",
+      "cid": "0x1c6f8054baac1d66",
+      "featureId": "0x882b3311b9eb7fcf:0x1c6f8054baac1d66",
+      "url": "https://www.google.com/maps/place/SMOKESHOW+bbq+and+brew/data=!4m2!3m1!1s0x882b3311b9eb7fcf:0x1c6f8054baac1d66",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Social Llama Cafe",
+      "normalizedTitle": "social llama cafe",
+      "cid": "0x31e8c19d1a0f12ed",
+      "featureId": "0x882b33077466d665:0x31e8c19d1a0f12ed",
+      "url": "https://www.google.com/maps/place/Social+Llama+Cafe/data=!4m2!3m1!1s0x882b33077466d665:0x31e8c19d1a0f12ed",
+      "reasons": [
+        "inauthentic"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Spano’s Diner",
+      "normalizedTitle": "spano s diner",
+      "cid": "0xcd24a8468d5fa621",
+      "featureId": "0x882b337a921887c5:0xcd24a8468d5fa621",
+      "url": "https://www.google.com/maps/place/Spano%E2%80%99s+Diner/data=!4m2!3m1!1s0x882b337a921887c5:0xcd24a8468d5fa621",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "The Fortunate Fox",
+      "normalizedTitle": "the fortunate fox",
+      "cid": "0xef8f6c6ccdea5f12",
+      "featureId": "0x882b351517c824a1:0xef8f6c6ccdea5f12",
+      "url": "https://www.google.com/maps/place/The+Fortunate+Fox/data=!4m2!3m1!1s0x882b351517c824a1:0xef8f6c6ccdea5f12",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "The Hand Roll Sushi Bar",
+      "normalizedTitle": "the hand roll sushi bar",
+      "cid": "0xc4689cf826a06c19",
+      "featureId": "0x882b357227857ea1:0xc4689cf826a06c19",
+      "url": "https://www.google.com/maps/place/The+Hand+Roll+Sushi+Bar/data=!4m2!3m1!1s0x882b357227857ea1:0xc4689cf826a06c19",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "To-Ne Sushi",
+      "normalizedTitle": "to ne sushi",
+      "cid": "0x77742f2455147770",
+      "featureId": "0x882b34dc85d3c469:0x77742f2455147770",
+      "url": "https://www.google.com/maps/place/To-Ne+Sushi/data=!4m2!3m1!1s0x882b34dc85d3c469:0x77742f2455147770",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "TOKYO GRILL at North York",
+      "normalizedTitle": "tokyo grill at north york",
+      "cid": "0xb7124d083471d29d",
+      "featureId": "0x882b2dd3ea5df8a3:0xb7124d083471d29d",
+      "url": "https://www.google.com/maps/place/TOKYO+GRILL+at+North+York/data=!4m2!3m1!1s0x882b2dd3ea5df8a3:0xb7124d083471d29d",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Victory Cafe",
+      "normalizedTitle": "victory cafe",
+      "cid": "0xc31179be7168ff27",
+      "featureId": "0x882b3493ffefe031:0xc31179be7168ff27",
+      "url": "https://www.google.com/maps/place/Victory+Cafe/data=!4m2!3m1!1s0x882b3493ffefe031:0xc31179be7168ff27",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Vozara Food Factory",
+      "normalizedTitle": "vozara food factory",
+      "cid": "0xc30573b52f1fb641",
+      "featureId": "0x89d4cd2d0b29656b:0xc30573b52f1fb641",
+      "url": "https://www.google.com/maps/place/Vozara+Food+Factory/data=!4m2!3m1!1s0x89d4cd2d0b29656b:0xc30573b52f1fb641",
+      "reasons": [
+        "overpriced"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Wilbur Mexicana",
+      "normalizedTitle": "wilbur mexicana",
+      "cid": "0xebdf6cc752312f19",
+      "featureId": "0x882b34de9542d05b:0xebdf6cc752312f19",
+      "url": "https://www.google.com/maps/place/Wilbur+Mexicana/data=!4m2!3m1!1s0x882b34de9542d05b:0xebdf6cc752312f19",
+      "reasons": [
+        "pedestrian"
+      ],
+      "note": null,
+      "strength": 1
+    },
+    {
+      "title": "Yummi's",
+      "normalizedTitle": "yummi s",
+      "cid": "0x6287fe83e449923d",
+      "featureId": "0x89d4cdf8ab774665:0x6287fe83e449923d",
+      "url": "https://www.google.com/maps/place/Yummi's/data=!4m2!3m1!1s0x89d4cdf8ab774665:0x6287fe83e449923d",
+      "reasons": [
+        "bad_quality"
+      ],
+      "note": null,
+      "strength": 1
+    }
+  ],
+  "supersededTitles": [
+    "Ristorante Sotto Sotto",
+    "Oxtail Pho & Banh Mi"
+  ]
+}

@@ -21,9 +21,13 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
-const SEED = join(ROOT, "seed.json");
 const CACHE = join(ROOT, "data", "places-cache.jsonl");
-const OUT = join(ROOT, "enriched.json");
+
+// Input and output are overridable so the same path can enrich the negative
+// lists (--in negatives.json --out negatives-enriched.json). They must go
+// through this script and not a variant of it: a negative is only comparable to
+// a positive if it carries the identical field mask, and the cache is shared,
+// so anything already fetched as a positive costs nothing to fetch again.
 
 const ENDPOINT = "https://places.googleapis.com/v1/places:searchText";
 
@@ -57,10 +61,19 @@ const MAX_RETRIES = 4;
 // ---------------------------------------------------------------------------
 
 function parseArgs(argv) {
-  const out = { limit: Infinity, titles: null, force: false, maxCalls: 1300 };
+  const out = {
+    limit: Infinity,
+    titles: null,
+    force: false,
+    maxCalls: 1300,
+    in: "seed.json",
+    out: "enriched.json",
+  };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
-    if (a === "--limit") out.limit = Number(argv[++i]);
+    if (a === "--in") out.in = argv[++i];
+    else if (a === "--out") out.out = argv[++i];
+    else if (a === "--limit") out.limit = Number(argv[++i]);
     else if (a === "--titles") out.titles = argv[++i].split(",").map((s) => s.trim().toLowerCase());
     else if (a === "--max-calls") out.maxCalls = Number(argv[++i]);
     else if (a === "--force") out.force = true;
@@ -76,6 +89,8 @@ function parseArgs(argv) {
 }
 
 const args = parseArgs(process.argv.slice(2));
+const SEED = join(ROOT, args.in);
+const OUT = join(ROOT, args.out);
 
 const API_KEY = process.env.GOOGLE_MAPS_API_KEY;
 if (!API_KEY) {

@@ -13,6 +13,7 @@ import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { gzipSync } from "node:zlib";
+import { isRuledOut } from "./lib/negatives.mjs";
 
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const PUB = join(ROOT, "public");
@@ -41,6 +42,10 @@ function packHours(periods) {
 }
 
 const places = labelled.places
+  // Explicitly ruled out. These were saved once and rejected later, and the
+  // later judgement wins — shipping them would keep recommending places Nathan
+  // has already said no to.
+  .filter((p) => !isRuledOut(p))
   // Permanently closed places can't be recommended. They shaped taste.json
   // already, so dropping them here loses nothing.
   .filter((p) => p.businessStatus !== "CLOSED_PERMANENTLY")
