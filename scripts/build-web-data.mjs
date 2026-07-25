@@ -13,7 +13,8 @@ import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { gzipSync } from "node:zlib";
-import { isRuledOut } from "./lib/negatives.mjs";
+import { isRuledOut, negatives } from "./lib/negatives.mjs";
+import { isCorporateChain } from "./lib/chains.mjs";
 
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const PUB = join(ROOT, "public");
@@ -69,6 +70,9 @@ const places = labelled.places
     u: p.googleMapsUri ?? null,
     l: p.list,
     tmp: p.businessStatus === "CLOSED_TEMPORARILY" || undefined,
+    // Corporate chain — Nathan dislikes corporate, not quick service, so the
+    // scorer penalises these. Matched by brand name, not by Google's type.
+    co: isCorporateChain(p.name) || undefined,
   }));
 
 /**
@@ -185,6 +189,10 @@ const webTaste = {
   hierarchy: taste.hierarchy,
   chips: taste.chips,
   defaultSearchTypes: taste.defaultSearchTypes,
+  // placeIds Nathan ruled out. Added to the discovery exclude set so a rejected
+  // chain like Burrito Boyz can't return as an off-list "New to you" pick — the
+  // saved-list exclusion alone doesn't cover these, since they were never saved.
+  ruledOutIds: [...negatives.placeIds],
 };
 
 const write = (name, data) => {
@@ -194,7 +202,15 @@ const write = (name, data) => {
   console.log(`  ${name.padEnd(14)} ${kb(json.length).padStart(7)}  →  ${kb(gzipSync(json).length)} gzipped`);
 };
 
-console.log(`packing ${places.length} places for the browser:`);
+// The corporate list must never catch an independent. Print every saved place
+// it flags, so a mis-tuned brand shows up as a favourite about to be buried.
+const flaggedSaved = places.filter((p) => p.co).map((p) => p.n);
+console.log(
+  `corporate-flagged saved places: ${flaggedSaved.length}` +
+    (flaggedSaved.length ? ` — ${[...new Set(flaggedSaved)].join(", ")}` : ""),
+);
+
+console.log(`\npacking ${places.length} places for the browser:`);
 write("places.json", places);
 write("taste.json", webTaste);
 console.log("\nwrote to public/");

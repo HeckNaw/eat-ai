@@ -22,18 +22,27 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = dirname(dirname(dirname(fileURLToPath(import.meta.url))));
 const PATH = join(ROOT, "negatives.json");
+// placeIds live only in the enriched output — the raw import has CID + name.
+// They are what discovery excludes by, so both files feed this set.
+const ENRICHED = join(ROOT, "negatives-enriched.json");
 
 function load() {
-  if (!existsSync(PATH)) return { cids: new Set(), byCid: new Map() };
+  if (!existsSync(PATH)) return { cids: new Set(), byCid: new Map(), placeIds: new Set() };
   const { places = [] } = JSON.parse(readFileSync(PATH, "utf8"));
   const byCid = new Map();
   for (const p of places) if (p.cid) byCid.set(p.cid, p);
-  return { cids: new Set(byCid.keys()), byCid };
+
+  const placeIds = new Set();
+  if (existsSync(ENRICHED)) {
+    const enriched = JSON.parse(readFileSync(ENRICHED, "utf8"));
+    for (const p of enriched.places ?? enriched) if (p.placeId) placeIds.add(p.placeId);
+  }
+  return { cids: new Set(byCid.keys()), byCid, placeIds };
 }
 
 export const negatives = load();
 
-/** True when this place has been explicitly ruled out. */
+/** True when this place has been explicitly ruled out (matched by CID). */
 export function isRuledOut(place) {
   return Boolean(place?.cid && negatives.cids.has(place.cid));
 }

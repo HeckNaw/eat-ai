@@ -26,6 +26,21 @@ const W = {
   neighbourhood: 0.15, // places near where you already eat tend to land better
 };
 
+/**
+ * Corporate-chain penalty.
+ *
+ * A stated preference, in Nathan's words: "fast food I don't like means
+ * corporate. I don't like corporate." The dislike is of franchise brands, not
+ * of quick service — Banh Mi Boys is fast food and stays; McDonald's is a
+ * corporation and sinks. Detection is by brand name in chains.mjs, never by
+ * Google's fast-food type, which would bury his mom-and-pop favourites.
+ *
+ * Large on purpose — 0.5 against a base score that maxes near 1.0. It buries a
+ * chain beneath any genuine option without a hard filter, so a chain still
+ * appears rather than leaving an empty screen when nothing else is open.
+ */
+const CORPORATE_PENALTY = 0.5;
+
 /** 1 at the door, decaying to 0 at the edge of the chosen radius. */
 function proximity(distM: number, radiusM: number): number {
   return Math.max(0, 1 - distM / Math.max(1, radiusM));
@@ -143,7 +158,9 @@ export function rank(
       // A place with unknown hours is a gamble, so nudge it below a sure thing
       // rather than removing it.
       (state === "unknown" ? -0.06 : 0) +
-      (state === "soon" ? -0.03 : 0);
+      (state === "soon" ? -0.03 : 0) +
+      // Chains sink beneath any real option but stay reachable as a last resort.
+      (place.co ? -CORPORATE_PENALTY : 0);
 
     out.push({
       place,

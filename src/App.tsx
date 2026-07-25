@@ -162,7 +162,9 @@ export default function App() {
         lng: origin.lng,
         radius: Math.min(answers.radiusM, 50_000),
         includedPrimaryTypes: searchTypes(taste, answers),
-        exclude: (places ?? []).map((p) => p.i),
+        // Saved places, plus the explicitly-ruled-out ones (chains like Burrito
+        // Boyz), so neither returns as an off-list discovery.
+        exclude: [...(places ?? []).map((p) => p.i), ...(taste.ruledOutIds ?? [])],
       });
       await floor;
       setSettling(false);

@@ -21,6 +21,7 @@ export interface Place {
   u: string | null;       // Google Maps URL
   l: string;              // which list it came from (provenance only)
   tmp?: true;             // temporarily closed
+  co?: true;              // corporate chain — penalised, per Nathan's stated preference
   onList?: boolean;       // set true for saved places, false for discoveries
 }
 
@@ -33,6 +34,7 @@ export interface Taste {
   hierarchy: Record<Mode, Family[]>;
   chips: Record<"savoury" | "sweet", Chip[]>;
   defaultSearchTypes: Record<"savoury" | "sweet", string[]>;
+  ruledOutIds?: string[];  // placeIds of explicitly-rejected places, for the exclude set
 }
 
 export interface Area {
