@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-25T22:16:31.039Z",
+  "generatedAt": "2026-07-26T00:30:31.177Z",
   "basis": {
     "places": 1266,
     "withCoordinates": 1266,
@@ -350,82 +350,82 @@
   "familyAffinity": {
     "North American": {
       "count": 387,
-      "share": 0.19389,
+      "share": 0.19408,
       "weight": 1
     },
     "Bakery & Sweets": {
       "count": 208,
-      "share": 0.10421,
+      "share": 0.10431,
       "weight": 0.5375
+    },
+    "European": {
+      "count": 198,
+      "share": 0.0993,
+      "weight": 0.5116
     },
     "Chinese": {
       "count": 188,
-      "share": 0.09419,
+      "share": 0.09428,
       "weight": 0.4858
-    },
-    "European": {
-      "count": 180,
-      "share": 0.09018,
-      "weight": 0.4651
     },
     "South Asian": {
       "count": 133,
-      "share": 0.06663,
+      "share": 0.0667,
       "weight": 0.3437
     },
     "Southeast Asian": {
       "count": 132,
-      "share": 0.06613,
+      "share": 0.0662,
       "weight": 0.3411
     },
     "Cafe": {
       "count": 118,
-      "share": 0.05912,
+      "share": 0.05918,
       "weight": 0.3049
     },
     "Japanese": {
       "count": 110,
-      "share": 0.05511,
+      "share": 0.05517,
       "weight": 0.2842
-    },
-    "Middle Eastern": {
-      "count": 107,
-      "share": 0.05361,
-      "weight": 0.2765
     },
     "Caribbean": {
       "count": 103,
-      "share": 0.0516,
+      "share": 0.05165,
       "weight": 0.2661
+    },
+    "Middle Eastern": {
+      "count": 87,
+      "share": 0.04363,
+      "weight": 0.2248
     },
     "Korean": {
       "count": 86,
-      "share": 0.04309,
+      "share": 0.04313,
       "weight": 0.2222
     },
     "Latin American": {
       "count": 76,
-      "share": 0.03808,
+      "share": 0.03811,
       "weight": 0.1964
     },
     "Retail": {
       "count": 51,
-      "share": 0.02555,
+      "share": 0.02558,
       "weight": 0.1318
     },
     "Dietary": {
       "count": 42,
-      "share": 0.02104,
+      "share": 0.02106,
       "weight": 0.1085
     },
     "African": {
       "count": 35,
-      "share": 0.01754,
+      "share": 0.01755,
       "weight": 0.0904
     },
     "Asian": {
       "count": 32,
-      "share": 0.01603,
+      "share": 0.01605,
       "weight": 0.0827
     },
     "Pacific": {
@@ -602,7 +602,7 @@
       },
       {
         "family": "European",
-        "count": 202,
+        "count": 222,
         "styles": [
           {
             "cuisine": "Italian",
@@ -626,6 +626,14 @@
             "weight": 0.1676,
             "googleTypes": [
               "french_restaurant"
+            ]
+          },
+          {
+            "cuisine": "Jewish Deli",
+            "count": 20,
+            "weight": 0.1117,
+            "googleTypes": [
+              "deli"
             ]
           },
           {
@@ -867,8 +875,23 @@
         ]
       },
       {
+        "family": "Cafe",
+        "count": 105,
+        "styles": [
+          {
+            "cuisine": "Coffee",
+            "count": 105,
+            "weight": 0.5866,
+            "googleTypes": [
+              "coffee_shop",
+              "cafe"
+            ]
+          }
+        ]
+      },
+      {
         "family": "Middle Eastern",
-        "count": 124,
+        "count": 104,
         "styles": [
           {
             "cuisine": "Middle Eastern",
@@ -877,14 +900,6 @@
             "googleTypes": [
               "mediterranean_restaurant",
               "middle_eastern_restaurant"
-            ]
-          },
-          {
-            "cuisine": "Jewish Deli",
-            "count": 20,
-            "weight": 0.1117,
-            "googleTypes": [
-              "deli"
             ]
           },
           {
@@ -910,21 +925,6 @@
             "weight": 0.0559,
             "googleTypes": [
               "lebanese_restaurant"
-            ]
-          }
-        ]
-      },
-      {
-        "family": "Cafe",
-        "count": 105,
-        "styles": [
-          {
-            "cuisine": "Coffee",
-            "count": 105,
-            "weight": 0.5866,
-            "googleTypes": [
-              "coffee_shop",
-              "cafe"
             ]
           }
         ]
