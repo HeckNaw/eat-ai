@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Backdrop } from "./components/Backdrop";
-import { LocationGate } from "./components/LocationGate";
-import { QuestionScreen } from "./components/QuestionScreen";
+import { Flow } from "./components/Flow";
 import { SwipeDeck } from "./components/SwipeDeck";
 import { Unlock } from "./components/Unlock";
 import { checkAccess, post, Unauthorized } from "./lib/api";
@@ -11,7 +10,7 @@ import { loadPhotos } from "./lib/photostore";
 import { rank } from "./lib/score";
 import type { Answers, Coords, Place, Scored, Taste } from "./lib/types";
 
-type Stage = "loading" | "locked" | "gate" | "ask" | "results";
+type Stage = "loading" | "locked" | "flow" | "results";
 
 /** Nearby Search accepts at most 50 includedPrimaryTypes. */
 const MAX_TYPES = 50;
@@ -81,7 +80,7 @@ export default function App() {
       .then(([p, t, access]) => {
         setPlaces(p);
         setTaste(t);
-        setStage(access.ok ? "gate" : "locked");
+        setStage(access.ok ? "flow" : "locked");
       })
       .catch(() => setLoadError("Couldn't load your places. Reload?"));
   }, []);
@@ -90,7 +89,7 @@ export default function App() {
   // are usually ready by the time the swipe deck appears — overlapped with the
   // discovery call rather than blocking it.
   useEffect(() => {
-    if (stage === "ask" && !photoMap) loadPhotos().then(setPhotoMap);
+    if (stage === "flow" && !photoMap) loadPhotos().then(setPhotoMap);
   }, [stage, photoMap]);
 
   // Every screen change starts at the top. Picking a location from far down the
@@ -186,7 +185,7 @@ export default function App() {
       <div className="shell">
       <header className="masthead">
         <span className="wordmark">
-          chudly<b>.ai</b>
+          eat<b>.ai</b>
         </span>
         {places && (
           <span className="eyebrow" style={{ marginLeft: "auto" }}>
@@ -207,28 +206,21 @@ export default function App() {
         </div>
       )}
 
-      {stage === "locked" && <Unlock onUnlocked={() => setStage("gate")} />}
+      {stage === "locked" && <Unlock onUnlocked={() => setStage("flow")} />}
 
-      {stage === "gate" && taste && (
-        <LocationGate
-          areas={taste.areas ?? []}
-          onLocated={(c, label) => {
-            setOrigin(c);
-            setOriginLabel(label);
-            setStage("ask");
-          }}
-        />
-      )}
-
-      {stage === "ask" && taste && (
-        <QuestionScreen
+      {stage === "flow" && taste && (
+        <Flow
           taste={taste}
           families={localFamilies}
           answers={answers}
           setAnswers={setAnswers}
+          origin={origin}
+          originLabel={originLabel}
+          onLocated={(c, label) => {
+            setOrigin(c);
+            setOriginLabel(label);
+          }}
           onGo={go}
-          locationLabel={originLabel}
-          onChangeLocation={() => setStage("gate")}
         />
       )}
 
@@ -237,7 +229,7 @@ export default function App() {
           deck={deck}
           discovering={discovering}
           photoMap={photoMap}
-          onRestart={() => setStage("ask")}
+          onRestart={() => setStage("flow")}
         />
       )}
       </div>

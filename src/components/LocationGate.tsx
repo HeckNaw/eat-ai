@@ -64,22 +64,10 @@ export function LocationGate({
 
   return (
     <>
-      <div className="panel gate">
+      <div className="gate-head">
         <h1>
           <span className="hi">Hi, Nathan!</span> I need to know where you are.
         </h1>
-        <p>Everything useful depends on it:</p>
-        <ul>
-          <li>
-            <b>How far</b> are you willing to go to eat.
-          </li>
-          <li>
-            <b>What's actually open</b> right now or for your occasion.
-          </li>
-          <li>
-            <b>Which of your places</b> are near enough to bother with.
-          </li>
-        </ul>
         {error && <div className="err">{error}</div>}
       </div>
 

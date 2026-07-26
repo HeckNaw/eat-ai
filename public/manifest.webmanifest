@@ -1,6 +1,6 @@
 {
-  "name": "chudly.ai",
-  "short_name": "chudly",
+  "name": "eat.ai",
+  "short_name": "eat",
   "description": "A personal food assistant. Knows what you like.",
   "start_url": "/",
   "scope": "/",

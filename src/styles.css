@@ -198,6 +198,56 @@ body::after {
 .shell { position: relative; z-index: 1; }
 
 /* --------------------------------------------------------------------------
+   question flow — one step at a time
+   -------------------------------------------------------------------------- */
+
+/* Fill the shell so the dock can pin to the bottom regardless of step height. */
+.flow { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+
+/* Segmented progress, centred at the top. One bar per step, filling as you go. */
+.flow-top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.flow-bar {
+  display: flex;
+  gap: 0.375rem;
+  width: 100%;
+}
+.flow-seg {
+  flex: 1;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--line);
+  transition: background 0.35s var(--out);
+}
+.flow-seg[data-done] { background: var(--accent-soft); }
+.flow-seg[data-on] { background: var(--accent); }
+
+/* Each step fades and rises in as you advance. Subtle, forward only. It takes
+   the slack between the progress bar and the dock, so the dock stays pinned to
+   the bottom whatever the step's height. */
+.flow-step {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  animation: flowIn 0.34s var(--out);
+}
+@keyframes flowIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flow-step { animation: none; }
+}
+
+/* Bigger segmented control for the opening Sweet/Savoury question. */
+.seg-lg button { padding: 1rem; font-size: 1.0625rem; }
+
+
+/* --------------------------------------------------------------------------
    swipe deck
    -------------------------------------------------------------------------- */
 
@@ -1051,16 +1101,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   pointer-events: none;
 }
 
-.gate { display: flex; flex-direction: column; gap: 1rem; text-align: left; }
-
-/* Greeting set inline in the headline, so it reads as one sentence the assistant
-   is saying rather than a separate banner. */
+/* Just the greeting — no panel, no explainer. The accent "Hi, Nathan!" is set
+   inline so it reads as one sentence rather than a separate banner. */
+.gate-head { margin-bottom: 1.25rem; }
+.gate-head h1 { font-size: clamp(1.625rem, 7vw, 2.125rem); }
 .hi { color: var(--accent); }
-.gate h1 { font-size: clamp(1.625rem, 7vw, 2.125rem); }
-.gate p { margin: 0; color: var(--ink-dim); font-size: 0.9375rem; line-height: 1.55; }
-.gate ul { margin: 0; padding-left: 1.125rem; color: var(--ink-dim); font-size: 0.9375rem; }
-.gate li { margin-bottom: 0.375rem; }
-.gate li b { color: var(--ink-soft); font-weight: 600; }
 
 .empty {
   padding: 2.25rem 1.25rem;

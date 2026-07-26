@@ -506,6 +506,12 @@ function Basket({
     <>
       {choosing && <Chooser items={items} photoMap={photoMap} onClose={() => setChoosing(false)} />}
 
+      {canResume && (
+        <button className="btn-quiet" style={{ width: "100%", marginBottom: "1.25rem" }} onClick={onBack}>
+          &lsaquo; Back to swiping
+        </button>
+      )}
+
       <div className="section-head">
         <h2>Your basket</h2>
         <span className="section-count mono">{items.length}</span>
@@ -541,11 +547,6 @@ function Basket({
         </>
       )}
 
-      {canResume && (
-        <button className="btn-quiet" style={{ width: "100%", marginTop: "1rem" }} onClick={onBack}>
-          Back to swiping
-        </button>
-      )}
     </>
   );
 }
