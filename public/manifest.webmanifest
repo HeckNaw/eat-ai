@@ -1,7 +1,7 @@
 {
   "name": "eat.ai",
   "short_name": "eat",
-  "description": "A personal food assistant. Knows what you like.",
+  "description": "A personal food assistant that knows what you like.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

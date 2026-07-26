@@ -29,9 +29,9 @@ export function Unlock({ onUnlocked }: { onUnlocked: () => void }) {
   return (
     <div className="panel gate">
       <h1>
-        <span className="hi">Hi, Nathan!</span> Prove your identity.
+        <span className="hi">Hi!</span> Prove your identity.
       </h1>
-      <p>Just once on this device.</p>
+      <p>Just once on this device. This app belongs to one person and one person only.</p>
       <form className="row" onSubmit={submit} style={{ marginTop: "1rem" }}>
         <input
           className="field"
