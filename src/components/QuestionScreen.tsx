@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { defaultWhenAt, describeWhen, toLocalInput } from "../lib/hours";
+import { describeWhen, targetTime, toLocalInput } from "../lib/hours";
 import type { Answers, Family, Taste } from "../lib/types";
 
 const RADII = [
@@ -8,6 +8,36 @@ const RADII = [
   { label: "10km", sub: null, m: 10_000 },
   { label: "Anywhere", sub: null, m: 60_000 },
 ];
+
+/** An emoji per cuisine family (or specific label), shown on its craving chip. */
+const CHIP_EMOJI: Record<string, string> = {
+  "North American": "🍔",
+  Chinese: "🥡",
+  Japanese: "🍣",
+  Korean: "🍲",
+  "Southeast Asian": "🍜",
+  "South Asian": "🍛",
+  "Middle Eastern": "🥙",
+  European: "🍝",
+  Caribbean: "🌴",
+  "Latin American": "🌮",
+  African: "🍢",
+  "Bakery & Sweets": "🧁",
+  Cafe: "🧋", // the sweet-mode family (Bubble Tea / Cafe)
+  Coffee: "☕", // the savoury-mode single cuisine
+  Pacific: "🐟",
+  Asian: "🥢",
+  Dietary: "🥗",
+  Retail: "🛒",
+};
+// Look up by the shown label first (so "Coffee" keeps ☕), then the family.
+const emojiFor = (family: string, label: string) =>
+  CHIP_EMOJI[label] ?? CHIP_EMOJI[family] ?? "🍽️";
+
+/** Display-name overrides for a family chip. */
+const FAMILY_LABEL: Record<string, string> = {
+  Cafe: "Bubble Tea / Cafe",
+};
 
 /**
  * Quick jumps for the days people actually plan around, so the calendar is there
@@ -58,7 +88,10 @@ export function QuestionScreen({
   onChangeLocation: () => void;
 }) {
   const [openFamily, setOpenFamily] = useState<string | null>(null);
-  const [showTime, setShowTime] = useState(typeof answers.when === "object");
+
+  // The always-visible picker mirrors whatever "when" resolves to — the current
+  // time for Now, an hour out for In an hour, or the exact custom value.
+  const pickerValue = toLocalInput(targetTime(answers.when));
 
   const familyList: Family[] =
     families.length ? families : (taste.hierarchy[answers.mode] ?? taste.hierarchy.savoury);
@@ -111,72 +144,52 @@ export function QuestionScreen({
 
       <div className="q" style={q(1)}>
         <div className="q-head">
-          <span className="q-title">Eating when?</span>
+          <span className="q-title">Pick a day &amp; time</span>
         </div>
         <div className="chips">
+          {/* Now and In an hour come first, then the common day shortcuts. Each
+              just sets the picker; editing the picker directly clears them. */}
           <button
             className="chip"
             data-on={answers.when === "now"}
-            onClick={() => {
-              setShowTime(false);
-              setAnswers({ ...answers, when: "now" });
-            }}
+            onClick={() => setAnswers({ ...answers, when: "now" })}
           >
             Now
           </button>
           <button
             className="chip"
             data-on={answers.when === "hour"}
-            onClick={() => {
-              setShowTime(false);
-              setAnswers({ ...answers, when: "hour" });
-            }}
+            onClick={() => setAnswers({ ...answers, when: "hour" })}
           >
             In an hour
           </button>
-          <button
-            className="chip"
-            data-on={typeof answers.when === "object"}
-            onClick={() => {
-              setShowTime(true);
-              if (typeof answers.when !== "object") {
-                setAnswers({ ...answers, when: { at: defaultWhenAt() } });
-              }
-            }}
-          >
-            Pick a day &amp; time
-          </button>
+          {shortcuts().map((s2) => {
+            const on = typeof answers.when === "object" && answers.when.at === s2.at;
+            return (
+              <button
+                key={s2.at}
+                className="chip"
+                data-on={on}
+                onClick={() => setAnswers({ ...answers, when: { at: s2.at } })}
+              >
+                {s2.label}
+              </button>
+            );
+          })}
         </div>
 
-        {showTime && typeof answers.when === "object" && (
-          <div style={{ marginTop: "0.5rem" }}>
-            {/* datetime-local carries a native calendar and clock, which beats a
-                hand-rolled picker on a phone. Shortcuts cover the common days. */}
-            <input
-              className="field"
-              type="datetime-local"
-              min={toLocalInput(new Date())}
-              value={answers.when.at}
-              onChange={(e) => setAnswers({ ...answers, when: { at: e.target.value } })}
-            />
-            <div className="chips" style={{ marginTop: "0.5rem" }}>
-              {shortcuts().map((s2) => {
-                const on = typeof answers.when === "object" && answers.when.at === s2.at;
-                return (
-                  <button
-                    key={s2.at}
-                    className="chip-sm"
-                    data-on={on}
-                    onClick={() => setAnswers({ ...answers, when: { at: s2.at } })}
-                  >
-                    {s2.label}
-                  </button>
-                );
-              })}
-            </div>
-            <div className="hint mono">&rarr; {describeWhen(answers.when)}</div>
-          </div>
-        )}
+        {/* Always visible. Its value tracks the chip above; typing a custom time
+            switches "when" to that exact value, which deselects every chip. */}
+        <div style={{ marginTop: "0.625rem" }}>
+          <input
+            className="field"
+            type="datetime-local"
+            min={toLocalInput(new Date())}
+            value={pickerValue}
+            onChange={(e) => setAnswers({ ...answers, when: { at: e.target.value } })}
+          />
+          <div className="hint mono">&rarr; {describeWhen(answers.when)}</div>
+        </div>
       </div>
 
       <div className="q" style={q(2)}>
@@ -225,11 +238,15 @@ export function QuestionScreen({
             // it labels itself with the cuisine. Otherwise the chip reads as an
             // invented container — "Asian" for one pan-Asian entry, "Pacific"
             // for eight poke places.
-            const label = f.styles.length === 1 ? (f.styles[0]?.cuisine ?? f.family) : f.family;
+            const label =
+              f.styles.length === 1
+                ? (f.styles[0]?.cuisine ?? f.family)
+                : (FAMILY_LABEL[f.family] ?? f.family);
             return (
               <div key={f.family} style={{ width: "100%" }}>
                 <div style={{ display: "flex", gap: "0.375rem" }}>
                   <button className="chip" data-on={on} onClick={() => toggleFamily(f)}>
+                    <span className="chip-emoji" aria-hidden="true">{emojiFor(f.family, label)}</span>
                     {label}
                     {f.count > 0 && <span className="chip-n">{f.count}</span>}
                   </button>

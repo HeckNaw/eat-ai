@@ -11,6 +11,7 @@ dist/
 # Raw Places API responses. Bulky and regenerable from enriched.json —
 # kept out of git, but kept on disk so a re-run never re-fetches.
 data/places-cache.jsonl
+data/photos-cache.jsonl
 
 # macOS
 .DS_Store

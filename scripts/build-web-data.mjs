@@ -75,6 +75,15 @@ const places = labelled.places
     co: isCorporateChain(p.name) || undefined,
   }));
 
+// Photo resource names are ~700 chars each; four per place is ~1.7MB — far too
+// much to sit in the payload that boots the app and drives filtering. They go in
+// a separate file, loaded lazily only once swiping starts, so the app boots on
+// the lean 124KB places.json and photos stream in behind skeletons.
+const photoMap = {};
+for (const p of labelled.places) {
+  if (p.placeId && !isRuledOut(p) && p.photos?.length) photoMap[p.placeId] = p.photos;
+}
+
 /**
  * Name each cluster by its main INTERSECTION, derived from the addresses already
  * on hand. No geocoding API, and it travels to any city where places are saved.
@@ -213,4 +222,6 @@ console.log(
 console.log(`\npacking ${places.length} places for the browser:`);
 write("places.json", places);
 write("taste.json", webTaste);
+write("photos.json", photoMap);
+console.log(`  (${Object.keys(photoMap).length} places have photos)`);
 console.log("\nwrote to public/");

@@ -3,10 +3,13 @@ import type { Answers, OpenState, Period, Place } from "./types";
 const WEEK = 7 * 1440;
 
 /**
- * Don't recommend somewhere that shuts before you could plausibly get there and
- * eat. "Open at 8:40" is useless if it closes at 8:45.
+ * Two thresholds on how close to closing a place is, at the target time:
+ *
+ *   ≤ 5 min  → dropped entirely. "Open at 8:40" is useless if it closes at 8:45.
+ *   < 60 min → shown, but flagged "closes soon" in amber rather than green.
  */
-export const CLOSING_BUFFER_MIN = 45;
+export const CLOSING_DROP_MIN = 5;
+export const SOON_MIN = 60;
 
 /**
  * Minute-of-week in the PLACE's local time, not the browser's.
@@ -62,8 +65,10 @@ export function openAt(
     for (const t of [now, now + WEEK]) {
       if (t >= start && t < end) {
         const closesInMin = end - t;
+        // About to close → treat as shut so the scorer drops it.
+        if (closesInMin <= CLOSING_DROP_MIN) return { state: "shut", closesInMin: null };
         return {
-          state: closesInMin <= CLOSING_BUFFER_MIN ? "soon" : "open",
+          state: closesInMin < SOON_MIN ? "soon" : "open",
           closesInMin,
         };
       }

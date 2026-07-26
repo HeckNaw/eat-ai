@@ -18,6 +18,35 @@ function apiDev(env: Record<string, string>): Plugin {
   return {
     name: "chudly-api-dev",
     configureServer(server) {
+      // GET /api/photo — mirrors the Vercel function so images work in dev too.
+      server.middlewares.use("/api/photo", async (req, res) => {
+        if (req.method !== "GET") {
+          res.statusCode = 405;
+          res.end("GET only");
+          return;
+        }
+        try {
+          const url = new URL(req.url ?? "", "http://localhost");
+          const { resolvePhoto } = await server.ssrLoadModule("/lib/photo.mjs");
+          const out = await resolvePhoto(
+            { name: url.searchParams.get("name"), w: url.searchParams.get("w") },
+            { ...process.env, ...env },
+          );
+          if (out.status !== 200) {
+            res.statusCode = out.status;
+            res.end(out.error ?? "error");
+            return;
+          }
+          res.statusCode = 200;
+          res.setHeader("content-type", out.contentType);
+          res.setHeader("cache-control", "public, max-age=31536000, immutable");
+          res.end(out.body);
+        } catch (err) {
+          res.statusCode = 500;
+          res.end(String((err as Error)?.message ?? err));
+        }
+      });
+
       for (const route of ROUTES) {
         server.middlewares.use(route.path, async (req, res) => {
           if (req.method !== "POST") {

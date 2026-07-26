@@ -22,6 +22,7 @@ export interface Place {
   l: string;              // which list it came from (provenance only)
   tmp?: true;             // temporarily closed
   co?: true;              // corporate chain — penalised, per Nathan's stated preference
+  ph?: string[];          // up to 4 Google photo resource names, fetched via /api/photo
   onList?: boolean;       // set true for saved places, false for discoveries
 }
 

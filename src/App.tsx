@@ -2,12 +2,13 @@ import { useEffect, useMemo, useState } from "react";
 import { Backdrop } from "./components/Backdrop";
 import { LocationGate } from "./components/LocationGate";
 import { QuestionScreen } from "./components/QuestionScreen";
-import { Results } from "./components/Results";
+import { SwipeDeck } from "./components/SwipeDeck";
 import { Unlock } from "./components/Unlock";
 import { checkAccess, post, Unauthorized } from "./lib/api";
-import { describeWhen, targetTime } from "./lib/hours";
+import { targetTime } from "./lib/hours";
 import { localizeFamilies } from "./lib/local";
-import { diversify, rank } from "./lib/score";
+import { loadPhotos } from "./lib/photostore";
+import { rank } from "./lib/score";
 import type { Answers, Coords, Place, Scored, Taste } from "./lib/types";
 
 type Stage = "loading" | "locked" | "gate" | "ask" | "results";
@@ -65,9 +66,8 @@ export default function App() {
   const [answers, setAnswers] = useState<Answers>(DEFAULTS);
 
   const [offList, setOffList] = useState<Place[]>([]);
-  const [settling, setSettling] = useState(false);
   const [discovering, setDiscovering] = useState(false);
-  const [discoverError, setDiscoverError] = useState<string | null>(null);
+  const [photoMap, setPhotoMap] = useState<Record<string, string[]> | null>(null);
 
   // Both payloads are static and cached after first load: 123KB + 4KB gzipped.
   // The access probe runs alongside them rather than before, so the passcode
@@ -85,6 +85,13 @@ export default function App() {
       })
       .catch(() => setLoadError("Couldn't load your places. Reload?"));
   }, []);
+
+  // Start pulling the photo names once the user reaches the questions, so they
+  // are usually ready by the time the swipe deck appears — overlapped with the
+  // discovery call rather than blocking it.
+  useEffect(() => {
+    if (stage === "ask" && !photoMap) loadPhotos().then(setPhotoMap);
+  }, [stage, photoMap]);
 
   // Every screen change starts at the top. Picking a location from far down the
   // gate's area list would otherwise drop you into the middle of the questions
@@ -137,18 +144,19 @@ export default function App() {
     return rank(offList, origin, answers, taste, at, modeOf);
   }, [offList, taste, origin, answers, at, modeOf]);
 
+  // Everything that matched, saved-list first then new-to-you, in one deck to
+  // swipe through. On-list is ready synchronously; off-list appends when the
+  // discovery call returns, so the deck grows under the swiper.
+  const deck: Scored[] = useMemo(
+    () => [...onListRanked, ...offListRanked],
+    [onListRanked, offListRanked],
+  );
+
   async function go() {
     if (!origin || !taste) return;
     setStage("results");
     setOffList([]);
-    setDiscoverError(null);
-    setSettling(true);
     setDiscovering(true);
-
-    // The saved-list half is computed synchronously, so it would pop in with no
-    // perceptible transition. A short floor gives the skeletons time to register
-    // as a deliberate beat rather than a flash of broken layout.
-    const floor = new Promise((r) => setTimeout(r, 550));
 
     try {
       const data = await post<{ places?: Place[] }>("/api/discover", {
@@ -160,31 +168,17 @@ export default function App() {
         // Boyz), so neither returns as an off-list discovery.
         exclude: [...(places ?? []).map((p) => p.i), ...(taste.ruledOutIds ?? [])],
       });
-      await floor;
-      setSettling(false);
       setOffList(data.places ?? []);
     } catch (e) {
-      await floor;
-      setSettling(false);
       if (e instanceof Unauthorized) {
         setStage("locked");
         return;
       }
       console.error("discover failed:", e);
-      setDiscoverError(
-        "Couldn't search for new places right now — your own list above is unaffected.",
-      );
     } finally {
-      setSettling(false);
       setDiscovering(false);
     }
   }
-
-  const summary = origin
-    ? `${answers.mode} · ${describeWhen(answers.when)} · within ${
-        answers.radiusM >= 60_000 ? "any distance" : `${(answers.radiusM / 1000).toFixed(answers.radiusM < 1000 ? 1 : 0)}km`
-      }${answers.cuisines.length ? ` · ${answers.cuisines.length} craving${answers.cuisines.length > 1 ? "s" : ""}` : ""}`
-    : "";
 
   return (
     <>
@@ -239,14 +233,11 @@ export default function App() {
       )}
 
       {stage === "results" && (
-        <Results
-          summary={summary}
-          onList={diversify(onListRanked, 40)}
-          offList={diversify(offListRanked, 40)}
-          settling={settling}
+        <SwipeDeck
+          deck={deck}
           discovering={discovering}
-          discoverError={discoverError}
-          onBack={() => setStage("ask")}
+          photoMap={photoMap}
+          onRestart={() => setStage("ask")}
         />
       )}
       </div>

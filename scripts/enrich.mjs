@@ -51,7 +51,22 @@ const FIELD_MASK = [
   "places.editorialSummary",
   "places.businessStatus",
   "places.googleMapsUri",
+  // Photo resource names only — the actual images are fetched separately and on
+  // demand through /api/photo, so this adds no cost here (photos is a Pro field
+  // and the mask is already Enterprise+Atmosphere, the top tier).
+  "places.photos",
 ].join(",");
+
+// How many photo references to keep per place. The UI shows up to four in a
+// grid; keeping exactly that avoids bloating the payload with refs never shown.
+const MAX_PHOTOS = 4;
+
+/** Google returns rich photo objects; we only need the resource name to fetch. */
+function photoNames(photos) {
+  if (!photos?.length) return null;
+  const names = photos.slice(0, MAX_PHOTOS).map((p) => p.name).filter(Boolean);
+  return names.length ? names : null;
+}
 
 const CONCURRENCY = 4;
 const MAX_RETRIES = 4;
@@ -350,6 +365,7 @@ async function main() {
           summary: hit.editorialSummary?.text ?? null,
           businessStatus: hit.businessStatus ?? null,
           googleMapsUri: hit.googleMapsUri ?? null,
+          photos: photoNames(hit.photos),
           enriched: true,
         });
       }

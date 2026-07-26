@@ -159,6 +159,7 @@ export function labelPlacesResult(r) {
     summary,
     businessStatus: r.businessStatus ?? null,
     googleMapsUri: r.googleMapsUri ?? null,
+    photos: r.photos?.length ? r.photos.slice(0, 4).map((p) => p.name).filter(Boolean) : null,
     ...cuisine,
     attributes,
     priceEstimate: r.priceLevel ? null : estimatePrice(attributes),
