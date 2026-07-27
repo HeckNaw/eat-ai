@@ -15,6 +15,7 @@ import { fileURLToPath } from "node:url";
 import { gzipSync } from "node:zlib";
 import { isRuledOut, negatives } from "./lib/negatives.mjs";
 import { isCorporateChain } from "./lib/chains.mjs";
+import { signPhotoNames } from "../lib/photosig.mjs";
 
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const PUB = join(ROOT, "public");
@@ -79,9 +80,26 @@ const places = labelled.places
 // much to sit in the payload that boots the app and drives filtering. They go in
 // a separate file, loaded lazily only once swiping starts, so the app boots on
 // the lean 124KB places.json and photos stream in behind skeletons.
+//
+// Each name is signed on the way out. photos.json is a public asset, so without
+// a signature the 5,190 names in it are a ready-made list of billable URLs
+// anyone can replay through /api/photo — and an unsigned proxy would accept
+// harvested names beyond ours too. The signature ties the file to this
+// deployment's PHOTO_SECRET without changing the URL, so CDN caching is
+// untouched. Building without the secret set produces unsigned names, which is
+// the local-dev case the proxy also allows.
+const photoSecret = (process.env.PHOTO_SECRET ?? "").trim();
+if (!photoSecret) {
+  console.warn(
+    "  ! PHOTO_SECRET is not set — photos.json will be UNSIGNED.\n" +
+      "    Fine locally; a production build needs it or /api/photo is an open tap.",
+  );
+}
 const photoMap = {};
 for (const p of labelled.places) {
-  if (p.placeId && !isRuledOut(p) && p.photos?.length) photoMap[p.placeId] = p.photos;
+  if (p.placeId && !isRuledOut(p) && p.photos?.length) {
+    photoMap[p.placeId] = signPhotoNames(p.photos, photoSecret);
+  }
 }
 
 /**
