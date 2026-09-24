@@ -1,6 +1,6 @@
-# chudly.ai
+# eat.ai
 
-**Live: [chudly-ai.vercel.app](https://chudly-ai.vercel.app)**
+**Live: [eat-ai-assistant.vercel.app](https://eat-ai-assistant.vercel.app/)**
 
 A personal food assistant. One user. Opens on a phone, asks four questions,
 returns picks from the 1,269 saved places and from places never saved.
@@ -96,8 +96,8 @@ apply — these two do:
 Ongoing cost is $0 unless you press *Feed me* more than about 30 times a day,
 every day. "See more" is free until the fetched pool of 20 runs dry.
 
-The only genuinely recurring cost is the domain, if you want `chudly.ai` rather
-than `chudly-ai.vercel.app`. `.ai` domains run roughly US$70–110/year — an order
+The only genuinely recurring cost is the domain, if you want `eat.ai` rather
+than `eat-ai-assistant.vercel.app`. `.ai` domains run roughly US$70–110/year — an order
 of magnitude more than the app itself. The Vercel subdomain is free and works
 identically once it's on your home screen, where you never see the URL again.
 
